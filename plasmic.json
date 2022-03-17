@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "public-files",
@@ -270,7 +270,8 @@
       ],
       "indirect": true,
       "globalContextsFilePath": "",
-      "codeComponents": []
+      "codeComponents": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -289,7 +290,8 @@
           "name": "Reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
@@ -308,7 +310,8 @@
           "name": "YouTube",
           "componentImportPath": "@plasmicpkgs/react-youtube"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -342,7 +345,8 @@
           "name": "Embed",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "seaQhLVS4bbjiGvJJrRwyL",
@@ -355,7 +359,8 @@
       "images": [],
       "indirect": true,
       "globalContextsFilePath": "",
-      "codeComponents": []
+      "codeComponents": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "qDNA17RfdgsM73kkELPPxa",

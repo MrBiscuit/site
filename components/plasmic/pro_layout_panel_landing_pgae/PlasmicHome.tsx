@@ -80,6 +80,7 @@ export type PlasmicHome__OverridesType = {
   solutions?: p.Flex<typeof Section>;
   howItWorks?: p.Flex<typeof Section>;
   pricingSection?: p.Flex<typeof Section>;
+  pricing?: p.Flex<"a"> & Partial<LinkProps>;
   columns?: p.Flex<"div">;
   footer?: p.Flex<typeof Footer>;
 };
@@ -262,7 +263,6 @@ function PlasmicHome__RenderFunc(props: {
                   sty.text__voQbq
                 )}
                 id={"feature" as const}
-                title={"" as const}
               >
                 {"What does it do?"}
               </div>
@@ -432,90 +432,105 @@ function PlasmicHome__RenderFunc(props: {
             }
             title={"Some other features"}
           >
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__iwcDk)}
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal__neMan)}
+              damping={0.5 as const}
+              direction={"up" as const}
+              duration={500 as const}
+              triggerOnce={true}
             >
-              <FeatureCard
-                className={classNames("__wab_instance", sty.featureCard__vCzF)}
-                description={
-                  "Shortcut like ⇧A, ⌘Z still functions when focused on the Plugin window"
-                }
-                iconFront={
-                  <Icon9Icon
-                    className={classNames(projectcss.all, sty.svg__zxSc7)}
-                    role={"img"}
-                  />
-                }
-                title={"Shortcut support"}
-              />
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__iwcDk)}
+              >
+                <FeatureCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.featureCard__vCzF
+                  )}
+                  description={
+                    "Shortcut like ⇧A, ⌘Z still functions when focused on the Plugin window"
+                  }
+                  iconFront={
+                    <Icon9Icon
+                      className={classNames(projectcss.all, sty.svg__zxSc7)}
+                      role={"img"}
+                    />
+                  }
+                  title={"Shortcut support"}
+                />
 
-              <FeatureCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.featureCard___0RcIc
-                )}
-                description={
-                  "So you can do stuff like bidirectional hugging and hug-scaling easily"
-                }
-                iconFront={
-                  <Icon6Icon
-                    className={classNames(projectcss.all, sty.svg__cja2F)}
-                    role={"img"}
-                  />
-                }
-                title={"Independent property editing"}
-              />
+                <FeatureCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.featureCard___0RcIc
+                  )}
+                  description={
+                    "So you can do stuff like bidirectional hugging and hug-scaling easily"
+                  }
+                  iconFront={
+                    <Icon6Icon
+                      className={classNames(projectcss.all, sty.svg__cja2F)}
+                      role={"img"}
+                    />
+                  }
+                  title={"Independent property editing"}
+                />
 
-              <FeatureCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.featureCard___5RzuC
-                )}
-                description={
-                  "All input fields default to the nearest multiple of 4, hold ⇧ to change to 8 "
-                }
-                iconFront={
-                  <Icon4Icon
-                    className={classNames(projectcss.all, sty.svg__p4FQ)}
-                    role={"img"}
-                  />
-                }
-                title={"4 Based Scrubbing"}
-              />
+                <FeatureCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.featureCard___5RzuC
+                  )}
+                  description={
+                    "All input fields default to the nearest multiple of 4, hold ⇧ to change to 8 "
+                  }
+                  iconFront={
+                    <Icon4Icon
+                      className={classNames(projectcss.all, sty.svg__p4FQ)}
+                      role={"img"}
+                    />
+                  }
+                  title={"4 Based Scrubbing"}
+                />
 
-              <FeatureCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.featureCard___3Vrh4
-                )}
-                description={
-                  "Padding input fields supports values separated by space or comma"
-                }
-                iconFront={
-                  <Icon10Icon
-                    className={classNames(projectcss.all, sty.svg___39ZeB)}
-                    role={"img"}
-                  />
-                }
-                title={"Independent padding values"}
-              />
+                <FeatureCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.featureCard___3Vrh4
+                  )}
+                  description={
+                    "Padding input fields supports values separated by space or comma"
+                  }
+                  iconFront={
+                    <Icon10Icon
+                      className={classNames(projectcss.all, sty.svg___39ZeB)}
+                      role={"img"}
+                    />
+                  }
+                  title={"Independent padding values"}
+                />
 
-              <FeatureCard
-                className={classNames("__wab_instance", sty.featureCard__qWZxv)}
-                description={
-                  "The parent and children resizing modes tend to be more resilient"
-                }
-                iconFront={
-                  <Icon2Icon
-                    className={classNames(projectcss.all, sty.svg__be14N)}
-                    role={"img"}
-                  />
-                }
-                title={"Resizing mode inheritance"}
-              />
-            </p.Stack>
+                <FeatureCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.featureCard__qWZxv
+                  )}
+                  description={
+                    "The parent and children resizing modes tend to be more resilient"
+                  }
+                  iconFront={
+                    <Icon2Icon
+                      className={classNames(projectcss.all, sty.svg__be14N)}
+                      role={"img"}
+                    />
+                  }
+                  title={"Resizing mode inheritance"}
+                />
+              </p.Stack>
+            </Reveal>
           </Section>
 
           <Section
@@ -537,155 +552,191 @@ function PlasmicHome__RenderFunc(props: {
                 }
               </div>
             }
-            title={"Pricing"}
+            title={
+              <p.PlasmicLink
+                data-plasmic-name={"pricing"}
+                data-plasmic-override={overrides.pricing}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.pricing
+                )}
+                component={Link}
+                id={"price" as const}
+                platform={"nextjs"}
+              >
+                {"Pricing"}
+              </p.PlasmicLink>
+            }
           >
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"columns"}
-              data-plasmic-override={overrides.columns}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns)}
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal__c0Rt9)}
+              direction={"up" as const}
+              duration={500 as const}
+              triggerOnce={true}
             >
-              <div className={classNames(projectcss.all, sty.column__ohl6R)}>
-                <Plan
-                  className={classNames("__wab_instance", sty.plan__tcon4)}
-                  description={
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__pd3Dy)}
-                    >
-                      <Bullet
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"columns"}
+                data-plasmic-override={overrides.columns}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.columns)}
+              >
+                <div className={classNames(projectcss.all, sty.column__ohl6R)}>
+                  <Plan
+                    className={classNames("__wab_instance", sty.plan__tcon4)}
+                    description={
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
                         className={classNames(
-                          "__wab_instance",
-                          sty.bullet__ak5He
+                          projectcss.all,
+                          sty.freeBox__pd3Dy
                         )}
                       >
-                        {"Full features"}
-                      </Bullet>
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet__ak5He
+                          )}
+                        >
+                          {"Full features"}
+                        </Bullet>
 
-                      <Bullet
-                        className={classNames(
-                          "__wab_instance",
-                          sty.bullet__q6Vp2
-                        )}
-                      >
-                        {"Free updates"}
-                      </Bullet>
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet__q6Vp2
+                          )}
+                        >
+                          {"Free updates"}
+                        </Bullet>
 
-                      <Bullet
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet___6ZfLc
+                          )}
+                          noIcon={true}
+                        >
+                          {"14 days trial period"}
+                        </Bullet>
+                      </p.Stack>
+                    }
+                    name={"Free trail"}
+                    price={
+                      <div
                         className={classNames(
-                          "__wab_instance",
-                          sty.bullet___6ZfLc
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__b2FJh
                         )}
-                        noIcon={true}
                       >
-                        {"14 days trial period"}
-                      </Bullet>
-                    </p.Stack>
-                  }
-                  name={"Free trail"}
-                  price={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__b2FJh
-                      )}
-                    >
-                      {"$0"}
-                    </div>
-                  }
-                >
-                  <Button
-                    className={classNames("__wab_instance", sty.button___0YoGk)}
-                    color={"outlineBlue" as const}
-                    link={
-                      "https://www.figma.com/community/plugin/1065130523685842895/Pro-Layout-Panel" as const
+                        {"$0"}
+                      </div>
                     }
                   >
-                    <div
+                    <Button
                       className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__fC3Jn
+                        "__wab_instance",
+                        sty.button___0YoGk
                       )}
+                      color={"outlineBlue" as const}
+                      link={
+                        "https://www.figma.com/community/plugin/1065130523685842895/Pro-Layout-Panel" as const
+                      }
                     >
-                      {"Get Started"}
-                    </div>
-                  </Button>
-                </Plan>
-              </div>
-
-              <div className={classNames(projectcss.all, sty.column__m2NuJ)}>
-                <Plan
-                  className={classNames("__wab_instance", sty.plan__wv2Mf)}
-                  description={
-                    <p.Stack
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__uQfsI)}
-                    >
-                      <Bullet
+                      <div
                         className={classNames(
-                          "__wab_instance",
-                          sty.bullet__aD0Yd
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__fC3Jn
                         )}
                       >
-                        {"Full features"}
-                      </Bullet>
+                        {"Get Started"}
+                      </div>
+                    </Button>
+                  </Plan>
+                </div>
 
-                      <Bullet
+                <div className={classNames(projectcss.all, sty.column__m2NuJ)}>
+                  <Plan
+                    className={classNames("__wab_instance", sty.plan__wv2Mf)}
+                    description={
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
                         className={classNames(
-                          "__wab_instance",
-                          sty.bullet__vwmeF
+                          projectcss.all,
+                          sty.freeBox__uQfsI
                         )}
                       >
-                        {"Free updates"}
-                      </Bullet>
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet__aD0Yd
+                          )}
+                        >
+                          {"Full features"}
+                        </Bullet>
 
-                      <Bullet
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet__vwmeF
+                          )}
+                        >
+                          {"Free updates"}
+                        </Bullet>
+
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet__bvKOm
+                          )}
+                        >
+                          {"Technical Support"}
+                        </Bullet>
+
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet__dgy3P
+                          )}
+                        >
+                          {"Use and love forever"}
+                        </Bullet>
+                      </p.Stack>
+                    }
+                    name={"Pro"}
+                    price={
+                      <div
                         className={classNames(
-                          "__wab_instance",
-                          sty.bullet__bvKOm
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__vsGer
                         )}
                       >
-                        {"Technical Support"}
-                      </Bullet>
-
-                      <Bullet
-                        className={classNames(
-                          "__wab_instance",
-                          sty.bullet__dgy3P
-                        )}
-                      >
-                        {"Use and love forever"}
-                      </Bullet>
-                    </p.Stack>
-                  }
-                  name={"Pro"}
-                  price={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__vsGer
-                      )}
-                    >
-                      {"$5"}
-                    </div>
-                  }
-                >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__c01Ak)}
-                    color={"purple" as const}
-                    link={"https://mrbiscuit.gumroad.com/l/qcpwqf" as const}
+                        {"$5"}
+                      </div>
+                    }
                   >
-                    {"Buy Now"}
-                  </Button>
-                </Plan>
-              </div>
-            </p.Stack>
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__c01Ak
+                      )}
+                      color={"purple" as const}
+                      link={"https://mrbiscuit.gumroad.com/l/qcpwqf" as const}
+                    >
+                      {"Buy Now"}
+                    </Button>
+                  </Plan>
+                </div>
+              </p.Stack>
+            </Reveal>
           </Section>
 
           <Footer
@@ -708,6 +759,7 @@ const PlasmicDescendants = {
     "solutions",
     "howItWorks",
     "pricingSection",
+    "pricing",
     "columns",
     "footer"
   ],
@@ -716,7 +768,8 @@ const PlasmicDescendants = {
   img: ["img"],
   solutions: ["solutions"],
   howItWorks: ["howItWorks"],
-  pricingSection: ["pricingSection", "columns"],
+  pricingSection: ["pricingSection", "pricing", "columns"],
+  pricing: ["pricing"],
   columns: ["columns"],
   footer: ["footer"]
 } as const;
@@ -731,6 +784,7 @@ type NodeDefaultElementType = {
   solutions: typeof Section;
   howItWorks: typeof Section;
   pricingSection: typeof Section;
+  pricing: "a";
   columns: "div";
   footer: typeof Footer;
 };
@@ -798,6 +852,7 @@ export const PlasmicHome = Object.assign(
     solutions: makeNodeComponent("solutions"),
     howItWorks: makeNodeComponent("howItWorks"),
     pricingSection: makeNodeComponent("pricingSection"),
+    pricing: makeNodeComponent("pricing"),
     columns: makeNodeComponent("columns"),
     footer: makeNodeComponent("footer"),
 
