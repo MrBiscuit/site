@@ -1,0 +1,66 @@
+.root {
+  flex-direction: row;
+  width: auto;
+  height: 40px;
+  display: inline-flex;
+  position: relative;
+  padding: 0px 6px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 8px;
+}
+.root:hover {
+  background: #000000;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 0px 6px;
+}
+.logo {
+  background: none;
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  top: auto;
+  left: auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+._4441 {
+  background: url("/plasmic/outline_to_single_stroke/images/outlineToSingleStrokepng4.png") center center / cover no-repeat;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-radius: 18px;
+}
+.text {
+  display: block;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.014px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  top: auto;
+  left: auto;
+  text-align: left;
+  width: auto;
+  flex-grow: 0;
+  height: auto;
+  user-select: none;
+  white-space: pre;
+}

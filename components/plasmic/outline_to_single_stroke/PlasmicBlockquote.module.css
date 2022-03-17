@@ -1,0 +1,39 @@
+.root {
+  flex-direction: row;
+  height: auto;
+  display: flex;
+  position: relative;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 8px;
+  background: #ffe4634d;
+  padding: 15px 30px 15px 15px;
+  border-style: solid;
+  border-color: #ffe463;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 8px;
+}
+.freeBox {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+  flex-direction: row;
+}
+.slotTargetChildren {
+  font-size: var(--token-SFqIPp0tM);
+  color: rgba(0, 0, 0, 0.899);
+  line-height: 21px;
+  letter-spacing: 0.083px;
+}

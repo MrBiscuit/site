@@ -1,0 +1,73 @@
+.root {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  cursor: pointer;
+  min-width: 0;
+  min-height: 0;
+  padding: 8px;
+}
+.root:hover {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-row-gap: 0px;
+  min-height: 0;
+}
+.freeBox {
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: auto;
+  justify-content: center;
+  flex-direction: row;
+}
+.root:hover .freeBox {
+  height: auto;
+}
+.slotTargetChildren {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: 0.014px;
+}
+.slotTargetChildrenactive {
+  color: #ffffff;
+}
+.root:hover .slotTargetChildren {
+  color: #ffffff;
+}
+.root:hover .slotTargetChildren > .__wab_text,
+.root:hover .slotTargetChildren > .__wab_slot-string-wrapper,
+.root:hover .slotTargetChildren > .__wab_slot > .__wab_text,
+.root:hover .slotTargetChildren > .__wab_slot > .__wab_slot-string-wrapper,
+.root:hover .slotTargetChildren > .__wab_slot > .__wab_slot > .__wab_text,
+.root:hover
+  .slotTargetChildren
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot-string-wrapper,
+.root:hover
+  .slotTargetChildren
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_text,
+.root:hover
+  .slotTargetChildren
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot-string-wrapper {
+  text-decoration-line: underline;
+}

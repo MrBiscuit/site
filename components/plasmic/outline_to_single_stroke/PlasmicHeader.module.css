@@ -1,0 +1,74 @@
+.root {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  position: relative;
+  background: rgba(43, 43, 43, 1);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+.headerWrapperWrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  position: relative;
+  top: auto;
+  left: auto;
+  padding-right: 48px;
+  padding-left: 48px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  right: auto;
+  bottom: auto;
+  max-width: 1280px;
+  margin-right: 80px;
+  margin-left: 80px;
+  min-width: 0;
+}
+.home:global(.__wab_instance) {
+  position: relative;
+  top: auto;
+  left: auto;
+  margin-left: -10px;
+}
+.navSiteNavSiteInternal {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  top: auto;
+  right: auto;
+}
+.navSiteNavSiteInternal > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: calc(0px - 0px);
+  width: calc(100% + 0px);
+}
+.navSiteNavSiteInternal > :global(.__wab_flex-container) > *,
+.navSiteNavSiteInternal
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > *,
+.navSiteNavSiteInternal > :global(.__wab_flex-container) > picture > img,
+.navSiteNavSiteInternal
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 0px;
+}
+.linkButton___18V6G:global(.__wab_instance) {
+  position: relative;
+}
+.linkButton__g7EeH:global(.__wab_instance) {
+  position: relative;
+}
+.linkButton__anOsk:global(.__wab_instance) {
+  position: relative;
+}

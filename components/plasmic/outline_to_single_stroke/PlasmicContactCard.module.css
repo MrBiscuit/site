@@ -1,0 +1,53 @@
+.root {
+  flex-direction: column;
+  width: 232px;
+  height: 120px;
+  display: flex;
+  position: relative;
+  border-radius: 6px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-top: 20px;
+}
+.root:hover {
+  background: #00000008;
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #0000004d;
+  width: 22px;
+  height: 22px;
+  display: block;
+  flex-shrink: 0;
+}
+.root:hover .svg {
+  color: #000000cc;
+}
+.text {
+  display: block;
+  font-size: 13.999px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 122px;
+  height: 18px;
+  flex-shrink: 0;
+}
+.root:hover .text {
+  color: #000000cc;
+}
