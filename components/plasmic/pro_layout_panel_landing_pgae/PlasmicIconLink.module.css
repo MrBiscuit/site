@@ -4,7 +4,7 @@
   height: 32px;
   position: relative;
 }
-.link {
+.freeBox {
   display: flex;
   position: relative;
   flex-direction: row;

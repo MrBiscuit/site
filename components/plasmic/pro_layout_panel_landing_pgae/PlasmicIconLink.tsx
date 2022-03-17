@@ -57,7 +57,7 @@ export const PlasmicIconLink__ArgProps = new Array<ArgPropType>("icon");
 
 export type PlasmicIconLink__OverridesType = {
   root?: p.Flex<"div">;
-  link?: p.Flex<"a"> & Partial<LinkProps>;
+  freeBox?: p.Flex<"div">;
 };
 
 export interface DefaultIconLinkProps {
@@ -90,13 +90,10 @@ function PlasmicIconLink__RenderFunc(props: {
         sty.root
       )}
     >
-      <p.PlasmicLink
-        data-plasmic-name={"link"}
-        data-plasmic-override={overrides.link}
-        className={classNames(projectcss.all, projectcss.a, sty.link)}
-        component={Link}
-        href={"/" as const}
-        platform={"nextjs"}
+      <div
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
         title={"" as const}
       >
         {p.renderPlasmicSlot({
@@ -110,21 +107,21 @@ function PlasmicIconLink__RenderFunc(props: {
           value: args.icon,
           className: classNames(sty.slotTargetIcon)
         })}
-      </p.PlasmicLink>
+      </div>
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link"],
-  link: ["link"]
+  root: ["root", "freeBox"],
+  freeBox: ["freeBox"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  link: "a";
+  freeBox: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -184,7 +181,7 @@ export const PlasmicIconLink = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    link: makeNodeComponent("link"),
+    freeBox: makeNodeComponent("freeBox"),
 
     // Metadata about props expected for PlasmicIconLink
     internalVariantProps: PlasmicIconLink__VariantProps,
