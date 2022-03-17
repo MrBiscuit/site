@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" viewBox="0 0 170 154">
+  <path opacity=".35" fill-rule="evenodd" clip-rule="evenodd" d="M81.273 2.283a5.856 5.856 0 017.317 0l58.556 46.846 19.519 15.615a5.855 5.855 0 11-7.316 9.145l-10.005-8.004v81.507a5.848 5.848 0 01-2.582 4.855 5.823 5.823 0 01-3.274 1.001H26.375a5.846 5.846 0 01-4.296-1.877 5.832 5.832 0 01-1.56-3.979V65.884L10.514 73.89a5.856 5.856 0 11-7.316-9.145L22.717 49.13l.002-.003L81.273 2.283zM32.231 141.536h27.326V96.643a5.856 5.856 0 015.856-5.856h39.037a5.856 5.856 0 015.856 5.856v44.893h27.327v-85.02L84.932 14.355 32.23 56.515v85.021zm39.037-39.038v39.038h27.327v-39.038H71.268z" fill="url(#qlPuh2uouBa)" stroke="#18A0FB" stroke-width="1.464" stroke-linecap="round"/>
+  <defs>
+    <pattern id="qlPuh2uouBa" patternContentUnits="objectBoundingBox" width=".056" height=".062">
+      <use xlink:href="#qlPuh2uouBb" transform="scale(.00349 .00385)"/>
+    </pattern>
+    <image id="qlPuh2uouBb" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAUklEQVQ4EWOQWPDnvsT8/woMSEBi/ncFsPiC3/8JyTNQohlkOJK9DAyk2IzhsiGqGRQAxIY2hp9Beud/V2CQICKqcGkGiUNcMJoOBjAFDop0AAAWJm+QyeSUmAAAAABJRU5ErkJggg=="/>
+  </defs>
+</svg>
