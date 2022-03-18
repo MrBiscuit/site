@@ -183,9 +183,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
                     sty.text__brrqm
                   )}
                 >
-                  {hasVariant(globalVariants, "screen", "mobile")
-                    ? "All properties in one place, giving you unprecedented control and speed."
-                    : "所有属性集中在一个地方，为你带来前所未有的掌控和速度。"}
+                  {"所有属性集中在一个地方，为你带来前所未有的掌控和速度。"}
                 </div>
               </p.Stack>
 
@@ -254,7 +252,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
                 )}
               >
                 {
-                  "Pro layout panel brings deep improvements to Figma's layout workflow by overhauling the UI but maintaining the same intuitiveness."
+                  "Pro 布局面板完全重制了Figma的原生 UI，并保持了相同的直观性，为 Figma 的布局工作流程带来了深刻的改进。"
                 }
               </div>
             }
@@ -302,9 +300,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
                         sty.text__nY1M
                       )}
                     >
-                      {hasVariant(globalVariants, "screen", "mobile")
-                        ? "No flyout menus and dropdowns, everything stays where they appear."
-                        : "没有弹出框和下拉菜单，一切都固定在它出现的地方"}
+                      {"没有弹出框和下拉菜单，一切都固定在它出现的地方"}
                     </div>
                   </React.Fragment>
                 }
@@ -351,9 +347,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
                         sty.text__mdUty
                       )}
                     >
-                      {hasVariant(globalVariants, "screen", "mobile")
-                        ? "Fixed a ton of quirky native behaviors to make things feel more natural."
-                        : "修复了大量古怪的 Figma 原生行为，让一切变得顺畅自然。"}
+                      {"修复了大量古怪的 Figma 原生行为，让一切变得顺畅自然。"}
                     </div>
                   </React.Fragment>
                 }
