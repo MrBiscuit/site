@@ -400,7 +400,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
                       )}
                     >
                       {
-                        "Additional features that are supported natively in Figma but not possible in via native UI"
+                        "一些 Figma 原生支持的进阶功能无法通过 Figma 的原生 UI 实现，Pro 布局面板将他们完全解锁。"
                       }
                     </div>
                   </React.Fragment>
