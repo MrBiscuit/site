@@ -317,12 +317,20 @@
   position: relative;
   margin-bottom: 0px;
 }
-.htmlVideo__dJeQk:global(.__wab_instance) {
-  width: 100%;
-  height: hug;
+.youTube__szkYk:global(.__wab_instance) {
+  height: 493px;
+  width: 876px;
+  max-height: 100%;
   max-width: 100%;
   position: relative;
-  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .youTube__szkYk:global(.__wab_instance) {
+    width: 100%;
+    height: 100%;
+    min-width: 0;
+    min-height: 0;
+  }
 }
 .text__aLzya {
   font-size: 32px;
@@ -350,12 +358,20 @@
   position: relative;
   margin-top: 0px;
 }
-.htmlVideo__dwjOu:global(.__wab_instance) {
-  width: 100%;
-  height: hug;
+.youTube__jCix7:global(.__wab_instance) {
+  height: 493px;
+  width: 876px;
+  max-height: 100%;
   max-width: 100%;
   position: relative;
-  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .youTube__jCix7:global(.__wab_instance) {
+    height: 100%;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+  }
 }
 .text__dxfxb {
   font-size: 32px;
@@ -392,12 +408,19 @@
   position: relative;
   margin-bottom: 0px;
 }
-.htmlVideo___0ZM5:global(.__wab_instance) {
+.youTube__gNoGn:global(.__wab_instance) {
+  height: 493px;
   width: 100%;
-  height: hug;
+  max-height: 100%;
   max-width: 100%;
   position: relative;
   min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .youTube__gNoGn:global(.__wab_instance) {
+    height: 100%;
+    min-height: 0;
+  }
 }
 .text___8YvkP {
   font-size: 32px;

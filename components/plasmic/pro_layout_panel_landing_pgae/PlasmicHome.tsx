@@ -39,7 +39,7 @@ import Section from "../../Section"; // plasmic-import: polj06cVBtzpxl/component
 import Button from "../../Button"; // plasmic-import: s3E0QheUTMLIRg/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import VideoExample from "../../VideoExample"; // plasmic-import: AuERE4DOLn/component
-import { Video } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: RhitNJW5Zu-/codeComponent
+import YouTube from "@plasmicpkgs/react-youtube"; // plasmic-import: CHO21V9uYw/codeComponent
 import FeatureCard from "../../FeatureCard"; // plasmic-import: 8J_TITQjji4-M9/component
 import Plan from "../../Plan"; // plasmic-import: IC0peUQeOrc-TC/component
 import Bullet from "../../Bullet"; // plasmic-import: h8iasHjPSdhGL5/component
@@ -302,7 +302,16 @@ function PlasmicHome__RenderFunc(props: {
                     </div>
                   </React.Fragment>
                 }
-              />
+              >
+                <YouTube
+                  autoplay={true}
+                  className={classNames("__wab_instance", sty.youTube__szkYk)}
+                  loop={true}
+                  modestbranding={true}
+                  rel={false}
+                  videoId={"6ruue3efgSY" as const}
+                />
+              </VideoExample>
             </Reveal>
 
             <Reveal
@@ -341,17 +350,13 @@ function PlasmicHome__RenderFunc(props: {
                   </React.Fragment>
                 }
               >
-                <Video
-                  autoPlay={true}
-                  className={classNames("__wab_instance", sty.htmlVideo__dwjOu)}
-                  controls={true}
+                <YouTube
+                  autoplay={true}
+                  className={classNames("__wab_instance", sty.youTube__jCix7)}
                   loop={true}
-                  muted={true}
-                  playsInline={false}
-                  preload={"auto" as const}
-                  src={
-                    "https://sunshuaiqi.wistia.com/medias/m1o9t1mvkw/download?media_file_id=748712646" as const
-                  }
+                  modestbranding={true}
+                  rel={false}
+                  videoId={"X1PulDuvpEY" as const}
                 />
               </VideoExample>
             </Reveal>
@@ -394,17 +399,13 @@ function PlasmicHome__RenderFunc(props: {
                   </React.Fragment>
                 }
               >
-                <Video
-                  autoPlay={true}
-                  className={classNames("__wab_instance", sty.htmlVideo___0ZM5)}
-                  controls={true}
+                <YouTube
+                  autoplay={true}
+                  className={classNames("__wab_instance", sty.youTube__gNoGn)}
                   loop={true}
-                  muted={true}
-                  playsInline={false}
-                  preload={"auto" as const}
-                  src={
-                    "https://sunshuaiqi.wistia.com/medias/cu1mo7llmw/download?media_file_id=749695671" as const
-                  }
+                  modestbranding={true}
+                  rel={false}
+                  videoId={"Dui6-rgK8BY" as const}
                 />
               </VideoExample>
             </Reveal>
