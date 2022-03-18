@@ -39,7 +39,7 @@ import Section from "../../Section"; // plasmic-import: polj06cVBtzpxl/component
 import Button from "../../Button"; // plasmic-import: s3E0QheUTMLIRg/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import VideoExample from "../../VideoExample"; // plasmic-import: AuERE4DOLn/component
-import YouTube from "@plasmicpkgs/react-youtube"; // plasmic-import: CHO21V9uYw/codeComponent
+import { Iframe } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: CMDBvOhaI4s/codeComponent
 import FeatureCard from "../../FeatureCard"; // plasmic-import: 8J_TITQjji4-M9/component
 import Plan from "../../Plan"; // plasmic-import: IC0peUQeOrc-TC/component
 import Bullet from "../../Bullet"; // plasmic-import: h8iasHjPSdhGL5/component
@@ -309,13 +309,12 @@ function PlasmicHomeChinese__RenderFunc(props: {
                   </React.Fragment>
                 }
               >
-                <YouTube
-                  autoplay={true}
-                  className={classNames("__wab_instance", sty.youTube__icGxq)}
-                  loop={true}
-                  modestbranding={true}
-                  rel={false}
-                  videoId={"6ruue3efgSY" as const}
+                <Iframe
+                  className={classNames("__wab_instance", sty.iframe__s6C9I)}
+                  preview={true}
+                  src={
+                    "//player.bilibili.com/player.html?aid=979770454&bvid=BV1F44y1T7gD&cid=552280749&page=1" as const
+                  }
                 />
               </VideoExample>
             </Reveal>
@@ -359,13 +358,12 @@ function PlasmicHomeChinese__RenderFunc(props: {
                   </React.Fragment>
                 }
               >
-                <YouTube
-                  autoplay={true}
-                  className={classNames("__wab_instance", sty.youTube___0KapO)}
-                  loop={true}
-                  modestbranding={true}
-                  rel={false}
-                  videoId={"X1PulDuvpEY" as const}
+                <Iframe
+                  className={classNames("__wab_instance", sty.iframe__ajDh1)}
+                  preview={true}
+                  src={
+                    "//player.bilibili.com/player.html?aid=254867021&bvid=BV1MY411n7Qw&cid=552285296&page=1" as const
+                  }
                 />
               </VideoExample>
             </Reveal>
@@ -408,13 +406,12 @@ function PlasmicHomeChinese__RenderFunc(props: {
                   </React.Fragment>
                 }
               >
-                <YouTube
-                  autoplay={true}
-                  className={classNames("__wab_instance", sty.youTube__rbWiC)}
-                  loop={true}
-                  modestbranding={true}
-                  rel={false}
-                  videoId={"Dui6-rgK8BY" as const}
+                <Iframe
+                  className={classNames("__wab_instance", sty.iframe__ms4No)}
+                  preview={true}
+                  src={
+                    "//player.bilibili.com/player.html?aid=594843390&bvid=BV1mq4y1e7Hi&cid=552290253&page=1" as const
+                  }
                 />
               </VideoExample>
             </Reveal>
