@@ -125,21 +125,33 @@ function PlasmicHeader__RenderFunc(props: {
           className={classNames(projectcss.all, sty.freeBox)}
         >
           <Button
-            className={classNames("__wab_instance", sty.button___3TBjG)}
+            className={classNames("__wab_instance", sty.button___3TBjG, {
+              [sty.buttonchinese___3TBjG5R05K]: hasVariant(
+                variants,
+                "chinese",
+                "chinese"
+              )
+            })}
             color={"clear" as const}
             link={"#feature" as const}
             size={"compact" as const}
           >
-            {"功能"}
+            {hasVariant(variants, "chinese", "chinese") ? "功能" : "Features"}
           </Button>
 
           <Button
-            className={classNames("__wab_instance", sty.button__lHpv)}
+            className={classNames("__wab_instance", sty.button__lHpv, {
+              [sty.buttonchinese__lHpv5R05K]: hasVariant(
+                variants,
+                "chinese",
+                "chinese"
+              )
+            })}
             color={"clear" as const}
             link={"#price" as const}
             size={"compact" as const}
           >
-            {"价格"}
+            {hasVariant(variants, "chinese", "chinese") ? "价格" : "Pricing"}
           </Button>
 
           <Button
