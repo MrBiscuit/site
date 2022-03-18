@@ -46,11 +46,18 @@ import sty from "./PlasmicHeader.module.css"; // plasmic-import: gCP9N_nn5MCbJS/
 import ProLayoutPanelsvgIcon from "./icons/PlasmicIcon__ProLayoutPanelsvg"; // plasmic-import: MsE1fZcL1_/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: r_TPt86vHV4SXb/icon
 
-export type PlasmicHeader__VariantMembers = {};
+export type PlasmicHeader__VariantMembers = {
+  chinese: "chinese";
+};
 
-export type PlasmicHeader__VariantsArgs = {};
+export type PlasmicHeader__VariantsArgs = {
+  chinese?: SingleBooleanChoiceArg<"chinese">;
+};
+
 type VariantPropType = keyof PlasmicHeader__VariantsArgs;
-export const PlasmicHeader__VariantProps = new Array<VariantPropType>();
+export const PlasmicHeader__VariantProps = new Array<VariantPropType>(
+  "chinese"
+);
 
 export type PlasmicHeader__ArgsType = {};
 type ArgPropType = keyof PlasmicHeader__ArgsType;
@@ -64,6 +71,7 @@ export type PlasmicHeader__OverridesType = {
 };
 
 export interface DefaultHeaderProps {
+  chinese?: SingleBooleanChoiceArg<"chinese">;
   className?: string;
 }
 
@@ -122,7 +130,7 @@ function PlasmicHeader__RenderFunc(props: {
             link={"#feature" as const}
             size={"compact" as const}
           >
-            {"Features"}
+            {"功能"}
           </Button>
 
           <Button
@@ -131,7 +139,26 @@ function PlasmicHeader__RenderFunc(props: {
             link={"#price" as const}
             size={"compact" as const}
           >
-            {"Pricing"}
+            {"价格"}
+          </Button>
+
+          <Button
+            className={classNames("__wab_instance", sty.button__p3Jas, {
+              [sty.buttonchinese__p3Jas5R05K]: hasVariant(
+                variants,
+                "chinese",
+                "chinese"
+              )
+            })}
+            color={"clear" as const}
+            link={
+              hasVariant(variants, "chinese", "chinese")
+                ? ("/" as const)
+                : ("/-2" as const)
+            }
+            size={"compact" as const}
+          >
+            {hasVariant(variants, "chinese", "chinese") ? "English" : "中文"}
           </Button>
         </p.Stack>
       ) : null}

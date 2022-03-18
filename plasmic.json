@@ -526,6 +526,19 @@
           "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicVideoExample.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "1s7g74uB-Ej",
+          "name": "HomeChinese",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHomeChinese.tsx",
+          "importSpec": {
+            "modulePath": "../pages/-2.tsx"
+          },
+          "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHomeChinese.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
