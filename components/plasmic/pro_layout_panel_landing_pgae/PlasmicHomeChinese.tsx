@@ -124,6 +124,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
             projectcss.all,
             projectcss.root_reset,
             projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
             plasmic_library_plasmic_color_type_css.plasmic_tokens,
             plasmic_outline_to_single_stroke_css.plasmic_tokens,
@@ -575,7 +576,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
                 id={"price" as const}
                 platform={"nextjs"}
               >
-                {"价格"}
+                {"一次购买 永久使用"}
               </p.PlasmicLink>
             }
           >
@@ -728,7 +729,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
                           sty.text___7NvfG
                         )}
                       >
-                        {"¥31"}
+                        {"¥63"}
                       </div>
                     }
                   >
