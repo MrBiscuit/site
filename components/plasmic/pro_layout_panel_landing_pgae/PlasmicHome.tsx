@@ -208,6 +208,22 @@ function PlasmicHome__RenderFunc(props: {
                 >
                   {"Start free trial"}
                 </Button>
+
+                <Button
+                  className={classNames("__wab_instance", sty.button__rslrR)}
+                  color={"clear" as const}
+                  endIcon={
+                    <RightArrowIcon
+                      className={classNames(projectcss.all, sty.svg__wKzd9)}
+                      role={"img"}
+                    />
+                  }
+                  link={
+                    "https://www.figma.com/community/file/1089450392855659100/Pro-Layout-Panel-Playground" as const
+                  }
+                >
+                  {"Open Playground"}
+                </Button>
               </p.Stack>
 
               <div className={classNames(projectcss.all, sty.freeBox___5SHxj)}>
@@ -416,7 +432,6 @@ function PlasmicHome__RenderFunc(props: {
             data-plasmic-name={"howItWorks"}
             data-plasmic-override={overrides.howItWorks}
             className={classNames("__wab_instance", sty.howItWorks)}
-            color={"halfDark" as const}
             hasSubtitle={true}
             hasTitle={true}
             subtitle={

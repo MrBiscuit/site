@@ -269,6 +269,21 @@
   width: 1em;
   height: 1em;
 }
+.button__f3GVb:global(.__wab_instance) {
+  position: relative;
+}
+.svg___7KTh {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.svg__de6I1 {
+  position: relative;
+  object-fit: cover;
+  width: 1em;
+  height: 1em;
+}
 .freeBox___8U1P {
   display: flex;
   position: relative;

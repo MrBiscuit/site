@@ -209,6 +209,22 @@ function PlasmicHomeChinese__RenderFunc(props: {
                 >
                   {"开启免费体验"}
                 </Button>
+
+                <Button
+                  className={classNames("__wab_instance", sty.button__f3GVb)}
+                  color={"clear" as const}
+                  endIcon={
+                    <RightArrowIcon
+                      className={classNames(projectcss.all, sty.svg__de6I1)}
+                      role={"img"}
+                    />
+                  }
+                  link={
+                    "https://www.figma.com/community/file/1089790476460041983/Pro-Layout-Panel-playground-(%E4%B8%AD%E6%96%87%E7%89%88)" as const
+                  }
+                >
+                  {"Figma 中文游乐场"}
+                </Button>
               </p.Stack>
 
               <div className={classNames(projectcss.all, sty.freeBox___8U1P)}>
@@ -416,7 +432,6 @@ function PlasmicHomeChinese__RenderFunc(props: {
             data-plasmic-name={"howItWorks"}
             data-plasmic-override={overrides.howItWorks}
             className={classNames("__wab_instance", sty.howItWorks)}
-            color={"halfDark" as const}
             hasSubtitle={true}
             hasTitle={true}
             subtitle={
