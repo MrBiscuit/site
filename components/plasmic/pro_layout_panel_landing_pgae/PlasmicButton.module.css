@@ -73,6 +73,8 @@
 }
 .rootcolor_clear {
   background: #23232000;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 .rootcolor_black {
   background: #000000;
@@ -92,12 +94,15 @@
 .root:hover {
   transform: translateX(0px) translateY(-3px) translateZ(0px);
 }
+.rootcolor_purple:hover {
+  border-color: #000000;
+}
 .rootcolor_figma:hover {
   background: var(--token-I651Myd9-);
   border: 2px solid var(--token-NEon4Y--Z);
 }
 .rootcolor_outline:hover {
-  background: #e1f0ff;
+  background: none;
 }
 .rootcolor_clear:hover {
   background: #e5e5e5;
@@ -117,7 +122,7 @@
   background: #2721ff;
 }
 .rootcolor_outline:active {
-  background: #cee7fe;
+  background: none;
 }
 .rootcolor_clear:active {
   background: var(--token-3dsm_UqzX);

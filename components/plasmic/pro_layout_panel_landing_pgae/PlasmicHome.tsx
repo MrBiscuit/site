@@ -742,7 +742,9 @@ function PlasmicHome__RenderFunc(props: {
                         sty.button__c01Ak
                       )}
                       color={"figma" as const}
-                      link={"https://mrbiscuit.gumroad.com/l/qcpwqf" as const}
+                      link={
+                        "https://mrbiscuit.gumroad.com/l/prolayoutpanel?variant=Single%20User" as const
+                      }
                     >
                       {"Buy Now"}
                     </Button>
@@ -810,7 +812,9 @@ function PlasmicHome__RenderFunc(props: {
                         sty.button__oJhIp
                       )}
                       color={"purple" as const}
-                      link={"https://mrbiscuit.gumroad.com/l/qcpwqf" as const}
+                      link={
+                        "https://mrbiscuit.gumroad.com/l/prolayoutpanel?variant=Team" as const
+                      }
                     >
                       {"Buy Now"}
                     </Button>
