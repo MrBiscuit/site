@@ -541,6 +541,16 @@
       }
     },
     {
+      "name": "Figma",
+      "type": "color",
+      "value": "#0D99FF",
+      "category": "color",
+      "meta": {
+        "projectId": "qDNA17RfdgsM73kkELPPxa",
+        "id": "I651Myd9-"
+      }
+    },
+    {
       "name": "L/Border+Divider-(G90)",
       "type": "color",
       "value": "rgb(228,230,235)",

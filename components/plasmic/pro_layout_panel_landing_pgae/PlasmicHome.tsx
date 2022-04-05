@@ -61,6 +61,12 @@ import Icon6Icon from "./icons/PlasmicIcon__Icon6"; // plasmic-import: J1YAUdPI6
 import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: V02xllXpr/icon
 import Icon10Icon from "./icons/PlasmicIcon__Icon10"; // plasmic-import: VcNk7skQWd/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: JfzJrHKPBw/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: cNxJEz4gEG/icon
+import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: ScoFh1W5NL/icon
+import Icon7Icon from "./icons/PlasmicIcon__Icon7"; // plasmic-import: z0Ji84AyCw/icon
+import Icon11Icon from "./icons/PlasmicIcon__Icon11"; // plasmic-import: ZsRymmi19/icon
+import Icon15Icon from "./icons/PlasmicIcon__Icon15"; // plasmic-import: RQ7qx5lk9P/icon
+import Icon17Icon from "./icons/PlasmicIcon__Icon17"; // plasmic-import: 4PP-eruZ4G/icon
 
 export type PlasmicHome__VariantMembers = {};
 
@@ -82,6 +88,7 @@ export type PlasmicHome__OverridesType = {
   pricingSection?: p.Flex<typeof Section>;
   pricing?: p.Flex<"a"> & Partial<LinkProps>;
   columns?: p.Flex<"div">;
+  howItWorks2?: p.Flex<typeof Section>;
   footer?: p.Flex<typeof Footer>;
 };
 
@@ -102,9 +109,7 @@ function PlasmicHome__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head>
-        <meta name="twitter:card" content="summary" />
-      </Head>
+      {}
 
       <style>{`
         body {
@@ -194,7 +199,7 @@ function PlasmicHome__RenderFunc(props: {
               >
                 <Button
                   className={classNames("__wab_instance", sty.button__pjDz6)}
-                  color={"purple" as const}
+                  color={"figma" as const}
                   endIcon={
                     <RightArrowIcon
                       className={classNames(projectcss.all, sty.svg___7I12J)}
@@ -546,6 +551,21 @@ function PlasmicHome__RenderFunc(props: {
                   }
                   title={"Resizing mode inheritance"}
                 />
+
+                <FeatureCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.featureCard__pT6Oa
+                  )}
+                  description={"Free direction retains gap and padding values"}
+                  iconFront={
+                    <IconIcon
+                      className={classNames(projectcss.all, sty.svg__lip9B)}
+                      role={"img"}
+                    />
+                  }
+                  title={"Free Direction"}
+                />
               </p.Stack>
             </Reveal>
           </Section>
@@ -630,19 +650,10 @@ function PlasmicHome__RenderFunc(props: {
                         >
                           {"Free updates"}
                         </Bullet>
-
-                        <Bullet
-                          className={classNames(
-                            "__wab_instance",
-                            sty.bullet___6ZfLc
-                          )}
-                          noIcon={true}
-                        >
-                          {"14 days trial period"}
-                        </Bullet>
                       </p.Stack>
                     }
-                    name={"Free trial"}
+                    name={"Starter"}
+                    name2={"14 days trial period"}
                     price={
                       <div
                         className={classNames(
@@ -660,20 +671,12 @@ function PlasmicHome__RenderFunc(props: {
                         "__wab_instance",
                         sty.button___0YoGk
                       )}
-                      color={"outlineBlue" as const}
+                      color={"outline" as const}
                       link={
                         "https://www.figma.com/community/plugin/1065130523685842895/Pro-Layout-Panel" as const
                       }
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__fC3Jn
-                        )}
-                      >
-                        {"Get Started"}
-                      </div>
+                      {"Get Started"}
                     </Button>
                   </Plan>
                 </div>
@@ -681,6 +684,7 @@ function PlasmicHome__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column__m2NuJ)}>
                   <Plan
                     className={classNames("__wab_instance", sty.plan__wv2Mf)}
+                    color={"blue" as const}
                     description={
                       <p.Stack
                         as={"div"}
@@ -716,18 +720,10 @@ function PlasmicHome__RenderFunc(props: {
                         >
                           {"Technical Support"}
                         </Bullet>
-
-                        <Bullet
-                          className={classNames(
-                            "__wab_instance",
-                            sty.bullet__dgy3P
-                          )}
-                        >
-                          {"Use and love forever"}
-                        </Bullet>
                       </p.Stack>
                     }
-                    name={"Pro"}
+                    name={"Professional"}
+                    name2={"One account"}
                     price={
                       <div
                         className={classNames(
@@ -745,6 +741,74 @@ function PlasmicHome__RenderFunc(props: {
                         "__wab_instance",
                         sty.button__c01Ak
                       )}
+                      color={"figma" as const}
+                      link={"https://mrbiscuit.gumroad.com/l/qcpwqf" as const}
+                    >
+                      {"Buy Now"}
+                    </Button>
+                  </Plan>
+                </div>
+
+                <div className={classNames(projectcss.all, sty.column___2GGdf)}>
+                  <Plan
+                    className={classNames("__wab_instance", sty.plan__rYndX)}
+                    color={"purle" as const}
+                    description={
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___6AkVp
+                        )}
+                      >
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet__wFllC
+                          )}
+                        >
+                          {"Full features"}
+                        </Bullet>
+
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet__mZFs
+                          )}
+                        >
+                          {"Free updates"}
+                        </Bullet>
+
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet___449C8
+                          )}
+                        >
+                          {"Technical Support"}
+                        </Bullet>
+                      </p.Stack>
+                    }
+                    name={"Team"}
+                    name2={"Everyone in your team"}
+                    price={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__mF7Dq
+                        )}
+                      >
+                        {"$25"}
+                      </div>
+                    }
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__oJhIp
+                      )}
                       color={"purple" as const}
                       link={"https://mrbiscuit.gumroad.com/l/qcpwqf" as const}
                     >
@@ -752,6 +816,150 @@ function PlasmicHome__RenderFunc(props: {
                     </Button>
                   </Plan>
                 </div>
+              </p.Stack>
+            </Reveal>
+          </Section>
+
+          <Section
+            data-plasmic-name={"howItWorks2"}
+            data-plasmic-override={overrides.howItWorks2}
+            className={classNames("__wab_instance", sty.howItWorks2)}
+            hasSubtitle={true}
+            hasTitle={true}
+            subtitle={
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__lAnlA
+                )}
+              >
+                {
+                  "Pro layout panel will continue to grow and receive updates to further enhance your workflow, below are features that are planned to come in future version, let me know your thoughts :) "
+                }
+              </div>
+            }
+            title={"Planned Features..."}
+          >
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal__dwO7S)}
+              damping={0.5 as const}
+              direction={"up" as const}
+              duration={500 as const}
+              triggerOnce={true}
+            >
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__m8Tv2)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___85Pf2)}
+                >
+                  <Icon5Icon
+                    className={classNames(projectcss.all, sty.svg__nr5Vg)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__vWpQd
+                    )}
+                  >
+                    {"Figma Tokens integration"}
+                  </div>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__vdswO)}
+                >
+                  <Icon7Icon
+                    className={classNames(projectcss.all, sty.svg__k1VkK)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__uax5J
+                    )}
+                  >
+                    {"Auto Layout v4.0 updates"}
+                  </div>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__esYwX)}
+                >
+                  <Icon11Icon
+                    className={classNames(projectcss.all, sty.svg___5R60L)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___1KnT
+                    )}
+                  >
+                    {"Input math calc"}
+                  </div>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__nyldf)}
+                >
+                  <Icon15Icon
+                    className={classNames(projectcss.all, sty.svg__ktnK)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__v5MX
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Menu items for shortcuts"
+                      : "Menu items for shortcut assignment"}
+                  </div>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__lpGkn)}
+                >
+                  <Icon17Icon
+                    className={classNames(projectcss.all, sty.svg__onlkX)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__chZju
+                    )}
+                  >
+                    {"Customizable Nudge amount"}
+                  </div>
+                </p.Stack>
               </p.Stack>
             </Reveal>
           </Section>
@@ -778,6 +986,7 @@ const PlasmicDescendants = {
     "pricingSection",
     "pricing",
     "columns",
+    "howItWorks2",
     "footer"
   ],
   header: ["header"],
@@ -788,6 +997,7 @@ const PlasmicDescendants = {
   pricingSection: ["pricingSection", "pricing", "columns"],
   pricing: ["pricing"],
   columns: ["columns"],
+  howItWorks2: ["howItWorks2"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -803,6 +1013,7 @@ type NodeDefaultElementType = {
   pricingSection: typeof Section;
   pricing: "a";
   columns: "div";
+  howItWorks2: typeof Section;
   footer: typeof Footer;
 };
 
@@ -871,6 +1082,7 @@ export const PlasmicHome = Object.assign(
     pricingSection: makeNodeComponent("pricingSection"),
     pricing: makeNodeComponent("pricing"),
     columns: makeNodeComponent("columns"),
+    howItWorks2: makeNodeComponent("howItWorks2"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHome

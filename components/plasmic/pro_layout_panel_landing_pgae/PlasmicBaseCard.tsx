@@ -43,15 +43,17 @@ import projectcss from "./plasmic_pro_layout_panel_landing_pgae.module.css"; // 
 import sty from "./PlasmicBaseCard.module.css"; // plasmic-import: kB0nxxEQSAGjiC/css
 
 export type PlasmicBaseCard__VariantMembers = {
-  long: "long";
+  color: "grey" | "blue" | "black" | "purple";
 };
 
 export type PlasmicBaseCard__VariantsArgs = {
-  long?: SingleBooleanChoiceArg<"long">;
+  color?: SingleChoiceArg<"grey" | "blue" | "black" | "purple">;
 };
 
 type VariantPropType = keyof PlasmicBaseCard__VariantsArgs;
-export const PlasmicBaseCard__VariantProps = new Array<VariantPropType>("long");
+export const PlasmicBaseCard__VariantProps = new Array<VariantPropType>(
+  "color"
+);
 
 export type PlasmicBaseCard__ArgsType = {
   children?: React.ReactNode;
@@ -66,12 +68,13 @@ export const PlasmicBaseCard__ArgProps = new Array<ArgPropType>(
 
 export type PlasmicBaseCard__OverridesType = {
   root?: p.Flex<"div">;
+  color?: p.Flex<"div">;
 };
 
 export interface DefaultBaseCardProps {
   children?: React.ReactNode;
   iconBack?: React.ReactNode;
-  long?: SingleBooleanChoiceArg<"long">;
+  color?: SingleChoiceArg<"grey" | "blue" | "black" | "purple">;
   className?: string;
 }
 
@@ -85,13 +88,11 @@ function PlasmicBaseCard__RenderFunc(props: {
   const { variants, args, overrides, forNode } = props;
 
   return (
-    <p.Stack
-      as={"div"}
+    <div
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      hasGap={true}
       className={classNames(
         projectcss.all,
         projectcss.root_reset,
@@ -101,12 +102,29 @@ function PlasmicBaseCard__RenderFunc(props: {
         plasmic_library_plasmic_color_type_css.plasmic_tokens,
         plasmic_outline_to_single_stroke_css.plasmic_tokens,
         sty.root,
-        { [sty.rootlong]: hasVariant(variants, "long", "long") }
+        {
+          [sty.rootcolor_black]: hasVariant(variants, "color", "black"),
+          [sty.rootcolor_blue]: hasVariant(variants, "color", "blue")
+        }
       )}
     >
       <div
+        data-plasmic-name={"color"}
+        data-plasmic-override={overrides.color}
+        className={classNames(projectcss.all, sty.color, {
+          [sty.colorcolor_black]: hasVariant(variants, "color", "black"),
+          [sty.colorcolor_blue]: hasVariant(variants, "color", "blue"),
+          [sty.colorcolor_purple]: hasVariant(variants, "color", "purple")
+        })}
+      />
+
+      <div
         className={classNames(projectcss.all, sty.freeBox__dRDu, {
-          [sty.freeBoxlong__dRDuOupkt]: hasVariant(variants, "long", "long")
+          [sty.freeBoxcolor_black__dRDuWuOza]: hasVariant(
+            variants,
+            "color",
+            "black"
+          )
         })}
       >
         {p.renderPlasmicSlot({
@@ -114,17 +132,27 @@ function PlasmicBaseCard__RenderFunc(props: {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           value: args.children,
           className: classNames(sty.slotTargetChildren, {
-            [sty.slotTargetChildrenlong]: hasVariant(variants, "long", "long")
+            [sty.slotTargetChildrencolor_black]: hasVariant(
+              variants,
+              "color",
+              "black"
+            ),
+            [sty.slotTargetChildrencolor_blue]: hasVariant(
+              variants,
+              "color",
+              "blue"
+            ),
+            [sty.slotTargetChildrencolor_grey]: hasVariant(
+              variants,
+              "color",
+              "grey"
+            )
           })
         })}
       </div>
 
-      {(hasVariant(variants, "long", "long") ? true : true) ? (
-        <div
-          className={classNames(projectcss.all, sty.freeBox__zHlux, {
-            [sty.freeBoxlong__zHluxOupkt]: hasVariant(variants, "long", "long")
-          })}
-        >
+      {true ? (
+        <div className={classNames(projectcss.all, sty.freeBox__zHlux)}>
           {p.renderPlasmicSlot({
             defaultContents: (
               <svg
@@ -137,18 +165,20 @@ function PlasmicBaseCard__RenderFunc(props: {
           })}
         </div>
       ) : null}
-    </p.Stack>
+    </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "color"],
+  color: ["color"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  color: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -208,6 +238,7 @@ export const PlasmicBaseCard = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    color: makeNodeComponent("color"),
 
     // Metadata about props expected for PlasmicBaseCard
     internalVariantProps: PlasmicBaseCard__VariantProps,

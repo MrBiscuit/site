@@ -52,19 +52,37 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox > :global(.__wab_flex-container) {
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
+  }
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  font-weight: 700;
+  color: var(--token-T5L5Js4u0Cm);
+  font-size: 24px;
+  padding-left: 8px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text {
+    display: none;
   }
 }
 .button___3TBjG:global(.__wab_instance) {
   max-width: 100%;
 }
-.svg__cwwUx {
+.svg__znUs0 {
   position: relative;
   object-fit: cover;
   width: 24px;
   height: 24px;
 }
-.svg__oGnny {
+.svg__p9Kp7 {
   position: relative;
   object-fit: cover;
   width: 24px;
@@ -74,13 +92,13 @@
   max-width: 100%;
   position: relative;
 }
-.svg__eOeMc {
+.svg__bdRHq {
   position: relative;
   object-fit: cover;
   width: 24px;
   height: 24px;
 }
-.svg___7QBy2 {
+.svg___4Z5A4 {
   position: relative;
   object-fit: cover;
   width: 24px;
@@ -90,13 +108,13 @@
   max-width: 100%;
   position: relative;
 }
-.svg__woQ2O {
+.svg__i9YuO {
   position: relative;
   object-fit: cover;
   width: 24px;
   height: 24px;
 }
-.svg__mOmp0 {
+.svg__qSnNo {
   position: relative;
   object-fit: cover;
   width: 24px;

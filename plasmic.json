@@ -611,6 +611,61 @@
           "id": "xchrs1LLb",
           "name": "FigmasvgIcon",
           "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Figmasvg.tsx"
+        },
+        {
+          "id": "cNxJEz4gEG",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "ScoFh1W5NL",
+          "name": "Icon5Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon5.tsx"
+        },
+        {
+          "id": "z0Ji84AyCw",
+          "name": "Icon7Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon7.tsx"
+        },
+        {
+          "id": "jUjB35vxI5",
+          "name": "Icon8Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon8.tsx"
+        },
+        {
+          "id": "ZsRymmi19",
+          "name": "Icon11Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon11.tsx"
+        },
+        {
+          "id": "25hjAT5OdQ",
+          "name": "Icon12Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon12.tsx"
+        },
+        {
+          "id": "_AoRHa6Inn",
+          "name": "Icon13Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon13.tsx"
+        },
+        {
+          "id": "_nk2PDcKh-",
+          "name": "Icon14Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon14.tsx"
+        },
+        {
+          "id": "RQ7qx5lk9P",
+          "name": "Icon15Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon15.tsx"
+        },
+        {
+          "id": "RU7erS12KY",
+          "name": "Icon16Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon16.tsx"
+        },
+        {
+          "id": "4PP-eruZ4G",
+          "name": "Icon17Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon17.tsx"
         }
       ],
       "images": [

@@ -50,7 +50,7 @@ export type PlasmicButton__VariantMembers = {
   isDisabled: "isDisabled";
   shape: "rounded";
   size: "compact";
-  color: "purple" | "red" | "outlineBlue" | "outlineRed" | "clear";
+  color: "figma" | "outline" | "clear" | "black" | "purple";
 };
 
 export type PlasmicButton__VariantsArgs = {
@@ -59,9 +59,7 @@ export type PlasmicButton__VariantsArgs = {
   isDisabled?: SingleBooleanChoiceArg<"isDisabled">;
   shape?: SingleChoiceArg<"rounded">;
   size?: SingleChoiceArg<"compact">;
-  color?: SingleChoiceArg<
-    "purple" | "red" | "outlineBlue" | "outlineRed" | "clear"
-  >;
+  color?: SingleChoiceArg<"figma" | "outline" | "clear" | "black" | "purple">;
 };
 
 type VariantPropType = keyof PlasmicButton__VariantsArgs;
@@ -99,9 +97,7 @@ export type PlasmicButton__OverridesType = {
 export interface DefaultButtonProps extends pp.BaseButtonProps {
   shape?: SingleChoiceArg<"rounded">;
   size?: SingleChoiceArg<"compact">;
-  color?: SingleChoiceArg<
-    "purple" | "red" | "outlineBlue" | "outlineRed" | "clear"
-  >;
+  color?: SingleChoiceArg<"figma" | "outline" | "clear" | "black" | "purple">;
 }
 
 function PlasmicButton__RenderFunc(props: {
@@ -142,19 +138,11 @@ function PlasmicButton__RenderFunc(props: {
         sty.root,
         {
           [sty.root___focusVisibleWithin]: triggers.focusVisibleWithin_root,
+          [sty.rootcolor_black]: hasVariant(variants, "color", "black"),
           [sty.rootcolor_clear]: hasVariant(variants, "color", "clear"),
-          [sty.rootcolor_outlineBlue]: hasVariant(
-            variants,
-            "color",
-            "outlineBlue"
-          ),
-          [sty.rootcolor_outlineRed]: hasVariant(
-            variants,
-            "color",
-            "outlineRed"
-          ),
+          [sty.rootcolor_figma]: hasVariant(variants, "color", "figma"),
+          [sty.rootcolor_outline]: hasVariant(variants, "color", "outline"),
           [sty.rootcolor_purple]: hasVariant(variants, "color", "purple"),
-          [sty.rootcolor_red]: hasVariant(variants, "color", "red"),
           [sty.rootisDisabled]: hasVariant(
             variants,
             "isDisabled",
@@ -175,6 +163,9 @@ function PlasmicButton__RenderFunc(props: {
             "showEndIcon",
             "showEndIcon"
           ),
+          [sty.rootshowEndIcon_color_figma]:
+            hasVariant(variants, "color", "figma") &&
+            hasVariant(variants, "showEndIcon", "showEndIcon"),
           [sty.rootshowStartIcon]: hasVariant(
             variants,
             "showStartIcon",
@@ -202,10 +193,10 @@ function PlasmicButton__RenderFunc(props: {
           data-plasmic-name={"startIconContainer"}
           data-plasmic-override={overrides.startIconContainer}
           className={classNames(projectcss.all, sty.startIconContainer, {
-            [sty.startIconContainercolor_purple]: hasVariant(
+            [sty.startIconContainercolor_figma]: hasVariant(
               variants,
               "color",
-              "purple"
+              "figma"
             ),
             [sty.startIconContainershape_rounded_showStartIcon]:
               hasVariant(variants, "shape", "rounded") &&
@@ -227,20 +218,15 @@ function PlasmicButton__RenderFunc(props: {
 
             value: args.startIcon,
             className: classNames(sty.slotTargetStartIcon, {
-              [sty.slotTargetStartIconcolor_outlineBlue]: hasVariant(
+              [sty.slotTargetStartIconcolor_figma]: hasVariant(
                 variants,
                 "color",
-                "outlineBlue"
+                "figma"
               ),
-              [sty.slotTargetStartIconcolor_outlineRed]: hasVariant(
+              [sty.slotTargetStartIconcolor_outline]: hasVariant(
                 variants,
                 "color",
-                "outlineRed"
-              ),
-              [sty.slotTargetStartIconcolor_purple]: hasVariant(
-                variants,
-                "color",
-                "purple"
+                "outline"
               ),
               [sty.slotTargetStartIconshowStartIcon]: hasVariant(
                 variants,
@@ -286,25 +272,15 @@ function PlasmicButton__RenderFunc(props: {
               "color",
               "clear"
             ),
-            [sty.slotTargetChildrencolor_outlineBlue]: hasVariant(
+            [sty.slotTargetChildrencolor_figma]: hasVariant(
               variants,
               "color",
-              "outlineBlue"
+              "figma"
             ),
-            [sty.slotTargetChildrencolor_outlineRed]: hasVariant(
+            [sty.slotTargetChildrencolor_outline]: hasVariant(
               variants,
               "color",
-              "outlineRed"
-            ),
-            [sty.slotTargetChildrencolor_purple]: hasVariant(
-              variants,
-              "color",
-              "purple"
-            ),
-            [sty.slotTargetChildrencolor_red]: hasVariant(
-              variants,
-              "color",
-              "red"
+              "outline"
             ),
             [sty.slotTargetChildrenisDisabled]: hasVariant(
               variants,
@@ -352,15 +328,10 @@ function PlasmicButton__RenderFunc(props: {
 
             value: args.endIcon,
             className: classNames(sty.slotTargetEndIcon, {
-              [sty.slotTargetEndIconcolor_outlineBlue]: hasVariant(
+              [sty.slotTargetEndIconcolor_outline]: hasVariant(
                 variants,
                 "color",
-                "outlineBlue"
-              ),
-              [sty.slotTargetEndIconcolor_outlineRed]: hasVariant(
-                variants,
-                "color",
-                "outlineRed"
+                "outline"
               ),
               [sty.slotTargetEndIconshowEndIcon]: hasVariant(
                 variants,

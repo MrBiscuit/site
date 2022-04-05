@@ -47,17 +47,23 @@ import sty from "./PlasmicPlan.module.css"; // plasmic-import: IC0peUQeOrc-TC/cs
 
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: r_TPt86vHV4SXb/icon
 
-export type PlasmicPlan__VariantMembers = {};
+export type PlasmicPlan__VariantMembers = {
+  color: "blue" | "black" | "purle";
+};
 
-export type PlasmicPlan__VariantsArgs = {};
+export type PlasmicPlan__VariantsArgs = {
+  color?: SingleChoiceArg<"blue" | "black" | "purle">;
+};
+
 type VariantPropType = keyof PlasmicPlan__VariantsArgs;
-export const PlasmicPlan__VariantProps = new Array<VariantPropType>();
+export const PlasmicPlan__VariantProps = new Array<VariantPropType>("color");
 
 export type PlasmicPlan__ArgsType = {
   price?: React.ReactNode;
   name?: React.ReactNode;
   description?: React.ReactNode;
   children?: React.ReactNode;
+  name2?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicPlan__ArgsType;
@@ -65,11 +71,13 @@ export const PlasmicPlan__ArgProps = new Array<ArgPropType>(
   "price",
   "name",
   "description",
-  "children"
+  "children",
+  "name2"
 );
 
 export type PlasmicPlan__OverridesType = {
   root?: p.Flex<typeof BaseCard>;
+  svg?: p.Flex<"svg">;
 };
 
 export interface DefaultPlanProps {
@@ -77,6 +85,8 @@ export interface DefaultPlanProps {
   name?: React.ReactNode;
   description?: React.ReactNode;
   children?: React.ReactNode;
+  name2?: React.ReactNode;
+  color?: SingleChoiceArg<"blue" | "black" | "purle">;
   className?: string;
 }
 
@@ -95,66 +105,134 @@ function PlasmicPlan__RenderFunc(props: {
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
-      className={classNames("__wab_instance", sty.root)}
+      className={classNames("__wab_instance", sty.root, {
+        [sty.rootcolor_black]: hasVariant(variants, "color", "black"),
+        [sty.rootcolor_blue]: hasVariant(variants, "color", "blue"),
+        [sty.rootcolor_purle]: hasVariant(variants, "color", "purle")
+      })}
+      color={
+        hasVariant(variants, "color", "purle")
+          ? ("purple" as const)
+          : hasVariant(variants, "color", "black")
+          ? ("black" as const)
+          : hasVariant(variants, "color", "blue")
+          ? ("blue" as const)
+          : undefined
+      }
+      iconBack={
+        <svg
+          data-plasmic-name={"svg"}
+          data-plasmic-override={overrides.svg}
+          className={classNames(projectcss.all, sty.svg)}
+          role={"img"}
+        />
+      }
     >
+      {true ? (
+        <div
+          className={classNames(projectcss.all, sty.freeBox__zZJh, {
+            [sty.freeBoxcolor_blue__zZJh3XiLz]: hasVariant(
+              variants,
+              "color",
+              "blue"
+            )
+          })}
+        />
+      ) : null}
+
       <div className={classNames(projectcss.all, sty.freeBox__lHcut)}>
         <p.Stack
           as={"div"}
           hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox__k5FnP)}
+          className={classNames(projectcss.all, sty.freeBox__k5FnP, {
+            [sty.freeBoxcolor_black__k5FnPopnhd]: hasVariant(
+              variants,
+              "color",
+              "black"
+            )
+          })}
         >
-          {p.renderPlasmicSlot({
-            defaultContents: "Basic",
-            value: args.name,
-            className: classNames(sty.slotTargetName)
-          })}
+          {true ? (
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__zlMuc)}
+            >
+              {p.renderPlasmicSlot({
+                defaultContents: "Basic",
+                value: args.name,
+                className: classNames(sty.slotTargetName, {
+                  [sty.slotTargetNamecolor_purle]: hasVariant(
+                    variants,
+                    "color",
+                    "purle"
+                  )
+                })
+              })}
 
-          {p.renderPlasmicSlot({
-            defaultContents: (
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__mKhs
-                )}
-              >
-                {"$10"}
-              </div>
-            ),
+              {true ? (
+                <div className={classNames(projectcss.all, sty.freeBox__rGcPc)}>
+                  {p.renderPlasmicSlot({
+                    defaultContents: (
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__mKhs
+                        )}
+                      >
+                        {"$10"}
+                      </div>
+                    ),
 
-            value: args.price
-          })}
+                    value: args.price
+                  })}
 
-          {p.renderPlasmicSlot({
-            defaultContents: (
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__wgNzi)}
-              >
-                <Bullet
-                  className={classNames("__wab_instance", sty.bullet__vjMg)}
-                />
+                  {p.renderPlasmicSlot({
+                    defaultContents: "description",
+                    value: args.name2,
+                    className: classNames(sty.slotTargetName2)
+                  })}
+                </div>
+              ) : null}
+              {p.renderPlasmicSlot({
+                defaultContents: (
+                  <p.Stack
+                    as={"div"}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.freeBox__wgNzi)}
+                  >
+                    <Bullet
+                      className={classNames("__wab_instance", sty.bullet__vjMg)}
+                    />
 
-                <Bullet
-                  className={classNames("__wab_instance", sty.bullet__r3Q8I)}
-                />
+                    <Bullet
+                      className={classNames(
+                        "__wab_instance",
+                        sty.bullet__r3Q8I
+                      )}
+                    />
 
-                <Bullet
-                  className={classNames("__wab_instance", sty.bullet__rZeqf)}
-                />
-              </p.Stack>
-            ),
+                    <Bullet
+                      className={classNames(
+                        "__wab_instance",
+                        sty.bullet__rZeqf
+                      )}
+                    />
+                  </p.Stack>
+                ),
 
-            value: args.description
-          })}
+                value: args.description
+              })}
+            </p.Stack>
+          ) : null}
 
           <div className={classNames(projectcss.all, sty.freeBox___6Glu4)}>
             {p.renderPlasmicSlot({
               defaultContents: (
                 <Button
                   className={classNames("__wab_instance", sty.button__pYicp)}
-                  color={"outlineBlue" as const}
+                  color={"outline" as const}
                 >
                   {"Get started"}
                 </Button>
@@ -170,13 +248,15 @@ function PlasmicPlan__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "svg"],
+  svg: ["svg"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: typeof BaseCard;
+  svg: "svg";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -236,6 +316,7 @@ export const PlasmicPlan = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicPlan
     internalVariantProps: PlasmicPlan__VariantProps,

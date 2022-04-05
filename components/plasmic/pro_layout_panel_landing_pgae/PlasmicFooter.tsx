@@ -34,7 +34,6 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import ContactCard from "../../ContactCard"; // plasmic-import: 2c2FAccr5Q/component
 import IconLink from "../../IconLink"; // plasmic-import: 1VSJl1M4qMed7Q/component
 
 import { useScreenVariants as useScreenVariants_3KhhFf1Cq1Qfos } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 3KhhFf1CQ1QFOS/globalVariant
@@ -62,7 +61,6 @@ export const PlasmicFooter__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicFooter__OverridesType = {
   root?: p.Flex<"div">;
-  contactCard?: p.Flex<typeof ContactCard>;
   text?: p.Flex<"div">;
 };
 
@@ -103,20 +101,6 @@ function PlasmicFooter__RenderFunc(props: {
       )}
     >
       <div className={classNames(projectcss.all, sty.freeBox__s2U1E)} />
-
-      <p.Stack
-        as={"div"}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox___6TEy0)}
-      >
-        <ContactCard
-          data-plasmic-name={"contactCard"}
-          data-plasmic-override={overrides.contactCard}
-          className={classNames("__wab_instance", sty.contactCard)}
-        />
-      </p.Stack>
-
-      <div className={classNames(projectcss.all, sty.freeBox__gWuRg)} />
 
       <p.Stack
         as={"div"}
@@ -229,8 +213,7 @@ function PlasmicFooter__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "contactCard", "text"],
-  contactCard: ["contactCard"],
+  root: ["root", "text"],
   text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -238,7 +221,6 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  contactCard: typeof ContactCard;
   text: "div";
 };
 
@@ -299,7 +281,6 @@ export const PlasmicFooter = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    contactCard: makeNodeComponent("contactCard"),
     text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicFooter

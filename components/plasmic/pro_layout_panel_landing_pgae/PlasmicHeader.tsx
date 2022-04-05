@@ -36,6 +36,8 @@ import {
 } from "@plasmicapp/react-web";
 import Button from "../../Button"; // plasmic-import: s3E0QheUTMLIRg/component
 
+import { useScreenVariants as useScreenVariants_3KhhFf1Cq1Qfos } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 3KhhFf1CQ1QFOS/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
@@ -68,6 +70,7 @@ export type PlasmicHeader__OverridesType = {
   link?: p.Flex<"a"> & Partial<LinkProps>;
   svg?: p.Flex<"svg">;
   freeBox?: p.Flex<"div">;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultHeaderProps {
@@ -83,6 +86,10 @@ function PlasmicHeader__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, args, overrides, forNode } = props;
+
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants_3KhhFf1Cq1Qfos()
+  });
 
   return (
     <div
@@ -125,6 +132,20 @@ function PlasmicHeader__RenderFunc(props: {
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox)}
         >
+          {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
+            <div
+              data-plasmic-name={"text"}
+              data-plasmic-override={overrides.text}
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text
+              )}
+            >
+              {"Pro Layout Panel"}
+            </div>
+          ) : null}
+
           <Button
             className={classNames("__wab_instance", sty.button___3TBjG, {
               [sty.buttonchinese___3TBjG5R05K]: hasVariant(
@@ -180,10 +201,11 @@ function PlasmicHeader__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "svg", "freeBox"],
+  root: ["root", "link", "svg", "freeBox", "text"],
   link: ["link", "svg"],
   svg: ["svg"],
-  freeBox: ["freeBox"]
+  freeBox: ["freeBox", "text"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -193,6 +215,7 @@ type NodeDefaultElementType = {
   link: "a";
   svg: "svg";
   freeBox: "div";
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -255,6 +278,7 @@ export const PlasmicHeader = Object.assign(
     link: makeNodeComponent("link"),
     svg: makeNodeComponent("svg"),
     freeBox: makeNodeComponent("freeBox"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,

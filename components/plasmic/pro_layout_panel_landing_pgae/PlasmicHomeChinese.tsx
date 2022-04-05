@@ -61,6 +61,12 @@ import Icon6Icon from "./icons/PlasmicIcon__Icon6"; // plasmic-import: J1YAUdPI6
 import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: V02xllXpr/icon
 import Icon10Icon from "./icons/PlasmicIcon__Icon10"; // plasmic-import: VcNk7skQWd/icon
 import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: JfzJrHKPBw/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: cNxJEz4gEG/icon
+import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: ScoFh1W5NL/icon
+import Icon7Icon from "./icons/PlasmicIcon__Icon7"; // plasmic-import: z0Ji84AyCw/icon
+import Icon11Icon from "./icons/PlasmicIcon__Icon11"; // plasmic-import: ZsRymmi19/icon
+import Icon15Icon from "./icons/PlasmicIcon__Icon15"; // plasmic-import: RQ7qx5lk9P/icon
+import Icon17Icon from "./icons/PlasmicIcon__Icon17"; // plasmic-import: 4PP-eruZ4G/icon
 
 export type PlasmicHomeChinese__VariantMembers = {};
 
@@ -82,6 +88,7 @@ export type PlasmicHomeChinese__OverridesType = {
   pricingSection?: p.Flex<typeof Section>;
   pricing?: p.Flex<"a"> & Partial<LinkProps>;
   columns?: p.Flex<"div">;
+  howItWorks2?: p.Flex<typeof Section>;
   footer?: p.Flex<typeof Footer>;
 };
 
@@ -102,9 +109,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head>
-        <meta name="twitter:card" content="summary" />
-      </Head>
+      {}
 
       <style>{`
         body {
@@ -195,7 +200,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
               >
                 <Button
                   className={classNames("__wab_instance", sty.button___0BJvr)}
-                  color={"purple" as const}
+                  color={"figma" as const}
                   endIcon={
                     <RightArrowIcon
                       className={classNames(projectcss.all, sty.svg__yVnM)}
@@ -554,6 +559,23 @@ function PlasmicHomeChinese__RenderFunc(props: {
                   }
                   title={"撑缩模式继承"}
                 />
+
+                <FeatureCard
+                  className={classNames(
+                    "__wab_instance",
+                    sty.featureCard__p8Sue
+                  )}
+                  description={
+                    "自由方向会保留自动布局内边距与元素间隔不丢失，以便调整后重新应用。"
+                  }
+                  iconFront={
+                    <IconIcon
+                      className={classNames(projectcss.all, sty.svg__ewRNc)}
+                      role={"img"}
+                    />
+                  }
+                  title={"自由方向"}
+                />
               </p.Stack>
             </Reveal>
           </Section>
@@ -638,19 +660,10 @@ function PlasmicHomeChinese__RenderFunc(props: {
                         >
                           {"免费更新"}
                         </Bullet>
-
-                        <Bullet
-                          className={classNames(
-                            "__wab_instance",
-                            sty.bullet__buP7L
-                          )}
-                          noIcon={true}
-                        >
-                          {"14 天免费试用"}
-                        </Bullet>
                       </p.Stack>
                     }
-                    name={"Free trail"}
+                    name={"初心者"}
+                    name2={"14 天免费试用"}
                     price={
                       <div
                         className={classNames(
@@ -668,20 +681,12 @@ function PlasmicHomeChinese__RenderFunc(props: {
                         "__wab_instance",
                         sty.button__fi8Ak
                       )}
-                      color={"outlineBlue" as const}
+                      color={"outline" as const}
                       link={
                         "https://www.figma.com/community/plugin/1065130523685842895/Pro-Layout-Panel" as const
                       }
                     >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__yDuHn
-                        )}
-                      >
-                        {"开始使用"}
-                      </div>
+                      {"开始使用"}
                     </Button>
                   </Plan>
                 </div>
@@ -689,6 +694,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
                 <div className={classNames(projectcss.all, sty.column__lzMt2)}>
                   <Plan
                     className={classNames("__wab_instance", sty.plan__eaUQm)}
+                    color={"blue" as const}
                     description={
                       <p.Stack
                         as={"div"}
@@ -724,18 +730,10 @@ function PlasmicHomeChinese__RenderFunc(props: {
                         >
                           {"技术支持"}
                         </Bullet>
-
-                        <Bullet
-                          className={classNames(
-                            "__wab_instance",
-                            sty.bullet__qpb1T
-                          )}
-                        >
-                          {"永久使用权"}
-                        </Bullet>
                       </p.Stack>
                     }
-                    name={"Pro"}
+                    name={"专业"}
+                    name2={"一个账户"}
                     price={
                       <div
                         className={classNames(
@@ -753,7 +751,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
                         "__wab_instance",
                         sty.button__zZ4Zh
                       )}
-                      color={"purple" as const}
+                      color={"figma" as const}
                       link={
                         "https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.50111deb2Qb6Cn&ft=t&id=670429733914" as const
                       }
@@ -762,6 +760,148 @@ function PlasmicHomeChinese__RenderFunc(props: {
                     </Button>
                   </Plan>
                 </div>
+              </p.Stack>
+            </Reveal>
+          </Section>
+
+          <Section
+            data-plasmic-name={"howItWorks2"}
+            data-plasmic-override={overrides.howItWorks2}
+            className={classNames("__wab_instance", sty.howItWorks2)}
+            hasSubtitle={true}
+            hasTitle={true}
+            subtitle={
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___3Q4Zd
+                )}
+              >
+                {
+                  "Pro layout panel 会持续收到更新以更好的简化你的布局工作流，以下是列在计划中的功能，很多都是由用户提出，这些功能将会在未来版本中上线，欢迎随时和我交流想法 :) "
+                }
+              </div>
+            }
+            title={"计划中的功能..."}
+          >
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal__yXpxh)}
+              damping={0.5 as const}
+              direction={"up" as const}
+              duration={500 as const}
+              triggerOnce={true}
+            >
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___5LF6N)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__vNiQd)}
+                >
+                  <Icon5Icon
+                    className={classNames(projectcss.all, sty.svg__zUpzX)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__sli9A
+                    )}
+                  >
+                    {"与 Figma Tokens 插件打通"}
+                  </div>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__jqaN)}
+                >
+                  <Icon7Icon
+                    className={classNames(projectcss.all, sty.svg__yyyD8)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__a7OEr
+                    )}
+                  >
+                    {"Auto Layout v4.0 跟进更新"}
+                  </div>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__ioamV)}
+                >
+                  <Icon11Icon
+                    className={classNames(projectcss.all, sty.svg__rlQr)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__yuGno
+                    )}
+                  >
+                    {"输入框数学计算"}
+                  </div>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__olR9E)}
+                >
+                  <Icon15Icon
+                    className={classNames(projectcss.all, sty.svg__e5VK)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___6AFh
+                    )}
+                  >
+                    {"常用功能菜单项以便快捷调用"}
+                  </div>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___47Ksy)}
+                >
+                  <Icon17Icon
+                    className={classNames(projectcss.all, sty.svg__eKua)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__jEaR8
+                    )}
+                  >
+                    {"Nudge 数值自定义"}
+                  </div>
+                </p.Stack>
               </p.Stack>
             </Reveal>
           </Section>
@@ -788,6 +928,7 @@ const PlasmicDescendants = {
     "pricingSection",
     "pricing",
     "columns",
+    "howItWorks2",
     "footer"
   ],
   header: ["header"],
@@ -798,6 +939,7 @@ const PlasmicDescendants = {
   pricingSection: ["pricingSection", "pricing", "columns"],
   pricing: ["pricing"],
   columns: ["columns"],
+  howItWorks2: ["howItWorks2"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -813,6 +955,7 @@ type NodeDefaultElementType = {
   pricingSection: typeof Section;
   pricing: "a";
   columns: "div";
+  howItWorks2: typeof Section;
   footer: typeof Footer;
 };
 
@@ -881,6 +1024,7 @@ export const PlasmicHomeChinese = Object.assign(
     pricingSection: makeNodeComponent("pricingSection"),
     pricing: makeNodeComponent("pricing"),
     columns: makeNodeComponent("columns"),
+    howItWorks2: makeNodeComponent("howItWorks2"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHomeChinese

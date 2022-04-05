@@ -4,11 +4,12 @@
   position: relative;
   background: none;
   cursor: pointer;
-  transition-property: background;
-  transition-duration: 0.1s;
-  border-radius: 6px;
-  padding: 10px 20px;
-  border-width: 0px;
+  transition-property: transform;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+  border-radius: 10px;
+  padding: 10px 40px;
+  border: 2px solid #ffffff00;
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -26,11 +27,29 @@
 .rootshowStartIcon {
   padding-left: 16px;
 }
-.rootcolor_clear {
-  background: #23232000;
+.rootcolor_purple {
+  background: #5551ff;
 }
 .rootshowEndIcon {
-  padding-right: 16px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.rootshowEndIcon > :global(.__wab_flex-container) {
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+  margin-top: calc(0px - 0px);
+  height: calc(100% + 0px);
+}
+.rootshowEndIcon > :global(.__wab_flex-container) > *,
+.rootshowEndIcon > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.rootshowEndIcon > :global(.__wab_flex-container) > picture > img,
+.rootshowEndIcon
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+  margin-top: 0px;
 }
 .rootisDisabled {
   cursor: not-allowed;
@@ -45,19 +64,18 @@
 .rootsize_compact {
   padding: 6px 12px;
 }
-.rootcolor_purple {
-  background: #5551ff;
+.rootcolor_figma {
+  background: #0d99ff;
 }
-.rootcolor_red {
-  background: #e54d2e;
-}
-.rootcolor_outlineBlue {
+.rootcolor_outline {
   background: #ffffff00;
-  border: 1px solid #5551ff;
+  border: 2px solid #000000;
 }
-.rootcolor_outlineRed {
-  background: #fff0ee00;
-  border: 1px solid #ca3214;
+.rootcolor_clear {
+  background: #23232000;
+}
+.rootcolor_black {
+  background: #000000;
 }
 .rootshape_rounded_showStartIcon {
   padding-left: 16px;
@@ -72,22 +90,17 @@
   padding-right: 8px;
 }
 .root:hover {
-  background: #282826;
+  transform: translateX(0px) translateY(-3px) translateZ(0px);
 }
-.rootcolor_clear:hover {
-  background: var(--token-ECewHnPLa);
+.rootcolor_figma:hover {
+  background: var(--token-I651Myd9-);
+  border: 2px solid var(--token-NEon4Y--Z);
 }
-.rootcolor_purple:hover {
-  background: #6966ff;
-}
-.rootcolor_red:hover {
-  background: #ec5e41;
-}
-.rootcolor_outlineBlue:hover {
+.rootcolor_outline:hover {
   background: #e1f0ff;
 }
-.rootcolor_outlineRed:hover {
-  background: #ffe6e2;
+.rootcolor_clear:hover {
+  background: #e5e5e5;
 }
 .root:focus-within {
   box-shadow: 0px 0px 0px 3px #96c7f2;
@@ -100,20 +113,14 @@
 .root:active {
   background: #2e2e2b;
 }
-.rootcolor_clear:active {
-  background: var(--token-3dsm_UqzX);
-}
-.rootcolor_purple:active {
+.rootcolor_figma:active {
   background: #2721ff;
 }
-.rootcolor_red:active {
-  background: #f16a50;
-}
-.rootcolor_outlineBlue:active {
+.rootcolor_outline:active {
   background: #cee7fe;
 }
-.rootcolor_outlineRed:active {
-  background: #fdd8d3;
+.rootcolor_clear:active {
+  background: var(--token-3dsm_UqzX);
 }
 .startIconContainer {
   display: flex;
@@ -128,11 +135,8 @@
 .slotTargetStartIcon {
   color: #ffffff;
 }
-.slotTargetStartIconcolor_outlineBlue {
+.slotTargetStartIconcolor_outline {
   color: #006adc;
-}
-.slotTargetStartIconcolor_outlineRed {
-  color: #ca3214;
 }
 .svg__ng8IE {
   position: relative;
@@ -157,20 +161,14 @@
   font-size: 16px;
   white-space: pre;
 }
+.slotTargetChildrencolor_figma {
+  color: #ffffff;
+}
+.slotTargetChildrencolor_outline {
+  color: var(--token-ChmjNJ38FAuV);
+}
 .slotTargetChildrencolor_clear {
   color: var(--token-ygTQn1PS0A_9eH);
-}
-.slotTargetChildrencolor_purple {
-  color: #ffffff;
-}
-.slotTargetChildrencolor_red {
-  color: #ffffff;
-}
-.slotTargetChildrencolor_outlineBlue {
-  color: #006adc;
-}
-.slotTargetChildrencolor_outlineRed {
-  color: #ca3214;
 }
 .root:focus-within .slotTargetChildren > *,
 .root:focus-within .slotTargetChildren > .__wab_slot > *,
@@ -238,11 +236,8 @@
   color: #ffffff;
   font-size: 16px;
 }
-.slotTargetEndIconcolor_outlineBlue {
+.slotTargetEndIconcolor_outline {
   color: #006adc;
-}
-.slotTargetEndIconcolor_outlineRed {
-  color: #ca3214;
 }
 .svg__lwCxt {
   position: relative;
