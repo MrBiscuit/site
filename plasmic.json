@@ -534,7 +534,7 @@
           "projectId": "qDNA17RfdgsM73kkELPPxa",
           "renderModuleFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHomeChinese.tsx",
           "importSpec": {
-            "modulePath": "../pages/-2.tsx"
+            "modulePath": "../pages/cn.tsx"
           },
           "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHomeChinese.module.css",
           "scheme": "blackbox",
@@ -781,6 +781,11 @@
           "id": "WA1UMCYLX",
           "name": "image 3",
           "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image3.png"
+        },
+        {
+          "id": "1ZuDkmFFl",
+          "name": "WX20220529-214756@2x.png",
+          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/wx202205292147562Xpng.png"
         }
       ],
       "indirect": false,

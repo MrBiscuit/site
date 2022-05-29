@@ -63,19 +63,23 @@ export const PlasmicHeader__VariantProps = new Array<VariantPropType>(
 
 export type PlasmicHeader__ArgsType = {
   children?: React.ReactNode;
+  slot?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicHeader__ArgsType;
-export const PlasmicHeader__ArgProps = new Array<ArgPropType>("children");
+export const PlasmicHeader__ArgProps = new Array<ArgPropType>(
+  "children",
+  "slot"
+);
 
 export type PlasmicHeader__OverridesType = {
   root?: p.Flex<"div">;
   link?: p.Flex<"a"> & Partial<LinkProps>;
-  text?: p.Flex<"div">;
 };
 
 export interface DefaultHeaderProps {
   children?: React.ReactNode;
+  slot?: React.ReactNode;
   chinese?: SingleBooleanChoiceArg<"chinese">;
   className?: string;
 }
@@ -141,16 +145,12 @@ function PlasmicHeader__RenderFunc(props: {
           className={classNames(projectcss.all, sty.freeBox___7CZcb)}
         >
           {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
-            <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text
-              )}
-            >
-              {"Figma Sections"}
+            <div className={classNames(projectcss.all, sty.freeBox__hgUjo)}>
+              {p.renderPlasmicSlot({
+                defaultContents: "Figma Sections",
+                value: args.slot,
+                className: classNames(sty.slotTargetSlot)
+              })}
             </div>
           ) : null}
           {true ? (
@@ -201,7 +201,7 @@ function PlasmicHeader__RenderFunc(props: {
                 link={
                   hasVariant(variants, "chinese", "chinese")
                     ? ("/" as const)
-                    : ("/-2" as const)
+                    : ("/cn" as const)
                 }
                 size={"compact" as const}
               >
@@ -218,9 +218,8 @@ function PlasmicHeader__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "text"],
-  link: ["link"],
-  text: ["text"]
+  root: ["root", "link"],
+  link: ["link"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -228,7 +227,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   link: "a";
-  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -289,7 +287,6 @@ export const PlasmicHeader = Object.assign(
   {
     // Helper components rendering sub-elements
     link: makeNodeComponent("link"),
-    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,

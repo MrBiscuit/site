@@ -328,9 +328,9 @@ function PlasmicFigmaSection__RenderFunc(props: {
                   displayWidth={"100%" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/pro_layout_panel_landing_pgae/images/image.png",
-                    fullWidth: 1562,
-                    fullHeight: 816,
+                    src: "/plasmic/pro_layout_panel_landing_pgae/images/wx202205292147562Xpng.png",
+                    fullWidth: 1708,
+                    fullHeight: 884,
                     aspectRatio: undefined
                   }}
                 />

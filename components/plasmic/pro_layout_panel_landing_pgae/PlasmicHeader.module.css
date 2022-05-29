@@ -56,23 +56,27 @@
     justify-content: flex-end;
   }
 }
-.text {
+.freeBox__hgUjo {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
-  font-weight: 700;
-  color: var(--token-T5L5Js4u0Cm);
-  font-size: 24px;
   padding-left: 8px;
   margin-bottom: 3px;
   margin-top: 3px;
+  display: flex;
+  flex-direction: row;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .text {
+  .freeBox__hgUjo {
     display: none;
   }
+}
+.slotTargetSlot {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--token-T5L5Js4u0Cm);
 }
 .freeBox__v8Ufi {
   display: flex;

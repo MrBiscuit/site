@@ -147,6 +147,17 @@ function PlasmicHomeChinese__RenderFunc(props: {
             data-plasmic-override={overrides.header}
             chinese={true}
             className={classNames("__wab_instance", sty.header)}
+            slot={
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__xYk9Z
+                )}
+              >
+                {"Pro Layout Panel"}
+              </div>
+            }
           />
 
           <Section

@@ -127,6 +127,7 @@
   position: relative;
   width: 100%;
   max-width: 1000px;
+  overflow: visible;
   min-width: 0;
 }
 .freeBox__sp085 > :global(.__wab_flex-container) {
@@ -221,6 +222,7 @@
     )
     0% 0% / 100% 100% padding-box /* clip: text **/;
   padding-top: 8px;
+  padding-bottom: 12px;
   background-clip: text;
   -webkit-background-clip: text;
 }
