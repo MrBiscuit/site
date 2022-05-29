@@ -35,8 +35,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: gCP9N_nn5MCbJS/component
-import Section from "../../Section"; // plasmic-import: polj06cVBtzpxl/component
 import Button from "../../Button"; // plasmic-import: s3E0QheUTMLIRg/component
+import Section from "../../Section"; // plasmic-import: polj06cVBtzpxl/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import VideoExample from "../../VideoExample"; // plasmic-import: AuERE4DOLn/component
 import { Iframe } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: CMDBvOhaI4s/codeComponent
@@ -157,6 +157,36 @@ function PlasmicHomeChinese__RenderFunc(props: {
               >
                 {"Pro Layout Panel"}
               </div>
+            }
+            slot2={
+              <React.Fragment>
+                <Button
+                  className={classNames("__wab_instance", sty.button__awtOp)}
+                  color={"clear" as const}
+                  link={"#feature" as const}
+                  size={"compact" as const}
+                >
+                  {"功能"}
+                </Button>
+
+                <Button
+                  className={classNames("__wab_instance", sty.button__dOXuz)}
+                  color={"clear" as const}
+                  link={"#price" as const}
+                  size={"compact" as const}
+                >
+                  {"Pricing"}
+                </Button>
+
+                <Button
+                  className={classNames("__wab_instance", sty.button__insSm)}
+                  color={"clear" as const}
+                  link={"/" as const}
+                  size={"compact" as const}
+                >
+                  {"English"}
+                </Button>
+              </React.Fragment>
             }
           />
 

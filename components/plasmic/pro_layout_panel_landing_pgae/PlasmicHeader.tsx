@@ -64,12 +64,14 @@ export const PlasmicHeader__VariantProps = new Array<VariantPropType>(
 export type PlasmicHeader__ArgsType = {
   children?: React.ReactNode;
   slot?: React.ReactNode;
+  slot2?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicHeader__ArgsType;
 export const PlasmicHeader__ArgProps = new Array<ArgPropType>(
   "children",
-  "slot"
+  "slot",
+  "slot2"
 );
 
 export type PlasmicHeader__OverridesType = {
@@ -80,6 +82,7 @@ export type PlasmicHeader__OverridesType = {
 export interface DefaultHeaderProps {
   children?: React.ReactNode;
   slot?: React.ReactNode;
+  slot2?: React.ReactNode;
   chinese?: SingleBooleanChoiceArg<"chinese">;
   className?: string;
 }
@@ -155,60 +158,47 @@ function PlasmicHeader__RenderFunc(props: {
           ) : null}
           {true ? (
             <div className={classNames(projectcss.all, sty.freeBox__v8Ufi)}>
-              <Button
-                className={classNames("__wab_instance", sty.button___3TBjG, {
-                  [sty.buttonchinese___3TBjG5R05K]: hasVariant(
-                    variants,
-                    "chinese",
-                    "chinese"
-                  )
-                })}
-                color={"clear" as const}
-                link={"#feature" as const}
-                size={"compact" as const}
-              >
-                {hasVariant(variants, "chinese", "chinese")
-                  ? "功能"
-                  : "Features"}
-              </Button>
+              {p.renderPlasmicSlot({
+                defaultContents: (
+                  <React.Fragment>
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button___49HkH
+                      )}
+                      color={"clear" as const}
+                      link={"#feature" as const}
+                      size={"compact" as const}
+                    >
+                      {"Features"}
+                    </Button>
 
-              <Button
-                className={classNames("__wab_instance", sty.button__lHpv, {
-                  [sty.buttonchinese__lHpv5R05K]: hasVariant(
-                    variants,
-                    "chinese",
-                    "chinese"
-                  )
-                })}
-                color={"clear" as const}
-                link={"#price" as const}
-                size={"compact" as const}
-              >
-                {hasVariant(variants, "chinese", "chinese")
-                  ? "价格"
-                  : "Pricing"}
-              </Button>
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__frrPa
+                      )}
+                      color={"clear" as const}
+                      link={"#price" as const}
+                      size={"compact" as const}
+                    >
+                      {"Pricing"}
+                    </Button>
 
-              <Button
-                className={classNames("__wab_instance", sty.button__p3Jas, {
-                  [sty.buttonchinese__p3Jas5R05K]: hasVariant(
-                    variants,
-                    "chinese",
-                    "chinese"
-                  )
-                })}
-                color={"clear" as const}
-                link={
-                  hasVariant(variants, "chinese", "chinese")
-                    ? ("/" as const)
-                    : ("/cn" as const)
-                }
-                size={"compact" as const}
-              >
-                {hasVariant(variants, "chinese", "chinese")
-                  ? "English"
-                  : "中文"}
-              </Button>
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button___7Jzjx
+                      )}
+                      color={"clear" as const}
+                      size={"compact" as const}
+                    >
+                      {"中文"}
+                    </Button>
+                  </React.Fragment>
+                ),
+                value: args.slot2
+              })}
             </div>
           ) : null}
         </p.Stack>

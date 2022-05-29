@@ -47,6 +47,56 @@
 .text__xYk9Z {
   height: auto;
 }
+.button__awtOp:global(.__wab_instance) {
+  max-width: 100%;
+  width: 100px;
+}
+.svg__s8H5 {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.svg___5ImE {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.button__dOXuz:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 100px;
+}
+.svg__wg8D {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.svg__hkfIu {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.button__insSm:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 100px;
+}
+.svg__bc1KZ {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.svg__uwOsS {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
 .topSection:global(.__wab_instance) {
   position: relative;
 }

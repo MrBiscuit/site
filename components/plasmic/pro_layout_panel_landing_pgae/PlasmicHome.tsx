@@ -35,8 +35,8 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: gCP9N_nn5MCbJS/component
-import Section from "../../Section"; // plasmic-import: polj06cVBtzpxl/component
 import Button from "../../Button"; // plasmic-import: s3E0QheUTMLIRg/component
+import Section from "../../Section"; // plasmic-import: polj06cVBtzpxl/component
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import VideoExample from "../../VideoExample"; // plasmic-import: AuERE4DOLn/component
 import YouTube from "@plasmicpkgs/react-youtube"; // plasmic-import: CHO21V9uYw/codeComponent
@@ -144,6 +144,36 @@ function PlasmicHome__RenderFunc(props: {
             data-plasmic-override={overrides.header}
             className={classNames("__wab_instance", sty.header)}
             slot={"Pro Layout Panel"}
+            slot2={
+              <React.Fragment>
+                <Button
+                  className={classNames("__wab_instance", sty.button__jtkLm)}
+                  color={"clear" as const}
+                  link={"#feature" as const}
+                  size={"compact" as const}
+                >
+                  {"Features"}
+                </Button>
+
+                <Button
+                  className={classNames("__wab_instance", sty.button___3RumU)}
+                  color={"clear" as const}
+                  link={"#price" as const}
+                  size={"compact" as const}
+                >
+                  {"Pricing"}
+                </Button>
+
+                <Button
+                  className={classNames("__wab_instance", sty.button__cj25E)}
+                  color={"clear" as const}
+                  link={"/cn" as const}
+                  size={"compact" as const}
+                >
+                  {"中文"}
+                </Button>
+              </React.Fragment>
+            }
           />
 
           <Section

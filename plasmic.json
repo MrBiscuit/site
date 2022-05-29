@@ -552,6 +552,19 @@
           "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicFigmaSection.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "NiW2fD3OqY-",
+          "name": "FigmaSectionChinese",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicFigmaSectionChinese.tsx",
+          "importSpec": {
+            "modulePath": "../pages/figmasection_cn.tsx"
+          },
+          "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicFigmaSectionChinese.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -786,6 +799,11 @@
           "id": "1ZuDkmFFl",
           "name": "WX20220529-214756@2x.png",
           "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/wx202205292147562Xpng.png"
+        },
+        {
+          "id": "l-BoqRhsf",
+          "name": "CoverCn.png",
+          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/coverCnpng.png"
         }
       ],
       "indirect": false,

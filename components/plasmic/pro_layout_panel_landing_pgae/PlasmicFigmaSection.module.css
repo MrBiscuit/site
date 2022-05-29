@@ -55,6 +55,56 @@
 .img__hEr8B > .__wab_img-spacer > img {
   object-fit: cover;
 }
+.button__j0RSm:global(.__wab_instance) {
+  max-width: 100%;
+  width: 100px;
+}
+.svg__ikbsN {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.svg__evkoz {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.button__oJeTt:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 100px;
+}
+.svg___5Asmz {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.svg__ddApn {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.button__bNgA6:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  width: 100px;
+}
+.svg__h5Ri1 {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
+.svg__zYnoK {
+  position: relative;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+}
 .topSection:global(.__wab_instance) {
   position: relative;
 }
