@@ -810,7 +810,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                       >
                         {hasVariant(globalVariants, "screen", "mobile")
                           ? "Menu items for shortcuts"
-                          : "An instant kill to design management plugins and softwares."}
+                          : '"An instant kill to design management plugins and softwares."'}
                       </div>
                     </div>
                   ) : null}
@@ -862,7 +862,114 @@ function PlasmicFigmaSection__RenderFunc(props: {
                       >
                         {hasVariant(globalVariants, "screen", "mobile")
                           ? "Menu items for shortcuts"
-                          : "Artboard/Frame/Section: may be considered the same, tho infer different intent with use / context"}
+                          : '"Artboard/Frame/Section: may be considered the same, tho infer different intent with use / context"'}
+                      </div>
+                    </div>
+                  ) : null}
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__shpk6)}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__fEDoG)}
+                    displayHeight={"56px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"56px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/pro_layout_panel_landing_pgae/images/image2.png",
+                      fullWidth: 400,
+                      fullHeight: 400,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  {true ? (
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___6Cp0L
+                      )}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__eTDgz
+                        )}
+                      >
+                        {"Utsav Sheth"}
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__ko0Dq
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobile")
+                          ? "Menu items for shortcuts"
+                          : '"Thank you for the New Figma sections.\n1. Help me to stay organized on my board\n2. No need to use Dividers "'}
+                      </div>
+                    </div>
+                  ) : null}
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__emrBs)}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__auBjN)}
+                    displayHeight={"56px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"56px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: "/plasmic/pro_layout_panel_landing_pgae/images/image3.png",
+                      fullWidth: 400,
+                      fullHeight: 400,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  {true ? (
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__k9Vti)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__jpU4I
+                        )}
+                      >
+                        {"鈴木慎吾 / TSUMIKI INC."}
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__tuG8Z
+                        )}
+                      >
+                        {hasVariant(globalVariants, "screen", "mobile")
+                          ? "Menu items for shortcuts"
+                          : '"The Section function added to Figma is very good.\n The manual work of enclosing the elements you want to classify in a rectangle, labeling them, and grouping them is now easier and cleaner."'}
                       </div>
                     </div>
                   ) : null}

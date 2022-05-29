@@ -771,6 +771,16 @@
           "id": "d9KaZQ1lZ",
           "name": "image",
           "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image.png"
+        },
+        {
+          "id": "hy9Un0QqX",
+          "name": "image 2",
+          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image2.png"
+        },
+        {
+          "id": "WA1UMCYLX",
+          "name": "image 3",
+          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image3.png"
         }
       ],
       "indirect": false,
