@@ -83,6 +83,9 @@ export interface DefaultFeatureCardProps {
   className?: string;
 }
 
+export const defaultFeatureCard__Args: Partial<PlasmicFeatureCard__ArgsType> =
+  {};
+
 function PlasmicFeatureCard__RenderFunc(props: {
   variants: PlasmicFeatureCard__VariantsArgs;
   args: PlasmicFeatureCard__ArgsType;
@@ -90,7 +93,9 @@ function PlasmicFeatureCard__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultFeatureCard__Args, props.args);
+  const $props = args;
 
   return (
     <p.Stack

@@ -99,6 +99,10 @@ export interface DefaultTextInputProps extends pp.BaseTextInputProps {
   fontSize?: SingleChoiceArg<"small">;
 }
 
+export const defaultTextInput__Args: Partial<PlasmicTextInput__ArgsType> = {
+  placeholder: "Enter something…" as const
+};
+
 function PlasmicTextInput__RenderFunc(props: {
   variants: PlasmicTextInput__VariantsArgs;
   args: PlasmicTextInput__ArgsType;
@@ -106,7 +110,9 @@ function PlasmicTextInput__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultTextInput__Args, props.args);
+  const $props = args;
 
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
@@ -212,11 +218,7 @@ function PlasmicTextInput__RenderFunc(props: {
         disabled={
           hasVariant(variants, "isDisabled", "isDisabled") ? true : undefined
         }
-        placeholder={
-          args.placeholder !== undefined
-            ? args.placeholder
-            : ("Enter something…" as const)
-        }
+        placeholder={args.placeholder}
         type={"text" as const}
         value={args.value}
       />

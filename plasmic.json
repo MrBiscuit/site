@@ -539,6 +539,19 @@
           "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHomeChinese.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "Xh2O--6vZNn",
+          "name": "FigmaSection",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicFigmaSection.tsx",
+          "importSpec": {
+            "modulePath": "../pages/figmasections.tsx"
+          },
+          "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicFigmaSection.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -666,6 +679,56 @@
           "id": "4PP-eruZ4G",
           "name": "Icon17Icon",
           "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon17.tsx"
+        },
+        {
+          "id": "e4DflX9Qn0v",
+          "name": "Icon18Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon18.tsx"
+        },
+        {
+          "id": "gA3ReOTWRWd",
+          "name": "Icon19Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon19.tsx"
+        },
+        {
+          "id": "a_qIlnBN2iF",
+          "name": "Icon20Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon20.tsx"
+        },
+        {
+          "id": "qiaYM77t3P3",
+          "name": "Icon28Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon28.tsx"
+        },
+        {
+          "id": "LDI2rsRWBbL",
+          "name": "Icon21Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon21.tsx"
+        },
+        {
+          "id": "PK0IXvxdsy",
+          "name": "Icon22Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon22.tsx"
+        },
+        {
+          "id": "I8V0I6I9C0",
+          "name": "Icon23Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon23.tsx"
+        },
+        {
+          "id": "gfa7vuOMuc",
+          "name": "Icon24Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon24.tsx"
+        },
+        {
+          "id": "kuMSi66yKA",
+          "name": "Icon25Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon25.tsx"
+        },
+        {
+          "id": "KRTK6f0Lc0",
+          "name": "Icon26Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon26.tsx"
         }
       ],
       "images": [
@@ -673,6 +736,41 @@
           "id": "9z5DNRkiT",
           "name": "Frame 10.png 2",
           "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/frame10Png2.png"
+        },
+        {
+          "id": "KaByfjjNpK",
+          "name": "image 6",
+          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image6.svg"
+        },
+        {
+          "id": "aBpm_HJ0y",
+          "name": "image 7",
+          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image7.png"
+        },
+        {
+          "id": "dU8MNJKsY",
+          "name": "WX20220529-210650@2x.png",
+          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/wx202205292106502Xpng.png"
+        },
+        {
+          "id": "BlL9SwZcr",
+          "name": "image 8",
+          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image8.png"
+        },
+        {
+          "id": "1J4i_3Cs3",
+          "name": "image 9",
+          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image9.png"
+        },
+        {
+          "id": "HsgQx8hyC",
+          "name": "image 10",
+          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image10.png"
+        },
+        {
+          "id": "d9KaZQ1lZ",
+          "name": "image",
+          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image.png"
         }
       ],
       "indirect": false,
@@ -706,6 +804,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.176",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.176/dist/plasmic.schema.json"
+  "cliVersion": "0.1.178",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.178/dist/plasmic.schema.json"
 }

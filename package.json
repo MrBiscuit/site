@@ -9,9 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@plasmicapp/cli": "^0.1.176",
+    "@plasmicapp/cli": "^0.1.178",
     "@plasmicapp/host": "^1.0.25",
-    "@plasmicapp/react-web": "^0.2.93",
+    "@plasmicapp/react-web": "^0.2.97",
     "@plasmicpkgs/plasmic-basic-components": "^0.0.28",
     "@plasmicpkgs/react-awesome-reveal": "^3.8.25",
     "@plasmicpkgs/react-youtube": "^7.13.25",

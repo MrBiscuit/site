@@ -90,6 +90,8 @@ export interface DefaultPlanProps {
   className?: string;
 }
 
+export const defaultPlan__Args: Partial<PlasmicPlan__ArgsType> = {};
+
 function PlasmicPlan__RenderFunc(props: {
   variants: PlasmicPlan__VariantsArgs;
   args: PlasmicPlan__ArgsType;
@@ -97,7 +99,9 @@ function PlasmicPlan__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultPlan__Args, props.args);
+  const $props = args;
 
   return (
     <BaseCard

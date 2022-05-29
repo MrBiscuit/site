@@ -5,6 +5,7 @@
   display: flex;
   position: relative;
   justify-content: space-between;
+  align-items: center;
   min-width: 0;
   padding: 16px 8px;
 }
@@ -15,13 +16,13 @@
   align-items: stretch;
   justify-content: flex-start;
 }
-.svg {
+.svg__r6NTn {
   object-fit: cover;
   width: 48px;
   height: 48px;
   flex-shrink: 0;
 }
-.freeBox {
+.freeBox___7CZcb {
   flex-direction: row;
   display: flex;
   position: relative;
@@ -31,18 +32,18 @@
   min-width: 0;
   padding: 0px 24px 0px 0px;
 }
-.freeBox > :global(.__wab_flex-container) {
+.freeBox___7CZcb > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   min-width: 0;
   margin-left: calc(0px - 20px);
   width: calc(100% + 20px);
 }
-.freeBox > :global(.__wab_flex-container) > *,
-.freeBox > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.freeBox > :global(.__wab_flex-container) > picture > img,
-.freeBox
+.freeBox___7CZcb > :global(.__wab_flex-container) > *,
+.freeBox___7CZcb > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox___7CZcb > :global(.__wab_flex-container) > picture > img,
+.freeBox___7CZcb
   > :global(.__wab_flex-container)
   > :global(.__wab_slot)
   > picture
@@ -50,7 +51,7 @@
   margin-left: 20px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .freeBox > :global(.__wab_flex-container) {
+  .freeBox___7CZcb > :global(.__wab_flex-container) {
     align-items: center;
     justify-content: flex-end;
   }
@@ -73,16 +74,30 @@
     display: none;
   }
 }
+.freeBox__v8Ufi {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
 .button___3TBjG:global(.__wab_instance) {
   max-width: 100%;
+  width: 100px;
+  flex-shrink: 0;
 }
-.svg__znUs0 {
+.svg__wa5Ej {
   position: relative;
   object-fit: cover;
   width: 24px;
   height: 24px;
 }
-.svg__p9Kp7 {
+.svg__uhnuO {
   position: relative;
   object-fit: cover;
   width: 24px;
@@ -91,6 +106,8 @@
 .button__lHpv:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  width: 100px;
+  flex-shrink: 0;
 }
 .svg__bdRHq {
   position: relative;
@@ -107,6 +124,8 @@
 .button__p3Jas:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
+  width: 100px;
+  flex-shrink: 0;
 }
 .svg__i9YuO {
   position: relative;

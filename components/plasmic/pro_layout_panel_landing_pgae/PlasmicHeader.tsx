@@ -61,22 +61,26 @@ export const PlasmicHeader__VariantProps = new Array<VariantPropType>(
   "chinese"
 );
 
-export type PlasmicHeader__ArgsType = {};
+export type PlasmicHeader__ArgsType = {
+  children?: React.ReactNode;
+};
+
 type ArgPropType = keyof PlasmicHeader__ArgsType;
-export const PlasmicHeader__ArgProps = new Array<ArgPropType>();
+export const PlasmicHeader__ArgProps = new Array<ArgPropType>("children");
 
 export type PlasmicHeader__OverridesType = {
   root?: p.Flex<"div">;
   link?: p.Flex<"a"> & Partial<LinkProps>;
-  svg?: p.Flex<"svg">;
-  freeBox?: p.Flex<"div">;
   text?: p.Flex<"div">;
 };
 
 export interface DefaultHeaderProps {
+  children?: React.ReactNode;
   chinese?: SingleBooleanChoiceArg<"chinese">;
   className?: string;
 }
+
+export const defaultHeader__Args: Partial<PlasmicHeader__ArgsType> = {};
 
 function PlasmicHeader__RenderFunc(props: {
   variants: PlasmicHeader__VariantsArgs;
@@ -85,7 +89,9 @@ function PlasmicHeader__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultHeader__Args, props.args);
+  const $props = args;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()
@@ -116,21 +122,23 @@ function PlasmicHeader__RenderFunc(props: {
         href={"/" as const}
         platform={"nextjs"}
       >
-        <ProLayoutPanelsvgIcon
-          data-plasmic-name={"svg"}
-          data-plasmic-override={overrides.svg}
-          className={classNames(projectcss.all, sty.svg)}
-          role={"img"}
-        />
+        {p.renderPlasmicSlot({
+          defaultContents: (
+            <ProLayoutPanelsvgIcon
+              className={classNames(projectcss.all, sty.svg__r6NTn)}
+              role={"img"}
+            />
+          ),
+
+          value: args.children
+        })}
       </p.PlasmicLink>
 
       {true ? (
         <p.Stack
           as={"div"}
-          data-plasmic-name={"freeBox"}
-          data-plasmic-override={overrides.freeBox}
           hasGap={true}
-          className={classNames(projectcss.all, sty.freeBox)}
+          className={classNames(projectcss.all, sty.freeBox___7CZcb)}
         >
           {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
             <div
@@ -142,58 +150,67 @@ function PlasmicHeader__RenderFunc(props: {
                 sty.text
               )}
             >
-              {"Pro Layout Panel"}
+              {"Figma Sections"}
             </div>
           ) : null}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__v8Ufi)}>
+              <Button
+                className={classNames("__wab_instance", sty.button___3TBjG, {
+                  [sty.buttonchinese___3TBjG5R05K]: hasVariant(
+                    variants,
+                    "chinese",
+                    "chinese"
+                  )
+                })}
+                color={"clear" as const}
+                link={"#feature" as const}
+                size={"compact" as const}
+              >
+                {hasVariant(variants, "chinese", "chinese")
+                  ? "功能"
+                  : "Features"}
+              </Button>
 
-          <Button
-            className={classNames("__wab_instance", sty.button___3TBjG, {
-              [sty.buttonchinese___3TBjG5R05K]: hasVariant(
-                variants,
-                "chinese",
-                "chinese"
-              )
-            })}
-            color={"clear" as const}
-            link={"#feature" as const}
-            size={"compact" as const}
-          >
-            {hasVariant(variants, "chinese", "chinese") ? "功能" : "Features"}
-          </Button>
+              <Button
+                className={classNames("__wab_instance", sty.button__lHpv, {
+                  [sty.buttonchinese__lHpv5R05K]: hasVariant(
+                    variants,
+                    "chinese",
+                    "chinese"
+                  )
+                })}
+                color={"clear" as const}
+                link={"#price" as const}
+                size={"compact" as const}
+              >
+                {hasVariant(variants, "chinese", "chinese")
+                  ? "价格"
+                  : "Pricing"}
+              </Button>
 
-          <Button
-            className={classNames("__wab_instance", sty.button__lHpv, {
-              [sty.buttonchinese__lHpv5R05K]: hasVariant(
-                variants,
-                "chinese",
-                "chinese"
-              )
-            })}
-            color={"clear" as const}
-            link={"#price" as const}
-            size={"compact" as const}
-          >
-            {hasVariant(variants, "chinese", "chinese") ? "价格" : "Pricing"}
-          </Button>
-
-          <Button
-            className={classNames("__wab_instance", sty.button__p3Jas, {
-              [sty.buttonchinese__p3Jas5R05K]: hasVariant(
-                variants,
-                "chinese",
-                "chinese"
-              )
-            })}
-            color={"clear" as const}
-            link={
-              hasVariant(variants, "chinese", "chinese")
-                ? ("/" as const)
-                : ("/-2" as const)
-            }
-            size={"compact" as const}
-          >
-            {hasVariant(variants, "chinese", "chinese") ? "English" : "中文"}
-          </Button>
+              <Button
+                className={classNames("__wab_instance", sty.button__p3Jas, {
+                  [sty.buttonchinese__p3Jas5R05K]: hasVariant(
+                    variants,
+                    "chinese",
+                    "chinese"
+                  )
+                })}
+                color={"clear" as const}
+                link={
+                  hasVariant(variants, "chinese", "chinese")
+                    ? ("/" as const)
+                    : ("/-2" as const)
+                }
+                size={"compact" as const}
+              >
+                {hasVariant(variants, "chinese", "chinese")
+                  ? "English"
+                  : "中文"}
+              </Button>
+            </div>
+          ) : null}
         </p.Stack>
       ) : null}
     </div>
@@ -201,10 +218,8 @@ function PlasmicHeader__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "svg", "freeBox", "text"],
-  link: ["link", "svg"],
-  svg: ["svg"],
-  freeBox: ["freeBox", "text"],
+  root: ["root", "link", "text"],
+  link: ["link"],
   text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -213,8 +228,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   link: "a";
-  svg: "svg";
-  freeBox: "div";
   text: "div";
 };
 
@@ -276,8 +289,6 @@ export const PlasmicHeader = Object.assign(
   {
     // Helper components rendering sub-elements
     link: makeNodeComponent("link"),
-    svg: makeNodeComponent("svg"),
-    freeBox: makeNodeComponent("freeBox"),
     text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicHeader

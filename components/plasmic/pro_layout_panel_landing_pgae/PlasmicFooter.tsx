@@ -55,9 +55,12 @@ export type PlasmicFooter__VariantsArgs = {};
 type VariantPropType = keyof PlasmicFooter__VariantsArgs;
 export const PlasmicFooter__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicFooter__ArgsType = {};
+export type PlasmicFooter__ArgsType = {
+  children?: React.ReactNode;
+};
+
 type ArgPropType = keyof PlasmicFooter__ArgsType;
-export const PlasmicFooter__ArgProps = new Array<ArgPropType>();
+export const PlasmicFooter__ArgProps = new Array<ArgPropType>("children");
 
 export type PlasmicFooter__OverridesType = {
   root?: p.Flex<"div">;
@@ -65,8 +68,11 @@ export type PlasmicFooter__OverridesType = {
 };
 
 export interface DefaultFooterProps {
+  children?: React.ReactNode;
   className?: string;
 }
+
+export const defaultFooter__Args: Partial<PlasmicFooter__ArgsType> = {};
 
 function PlasmicFooter__RenderFunc(props: {
   variants: PlasmicFooter__VariantsArgs;
@@ -75,7 +81,9 @@ function PlasmicFooter__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultFooter__Args, props.args);
+  const $props = args;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()
@@ -112,14 +120,17 @@ function PlasmicFooter__RenderFunc(props: {
             className={classNames(
               projectcss.all,
               projectcss.a,
-              projectcss.__wab_text,
               sty.link__yjOa2
             )}
             component={Link}
             href={"https://cruip.com/" as const}
             platform={"nextjs"}
           >
-            {"Designed and developed by Mr.Biscuit. "}
+            {p.renderPlasmicSlot({
+              defaultContents: "Designed and developed by Mr.Biscuit. ",
+              value: args.children,
+              className: classNames(sty.slotTargetChildren)
+            })}
           </p.PlasmicLink>
 
           <div

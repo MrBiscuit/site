@@ -81,6 +81,9 @@ export interface DefaultVideoExampleProps {
   className?: string;
 }
 
+export const defaultVideoExample__Args: Partial<PlasmicVideoExample__ArgsType> =
+  {};
+
 function PlasmicVideoExample__RenderFunc(props: {
   variants: PlasmicVideoExample__VariantsArgs;
   args: PlasmicVideoExample__ArgsType;
@@ -88,7 +91,9 @@ function PlasmicVideoExample__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultVideoExample__Args, props.args);
+  const $props = args;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()

@@ -54,6 +54,7 @@ import plasmic_outline_to_single_stroke_css from "../outline_to_single_stroke/pl
 import projectcss from "./plasmic_pro_layout_panel_landing_pgae.module.css"; // plasmic-import: qDNA17RfdgsM73kkELPPxa/projectcss
 import sty from "./PlasmicHomeChinese.module.css"; // plasmic-import: 1s7g74uB-Ej/css
 
+import ProLayoutPanelsvgIcon from "./icons/PlasmicIcon__ProLayoutPanelsvg"; // plasmic-import: MsE1fZcL1_/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: r_TPt86vHV4SXb/icon
 import RightArrowIcon from "./icons/PlasmicIcon__RightArrow"; // plasmic-import: FfSoXEgUCW0G_l/icon
 import Icon9Icon from "./icons/PlasmicIcon__Icon9"; // plasmic-import: 3iSPR8gr_8/icon
@@ -94,6 +95,9 @@ export type PlasmicHomeChinese__OverridesType = {
 
 export interface DefaultHomeChineseProps {}
 
+export const defaultHomeChinese__Args: Partial<PlasmicHomeChinese__ArgsType> =
+  {};
+
 function PlasmicHomeChinese__RenderFunc(props: {
   variants: PlasmicHomeChinese__VariantsArgs;
   args: PlasmicHomeChinese__ArgsType;
@@ -101,7 +105,9 @@ function PlasmicHomeChinese__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
+  const { variants, overrides, forNode } = props;
+  const args = Object.assign({}, defaultHomeChinese__Args, props.args);
+  const $props = args;
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()

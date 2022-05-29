@@ -88,12 +88,13 @@
 }
 .link__yjOa2 {
   position: relative;
-  color: var(--token-ygTQn1PS0A_9eH);
   height: auto;
-  font-size: 14px;
+  display: flex;
+  flex-direction: row;
 }
-.root .link__yjOa2:hover {
-  text-decoration-line: underline;
+.slotTargetChildren {
+  font-size: 14px;
+  color: var(--token-ygTQn1PS0A_9eH);
 }
 .text {
   position: relative;
