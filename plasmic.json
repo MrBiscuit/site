@@ -547,7 +547,7 @@
           "projectId": "qDNA17RfdgsM73kkELPPxa",
           "renderModuleFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicFigmaSection.tsx",
           "importSpec": {
-            "modulePath": "../pages/figmasections.tsx"
+            "modulePath": "../pages/figmasection.tsx"
           },
           "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicFigmaSection.module.css",
           "scheme": "blackbox",

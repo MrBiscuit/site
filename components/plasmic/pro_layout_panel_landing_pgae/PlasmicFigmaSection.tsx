@@ -135,6 +135,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
             data-plasmic-name={"header"}
             data-plasmic-override={overrides.header}
             className={classNames("__wab_instance", sty.header)}
+            slot={"Figma Section"}
           >
             <p.PlasmicImg
               alt={""}
@@ -220,7 +221,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                     />
                   }
                   link={
-                    "https://www.figma.com/community/plugin/1065130523685842895/Pro-Layout-Panel" as const
+                    "https://www.figma.com/community/plugin/1105082111167032053/Figma-Section" as const
                   }
                   showEndIcon={true}
                 >
@@ -586,7 +587,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                       )}
                       color={"outline" as const}
                       link={
-                        "https://www.figma.com/community/plugin/1065130523685842895/Pro-Layout-Panel" as const
+                        "https://www.figma.com/community/plugin/1105082111167032053/Figma-Section" as const
                       }
                     >
                       {"Get Started"}
@@ -656,7 +657,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                       )}
                       color={"figma" as const}
                       link={
-                        "https://mrbiscuit.gumroad.com/l/prolayoutpanel?variant=Single%20User" as const
+                        "https://mrbiscuit.gumroad.com/l/figmaSection?variant=Individual" as const
                       }
                     >
                       {"Buy Now"}
@@ -726,7 +727,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                       )}
                       color={"purple" as const}
                       link={
-                        "https://mrbiscuit.gumroad.com/l/prolayoutpanel?variant=Team" as const
+                        "https://mrbiscuit.gumroad.com/l/figmaSection?variant=Team" as const
                       }
                     >
                       {"Buy Now"}
