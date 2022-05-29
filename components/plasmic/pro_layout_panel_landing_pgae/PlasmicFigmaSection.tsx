@@ -687,7 +687,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                       )}
                       color={"figma" as const}
                       link={
-                        "https://mrbiscuit.gumroad.com/l/figmaSection?variant=Individual" as const
+                        "https://mrbiscuit.gumroad.com/l/detnuo?variant=Individual" as const
                       }
                     >
                       {"Buy Now"}
@@ -757,7 +757,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                       )}
                       color={"purple" as const}
                       link={
-                        "https://mrbiscuit.gumroad.com/l/figmaSection?variant=Team" as const
+                        "https://mrbiscuit.gumroad.com/l/detnuo?variant=Team" as const
                       }
                     >
                       {"Buy Now"}
