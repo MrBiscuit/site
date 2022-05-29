@@ -159,7 +159,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                 <Button
                   className={classNames("__wab_instance", sty.button__bNgA6)}
                   color={"clear" as const}
-                  link={"/cn" as const}
+                  link={"/figmasection_cn" as const}
                   size={"compact" as const}
                 >
                   {"中文"}

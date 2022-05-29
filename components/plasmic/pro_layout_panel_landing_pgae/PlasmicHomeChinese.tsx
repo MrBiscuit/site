@@ -175,7 +175,7 @@ function PlasmicHomeChinese__RenderFunc(props: {
                   link={"#price" as const}
                   size={"compact" as const}
                 >
-                  {"Pricing"}
+                  {"价格"}
                 </Button>
 
                 <Button
