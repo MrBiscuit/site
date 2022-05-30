@@ -363,9 +363,9 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                   displayWidth={"100%" as const}
                   loading={"lazy" as const}
                   src={{
-                    src: "/plasmic/pro_layout_panel_landing_pgae/images/wx202205292147562Xpng.png",
-                    fullWidth: 1708,
-                    fullHeight: 884,
+                    src: "/plasmic/pro_layout_panel_landing_pgae/images/screenShot20220530At093233Png.png",
+                    fullWidth: 2522,
+                    fullHeight: 1490,
                     aspectRatio: undefined
                   }}
                 />
