@@ -331,7 +331,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                         sty.text___56LLx
                       )}
                     >
-                      {"Clarify Your Clusters"}
+                      {"Clarified Design\nClusters"}
                     </div>
 
                     <div
