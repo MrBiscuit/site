@@ -1085,7 +1085,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
                       ? "Menu items for shortcuts"
-                      : "Automatic Padding"}
+                      : "Dynamic Padding Calculation"}
                   </div>
                 </p.Stack>
               </p.Stack>

@@ -1102,7 +1102,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                   >
                     {hasVariant(globalVariants, "screen", "mobile")
                       ? "Menu items for shortcuts"
-                      : "自动艰巨计算"}
+                      : "动态间距计算"}
                   </div>
                 </p.Stack>
               </p.Stack>
