@@ -58,6 +58,8 @@ import RightArrowIcon from "./icons/PlasmicIcon__RightArrow"; // plasmic-import:
 import Icon22Icon from "./icons/PlasmicIcon__Icon22"; // plasmic-import: PK0IXvxdsy/icon
 import Icon25Icon from "./icons/PlasmicIcon__Icon25"; // plasmic-import: kuMSi66yKA/icon
 import Icon26Icon from "./icons/PlasmicIcon__Icon26"; // plasmic-import: KRTK6f0Lc0/icon
+import Icon8Icon from "./icons/PlasmicIcon__Icon8"; // plasmic-import: nx8ckd2R4tXE/icon
+import Icon13Icon from "./icons/PlasmicIcon__Icon13"; // plasmic-import: Ao0rL4yuRk/icon
 
 export type PlasmicFigmaSection__VariantMembers = {};
 
@@ -1004,6 +1006,87 @@ function PlasmicFigmaSection__RenderFunc(props: {
                       </div>
                     </div>
                   ) : null}
+                </p.Stack>
+              </p.Stack>
+            </Reveal>
+          </Section>
+
+          <Section
+            className={classNames("__wab_instance", sty.section__oKaTh)}
+            hasSubtitle={true}
+            hasTitle={true}
+            subtitle={
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___2TU4
+                )}
+              >
+                {
+                  "Figma Section will continue to receive updates to further enhance the experience, below are features that are planned to come in future version, let me know your thoughts :) "
+                }
+              </div>
+            }
+            title={"Planned Features..."}
+          >
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal__hjFpo)}
+              damping={0.5 as const}
+              direction={"up" as const}
+              duration={500 as const}
+              triggerOnce={true}
+            >
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__xuMsZ)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__z03La)}
+                >
+                  <Icon8Icon
+                    className={classNames(projectcss.all, sty.svg__kcd27)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___4CVrb
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Menu items for shortcuts"
+                      : "Color presets customization"}
+                  </div>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__k3UPk)}
+                >
+                  <Icon13Icon
+                    className={classNames(projectcss.all, sty.svg__cY4E3)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__bkCg
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Menu items for shortcuts"
+                      : "Automatic Padding"}
+                  </div>
                 </p.Stack>
               </p.Stack>
             </Reveal>

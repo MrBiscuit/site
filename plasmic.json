@@ -687,6 +687,16 @@
           "id": "KRTK6f0Lc0",
           "name": "Icon26Icon",
           "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon26.tsx"
+        },
+        {
+          "id": "nx8ckd2R4tXE",
+          "name": "Icon8Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon8.tsx"
+        },
+        {
+          "id": "Ao0rL4yuRk",
+          "name": "Icon13Icon",
+          "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon13.tsx"
         }
       ],
       "images": [

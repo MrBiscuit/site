@@ -58,6 +58,8 @@ import RightArrowIcon from "./icons/PlasmicIcon__RightArrow"; // plasmic-import:
 import Icon22Icon from "./icons/PlasmicIcon__Icon22"; // plasmic-import: PK0IXvxdsy/icon
 import Icon25Icon from "./icons/PlasmicIcon__Icon25"; // plasmic-import: kuMSi66yKA/icon
 import Icon26Icon from "./icons/PlasmicIcon__Icon26"; // plasmic-import: KRTK6f0Lc0/icon
+import Icon8Icon from "./icons/PlasmicIcon__Icon8"; // plasmic-import: nx8ckd2R4tXE/icon
+import Icon13Icon from "./icons/PlasmicIcon__Icon13"; // plasmic-import: Ao0rL4yuRk/icon
 
 export type PlasmicFigmaSectionChinese__VariantMembers = {};
 
@@ -1021,6 +1023,87 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                       </div>
                     </div>
                   ) : null}
+                </p.Stack>
+              </p.Stack>
+            </Reveal>
+          </Section>
+
+          <Section
+            className={classNames("__wab_instance", sty.section__inygm)}
+            hasSubtitle={true}
+            hasTitle={true}
+            subtitle={
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__mXg1I
+                )}
+              >
+                {
+                  "Figma Section将继续接收更新，以进一步增强体验，以下是计划在未来版本加入的功能，让我知道你的想法:)"
+                }
+              </div>
+            }
+            title={"计划中的功能..."}
+          >
+            <Reveal
+              cascade={true}
+              className={classNames("__wab_instance", sty.reveal__mhjj9)}
+              damping={0.5 as const}
+              direction={"up" as const}
+              duration={500 as const}
+              triggerOnce={true}
+            >
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__rnP)}
+              >
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__y53Ti)}
+                >
+                  <Icon8Icon
+                    className={classNames(projectcss.all, sty.svg__tPRuK)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__xKjZs
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Menu items for shortcuts"
+                      : "预设颜色自定义"}
+                  </div>
+                </p.Stack>
+
+                <p.Stack
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__p9RjZ)}
+                >
+                  <Icon13Icon
+                    className={classNames(projectcss.all, sty.svg__zLzsb)}
+                    role={"img"}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__gkBjJ
+                    )}
+                  >
+                    {hasVariant(globalVariants, "screen", "mobile")
+                      ? "Menu items for shortcuts"
+                      : "自动艰巨计算"}
+                  </div>
                 </p.Stack>
               </p.Stack>
             </Reveal>

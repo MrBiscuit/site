@@ -245,7 +245,6 @@
   font-size: 96px;
   font-weight: 700;
   text-align: center;
-  line-height: 1;
   color: var(--token-NEon4Y--Z);
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -253,7 +252,6 @@
     font-size: 48px;
     font-weight: 700;
     text-align: center;
-    line-height: 1;
     color: var(--token-NEon4Y--Z);
   }
 }
@@ -1204,6 +1202,167 @@
 .text__wvfLr {
   position: relative;
   font-weight: 700;
+}
+.section__inygm:global(.__wab_instance) {
+  position: relative;
+}
+.reveal__mhjj9 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.reveal__mhjj9 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 0;
+  margin-left: calc(0px - 20px);
+  width: calc(100% + 20px);
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.reveal__mhjj9 > :global(.__wab_flex-container) > *,
+.reveal__mhjj9 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.reveal__mhjj9 > :global(.__wab_flex-container) > picture > img,
+.reveal__mhjj9
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.freeBox__rnP {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  min-width: 0;
+}
+.freeBox__rnP > :global(.__wab_flex-container) {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  margin-left: calc(0px - 20px);
+  width: calc(100% + 20px);
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.freeBox__rnP > :global(.__wab_flex-container) > *,
+.freeBox__rnP > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__rnP > :global(.__wab_flex-container) > picture > img,
+.freeBox__rnP
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.freeBox__y53Ti {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  border-radius: 99px;
+  padding: 8px 24px;
+  border: 2px solid #000000;
+}
+.freeBox__y53Ti > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.freeBox__y53Ti > :global(.__wab_flex-container) > *,
+.freeBox__y53Ti > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__y53Ti > :global(.__wab_flex-container) > picture > img,
+.freeBox__y53Ti
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.svg__tPRuK {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.text__xKjZs {
+  position: relative;
+  left: auto;
+  top: auto;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__xKjZs {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+}
+.freeBox__p9RjZ {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  border-radius: 99px;
+  padding: 8px 24px;
+  border: 2px solid #000000;
+}
+.freeBox__p9RjZ > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.freeBox__p9RjZ > :global(.__wab_flex-container) > *,
+.freeBox__p9RjZ > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__p9RjZ > :global(.__wab_flex-container) > picture > img,
+.freeBox__p9RjZ
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.svg__zLzsb {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.text__gkBjJ {
+  position: relative;
+  left: auto;
+  top: auto;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__gkBjJ {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+}
+.text__mXg1I {
+  text-align: center;
 }
 .footer:global(.__wab_instance) {
   position: relative;

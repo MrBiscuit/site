@@ -1199,6 +1199,167 @@
   position: relative;
   font-weight: 700;
 }
+.section__oKaTh:global(.__wab_instance) {
+  position: relative;
+}
+.reveal__hjFpo {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.reveal__hjFpo > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 0;
+  margin-left: calc(0px - 20px);
+  width: calc(100% + 20px);
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.reveal__hjFpo > :global(.__wab_flex-container) > *,
+.reveal__hjFpo > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.reveal__hjFpo > :global(.__wab_flex-container) > picture > img,
+.reveal__hjFpo
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.freeBox__xuMsZ {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  min-width: 0;
+}
+.freeBox__xuMsZ > :global(.__wab_flex-container) {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  margin-left: calc(0px - 20px);
+  width: calc(100% + 20px);
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.freeBox__xuMsZ > :global(.__wab_flex-container) > *,
+.freeBox__xuMsZ > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__xuMsZ > :global(.__wab_flex-container) > picture > img,
+.freeBox__xuMsZ
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.freeBox__z03La {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  border-radius: 99px;
+  padding: 8px 24px;
+  border: 2px solid #000000;
+}
+.freeBox__z03La > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.freeBox__z03La > :global(.__wab_flex-container) > *,
+.freeBox__z03La > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__z03La > :global(.__wab_flex-container) > picture > img,
+.freeBox__z03La
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.svg__kcd27 {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.text___4CVrb {
+  position: relative;
+  left: auto;
+  top: auto;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text___4CVrb {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+}
+.freeBox__k3UPk {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  border-radius: 99px;
+  padding: 8px 24px;
+  border: 2px solid #000000;
+}
+.freeBox__k3UPk > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.freeBox__k3UPk > :global(.__wab_flex-container) > *,
+.freeBox__k3UPk > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__k3UPk > :global(.__wab_flex-container) > picture > img,
+.freeBox__k3UPk
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.svg__cY4E3 {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.text__bkCg {
+  position: relative;
+  left: auto;
+  top: auto;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__bkCg {
+    position: relative;
+    left: auto;
+    top: auto;
+  }
+}
+.text___2TU4 {
+  text-align: center;
+}
 .footer:global(.__wab_instance) {
   position: relative;
 }
