@@ -545,7 +545,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                 )}
               >
                 {
-                  "该插件提供 1 个文件内的无限制免费试用，更多文件需要许可证密钥才能激活、一次性购买以供终身使用+免费更新。"
+                  "该插件提供 2 个文件内的无限制免费试用，更多文件需要许可证密钥才能激活、一次性购买以供终身使用+免费更新。"
                 }
               </div>
             }
@@ -599,7 +599,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                             sty.bullet__uxjMv
                           )}
                         >
-                          {"单个文件"}
+                          {"2个文件"}
                         </Bullet>
 
                         <Bullet

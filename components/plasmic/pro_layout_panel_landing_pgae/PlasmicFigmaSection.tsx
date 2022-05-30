@@ -529,7 +529,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                 )}
               >
                 {
-                  "The plugin comes with a 1 file free trial that let's you use any number of sections, activation will be required for use in additional files. One time purchase for life-time usage."
+                  "The plugin comes with 2 files free trial that lets you use any number of sections, activation will be required for use in additional files. One time purchase for life-time usage."
                 }
               </div>
             }
@@ -583,7 +583,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                             sty.bullet___3X7S1
                           )}
                         >
-                          {"One file"}
+                          {"Two files"}
                         </Bullet>
 
                         <Bullet
