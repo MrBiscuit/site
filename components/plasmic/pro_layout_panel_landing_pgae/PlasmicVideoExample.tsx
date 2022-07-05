@@ -81,9 +81,6 @@ export interface DefaultVideoExampleProps {
   className?: string;
 }
 
-export const defaultVideoExample__Args: Partial<PlasmicVideoExample__ArgsType> =
-  {};
-
 function PlasmicVideoExample__RenderFunc(props: {
   variants: PlasmicVideoExample__VariantsArgs;
   args: PlasmicVideoExample__ArgsType;
@@ -92,7 +89,13 @@ function PlasmicVideoExample__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultVideoExample__Args, props.args);
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign(
+    {},
+
+    props.args
+  );
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({

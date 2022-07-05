@@ -87,8 +87,6 @@ export interface DefaultHeaderProps {
   className?: string;
 }
 
-export const defaultHeader__Args: Partial<PlasmicHeader__ArgsType> = {};
-
 function PlasmicHeader__RenderFunc(props: {
   variants: PlasmicHeader__VariantsArgs;
   args: PlasmicHeader__ArgsType;
@@ -97,7 +95,13 @@ function PlasmicHeader__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultHeader__Args, props.args);
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign(
+    {},
+
+    props.args
+  );
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({

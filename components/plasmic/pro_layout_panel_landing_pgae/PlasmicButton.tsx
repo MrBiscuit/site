@@ -100,8 +100,6 @@ export interface DefaultButtonProps extends pp.BaseButtonProps {
   color?: SingleChoiceArg<"figma" | "outline" | "clear" | "black" | "purple">;
 }
 
-export const defaultButton__Args: Partial<PlasmicButton__ArgsType> = {};
-
 function PlasmicButton__RenderFunc(props: {
   variants: PlasmicButton__VariantsArgs;
   args: PlasmicButton__ArgsType;
@@ -110,7 +108,13 @@ function PlasmicButton__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultButton__Args, props.args);
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign(
+    {},
+
+    props.args
+  );
   const $props = args;
 
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =

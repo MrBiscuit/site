@@ -93,8 +93,6 @@ export type PlasmicHome__OverridesType = {
 
 export interface DefaultHomeProps {}
 
-export const defaultHome__Args: Partial<PlasmicHome__ArgsType> = {};
-
 function PlasmicHome__RenderFunc(props: {
   variants: PlasmicHome__VariantsArgs;
   args: PlasmicHome__ArgsType;
@@ -103,7 +101,13 @@ function PlasmicHome__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultHome__Args, props.args);
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign(
+    {},
+
+    props.args
+  );
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({
@@ -816,7 +820,7 @@ function PlasmicHome__RenderFunc(props: {
                           sty.text__vsGer
                         )}
                       >
-                        {"$10"}
+                        {"$20"}
                       </div>
                     }
                   >
@@ -886,7 +890,7 @@ function PlasmicHome__RenderFunc(props: {
                           sty.text__mF7Dq
                         )}
                       >
-                        {"$25"}
+                        {"$45"}
                       </div>
                     }
                   >

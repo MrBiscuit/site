@@ -95,9 +95,6 @@ export type PlasmicHomeChinese__OverridesType = {
 
 export interface DefaultHomeChineseProps {}
 
-export const defaultHomeChinese__Args: Partial<PlasmicHomeChinese__ArgsType> =
-  {};
-
 function PlasmicHomeChinese__RenderFunc(props: {
   variants: PlasmicHomeChinese__VariantsArgs;
   args: PlasmicHomeChinese__ArgsType;
@@ -106,7 +103,13 @@ function PlasmicHomeChinese__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultHomeChinese__Args, props.args);
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign(
+    {},
+
+    props.args
+  );
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({

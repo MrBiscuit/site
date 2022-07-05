@@ -73,8 +73,6 @@ export interface DefaultBulletProps {
   className?: string;
 }
 
-export const defaultBullet__Args: Partial<PlasmicBullet__ArgsType> = {};
-
 function PlasmicBullet__RenderFunc(props: {
   variants: PlasmicBullet__VariantsArgs;
   args: PlasmicBullet__ArgsType;
@@ -83,7 +81,13 @@ function PlasmicBullet__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultBullet__Args, props.args);
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign(
+    {},
+
+    props.args
+  );
   const $props = args;
 
   return (

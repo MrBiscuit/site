@@ -78,8 +78,6 @@ export interface DefaultBaseCardProps {
   className?: string;
 }
 
-export const defaultBaseCard__Args: Partial<PlasmicBaseCard__ArgsType> = {};
-
 function PlasmicBaseCard__RenderFunc(props: {
   variants: PlasmicBaseCard__VariantsArgs;
   args: PlasmicBaseCard__ArgsType;
@@ -88,7 +86,13 @@ function PlasmicBaseCard__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultBaseCard__Args, props.args);
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign(
+    {},
+
+    props.args
+  );
   const $props = args;
 
   return (

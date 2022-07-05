@@ -72,8 +72,6 @@ export interface DefaultFooterProps {
   className?: string;
 }
 
-export const defaultFooter__Args: Partial<PlasmicFooter__ArgsType> = {};
-
 function PlasmicFooter__RenderFunc(props: {
   variants: PlasmicFooter__VariantsArgs;
   args: PlasmicFooter__ArgsType;
@@ -82,7 +80,13 @@ function PlasmicFooter__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultFooter__Args, props.args);
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign(
+    {},
+
+    props.args
+  );
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({

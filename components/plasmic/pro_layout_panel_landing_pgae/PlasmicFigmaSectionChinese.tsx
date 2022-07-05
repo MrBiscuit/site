@@ -87,9 +87,6 @@ export type PlasmicFigmaSectionChinese__OverridesType = {
 
 export interface DefaultFigmaSectionChineseProps {}
 
-export const defaultFigmaSectionChinese__Args: Partial<PlasmicFigmaSectionChinese__ArgsType> =
-  {};
-
 function PlasmicFigmaSectionChinese__RenderFunc(props: {
   variants: PlasmicFigmaSectionChinese__VariantsArgs;
   args: PlasmicFigmaSectionChinese__ArgsType;
@@ -98,7 +95,13 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultFigmaSectionChinese__Args, props.args);
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign(
+    {},
+
+    props.args
+  );
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({

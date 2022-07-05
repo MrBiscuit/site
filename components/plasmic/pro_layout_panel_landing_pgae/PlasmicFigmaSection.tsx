@@ -86,9 +86,6 @@ export type PlasmicFigmaSection__OverridesType = {
 
 export interface DefaultFigmaSectionProps {}
 
-export const defaultFigmaSection__Args: Partial<PlasmicFigmaSection__ArgsType> =
-  {};
-
 function PlasmicFigmaSection__RenderFunc(props: {
   variants: PlasmicFigmaSection__VariantsArgs;
   args: PlasmicFigmaSection__ArgsType;
@@ -97,7 +94,13 @@ function PlasmicFigmaSection__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultFigmaSection__Args, props.args);
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = Object.assign(
+    {},
+
+    props.args
+  );
   const $props = args;
 
   const globalVariants = ensureGlobalVariants({
