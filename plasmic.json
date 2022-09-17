@@ -290,7 +290,8 @@
           "name": "Reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
@@ -309,7 +310,8 @@
           "name": "YouTube",
           "componentImportPath": "@plasmicpkgs/react-youtube"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -343,7 +345,8 @@
           "name": "DataProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "seaQhLVS4bbjiGvJJrRwyL",
@@ -366,19 +369,6 @@
       "version": "latest",
       "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/plasmic_pro_layout_panel_landing_pgae.module.css",
       "components": [
-        {
-          "id": "PGLmNK8F9ob8KH",
-          "name": "Home",
-          "type": "managed",
-          "projectId": "qDNA17RfdgsM73kkELPPxa",
-          "renderModuleFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHome.tsx",
-          "importSpec": {
-            "modulePath": "../pages/plp.tsx"
-          },
-          "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHome.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
         {
           "id": "gCP9N_nn5MCbJS",
           "name": "Header",
@@ -640,6 +630,19 @@
           "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicPlugin.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "PGLmNK8F9ob8KH",
+          "name": "Home",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHome.tsx",
+          "importSpec": {
+            "modulePath": "../pages/plp.tsx"
+          },
+          "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHome.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -1311,106 +1314,6 @@
           "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image32.png"
         },
         {
-          "id": "7NCRajzm3R",
-          "name": "Image 23",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image23.png"
-        },
-        {
-          "id": "IRaBfxHr0V",
-          "name": "Image 24",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image24.png"
-        },
-        {
-          "id": "7f6-Ftnu7k",
-          "name": "Image 25",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image25.png"
-        },
-        {
-          "id": "4zmTqwxPR7",
-          "name": "Image 26",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image26.png"
-        },
-        {
-          "id": "M3iHDvIUki",
-          "name": "Image 27",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image27.png"
-        },
-        {
-          "id": "Hr7B6ousbB",
-          "name": "Image 28",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image28.png"
-        },
-        {
-          "id": "PqlTLu_wdH",
-          "name": "Image 29",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image29.png"
-        },
-        {
-          "id": "3x9SG9LRE8",
-          "name": "Image 30",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image30.png"
-        },
-        {
-          "id": "a6MoOh1m2f",
-          "name": "Image 4",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image4.png"
-        },
-        {
-          "id": "IqxyvrDw8l",
-          "name": "Image 5",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image5.png"
-        },
-        {
-          "id": "jP9TRni-ci",
-          "name": "Image 11",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image11.png"
-        },
-        {
-          "id": "aHopzUtoSl",
-          "name": "Image 12",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image12.png"
-        },
-        {
-          "id": "R6I_SsNYnNk",
-          "name": "Image 13",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image13.png"
-        },
-        {
-          "id": "Ogtw-fBnReW",
-          "name": "Image 14",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image14.png"
-        },
-        {
-          "id": "KqflZRqJjTc",
-          "name": "Image 15",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image15.png"
-        },
-        {
-          "id": "S__2qjIxZCm",
-          "name": "Image 16",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image16.png"
-        },
-        {
-          "id": "zETq66Ot_cW",
-          "name": "Image 17",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image17.png"
-        },
-        {
-          "id": "tE86iymPqro",
-          "name": "Image 18",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image18.png"
-        },
-        {
-          "id": "BnnxmBmwW5-",
-          "name": "Image 20",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image20.png"
-        },
-        {
-          "id": "AYzOQQFA2qf",
-          "name": "Image 22",
-          "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image22.png"
-        },
-        {
           "id": "pKZgTDaeMd",
           "name": "youtube",
           "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/youtube.svg"
@@ -1958,7 +1861,8 @@
           "name": "Tilt",
           "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "28Ba3BDvRe7EiWdfFNnLB6",
@@ -2102,7 +2006,8 @@
           "name": "Rate",
           "componentImportPath": "antd/lib/rate"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
