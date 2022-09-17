@@ -49,7 +49,6 @@ import { useScreenVariants as useScreenVariants_3KhhFf1Cq1Qfos } from "./Plasmic
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import plasmic_outline_to_single_stroke_css from "../outline_to_single_stroke/plasmic_outline_to_single_stroke.module.css"; // plasmic-import: 56iVbBJXbx9hFxysoAGHJC/projectcss
 import projectcss from "./plasmic_pro_layout_panel_landing_pgae.module.css"; // plasmic-import: qDNA17RfdgsM73kkELPPxa/projectcss
 import sty from "./PlasmicHome.module.css"; // plasmic-import: PGLmNK8F9ob8KH/css
@@ -103,12 +102,20 @@ function PlasmicHome__RenderFunc(props: {
   const { variants, overrides, forNode } = props;
 
   const $ctx = ph.useDataEnv?.() || {};
-  const args = Object.assign(
-    {},
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
 
-    props.args
+        props.args
+      ),
+    [props.args]
   );
-  const $props = args;
+
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()
@@ -116,7 +123,7 @@ function PlasmicHome__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      {}
+      <Head></Head>
 
       <style>{`
         body {
@@ -138,7 +145,6 @@ function PlasmicHome__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
-            plasmic_library_plasmic_color_type_css.plasmic_tokens,
             plasmic_outline_to_single_stroke_css.plasmic_tokens,
             sty.root
           )}
@@ -171,7 +177,7 @@ function PlasmicHome__RenderFunc(props: {
                 <Button
                   className={classNames("__wab_instance", sty.button__cj25E)}
                   color={"clear" as const}
-                  link={"/cn" as const}
+                  link={`/plp_cn`}
                   size={"compact" as const}
                 >
                   {"中文"}
@@ -1055,12 +1061,16 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicHome__ArgProps,
-      internalVariantPropNames: PlasmicHome__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicHome__ArgProps,
+          internalVariantPropNames: PlasmicHome__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicHome__RenderFunc({
       variants,
@@ -1095,7 +1105,15 @@ export const PlasmicHome = Object.assign(
 
     // Metadata about props expected for PlasmicHome
     internalVariantProps: PlasmicHome__VariantProps,
-    internalArgProps: PlasmicHome__ArgProps
+    internalArgProps: PlasmicHome__ArgProps,
+
+    // Page metadata
+    pageMetadata: {
+      title: "",
+      description: "",
+      ogImageSrc: "",
+      canonical: ""
+    }
   }
 );
 

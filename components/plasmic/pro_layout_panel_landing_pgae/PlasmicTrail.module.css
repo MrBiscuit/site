@@ -1,0 +1,16 @@
+.root {
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  transform: translate(-0.17300000000000182px, 0.23099999999999454px);
+  width: 287px;
+  height: 62px;
+  display: block;
+  position: relative;
+  border-radius: 54px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    display: none;
+  }
+}

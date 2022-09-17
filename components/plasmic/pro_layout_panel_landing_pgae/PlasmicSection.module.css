@@ -14,13 +14,13 @@
 .rootcolor_halfDark {
   background: linear-gradient(
       0deg,
-      var(--token-bp_CxDNOQi9) 0%,
-      var(--token-bp_CxDNOQi9) 100%
+      var(--token-nwgdOBuWrT) 0%,
+      var(--token-nwgdOBuWrT) 100%
     )
     left 0% top 100% / 100% 50% no-repeat;
 }
 .rootcolor_dark {
-  background: var(--token-dph1wZ7NjV9);
+  background: var(--token-o5xf3fxrqf);
 }
 .content {
   flex-direction: column;
@@ -65,7 +65,7 @@
 .slotTargetTitle {
   font-size: 42px;
   font-weight: 800;
-  color: var(--token-NEon4Y--Z);
+  color: var(--token-5gFOPrhbO);
   text-align: center;
 }
 .subtitleContainer {

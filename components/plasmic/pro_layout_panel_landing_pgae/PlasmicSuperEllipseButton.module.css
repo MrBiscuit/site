@@ -1,0 +1,81 @@
+.root:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.25s;
+  display: flex;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.25s;
+  padding: 4px;
+}
+.root:hover:global(.__wab_instance) {
+  background: #dedede;
+  transform: translateX(0px) translateY(-4px) translateZ(0px);
+}
+.superEllipse:global(.__wab_instance) {
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  background: #000000;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  display: flex;
+  flex-direction: row;
+}
+.root:hover .superEllipse:global(.__wab_instance) {
+  background: #292929;
+}
+.freeBox__pgCiL {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  align-self: auto;
+  flex-shrink: 0;
+  padding: 20px 32px;
+}
+.freeBox__pgCiL > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 16px);
+  width: calc(100% + 16px);
+}
+.freeBox__pgCiL > :global(.__wab_flex-container) > *,
+.freeBox__pgCiL > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox__pgCiL > :global(.__wab_flex-container) > picture > img,
+.freeBox__pgCiL
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 16px;
+}
+.text__yAtEx {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  font-family: "SF Pro Rounded";
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(255, 255, 255, 1);
+  flex-shrink: 0;
+  user-select: none;
+}
+.svg___36Itn {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #fff;
+  width: 18px;
+  height: 15px;
+  display: block;
+  flex-shrink: 0;
+}

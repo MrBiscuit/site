@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&family=Poppins%3Aital%2Cwght%400%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900&display=swap");
 
 .plasmic_tokens {
-  --token-izaLbM7YpamZn_: rgb(234, 234, 234);
+  --token-izaLbM7YpamZn_: #eaeaea;
   --plasmic-token-divider: var(--token-izaLbM7YpamZn_);
   --token-l0eeXWeAYwTjpW: rgb(255, 255, 255);
   --plasmic-token-white: var(--token-l0eeXWeAYwTjpW);
@@ -11,6 +11,32 @@
   --plasmic-token-max-content-width: var(--token-qI3Bf7JneQc0w1);
   --token-I651Myd9-: #0d99ff;
   --plasmic-token-figma: var(--token-I651Myd9-);
+  --token-5gFOPrhbO: rgb(5, 5, 5);
+  --plasmic-token-l-type-text-g-00: var(--token-5gFOPrhbO);
+  --token-ekp-964cfv: rgb(150, 153, 158);
+  --plasmic-token-spectrum-gray-60: var(--token-ekp-964cfv);
+  --token-UMOpAZlrQj: rgb(0, 0, 0);
+  --plasmic-token-alpha-black-00: var(--token-UMOpAZlrQj);
+  --token-rsk6THq9Hi: rgb(50, 52, 54);
+  --plasmic-token-spectrum-gray-20: var(--token-rsk6THq9Hi);
+  --token-8-f1ThHaBi: rgb(101, 103, 107);
+  --plasmic-token-spectrum-gray-40: var(--token-8-f1ThHaBi);
+  --token-o5xf3fxrqf: rgb(24, 25, 26);
+  --plasmic-token-spectrum-gray-10: var(--token-o5xf3fxrqf);
+  --token-HdFUjQVl2U: rgb(101, 103, 107);
+  --plasmic-token-d-sec-icon-g-40: var(--token-HdFUjQVl2U);
+  --token-AXe72ImaHu: rgb(50, 171, 79);
+  --plasmic-token-spectrum-green-55: var(--token-AXe72ImaHu);
+  --token-nwgdOBuWrT: rgb(5, 5, 5);
+  --plasmic-token-spectrum-gray-00: var(--token-nwgdOBuWrT);
+  --token-iPMnBEZADP: rgb(228, 230, 235);
+  --plasmic-token-l-sec-button-active-g-90: var(--token-iPMnBEZADP);
+  --token-rZ3wV8JakK: rgba(0, 0, 0, 0.9);
+  --plasmic-token-alpha-black-10: var(--token-rZ3wV8JakK);
+  --token-CU_VORm9N4: rgb(74, 76, 79);
+  --plasmic-token-l-pri-icon-g-30: var(--token-CU_VORm9N4);
+  --token-s6PHCYz-b: Albula;
+  --plasmic-token-main: var(--token-s6PHCYz-b);
 }
 
 .plasmic_default_styles {
@@ -463,7 +489,7 @@
 
 :where(.root_reset .plasmic_default__h1),
 :where(.root_reset .h1),
-:where(.root_reset .__wab_expr_html_text h1),
+:where(.root_reset :global(.__wab_expr_html_text) h1),
 :where(.root_reset.plasmic_default__h1) {
   font-family: var(--mixin-bC1wPMxOQ5DuNB_font-family);
   color: var(--mixin-bC1wPMxOQ5DuNB_color);
@@ -475,7 +501,7 @@
 
 :where(.root_reset .plasmic_default__h2),
 :where(.root_reset .h2),
-:where(.root_reset .__wab_expr_html_text h2),
+:where(.root_reset :global(.__wab_expr_html_text) h2),
 :where(.root_reset.plasmic_default__h2) {
   font-family: var(--mixin-QGH4-KDgXev5EU_font-family);
   color: var(--mixin-QGH4-KDgXev5EU_color);
@@ -487,7 +513,7 @@
 
 :where(.root_reset .plasmic_default__h3),
 :where(.root_reset .h3),
-:where(.root_reset .__wab_expr_html_text h3),
+:where(.root_reset :global(.__wab_expr_html_text) h3),
 :where(.root_reset.plasmic_default__h3) {
   font-family: var(--mixin-uYj-am8nmoXSQI_font-family);
   color: var(--mixin-uYj-am8nmoXSQI_color);
@@ -499,7 +525,7 @@
 
 :where(.root_reset .plasmic_default__h4),
 :where(.root_reset .h4),
-:where(.root_reset .__wab_expr_html_text h4),
+:where(.root_reset :global(.__wab_expr_html_text) h4),
 :where(.root_reset.plasmic_default__h4) {
   font-family: var(--mixin-MF__rbrJ82CuVt_font-family);
   color: var(--mixin-MF__rbrJ82CuVt_color);
@@ -511,7 +537,7 @@
 
 :where(.root_reset .plasmic_default__h5),
 :where(.root_reset .h5),
-:where(.root_reset .__wab_expr_html_text h5),
+:where(.root_reset :global(.__wab_expr_html_text) h5),
 :where(.root_reset.plasmic_default__h5) {
   font-family: var(--mixin-FSiXl5YSP33thT_font-family);
   color: var(--mixin-FSiXl5YSP33thT_color);
@@ -523,7 +549,7 @@
 
 :where(.root_reset .plasmic_default__h6),
 :where(.root_reset .h6),
-:where(.root_reset .__wab_expr_html_text h6),
+:where(.root_reset :global(.__wab_expr_html_text) h6),
 :where(.root_reset.plasmic_default__h6) {
   font-family: var(--mixin-aDlbBxWz4Qt7fB_font-family);
   color: var(--mixin-aDlbBxWz4Qt7fB_color);
@@ -534,7 +560,7 @@
 
 :where(.root_reset .plasmic_default__blockquote),
 :where(.root_reset .blockquote),
-:where(.root_reset .__wab_expr_html_text blockquote),
+:where(.root_reset :global(.__wab_expr_html_text) blockquote),
 :where(.root_reset.plasmic_default__blockquote) {
   color: var(--mixin-IJUkq2sTwySMlI_color);
   padding-left: var(--mixin-IJUkq2sTwySMlI_padding-left);
@@ -545,7 +571,7 @@
 
 :where(.root_reset .plasmic_default__code),
 :where(.root_reset .code),
-:where(.root_reset .__wab_expr_html_text code),
+:where(.root_reset :global(.__wab_expr_html_text) code),
 :where(.root_reset.plasmic_default__code) {
   background: var(--mixin-j_-M_RN7Qlu3wP_background);
   font-family: var(--mixin-j_-M_RN7Qlu3wP_font-family);
@@ -573,7 +599,7 @@
 
 :where(.root_reset .plasmic_default__pre),
 :where(.root_reset .pre),
-:where(.root_reset .__wab_expr_html_text pre),
+:where(.root_reset :global(.__wab_expr_html_text) pre),
 :where(.root_reset.plasmic_default__pre) {
   background: var(--mixin-cgtIYiJBJAgQUC_background);
   font-family: var(--mixin-cgtIYiJBJAgQUC_font-family);
@@ -601,7 +627,7 @@
 
 :where(.root_reset .plasmic_default__ol),
 :where(.root_reset .ol),
-:where(.root_reset .__wab_expr_html_text ol),
+:where(.root_reset :global(.__wab_expr_html_text) ol),
 :where(.root_reset.plasmic_default__ol) {
   display: var(--mixin-kZhaIS8ukVe2tc_display);
   flex-direction: var(--mixin-kZhaIS8ukVe2tc_flex-direction);
@@ -616,7 +642,7 @@
 
 :where(.root_reset .plasmic_default__ul),
 :where(.root_reset .ul),
-:where(.root_reset .__wab_expr_html_text ul),
+:where(.root_reset :global(.__wab_expr_html_text) ul),
 :where(.root_reset.plasmic_default__ul) {
   display: var(--mixin-ubhfHXnMjgYNUg_display);
   flex-direction: var(--mixin-ubhfHXnMjgYNUg_flex-direction);

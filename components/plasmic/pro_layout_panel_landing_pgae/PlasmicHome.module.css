@@ -239,7 +239,7 @@
   font-weight: 700;
   text-align: center;
   line-height: 1;
-  color: var(--token-NEon4Y--Z);
+  color: var(--token-5gFOPrhbO);
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__lPGs {
@@ -247,7 +247,7 @@
     font-weight: 700;
     text-align: center;
     line-height: 1;
-    color: var(--token-NEon4Y--Z);
+    color: var(--token-5gFOPrhbO);
   }
 }
 .text__sMMsP {
@@ -366,7 +366,7 @@
 .img > picture > img {
   object-fit: cover;
 }
-.img > .__wab_img-spacer > img {
+.img > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -418,7 +418,7 @@
 .text__aLzya {
   font-size: 32px;
   font-weight: 700;
-  color: var(--token-NEon4Y--Z);
+  color: var(--token-5gFOPrhbO);
   text-align: left;
   width: 100%;
   user-select: none;
@@ -426,7 +426,7 @@
 }
 .text__nY1M {
   position: relative;
-  color: var(--token-jBhCqxBbh1U);
+  color: var(--token-ekp-964cfv);
   width: 100%;
   user-select: none;
   min-width: 0;
@@ -465,7 +465,7 @@
 .text__dxfxb {
   font-size: 32px;
   font-weight: 700;
-  color: var(--token-NEon4Y--Z);
+  color: var(--token-5gFOPrhbO);
   position: relative;
   text-align: left;
   user-select: none;
@@ -479,7 +479,7 @@
 }
 .text__mdUty {
   position: relative;
-  color: var(--token-jBhCqxBbh1U);
+  color: var(--token-ekp-964cfv);
   user-select: none;
   padding-bottom: 0px;
 }
@@ -521,7 +521,7 @@
 .text___8YvkP {
   font-size: 32px;
   font-weight: 700;
-  color: var(--token-NEon4Y--Z);
+  color: var(--token-5gFOPrhbO);
   position: relative;
   text-align: left;
   width: 100%;
@@ -530,7 +530,7 @@
 }
 .text__nY1M {
   position: relative;
-  color: var(--token-jBhCqxBbh1U);
+  color: var(--token-ekp-964cfv);
   width: 100%;
   user-select: none;
   height: auto;
@@ -605,7 +605,7 @@
   object-fit: cover;
   width: 32px;
   height: 32px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
 }
 .svg__n3NH4 {
   width: 16px;
@@ -622,7 +622,7 @@
   object-fit: cover;
   width: 32px;
   height: 32px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
 }
 .svg__ahEOm {
   width: 16px;
@@ -639,7 +639,7 @@
   object-fit: cover;
   width: 32px;
   height: 32px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
 }
 .svg__eaCx7 {
   width: 16px;
@@ -656,7 +656,7 @@
   object-fit: cover;
   width: 32px;
   height: 32px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
 }
 .svg__b1E3Y {
   width: 16px;
@@ -673,7 +673,7 @@
   object-fit: cover;
   width: 32px;
   height: 32px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
 }
 .svg__tthfO {
   width: 16px;
@@ -690,7 +690,7 @@
   object-fit: cover;
   width: 32px;
   height: 32px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
   left: auto;
   top: auto;
 }
@@ -709,7 +709,7 @@
   object-fit: cover;
   width: 32px;
   height: 32px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
   left: auto;
   top: auto;
 }
@@ -728,7 +728,7 @@
   object-fit: cover;
   width: 32px;
   height: 32px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
 }
 .svg__iaoG2 {
   width: 16px;
@@ -745,7 +745,7 @@
   object-fit: cover;
   width: 32px;
   height: 32px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
 }
 .svg__nLFni {
   width: 16px;
@@ -876,7 +876,7 @@
 }
 .text__b2FJh {
   font-size: 48px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
 }
 .freeBox__pd3Dy {
   flex-direction: column;
@@ -949,7 +949,7 @@
 }
 .text__vsGer {
   font-size: 48px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
 }
 .freeBox__uQfsI {
   flex-direction: column;
@@ -1022,7 +1022,7 @@
 }
 .text__mF7Dq {
   font-size: 48px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
 }
 .freeBox___6AkVp {
   flex-direction: column;
@@ -1163,7 +1163,7 @@
   object-fit: cover;
   width: 32px;
   height: 32px;
-  color: var(--token-Hr1egt3PkNIr);
+  color: var(--token-UMOpAZlrQj);
   left: auto;
   top: auto;
   flex-shrink: 0;

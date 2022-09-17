@@ -48,7 +48,6 @@ import { useScreenVariants as useScreenVariants_3KhhFf1Cq1Qfos } from "./Plasmic
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
-import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import plasmic_outline_to_single_stroke_css from "../outline_to_single_stroke/plasmic_outline_to_single_stroke.module.css"; // plasmic-import: 56iVbBJXbx9hFxysoAGHJC/projectcss
 import projectcss from "./plasmic_pro_layout_panel_landing_pgae.module.css"; // plasmic-import: qDNA17RfdgsM73kkELPPxa/projectcss
 import sty from "./PlasmicFigmaSection.module.css"; // plasmic-import: Xh2O--6vZNn/css
@@ -96,12 +95,20 @@ function PlasmicFigmaSection__RenderFunc(props: {
   const { variants, overrides, forNode } = props;
 
   const $ctx = ph.useDataEnv?.() || {};
-  const args = Object.assign(
-    {},
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
 
-    props.args
+        props.args
+      ),
+    [props.args]
   );
-  const $props = args;
+
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()
@@ -109,7 +116,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      {}
+      <Head></Head>
 
       <style>{`
         body {
@@ -131,7 +138,6 @@ function PlasmicFigmaSection__RenderFunc(props: {
             projectcss.plasmic_default_styles,
             projectcss.plasmic_mixins,
             projectcss.plasmic_tokens,
-            plasmic_library_plasmic_color_type_css.plasmic_tokens,
             plasmic_outline_to_single_stroke_css.plasmic_tokens,
             sty.root
           )}
@@ -164,7 +170,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                 <Button
                   className={classNames("__wab_instance", sty.button__bNgA6)}
                   color={"clear" as const}
-                  link={"/figmasection_cn" as const}
+                  link={`/figmasection_cn`}
                   size={"compact" as const}
                 >
                   {"中文"}
@@ -1177,12 +1183,16 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicFigmaSection__ArgProps,
-      internalVariantPropNames: PlasmicFigmaSection__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicFigmaSection__ArgProps,
+          internalVariantPropNames: PlasmicFigmaSection__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicFigmaSection__RenderFunc({
       variants,
@@ -1216,7 +1226,15 @@ export const PlasmicFigmaSection = Object.assign(
 
     // Metadata about props expected for PlasmicFigmaSection
     internalVariantProps: PlasmicFigmaSection__VariantProps,
-    internalArgProps: PlasmicFigmaSection__ArgProps
+    internalArgProps: PlasmicFigmaSection__ArgProps,
+
+    // Page metadata
+    pageMetadata: {
+      title: "",
+      description: "",
+      ogImageSrc: "",
+      canonical: ""
+    }
   }
 );
 
