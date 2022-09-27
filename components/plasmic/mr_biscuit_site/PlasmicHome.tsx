@@ -164,8 +164,8 @@ export type PlasmicHome__OverridesType = {
   contentCard3?: p.Flex<typeof ContentCard>;
   frame1223?: p.Flex<"div">;
   arcoDesignSystem2?: p.Flex<"div">;
-  contentCard4?: p.Flex<typeof ContentCard>;
-  frame1221?: p.Flex<"div">;
+  contentCard10?: p.Flex<typeof ContentCard>;
+  frame1224?: p.Flex<"div">;
   contentCard5?: p.Flex<typeof ContentCard>;
   frame1205?: p.Flex<"div">;
   frame1206?: p.Flex<"div">;
@@ -364,481 +364,508 @@ function PlasmicHome__RenderFunc(props: {
             </p.Stack>
           </p.Stack>
 
-          <SuperEllipse
-            className={classNames("__wab_instance", sty.superEllipse__tDiFo)}
-          >
-            {true ? (
-              <div
-                data-plasmic-name={"hero"}
-                data-plasmic-override={overrides.hero}
-                className={classNames(projectcss.all, sty.hero)}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__v6A6F)}>
+              <SuperEllipse
+                className={classNames(
+                  "__wab_instance",
+                  sty.superEllipse__tDiFo
+                )}
               >
-                <Icon14Icon
-                  className={classNames(projectcss.all, sty.svg___5PWv5)}
-                  role={"img"}
-                />
-
-                <Text className={classNames("__wab_instance", sty.text__x8Zqs)}>
-                  <Typewriter
-                    data-plasmic-name={"typewriter"}
-                    data-plasmic-override={overrides.typewriter}
-                    className={classNames("__wab_instance", sty.typewriter)}
-                    cursor={true}
-                    cursorStyle={"|" as const}
-                    delaySpeed={1000 as const}
-                    deleteSpeed={20 as const}
-                    loop={0 as const}
-                    typeSpeed={90 as const}
-                    words={[
-                      "Hi, I'm a\nNext-Gen Professional\nDesign Syetem Architect.",
-                      "I Develop\nComposable, Declarative\n& Protocol Oriented DS",
-                      "Most of which are\nLarge Scale &\nOpen Sourced Projects",
-                      "I make\nProductivity Plugins\nIn Figma.",
-                      "I share\nAll my Progress\nOn Twitter,",
-                      "I share\nAll my Discoveries\nOn YouTube.",
-                      "Will You\nPerhaps want to\nBe my friend? ❤️"
-                    ]}
-                  />
-                </Text>
-
-                <Reveal
-                  data-plasmic-name={"arrowReveal"}
-                  data-plasmic-override={overrides.arrowReveal}
-                  big={true}
-                  cascade={true}
-                  className={classNames("__wab_instance", sty.arrowReveal)}
-                  delay={3250 as const}
-                  effect={"fade" as const}
-                  triggerOnce={true}
-                >
-                  <Loop
-                    className={classNames("__wab_instance", sty.loop___0Z5Pi)}
-                    interval={500 as const}
-                    startIndex={1 as const}
-                  >
-                    <Vector23Icon
-                      className={classNames(projectcss.all, sty.svg__eAmOu)}
-                      role={"img"}
-                    />
-
-                    <Vector24Icon
-                      className={classNames(projectcss.all, sty.svg__bzmO3)}
-                      role={"img"}
-                    />
-
-                    <Vector25Icon
-                      className={classNames(projectcss.all, sty.svg__ldmyg)}
-                      role={"img"}
-                    />
-                  </Loop>
-
-                  <Loop
-                    className={classNames("__wab_instance", sty.loop__ysz3L)}
-                    interval={500 as const}
-                    startIndex={0 as const}
-                  >
-                    <Vector27Icon
-                      className={classNames(projectcss.all, sty.svg__ib6IQ)}
-                      role={"img"}
-                    />
-
-                    <Vector32Icon
-                      className={classNames(projectcss.all, sty.svg__jkoBa)}
-                      role={"img"}
-                    />
-
-                    <Vector28Icon
-                      className={classNames(projectcss.all, sty.svg__bIlpS)}
-                      role={"img"}
-                    />
-                  </Loop>
-                </Reveal>
-
                 {true ? (
                   <div
-                    data-plasmic-name={"right"}
-                    data-plasmic-override={overrides.right}
-                    className={classNames(projectcss.all, sty.right)}
+                    data-plasmic-name={"hero"}
+                    data-plasmic-override={overrides.hero}
+                    className={classNames(projectcss.all, sty.hero)}
                   >
-                    <div
-                      className={classNames(projectcss.all, sty.freeBox__ya3Ik)}
-                    >
-                      <Reveal
-                        big={true}
-                        cascade={true}
-                        className={classNames(
-                          "__wab_instance",
-                          sty.reveal__e4P18
-                        )}
-                        delay={1500 as const}
-                        direction={"down" as const}
-                        effect={"zoom" as const}
-                        triggerOnce={true}
-                      >
-                        {true ? (
-                          <p.PlasmicImg
-                            data-plasmic-name={"background"}
-                            data-plasmic-override={overrides.background}
-                            alt={""}
-                            className={classNames(sty.background)}
-                            displayHeight={"508px" as const}
-                            displayMaxHeight={"none" as const}
-                            displayMaxWidth={"none" as const}
-                            displayMinHeight={"0" as const}
-                            displayMinWidth={"0" as const}
-                            displayWidth={"658px" as const}
-                            loading={"lazy" as const}
-                            src={{
-                              src: "/plasmic/pro_layout_panel_landing_pgae/images/image33.svg",
-                              fullWidth: 151,
-                              fullHeight: 150,
-                              aspectRatio: 1.009381
-                            }}
-                          />
-                        ) : null}
-                      </Reveal>
+                    <Icon14Icon
+                      className={classNames(projectcss.all, sty.svg___5PWv5)}
+                      role={"img"}
+                    />
 
-                      <Reveal
-                        cascade={false}
+                    <Text
+                      className={classNames("__wab_instance", sty.text__x8Zqs)}
+                    >
+                      <Typewriter
+                        data-plasmic-name={"typewriter"}
+                        data-plasmic-override={overrides.typewriter}
+                        className={classNames("__wab_instance", sty.typewriter)}
+                        cursor={true}
+                        cursorStyle={"|" as const}
+                        delaySpeed={1000 as const}
+                        deleteSpeed={20 as const}
+                        loop={0 as const}
+                        typeSpeed={90 as const}
+                        words={[
+                          "Hi, I'm a\nNext-Gen Professional\nDesign Syetem Architect.",
+                          "I Develop\nComposable, Declarative\n& Protocol Oriented DS",
+                          "Most of which are\nLarge Scale &\nOpen Sourced Projects",
+                          "I make\nProductivity Plugins\nIn Figma.",
+                          "I share\nAll my Progress\nOn Twitter,",
+                          "I share\nAll my Discoveries\nOn YouTube.",
+                          "Will You\nPerhaps want to\nBe my friend? ❤️"
+                        ]}
+                      />
+                    </Text>
+
+                    <Reveal
+                      data-plasmic-name={"arrowReveal"}
+                      data-plasmic-override={overrides.arrowReveal}
+                      big={true}
+                      cascade={true}
+                      className={classNames("__wab_instance", sty.arrowReveal)}
+                      delay={3250 as const}
+                      effect={"fade" as const}
+                      triggerOnce={true}
+                    >
+                      <Loop
                         className={classNames(
                           "__wab_instance",
-                          sty.reveal__reexk
+                          sty.loop___0Z5Pi
                         )}
-                        delay={2250 as const}
-                        direction={"down" as const}
-                        effect={"bounce" as const}
-                        triggerOnce={true}
+                        interval={500 as const}
+                        startIndex={1 as const}
+                      >
+                        <Vector23Icon
+                          className={classNames(projectcss.all, sty.svg__eAmOu)}
+                          role={"img"}
+                        />
+
+                        <Vector24Icon
+                          className={classNames(projectcss.all, sty.svg__bzmO3)}
+                          role={"img"}
+                        />
+
+                        <Vector25Icon
+                          className={classNames(projectcss.all, sty.svg__ldmyg)}
+                          role={"img"}
+                        />
+                      </Loop>
+
+                      <Loop
+                        className={classNames(
+                          "__wab_instance",
+                          sty.loop__ysz3L
+                        )}
+                        interval={500 as const}
+                        startIndex={0 as const}
+                      >
+                        <Vector27Icon
+                          className={classNames(projectcss.all, sty.svg__ib6IQ)}
+                          role={"img"}
+                        />
+
+                        <Vector32Icon
+                          className={classNames(projectcss.all, sty.svg__jkoBa)}
+                          role={"img"}
+                        />
+
+                        <Vector28Icon
+                          className={classNames(projectcss.all, sty.svg__bIlpS)}
+                          role={"img"}
+                        />
+                      </Loop>
+                    </Reveal>
+
+                    {true ? (
+                      <div
+                        data-plasmic-name={"right"}
+                        data-plasmic-override={overrides.right}
+                        className={classNames(projectcss.all, sty.right)}
                       >
                         <div
                           className={classNames(
                             projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__clmmz
+                            sty.freeBox__ya3Ik
                           )}
                         >
-                          {"Мг. Бisсuiт"}
-                        </div>
-                      </Reveal>
+                          <Reveal
+                            big={true}
+                            cascade={true}
+                            className={classNames(
+                              "__wab_instance",
+                              sty.reveal__e4P18
+                            )}
+                            delay={1500 as const}
+                            direction={"down" as const}
+                            effect={"zoom" as const}
+                            triggerOnce={true}
+                          >
+                            {true ? (
+                              <p.PlasmicImg
+                                data-plasmic-name={"background"}
+                                data-plasmic-override={overrides.background}
+                                alt={""}
+                                className={classNames(sty.background)}
+                                displayHeight={"508px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"658px" as const}
+                                loading={"lazy" as const}
+                                src={{
+                                  src: "/plasmic/pro_layout_panel_landing_pgae/images/image33.svg",
+                                  fullWidth: 151,
+                                  fullHeight: 150,
+                                  aspectRatio: 1.009381
+                                }}
+                              />
+                            ) : null}
+                          </Reveal>
 
-                      <Reveal
+                          <Reveal
+                            cascade={false}
+                            className={classNames(
+                              "__wab_instance",
+                              sty.reveal__reexk
+                            )}
+                            delay={2250 as const}
+                            direction={"down" as const}
+                            effect={"bounce" as const}
+                            triggerOnce={true}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__clmmz
+                              )}
+                            >
+                              {"Мг. Бisсuiт"}
+                            </div>
+                          </Reveal>
+
+                          <Reveal
+                            className={classNames(
+                              "__wab_instance",
+                              sty.reveal__r7WGe
+                            )}
+                            delay={1850 as const}
+                            direction={"down" as const}
+                            effect={"bounce" as const}
+                            triggerOnce={true}
+                          >
+                            <p.PlasmicImg
+                              alt={""}
+                              className={classNames(sty.img__ckElf)}
+                              displayHeight={"428px" as const}
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"100%" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"403px" as const}
+                              loading={"lazy" as const}
+                              src={{
+                                src: "/plasmic/pro_layout_panel_landing_pgae/images/image31.svg",
+                                fullWidth: 141,
+                                fullHeight: 150,
+                                aspectRatio: 0.942308
+                              }}
+                            />
+                          </Reveal>
+                        </div>
+                      </div>
+                    ) : null}
+
+                    <Reveal
+                      cascade={true}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.reveal__aOpBh
+                      )}
+                      delay={3000 as const}
+                      effect={"fade" as const}
+                      triggerOnce={true}
+                    >
+                      <p.Stack
+                        as={p.PlasmicLink}
+                        data-plasmic-name={"buttonwrap"}
+                        data-plasmic-override={overrides.buttonwrap}
+                        hasGap={true}
                         className={classNames(
-                          "__wab_instance",
-                          sty.reveal__r7WGe
+                          projectcss.all,
+                          projectcss.a,
+                          sty.buttonwrap
                         )}
-                        delay={1850 as const}
-                        direction={"down" as const}
-                        effect={"bounce" as const}
-                        triggerOnce={true}
+                        component={Link}
+                        href={"https://twitter.com/SShuaiqi" as const}
+                        platform={"nextjs"}
+                        target={"_blank" as const}
                       >
+                        <SuperEllipseButton
+                          className={classNames(
+                            "__wab_instance",
+                            sty.superEllipseButton__miHe9
+                          )}
+                        >
+                          <p.Stack
+                            as={"div"}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__zWE1
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__yw93F
+                              )}
+                            >
+                              {hasVariant(globalVariants, "screen", "mobile")
+                                ? "Follow me"
+                                : "Follow me"}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                sty.freeBox__rfNq6
+                              )}
+                            >
+                              <PawIcon
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.svg__xKnh7
+                                )}
+                                role={"img"}
+                              />
+                            </div>
+                          </p.Stack>
+                        </SuperEllipseButton>
+                      </p.Stack>
+
+                      <p.Stack
+                        as={"div"}
+                        data-plasmic-name={"frame1181"}
+                        data-plasmic-override={overrides.frame1181}
+                        hasGap={true}
+                        className={classNames(projectcss.all, sty.frame1181)}
+                      >
+                        <p.Stack
+                          as={"div"}
+                          data-plasmic-name={"frame1176"}
+                          data-plasmic-override={overrides.frame1176}
+                          hasGap={true}
+                          className={classNames(projectcss.all, sty.frame1176)}
+                        >
+                          <div
+                            data-plasmic-name={"frame1178"}
+                            data-plasmic-override={overrides.frame1178}
+                            className={classNames(
+                              projectcss.all,
+                              sty.frame1178
+                            )}
+                          >
+                            <div
+                              data-plasmic-name={"frame"}
+                              data-plasmic-override={overrides.frame}
+                              className={classNames(projectcss.all, sty.frame)}
+                            >
+                              <p.PlasmicImg
+                                alt={""}
+                                className={classNames(sty.img__mbA5E)}
+                                displayHeight={"19.2px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"100%" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"37.953px" as const}
+                                loading={"lazy" as const}
+                                src={{
+                                  src: "/plasmic/pro_layout_panel_landing_pgae/images/group2.svg",
+                                  fullWidth: 37.953,
+                                  fullHeight: 19.2,
+                                  aspectRatio: 1.9
+                                }}
+                              />
+                            </div>
+                          </div>
+                        </p.Stack>
+
                         <p.PlasmicImg
                           alt={""}
-                          className={classNames(sty.img__ckElf)}
-                          displayHeight={"428px" as const}
+                          className={classNames(sty.img__xVycu)}
+                          displayHeight={"14.399px" as const}
                           displayMaxHeight={"none" as const}
                           displayMaxWidth={"100%" as const}
                           displayMinHeight={"0" as const}
                           displayMinWidth={"0" as const}
-                          displayWidth={"403px" as const}
+                          displayWidth={"62.4px" as const}
                           loading={"lazy" as const}
                           src={{
-                            src: "/plasmic/pro_layout_panel_landing_pgae/images/image31.svg",
-                            fullWidth: 141,
-                            fullHeight: 150,
-                            aspectRatio: 0.942308
+                            src: "/plasmic/pro_layout_panel_landing_pgae/images/vercel2.svg",
+                            fullWidth: 62.4,
+                            fullHeight: 14.399,
+                            aspectRatio: 4.2
                           }}
                         />
-                      </Reveal>
-                    </div>
-                  </div>
-                ) : null}
 
-                <Reveal
-                  cascade={true}
-                  className={classNames("__wab_instance", sty.reveal__aOpBh)}
-                  delay={3000 as const}
-                  effect={"fade" as const}
-                  triggerOnce={true}
-                >
-                  <p.Stack
-                    as={p.PlasmicLink}
-                    data-plasmic-name={"buttonwrap"}
-                    data-plasmic-override={overrides.buttonwrap}
-                    hasGap={true}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.buttonwrap
-                    )}
-                    component={Link}
-                    href={"https://twitter.com/SShuaiqi" as const}
-                    platform={"nextjs"}
-                    target={"_blank" as const}
-                  >
-                    <SuperEllipseButton
-                      className={classNames(
-                        "__wab_instance",
-                        sty.superEllipseButton__miHe9
-                      )}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        hasGap={true}
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__zWE1
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__yw93F
-                          )}
-                        >
-                          {hasVariant(globalVariants, "screen", "mobile")
-                            ? "Follow me"
-                            : "Follow me"}
-                        </div>
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__rfNq6
-                          )}
-                        >
-                          <PawIcon
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__xKnh7
-                            )}
-                            role={"img"}
-                          />
-                        </div>
-                      </p.Stack>
-                    </SuperEllipseButton>
-                  </p.Stack>
-
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"frame1181"}
-                    data-plasmic-override={overrides.frame1181}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.frame1181)}
-                  >
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame1176"}
-                      data-plasmic-override={overrides.frame1176}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame1176)}
-                    >
-                      <div
-                        data-plasmic-name={"frame1178"}
-                        data-plasmic-override={overrides.frame1178}
-                        className={classNames(projectcss.all, sty.frame1178)}
-                      >
-                        <div
-                          data-plasmic-name={"frame"}
-                          data-plasmic-override={overrides.frame}
-                          className={classNames(projectcss.all, sty.frame)}
-                        >
-                          <p.PlasmicImg
-                            alt={""}
-                            className={classNames(sty.img__mbA5E)}
-                            displayHeight={"19.2px" as const}
-                            displayMaxHeight={"none" as const}
-                            displayMaxWidth={"100%" as const}
-                            displayMinHeight={"0" as const}
-                            displayMinWidth={"0" as const}
-                            displayWidth={"37.953px" as const}
-                            loading={"lazy" as const}
-                            src={{
-                              src: "/plasmic/pro_layout_panel_landing_pgae/images/group2.svg",
-                              fullWidth: 37.953,
-                              fullHeight: 19.2,
-                              aspectRatio: 1.9
-                            }}
-                          />
-                        </div>
-                      </div>
-                    </p.Stack>
-
-                    <p.PlasmicImg
-                      alt={""}
-                      className={classNames(sty.img__xVycu)}
-                      displayHeight={"14.399px" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"62.4px" as const}
-                      loading={"lazy" as const}
-                      src={{
-                        src: "/plasmic/pro_layout_panel_landing_pgae/images/vercel2.svg",
-                        fullWidth: 62.4,
-                        fullHeight: 14.399,
-                        aspectRatio: 4.2
-                      }}
-                    />
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame1179"}
-                      data-plasmic-override={overrides.frame1179}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame1179)}
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__e5LA
-                        )}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__xbGvf
-                          )}
-                        />
-                      </div>
-                    </p.Stack>
-
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__sTtQn
-                        )}
-                      >
-                        <Icon12Icon
-                          className={classNames(projectcss.all, sty.svg__aZCs)}
-                          role={"img"}
-                        />
-                      </div>
-                    ) : null}
-
-                    <p.Stack
-                      as={"div"}
-                      data-plasmic-name={"frame1180"}
-                      data-plasmic-override={overrides.frame1180}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.frame1180)}
-                    >
-                      <div
-                        data-plasmic-name={"page1"}
-                        data-plasmic-override={overrides.page1}
-                        className={classNames(projectcss.all, sty.page1)}
-                      >
-                        <div
-                          data-plasmic-name={"blackNextjs"}
-                          data-plasmic-override={overrides.blackNextjs}
-                          className={classNames(
-                            projectcss.all,
-                            sty.blackNextjs
-                          )}
+                        <p.Stack
+                          as={"div"}
+                          data-plasmic-name={"frame1179"}
+                          data-plasmic-override={overrides.frame1179}
+                          hasGap={true}
+                          className={classNames(projectcss.all, sty.frame1179)}
                         >
                           <div
-                            data-plasmic-name={"nextBlack"}
-                            data-plasmic-override={overrides.nextBlack}
                             className={classNames(
                               projectcss.all,
-                              sty.nextBlack
+                              sty.freeBox__e5LA
                             )}
                           >
-                            <ExtTypeSomethingIcon
+                            <div
                               className={classNames(
                                 projectcss.all,
-                                sty.svg__jdywM
+                                sty.freeBox__xbGvf
                               )}
-                              role={"img"}
                             />
+                          </div>
+                        </p.Stack>
 
-                            <JsIcon
+                        {true ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__sTtQn
+                            )}
+                          >
+                            <Icon12Icon
                               className={classNames(
                                 projectcss.all,
-                                sty.svg__q1Qso
+                                sty.svg__aZCs
                               )}
                               role={"img"}
                             />
                           </div>
-                        </div>
-                      </div>
-                    </p.Stack>
-                  </p.Stack>
-                </Reveal>
-              </div>
-            ) : null}
-            {true ? (
-              <div
-                data-plasmic-name={"separator2"}
-                data-plasmic-override={overrides.separator2}
-                className={classNames(projectcss.all, sty.separator2)}
-              >
-                <Loop
-                  className={classNames("__wab_instance", sty.loop__lblTk)}
-                  interval={500 as const}
-                  startIndex={0 as const}
-                >
-                  <Vector29Icon
-                    className={classNames(projectcss.all, sty.svg__jWHsj)}
-                    role={"img"}
-                  />
+                        ) : null}
 
-                  <Vector30Icon
-                    className={classNames(projectcss.all, sty.svg__kLc7J)}
-                    role={"img"}
-                  />
+                        <p.Stack
+                          as={"div"}
+                          data-plasmic-name={"frame1180"}
+                          data-plasmic-override={overrides.frame1180}
+                          hasGap={true}
+                          className={classNames(projectcss.all, sty.frame1180)}
+                        >
+                          <div
+                            data-plasmic-name={"page1"}
+                            data-plasmic-override={overrides.page1}
+                            className={classNames(projectcss.all, sty.page1)}
+                          >
+                            <div
+                              data-plasmic-name={"blackNextjs"}
+                              data-plasmic-override={overrides.blackNextjs}
+                              className={classNames(
+                                projectcss.all,
+                                sty.blackNextjs
+                              )}
+                            >
+                              <div
+                                data-plasmic-name={"nextBlack"}
+                                data-plasmic-override={overrides.nextBlack}
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.nextBlack
+                                )}
+                              >
+                                <ExtTypeSomethingIcon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__jdywM
+                                  )}
+                                  role={"img"}
+                                />
 
-                  <Vector31Icon
-                    className={classNames(projectcss.all, sty.svg__aBvuc)}
-                    role={"img"}
-                  />
-                </Loop>
+                                <JsIcon
+                                  className={classNames(
+                                    projectcss.all,
+                                    sty.svg__q1Qso
+                                  )}
+                                  role={"img"}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                    </Reveal>
+                  </div>
+                ) : null}
+                {true ? (
+                  <div
+                    data-plasmic-name={"separator2"}
+                    data-plasmic-override={overrides.separator2}
+                    className={classNames(projectcss.all, sty.separator2)}
+                  >
+                    <Loop
+                      className={classNames("__wab_instance", sty.loop__lblTk)}
+                      interval={500 as const}
+                      startIndex={0 as const}
+                    >
+                      <Vector29Icon
+                        className={classNames(projectcss.all, sty.svg__jWHsj)}
+                        role={"img"}
+                      />
 
-                <Loop
-                  className={classNames("__wab_instance", sty.loop__cCkO)}
-                  interval={500 as const}
-                  startIndex={1 as const}
-                >
-                  <Vector29Icon
-                    className={classNames(projectcss.all, sty.svg__qgQfx)}
-                    role={"img"}
-                  />
+                      <Vector30Icon
+                        className={classNames(projectcss.all, sty.svg__kLc7J)}
+                        role={"img"}
+                      />
 
-                  <Vector30Icon
-                    className={classNames(projectcss.all, sty.svg__kLc7J)}
-                    role={"img"}
-                  />
+                      <Vector31Icon
+                        className={classNames(projectcss.all, sty.svg__aBvuc)}
+                        role={"img"}
+                      />
+                    </Loop>
 
-                  <Vector31Icon
-                    className={classNames(projectcss.all, sty.svg__aBvuc)}
-                    role={"img"}
-                  />
-                </Loop>
+                    <Loop
+                      className={classNames("__wab_instance", sty.loop__cCkO)}
+                      interval={500 as const}
+                      startIndex={1 as const}
+                    >
+                      <Vector29Icon
+                        className={classNames(projectcss.all, sty.svg__qgQfx)}
+                        role={"img"}
+                      />
 
-                <Loop
-                  className={classNames("__wab_instance", sty.loop___3O5Jc)}
-                  interval={500 as const}
-                  startIndex={2 as const}
-                >
-                  <Vector29Icon
-                    className={classNames(projectcss.all, sty.svg__lf4X5)}
-                    role={"img"}
-                  />
+                      <Vector30Icon
+                        className={classNames(projectcss.all, sty.svg__kLc7J)}
+                        role={"img"}
+                      />
 
-                  <Vector30Icon
-                    className={classNames(projectcss.all, sty.svg__kLc7J)}
-                    role={"img"}
-                  />
+                      <Vector31Icon
+                        className={classNames(projectcss.all, sty.svg__aBvuc)}
+                        role={"img"}
+                      />
+                    </Loop>
 
-                  <Vector31Icon
-                    className={classNames(projectcss.all, sty.svg__aBvuc)}
-                    role={"img"}
-                  />
-                </Loop>
-              </div>
-            ) : null}
-          </SuperEllipse>
+                    <Loop
+                      className={classNames("__wab_instance", sty.loop___3O5Jc)}
+                      interval={500 as const}
+                      startIndex={2 as const}
+                    >
+                      <Vector29Icon
+                        className={classNames(projectcss.all, sty.svg__lf4X5)}
+                        role={"img"}
+                      />
+
+                      <Vector30Icon
+                        className={classNames(projectcss.all, sty.svg__kLc7J)}
+                        role={"img"}
+                      />
+
+                      <Vector31Icon
+                        className={classNames(projectcss.all, sty.svg__aBvuc)}
+                        role={"img"}
+                      />
+                    </Loop>
+                  </div>
+                ) : null}
+              </SuperEllipse>
+            </div>
+          ) : null}
 
           <Reveal
             data-plasmic-name={"leaf"}
@@ -1850,7 +1877,7 @@ function PlasmicHome__RenderFunc(props: {
                     className={classNames(
                       projectcss.all,
                       projectcss.a,
-                      sty.link___6KiX3
+                      sty.link__ulXTu
                     )}
                     component={Link}
                     href={
@@ -1859,15 +1886,18 @@ function PlasmicHome__RenderFunc(props: {
                     platform={"nextjs"}
                   >
                     <ContentCard
-                      data-plasmic-name={"contentCard4"}
-                      data-plasmic-override={overrides.contentCard4}
-                      className={classNames("__wab_instance", sty.contentCard4)}
+                      data-plasmic-name={"contentCard10"}
+                      data-plasmic-override={overrides.contentCard10}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.contentCard10
+                      )}
                       padding={"small" as const}
                     >
                       <AspectRatio
                         className={classNames(
                           "__wab_instance",
-                          sty.aspectRatio___4E2UF
+                          sty.aspectRatio___6Uo5J
                         )}
                         ratio={(() => {
                           try {
@@ -1881,9 +1911,10 @@ function PlasmicHome__RenderFunc(props: {
                         })()}
                       >
                         <Image
+                          alt={"" as const}
                           className={classNames(
                             "__wab_instance",
-                            sty.image__tjX12
+                            sty.image__jRgLf
                           )}
                           fallbackSrc={
                             "https://via.placeholder.com/150" as const
@@ -1896,16 +1927,16 @@ function PlasmicHome__RenderFunc(props: {
 
                       <p.Stack
                         as={"div"}
-                        data-plasmic-name={"frame1221"}
-                        data-plasmic-override={overrides.frame1221}
+                        data-plasmic-name={"frame1224"}
+                        data-plasmic-override={overrides.frame1224}
                         hasGap={true}
-                        className={classNames(projectcss.all, sty.frame1221)}
+                        className={classNames(projectcss.all, sty.frame1224)}
                       >
                         <div
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__zxbvY
+                            sty.text___6Nug
                           )}
                         >
                           {"IconPark Open Source"}
@@ -1915,7 +1946,7 @@ function PlasmicHome__RenderFunc(props: {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__hyVts
+                            sty.text__dXuuy
                           )}
                         >
                           {"Since  March 2019"}
@@ -2444,6 +2475,7 @@ function PlasmicHome__RenderFunc(props: {
                               sty.youTube___4Ajz9
                             )}
                             controls={true}
+                            rel={false}
                             videoId={"Cpc9H4GLEno" as const}
                           />
                         </div>
@@ -2515,6 +2547,7 @@ function PlasmicHome__RenderFunc(props: {
                               sty.youTube__z41
                             )}
                             controls={true}
+                            rel={false}
                             videoId={"DGm_jt7Lync" as const}
                           />
                         </div>
@@ -2586,6 +2619,7 @@ function PlasmicHome__RenderFunc(props: {
                               sty.youTube__oumZe
                             )}
                             controls={true}
+                            rel={false}
                             videoId={"FtJ7UscJxYU" as const}
                           />
                         </div>
@@ -2657,6 +2691,7 @@ function PlasmicHome__RenderFunc(props: {
                               sty.youTube__pLdcX
                             )}
                             controls={true}
+                            rel={false}
                             videoId={"H6W6V9JxYVg" as const}
                           />
                         </div>
@@ -2989,8 +3024,8 @@ const PlasmicDescendants = {
     "contentCard3",
     "frame1223",
     "arcoDesignSystem2",
-    "contentCard4",
-    "frame1221",
+    "contentCard10",
+    "frame1224",
     "contentCard5",
     "frame1205",
     "frame1206",
@@ -3129,8 +3164,8 @@ const PlasmicDescendants = {
     "contentCard3",
     "frame1223",
     "arcoDesignSystem2",
-    "contentCard4",
-    "frame1221",
+    "contentCard10",
+    "frame1224",
     "contentCard5",
     "frame1205",
     "frame1206",
@@ -3227,8 +3262,8 @@ const PlasmicDescendants = {
     "contentCard3",
     "frame1223",
     "arcoDesignSystem2",
-    "contentCard4",
-    "frame1221",
+    "contentCard10",
+    "frame1224",
     "contentCard5",
     "frame1205",
     "frame1206",
@@ -3291,8 +3326,8 @@ const PlasmicDescendants = {
     "contentCard3",
     "frame1223",
     "arcoDesignSystem2",
-    "contentCard4",
-    "frame1221",
+    "contentCard10",
+    "frame1224",
     "contentCard5",
     "frame1205"
   ],
@@ -3305,8 +3340,8 @@ const PlasmicDescendants = {
     "contentCard3",
     "frame1223",
     "arcoDesignSystem2",
-    "contentCard4",
-    "frame1221",
+    "contentCard10",
+    "frame1224",
     "contentCard5",
     "frame1205"
   ],
@@ -3315,8 +3350,8 @@ const PlasmicDescendants = {
   contentCard3: ["contentCard3", "frame1223", "arcoDesignSystem2"],
   frame1223: ["frame1223", "arcoDesignSystem2"],
   arcoDesignSystem2: ["arcoDesignSystem2"],
-  contentCard4: ["contentCard4", "frame1221"],
-  frame1221: ["frame1221"],
+  contentCard10: ["contentCard10", "frame1224"],
+  frame1224: ["frame1224"],
   contentCard5: ["contentCard5", "frame1205"],
   frame1205: ["frame1205"],
   frame1206: [
@@ -3505,8 +3540,8 @@ type NodeDefaultElementType = {
   contentCard3: typeof ContentCard;
   frame1223: "div";
   arcoDesignSystem2: "div";
-  contentCard4: typeof ContentCard;
-  frame1221: "div";
+  contentCard10: typeof ContentCard;
+  frame1224: "div";
   contentCard5: typeof ContentCard;
   frame1205: "div";
   frame1206: "div";
@@ -3680,8 +3715,8 @@ export const PlasmicHome = Object.assign(
     contentCard3: makeNodeComponent("contentCard3"),
     frame1223: makeNodeComponent("frame1223"),
     arcoDesignSystem2: makeNodeComponent("arcoDesignSystem2"),
-    contentCard4: makeNodeComponent("contentCard4"),
-    frame1221: makeNodeComponent("frame1221"),
+    contentCard10: makeNodeComponent("contentCard10"),
+    frame1224: makeNodeComponent("frame1224"),
     contentCard5: makeNodeComponent("contentCard5"),
     frame1205: makeNodeComponent("frame1205"),
     frame1206: makeNodeComponent("frame1206"),
