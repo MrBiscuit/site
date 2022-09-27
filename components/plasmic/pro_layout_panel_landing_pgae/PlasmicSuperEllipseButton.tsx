@@ -34,7 +34,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { SuperEllipse } from "react-superellipse"; // plasmic-import: tA0fNNo2idi/codeComponent
+import SuperEllipse from "react-superellipse"; // plasmic-import: tA0fNNo2idi/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 

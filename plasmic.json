@@ -365,7 +365,7 @@
     {
       "projectId": "qDNA17RfdgsM73kkELPPxa",
       "projectApiToken": "F5vYPsFzvwMq8o6ulHIYVW8iPlXldLN0kjR6j1RJhOTcQvyDj7a4YtP5SJ8zzkidWjAjMNi00Ai9uFONcMg",
-      "projectName": "Pro Layout Panel Landing Pgae",
+      "projectName": "MrBiscuitSite",
       "version": "latest",
       "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/plasmic_pro_layout_panel_landing_pgae.module.css",
       "components": [
@@ -515,19 +515,6 @@
           "componentType": "component"
         },
         {
-          "id": "1s7g74uB-Ej",
-          "name": "HomeChinese",
-          "type": "managed",
-          "projectId": "qDNA17RfdgsM73kkELPPxa",
-          "renderModuleFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHomeChinese.tsx",
-          "importSpec": {
-            "modulePath": "../pages/plp_cn.tsx"
-          },
-          "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHomeChinese.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "Xh2O--6vZNn",
           "name": "FigmaSection",
           "type": "managed",
@@ -550,19 +537,6 @@
             "modulePath": "../pages/figmasection_cn.tsx"
           },
           "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicFigmaSectionChinese.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "BsdlwyCaZe",
-          "name": "NewPage",
-          "type": "managed",
-          "projectId": "qDNA17RfdgsM73kkELPPxa",
-          "renderModuleFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicNewPage.tsx",
-          "importSpec": {
-            "modulePath": "../pages/index.tsx"
-          },
-          "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicNewPage.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         },
@@ -633,14 +607,40 @@
         },
         {
           "id": "PGLmNK8F9ob8KH",
-          "name": "Home",
+          "name": "ProLayoutPanel",
           "type": "managed",
           "projectId": "qDNA17RfdgsM73kkELPPxa",
-          "renderModuleFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHome.tsx",
+          "renderModuleFilePath": "plasmic/mr_biscuit_site/PlasmicProLayoutPanel.tsx",
           "importSpec": {
             "modulePath": "../pages/plp.tsx"
           },
-          "cssFilePath": "plasmic/pro_layout_panel_landing_pgae/PlasmicHome.module.css",
+          "cssFilePath": "plasmic/mr_biscuit_site/PlasmicProLayoutPanel.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "1s7g74uB-Ej",
+          "name": "ProLayoutPanelChinese",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/mr_biscuit_site/PlasmicProLayoutPanelChinese.tsx",
+          "importSpec": {
+            "modulePath": "../pages/plp_cn.tsx"
+          },
+          "cssFilePath": "plasmic/mr_biscuit_site/PlasmicProLayoutPanelChinese.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "BsdlwyCaZe",
+          "name": "Home",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/mr_biscuit_site/PlasmicHome.tsx",
+          "importSpec": {
+            "modulePath": "../pages/index.tsx"
+          },
+          "cssFilePath": "plasmic/mr_biscuit_site/PlasmicHome.module.css",
           "scheme": "blackbox",
           "componentType": "page"
         }
@@ -1235,6 +1235,11 @@
           "id": "L3sOXztzUd",
           "name": "Vector32Icon",
           "moduleFilePath": "plasmic/pro_layout_panel_landing_pgae/icons/PlasmicIcon__Vector32.tsx"
+        },
+        {
+          "id": "ZAy48aevCI",
+          "name": "Icon16Icon",
+          "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon16.tsx"
         }
       ],
       "images": [
@@ -1711,116 +1716,6 @@
           "id": "tA0fNNo2idi",
           "name": "SuperEllipse",
           "componentImportPath": "react-superellipse"
-        },
-        {
-          "id": "R4QJIMYKF6u",
-          "name": "PolarRadiusAxis",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "zE6GMZt_5Nw",
-          "name": "PolarAngleAxis",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "lNZ-de9x-f_",
-          "name": "PolarGrid",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "P4SFLVcVzcX",
-          "name": "RadarChartWrap",
-          "componentImportPath": "./components/RadarChart"
-        },
-        {
-          "id": "wBuFj8PRI3X",
-          "name": "Radar",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "ibyqVezCua3",
-          "name": "PieWrap",
-          "componentImportPath": "./components/PieChart"
-        },
-        {
-          "id": "4Gz2o1D5Jiu",
-          "name": "LineChart",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "Durv-d1ddt2",
-          "name": "Pie",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "4cITIkDdHES",
-          "name": "CartesianChart",
-          "componentImportPath": "./components/CartesianChart"
-        },
-        {
-          "id": "Ut-aWW-8NaI",
-          "name": "ReferenceLine",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "cQ9o4vNMyv6",
-          "name": "Area",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "UAljX7ZwQ7n",
-          "name": "Legend",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "pdUapyf2JI_8",
-          "name": "YAxis",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "y85nB7-YBVvk",
-          "name": "LabelList",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "v9QDeMndLamA",
-          "name": "Bar",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "uZRoFamam9Wn",
-          "name": "XAxis",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "f1Vv2DiSb7HC",
-          "name": "ChartTooltip",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "VAXrFXsPWxba",
-          "name": "CartesianGrid",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "OZwsQuINgRg0",
-          "name": "Brush",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "XHktKQgf-ANX",
-          "name": "Label",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "ngWroUtaS5qC",
-          "name": "Cell",
-          "componentImportPath": "recharts"
-        },
-        {
-          "id": "KkYZtgIRd2qQ",
-          "name": "ErrorBar",
-          "componentImportPath": "recharts"
         },
         {
           "id": "O2N6ZlMyi7",
