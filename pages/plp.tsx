@@ -4,7 +4,7 @@ import * as React from "react";
 import * as ph from "@plasmicapp/host";
 
 import { ScreenVariantProvider } from "../components/plasmic/pro_layout_panel_landing_pgae/PlasmicGlobalVariant__Screen";
-import { PlasmicProLayoutPanel } from "../components/plasmic/mr_biscuit_site/PlasmicProLayoutPanel";
+import { PlasmicProLayoutPanel } from "../components/plasmic/pro_layout_panel_landing_pgae/PlasmicProLayoutPanel";
 import { useRouter } from "next/router";
 
 function ProLayoutPanel() {

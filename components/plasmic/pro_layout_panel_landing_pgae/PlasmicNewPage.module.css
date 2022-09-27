@@ -61,6 +61,8 @@
     min-width: 0;
     margin-left: calc(0px - 0px);
     width: calc(100% + 0px);
+    margin-top: calc(0px - 16px);
+    height: calc(100% + 16px);
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -73,6 +75,7 @@
     > picture
     > img {
     margin-left: 0px;
+    margin-top: 16px;
   }
 }
 .left {
@@ -239,6 +242,7 @@
     top: auto;
     right: auto;
     overflow: visible;
+    margin-top: 28px;
     flex-column-gap: 0px;
   }
 }
@@ -1301,6 +1305,7 @@
   .content {
     left: auto;
     top: auto;
+    margin-top: -40px;
   }
 }
 .superEllipse__zYtIx:global(.__wab_instance) {
@@ -1731,8 +1736,8 @@
     min-width: 0;
     margin-left: calc(0px - 0px);
     width: calc(100% + 0px);
-    margin-top: calc(0px - 0px);
-    height: calc(100% + 0px);
+    margin-top: calc(0px - 40px);
+    height: calc(100% + 40px);
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -1745,7 +1750,7 @@
     > picture
     > img {
     margin-left: 0px;
-    margin-top: 0px;
+    margin-top: 40px;
   }
 }
 .freeBox__too8Y {
@@ -2808,13 +2813,32 @@
   position: relative;
   user-select: none;
 }
+.freeBox__bjwSe {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  align-self: stretch;
+  min-width: 0;
+  padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__bjwSe {
+    margin-left: calc(0px + 0px) !important;
+    margin-right: 0px;
+    display: flex;
+    padding: 0px 12px;
+  }
+}
 .frame1206 {
   flex-direction: column;
   background: rgba(252, 244, 231, 1);
   height: auto;
   display: flex;
-  position: relative;
-  align-self: stretch;
   overflow: hidden;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -2887,6 +2911,8 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1207 {
     width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
     min-width: 0;
   }
 }
@@ -3107,6 +3133,11 @@
   width: 24px;
   height: 25px;
   flex-shrink: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox___2AclY {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
+  }
 }
 .svg__mPw92 {
   position: absolute;
@@ -3382,6 +3413,32 @@
   > img {
   margin-left: 32px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame1242 {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame1242 > :global(.__wab_flex-container) {
+    flex-direction: column;
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame1242 > :global(.__wab_flex-container) > *,
+  .frame1242 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .frame1242 > :global(.__wab_flex-container) > picture > img,
+  .frame1242
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 0px;
+  }
+}
 .text__qVjWx {
   display: block;
   font-size: 32px;
@@ -3392,6 +3449,12 @@
   color: rgba(0, 0, 0, 1);
   position: relative;
   flex-shrink: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__qVjWx {
+    white-space: pre;
+    user-select: none;
+  }
 }
 .text__pojMm {
   display: block;
@@ -3439,6 +3502,39 @@
   > picture
   > img {
   margin-left: 16px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame1243 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame1243 > :global(.__wab_flex-container) {
+    flex-direction: column;
+    min-width: 0;
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+    margin-top: calc(0px - 24px);
+    height: calc(100% + 24px);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame1243 > :global(.__wab_flex-container) > *,
+  .frame1243 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .frame1243 > :global(.__wab_flex-container) > picture > img,
+  .frame1243
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 0px;
+    margin-top: 24px;
+  }
 }
 .frame1244 {
   flex-direction: column;

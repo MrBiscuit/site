@@ -45,26 +45,26 @@ import Plan from "../../Plan"; // plasmic-import: IC0peUQeOrc-TC/component
 import Bullet from "../../Bullet"; // plasmic-import: h8iasHjPSdhGL5/component
 import Footer from "../../Footer"; // plasmic-import: 48OR7NBtqAcun7/component
 
-import { useScreenVariants as useScreenVariants_3KhhFf1Cq1Qfos } from "../pro_layout_panel_landing_pgae/PlasmicGlobalVariant__Screen"; // plasmic-import: 3KhhFf1CQ1QFOS/globalVariant
+import { useScreenVariants as useScreenVariants_3KhhFf1Cq1Qfos } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 3KhhFf1CQ1QFOS/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import plasmic_outline_to_single_stroke_css from "../outline_to_single_stroke/plasmic_outline_to_single_stroke.module.css"; // plasmic-import: 56iVbBJXbx9hFxysoAGHJC/projectcss
-import projectcss from "../pro_layout_panel_landing_pgae/plasmic_pro_layout_panel_landing_pgae.module.css"; // plasmic-import: qDNA17RfdgsM73kkELPPxa/projectcss
+import projectcss from "./plasmic_pro_layout_panel_landing_pgae.module.css"; // plasmic-import: qDNA17RfdgsM73kkELPPxa/projectcss
 import sty from "./PlasmicProLayoutPanel.module.css"; // plasmic-import: PGLmNK8F9ob8KH/css
 
-import ProLayoutPanelsvgIcon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__ProLayoutPanelsvg"; // plasmic-import: MsE1fZcL1_/icon
-import ChecksvgIcon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Checksvg"; // plasmic-import: r_TPt86vHV4SXb/icon
-import RightArrowIcon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__RightArrow"; // plasmic-import: FfSoXEgUCW0G_l/icon
-import Icon9Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon9"; // plasmic-import: 3iSPR8gr_8/icon
-import Icon6Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon6"; // plasmic-import: J1YAUdPI6/icon
-import Icon4Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon4"; // plasmic-import: V02xllXpr/icon
-import Icon10Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon10"; // plasmic-import: VcNk7skQWd/icon
-import Icon2Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon2"; // plasmic-import: JfzJrHKPBw/icon
-import Icon11Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon11"; // plasmic-import: ZsRymmi19/icon
-import Icon5Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon5"; // plasmic-import: ScoFh1W5NL/icon
-import IconIcon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon"; // plasmic-import: cNxJEz4gEG/icon
-import Icon15Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Icon15"; // plasmic-import: RQ7qx5lk9P/icon
+import ProLayoutPanelsvgIcon from "./icons/PlasmicIcon__ProLayoutPanelsvg"; // plasmic-import: MsE1fZcL1_/icon
+import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: r_TPt86vHV4SXb/icon
+import RightArrowIcon from "./icons/PlasmicIcon__RightArrow"; // plasmic-import: FfSoXEgUCW0G_l/icon
+import Icon9Icon from "./icons/PlasmicIcon__Icon9"; // plasmic-import: 3iSPR8gr_8/icon
+import Icon6Icon from "./icons/PlasmicIcon__Icon6"; // plasmic-import: J1YAUdPI6/icon
+import Icon4Icon from "./icons/PlasmicIcon__Icon4"; // plasmic-import: V02xllXpr/icon
+import Icon10Icon from "./icons/PlasmicIcon__Icon10"; // plasmic-import: VcNk7skQWd/icon
+import Icon2Icon from "./icons/PlasmicIcon__Icon2"; // plasmic-import: JfzJrHKPBw/icon
+import Icon11Icon from "./icons/PlasmicIcon__Icon11"; // plasmic-import: ZsRymmi19/icon
+import Icon5Icon from "./icons/PlasmicIcon__Icon5"; // plasmic-import: ScoFh1W5NL/icon
+import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: cNxJEz4gEG/icon
+import Icon15Icon from "./icons/PlasmicIcon__Icon15"; // plasmic-import: RQ7qx5lk9P/icon
 
 export type PlasmicProLayoutPanel__VariantMembers = {};
 

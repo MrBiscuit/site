@@ -173,7 +173,23 @@ function PlasmicButton__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
@@ -197,6 +213,7 @@ function PlasmicButton__RenderFunc(props: {
         projectcss.button,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         sty.root,
         {
@@ -666,7 +683,6 @@ function useBehavior<P extends pp.BaseButtonProps>(
       endIconSlot: "endIcon",
       root: "root"
     },
-
     ref
   );
 
@@ -724,12 +740,16 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicButton__ArgProps,
-      internalVariantPropNames: PlasmicButton__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicButton__ArgProps,
+          internalVariantPropNames: PlasmicButton__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicButton__RenderFunc({
       variants,

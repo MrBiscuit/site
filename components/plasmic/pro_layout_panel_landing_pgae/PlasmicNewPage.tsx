@@ -2009,301 +2009,336 @@ function PlasmicNewPage__RenderFunc(props: {
                 </p.Stack>
               </p.Stack>
 
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame1206"}
-                data-plasmic-override={overrides.frame1206}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame1206)}
-              >
-                <Group955Icon
-                  className={classNames(projectcss.all, sty.svg__g6NYo)}
-                  role={"img"}
-                />
-
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"frame1207"}
-                  data-plasmic-override={overrides.frame1207}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.frame1207)}
-                >
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.freeBox__bjwSe)}>
                   <p.Stack
                     as={"div"}
-                    data-plasmic-name={"frame1238"}
-                    data-plasmic-override={overrides.frame1238}
+                    data-plasmic-name={"frame1206"}
+                    data-plasmic-override={overrides.frame1206}
                     hasGap={true}
-                    className={classNames(projectcss.all, sty.frame1238)}
+                    className={classNames(projectcss.all, sty.frame1206)}
                   >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__i9PY
-                      )}
-                    >
-                      {"Conference Agenda"}
-                    </div>
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__bxrJv
-                      )}
-                    >
-                      {"Connecting the globe"}
-                    </div>
-                  </p.Stack>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__miOuH
-                    )}
-                  >
-                    {"More»"}
-                  </div>
-                </p.Stack>
-
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"frame1208"}
-                  data-plasmic-override={overrides.frame1208}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.frame1208)}
-                >
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__dOZhl
-                    )}
-                    component={Link}
-                    href={
-                      "https://www.youtube.com/watch?v=hnPIpkvDxjc&t=1351s" as const
-                    }
-                    platform={"nextjs"}
-                  >
-                    <ContentCard
-                      data-plasmic-name={"contentCard6"}
-                      data-plasmic-override={overrides.contentCard6}
-                      className={classNames("__wab_instance", sty.contentCard6)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame1210"}
-                        data-plasmic-override={overrides.frame1210}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame1210)}
-                      >
-                        <div
-                          data-plasmic-name={"rectangle27"}
-                          data-plasmic-override={overrides.rectangle27}
-                          className={classNames(
-                            projectcss.all,
-                            sty.rectangle27
-                          )}
-                        />
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__rn69I
-                          )}
-                        >
-                          {"Config 2021"}
-                        </div>
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__pwV89
-                          )}
-                        >
-                          {"Feb, 14th 2021 \n\n🌍 Global Virtual conference"}
-                        </div>
-                      </p.Stack>
-                    </ContentCard>
-                  </p.PlasmicLink>
-
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox___2AclY)}
-                  >
-                    <PawIcon
-                      className={classNames(projectcss.all, sty.svg__mPw92)}
+                    <Group955Icon
+                      className={classNames(projectcss.all, sty.svg__g6NYo)}
                       role={"img"}
                     />
-                  </div>
 
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__z4VsF
-                    )}
-                    component={Link}
-                    href={
-                      "https://www.eventbrite.de/e/into-design-systems-munich-meetup-in-person-free-tickets-407558517497" as const
-                    }
-                    platform={"nextjs"}
-                  >
-                    <ContentCard
-                      data-plasmic-name={"contentCard7"}
-                      data-plasmic-override={overrides.contentCard7}
-                      className={classNames("__wab_instance", sty.contentCard7)}
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"frame1207"}
+                      data-plasmic-override={overrides.frame1207}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.frame1207)}
                     >
                       <p.Stack
                         as={"div"}
-                        data-plasmic-name={"frame1212"}
-                        data-plasmic-override={overrides.frame1212}
+                        data-plasmic-name={"frame1238"}
+                        data-plasmic-override={overrides.frame1238}
                         hasGap={true}
-                        className={classNames(projectcss.all, sty.frame1212)}
+                        className={classNames(projectcss.all, sty.frame1238)}
                       >
                         <div
-                          data-plasmic-name={"rectangle28"}
-                          data-plasmic-override={overrides.rectangle28}
-                          className={classNames(
-                            projectcss.all,
-                            sty.rectangle28
-                          )}
-                        />
-
-                        <div
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text___13B4L
+                            sty.text__i9PY
                           )}
                         >
-                          {"Into Design System Munich "}
+                          {"Conference Agenda"}
                         </div>
 
                         <div
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__dUqJm
+                            sty.text__bxrJv
                           )}
                         >
-                          {"Sept, 21st 2022 \n\nMunich, 🇩🇪 Germany"}
+                          {"Connecting the globe"}
                         </div>
                       </p.Stack>
-                    </ContentCard>
-                  </p.PlasmicLink>
 
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__mIwbc
-                    )}
-                    component={Link}
-                    href={"https://thegeekgathering.org/" as const}
-                    platform={"nextjs"}
-                  >
-                    <ContentCard
-                      data-plasmic-name={"contentCard8"}
-                      data-plasmic-override={overrides.contentCard8}
-                      className={classNames("__wab_instance", sty.contentCard8)}
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__miOuH
+                        )}
+                      >
+                        {"More»"}
+                      </div>
+                    </p.Stack>
+
+                    <p.Stack
+                      as={"div"}
+                      data-plasmic-name={"frame1208"}
+                      data-plasmic-override={overrides.frame1208}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.frame1208)}
                     >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame1239"}
-                        data-plasmic-override={overrides.frame1239}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame1239)}
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__dOZhl
+                        )}
+                        component={Link}
+                        href={
+                          "https://www.youtube.com/watch?v=hnPIpkvDxjc&t=1351s" as const
+                        }
+                        platform={"nextjs"}
                       >
-                        <div
-                          data-plasmic-name={"rectangle29"}
-                          data-plasmic-override={overrides.rectangle29}
+                        <ContentCard
+                          data-plasmic-name={"contentCard6"}
+                          data-plasmic-override={overrides.contentCard6}
                           className={classNames(
-                            projectcss.all,
-                            sty.rectangle29
-                          )}
-                        />
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__ufm50
+                            "__wab_instance",
+                            sty.contentCard6
                           )}
                         >
-                          {"The Geek Gathering 2022"}
-                        </div>
+                          <p.Stack
+                            as={"div"}
+                            data-plasmic-name={"frame1210"}
+                            data-plasmic-override={overrides.frame1210}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.frame1210
+                            )}
+                          >
+                            <div
+                              data-plasmic-name={"rectangle27"}
+                              data-plasmic-override={overrides.rectangle27}
+                              className={classNames(
+                                projectcss.all,
+                                sty.rectangle27
+                              )}
+                            />
 
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__g11R9
-                          )}
-                        >
-                          {"Oct, 6th 2022\n\nOsijek, 🇭🇷 Croatia"}
-                        </div>
-                      </p.Stack>
-                    </ContentCard>
-                  </p.PlasmicLink>
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__rn69I
+                              )}
+                            >
+                              {"Config 2021"}
+                            </div>
 
-                  <p.PlasmicLink
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.link__jf1N6
-                    )}
-                    component={Link}
-                    href={"https://dafed.org/" as const}
-                    platform={"nextjs"}
-                  >
-                    <ContentCard
-                      data-plasmic-name={"contentCard9"}
-                      data-plasmic-override={overrides.contentCard9}
-                      className={classNames("__wab_instance", sty.contentCard9)}
-                    >
-                      <p.Stack
-                        as={"div"}
-                        data-plasmic-name={"frame1252"}
-                        data-plasmic-override={overrides.frame1252}
-                        hasGap={true}
-                        className={classNames(projectcss.all, sty.frame1252)}
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__pwV89
+                              )}
+                            >
+                              {
+                                "Feb, 14th 2021 \n\n🌍 Global Virtual conference"
+                              }
+                            </div>
+                          </p.Stack>
+                        </ContentCard>
+                      </p.PlasmicLink>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___2AclY
+                        )}
                       >
-                        <div
-                          data-plasmic-name={"rectangle30"}
-                          data-plasmic-override={overrides.rectangle30}
-                          className={classNames(
-                            projectcss.all,
-                            sty.rectangle30
-                          )}
+                        <PawIcon
+                          className={classNames(projectcss.all, sty.svg__mPw92)}
+                          role={"img"}
                         />
+                      </div>
 
-                        <div
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__z4VsF
+                        )}
+                        component={Link}
+                        href={
+                          "https://www.eventbrite.de/e/into-design-systems-munich-meetup-in-person-free-tickets-407558517497" as const
+                        }
+                        platform={"nextjs"}
+                      >
+                        <ContentCard
+                          data-plasmic-name={"contentCard7"}
+                          data-plasmic-override={overrides.contentCard7}
                           className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__krgOj
+                            "__wab_instance",
+                            sty.contentCard7
                           )}
                         >
-                          {"DaFED"}
-                        </div>
+                          <p.Stack
+                            as={"div"}
+                            data-plasmic-name={"frame1212"}
+                            data-plasmic-override={overrides.frame1212}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.frame1212
+                            )}
+                          >
+                            <div
+                              data-plasmic-name={"rectangle28"}
+                              data-plasmic-override={overrides.rectangle28}
+                              className={classNames(
+                                projectcss.all,
+                                sty.rectangle28
+                              )}
+                            />
 
-                        <div
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text___13B4L
+                              )}
+                            >
+                              {"Into Design System Munich "}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__dUqJm
+                              )}
+                            >
+                              {"Sept, 21st 2022 \n\nMunich, 🇩🇪 Germany"}
+                            </div>
+                          </p.Stack>
+                        </ContentCard>
+                      </p.PlasmicLink>
+
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__mIwbc
+                        )}
+                        component={Link}
+                        href={"https://thegeekgathering.org/" as const}
+                        platform={"nextjs"}
+                      >
+                        <ContentCard
+                          data-plasmic-name={"contentCard8"}
+                          data-plasmic-override={overrides.contentCard8}
                           className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__dfK9C
+                            "__wab_instance",
+                            sty.contentCard8
                           )}
                         >
-                          {"Oct, 12th 2022\n\nBelgrade, 🇷🇸 Serbia"}
-                        </div>
-                      </p.Stack>
-                    </ContentCard>
-                  </p.PlasmicLink>
-                </p.Stack>
-              </p.Stack>
+                          <p.Stack
+                            as={"div"}
+                            data-plasmic-name={"frame1239"}
+                            data-plasmic-override={overrides.frame1239}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.frame1239
+                            )}
+                          >
+                            <div
+                              data-plasmic-name={"rectangle29"}
+                              data-plasmic-override={overrides.rectangle29}
+                              className={classNames(
+                                projectcss.all,
+                                sty.rectangle29
+                              )}
+                            />
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__ufm50
+                              )}
+                            >
+                              {"The Geek Gathering 2022"}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__g11R9
+                              )}
+                            >
+                              {"Oct, 6th 2022\n\nOsijek, 🇭🇷 Croatia"}
+                            </div>
+                          </p.Stack>
+                        </ContentCard>
+                      </p.PlasmicLink>
+
+                      <p.PlasmicLink
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.a,
+                          sty.link__jf1N6
+                        )}
+                        component={Link}
+                        href={"https://dafed.org/" as const}
+                        platform={"nextjs"}
+                      >
+                        <ContentCard
+                          data-plasmic-name={"contentCard9"}
+                          data-plasmic-override={overrides.contentCard9}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.contentCard9
+                          )}
+                        >
+                          <p.Stack
+                            as={"div"}
+                            data-plasmic-name={"frame1252"}
+                            data-plasmic-override={overrides.frame1252}
+                            hasGap={true}
+                            className={classNames(
+                              projectcss.all,
+                              sty.frame1252
+                            )}
+                          >
+                            <div
+                              data-plasmic-name={"rectangle30"}
+                              data-plasmic-override={overrides.rectangle30}
+                              className={classNames(
+                                projectcss.all,
+                                sty.rectangle30
+                              )}
+                            />
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__krgOj
+                              )}
+                            >
+                              {"DaFED"}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__dfK9C
+                              )}
+                            >
+                              {"Oct, 12th 2022\n\nBelgrade, 🇷🇸 Serbia"}
+                            </div>
+                          </p.Stack>
+                        </ContentCard>
+                      </p.PlasmicLink>
+                    </p.Stack>
+                  </p.Stack>
+                </div>
+              ) : null}
 
               <p.Stack
                 as={"div"}

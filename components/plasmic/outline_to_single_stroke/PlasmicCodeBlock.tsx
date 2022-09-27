@@ -69,7 +69,23 @@ function PlasmicCodeBlock__RenderFunc(props: {
 
   forNode?: string;
 }) {
-  const { variants, args, overrides, forNode } = props;
+  const { variants, overrides, forNode } = props;
+
+  const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {},
+
+        props.args
+      ),
+    [props.args]
+  );
+
+  const $props = {
+    ...args,
+    ...variants
+  };
 
   return (
     <div
@@ -81,6 +97,7 @@ function PlasmicCodeBlock__RenderFunc(props: {
         projectcss.all,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
+        projectcss.plasmic_mixins,
         projectcss.plasmic_tokens,
         sty.root
       )}
@@ -134,12 +151,16 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
   const func = function <T extends PropsType>(
     props: T & StrictProps<T, PropsType>
   ) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicCodeBlock__ArgProps,
-      internalVariantPropNames: PlasmicCodeBlock__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicCodeBlock__ArgProps,
+          internalVariantPropNames: PlasmicCodeBlock__VariantProps
+        }),
+      [props, nodeName]
+    );
 
     return PlasmicCodeBlock__RenderFunc({
       variants,
