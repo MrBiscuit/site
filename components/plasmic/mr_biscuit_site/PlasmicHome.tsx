@@ -35,9 +35,9 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import SuperEllipse from "react-superellipse"; // plasmic-import: tA0fNNo2idi/codeComponent
+import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import { Text } from "@chakra-ui/react"; // plasmic-import: GwrfPQ0Lynu/codeComponent
 import { Typewriter } from "react-simple-typewriter"; // plasmic-import: _wC7mwePtk/codeComponent
-import { Reveal } from "@plasmicpkgs/react-awesome-reveal"; // plasmic-import: R6s1FdhksG/codeComponent
 import { Loop } from "../../Loop"; // plasmic-import: IeAlCi-lqq/codeComponent
 import SuperEllipseButton from "../../SuperEllipseButton"; // plasmic-import: BydexUicCD/component
 import SideLink from "../../SideLink"; // plasmic-import: Erbgmri1tY/component
@@ -99,11 +99,11 @@ export type PlasmicHome__OverridesType = {
   right2?: p.Flex<"div">;
   frame1187?: p.Flex<"div">;
   _?: p.Flex<"div">;
+  right?: p.Flex<"div">;
+  background?: p.Flex<typeof p.PlasmicImg>;
   hero?: p.Flex<"div">;
   typewriter?: p.Flex<typeof Typewriter>;
   arrowReveal?: p.Flex<typeof Reveal>;
-  right?: p.Flex<"div">;
-  background?: p.Flex<typeof p.PlasmicImg>;
   buttonwrap?: p.Flex<"a"> & Partial<LinkProps>;
   frame1181?: p.Flex<"div">;
   frame1176?: p.Flex<"div">;
@@ -374,6 +374,103 @@ function PlasmicHome__RenderFunc(props: {
               >
                 {true ? (
                   <div
+                    data-plasmic-name={"right"}
+                    data-plasmic-override={overrides.right}
+                    className={classNames(projectcss.all, sty.right)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__ya3Ik)}
+                    >
+                      <Reveal
+                        big={true}
+                        cascade={true}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.reveal__e4P18
+                        )}
+                        delay={1500 as const}
+                        direction={"down" as const}
+                        effect={"zoom" as const}
+                        triggerOnce={true}
+                      >
+                        {true ? (
+                          <p.PlasmicImg
+                            data-plasmic-name={"background"}
+                            data-plasmic-override={overrides.background}
+                            alt={""}
+                            className={classNames(sty.background)}
+                            displayHeight={"508px" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"none" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"658px" as const}
+                            loading={"lazy" as const}
+                            src={{
+                              src: "/plasmic/pro_layout_panel_landing_pgae/images/image33.svg",
+                              fullWidth: 151,
+                              fullHeight: 150,
+                              aspectRatio: 1.009381
+                            }}
+                          />
+                        ) : null}
+                      </Reveal>
+
+                      <Reveal
+                        cascade={false}
+                        className={classNames(
+                          "__wab_instance",
+                          sty.reveal__reexk
+                        )}
+                        delay={2250 as const}
+                        direction={"down" as const}
+                        effect={"bounce" as const}
+                        triggerOnce={true}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__clmmz
+                          )}
+                        >
+                          {"Мг. Бisсuiт"}
+                        </div>
+                      </Reveal>
+
+                      <Reveal
+                        className={classNames(
+                          "__wab_instance",
+                          sty.reveal__r7WGe
+                        )}
+                        delay={1850 as const}
+                        direction={"down" as const}
+                        effect={"bounce" as const}
+                        triggerOnce={true}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__ckElf)}
+                          displayHeight={"428px" as const}
+                          displayMaxHeight={"none" as const}
+                          displayMaxWidth={"100%" as const}
+                          displayMinHeight={"0" as const}
+                          displayMinWidth={"0" as const}
+                          displayWidth={"403px" as const}
+                          loading={"lazy" as const}
+                          src={{
+                            src: "/plasmic/pro_layout_panel_landing_pgae/images/image31.svg",
+                            fullWidth: 141,
+                            fullHeight: 150,
+                            aspectRatio: 0.942308
+                          }}
+                        />
+                      </Reveal>
+                    </div>
+                  </div>
+                ) : null}
+                {true ? (
+                  <div
                     data-plasmic-name={"hero"}
                     data-plasmic-override={overrides.hero}
                     className={classNames(projectcss.all, sty.hero)}
@@ -466,107 +563,6 @@ function PlasmicHome__RenderFunc(props: {
                         />
                       </Loop>
                     </Reveal>
-
-                    {true ? (
-                      <div
-                        data-plasmic-name={"right"}
-                        data-plasmic-override={overrides.right}
-                        className={classNames(projectcss.all, sty.right)}
-                      >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            sty.freeBox__ya3Ik
-                          )}
-                        >
-                          <Reveal
-                            big={true}
-                            cascade={true}
-                            className={classNames(
-                              "__wab_instance",
-                              sty.reveal__e4P18
-                            )}
-                            delay={1500 as const}
-                            direction={"down" as const}
-                            effect={"zoom" as const}
-                            triggerOnce={true}
-                          >
-                            {true ? (
-                              <p.PlasmicImg
-                                data-plasmic-name={"background"}
-                                data-plasmic-override={overrides.background}
-                                alt={""}
-                                className={classNames(sty.background)}
-                                displayHeight={"508px" as const}
-                                displayMaxHeight={"none" as const}
-                                displayMaxWidth={"none" as const}
-                                displayMinHeight={"0" as const}
-                                displayMinWidth={"0" as const}
-                                displayWidth={"658px" as const}
-                                loading={"lazy" as const}
-                                src={{
-                                  src: "/plasmic/pro_layout_panel_landing_pgae/images/image33.svg",
-                                  fullWidth: 151,
-                                  fullHeight: 150,
-                                  aspectRatio: 1.009381
-                                }}
-                              />
-                            ) : null}
-                          </Reveal>
-
-                          <Reveal
-                            cascade={false}
-                            className={classNames(
-                              "__wab_instance",
-                              sty.reveal__reexk
-                            )}
-                            delay={2250 as const}
-                            direction={"down" as const}
-                            effect={"bounce" as const}
-                            triggerOnce={true}
-                          >
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__clmmz
-                              )}
-                            >
-                              {"Мг. Бisсuiт"}
-                            </div>
-                          </Reveal>
-
-                          <Reveal
-                            className={classNames(
-                              "__wab_instance",
-                              sty.reveal__r7WGe
-                            )}
-                            delay={1850 as const}
-                            direction={"down" as const}
-                            effect={"bounce" as const}
-                            triggerOnce={true}
-                          >
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__ckElf)}
-                              displayHeight={"428px" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"403px" as const}
-                              loading={"lazy" as const}
-                              src={{
-                                src: "/plasmic/pro_layout_panel_landing_pgae/images/image31.svg",
-                                fullWidth: 141,
-                                fullHeight: 150,
-                                aspectRatio: 0.942308
-                              }}
-                            />
-                          </Reveal>
-                        </div>
-                      </div>
-                    ) : null}
 
                     <Reveal
                       cascade={true}
@@ -2959,11 +2955,11 @@ const PlasmicDescendants = {
     "right2",
     "frame1187",
     "_",
+    "right",
+    "background",
     "hero",
     "typewriter",
     "arrowReveal",
-    "right",
-    "background",
     "buttonwrap",
     "frame1181",
     "frame1176",
@@ -3072,12 +3068,12 @@ const PlasmicDescendants = {
   right2: ["right2", "frame1187", "_"],
   frame1187: ["frame1187", "_"],
   _: ["_"],
+  right: ["right", "background"],
+  background: ["background"],
   hero: [
     "hero",
     "typewriter",
     "arrowReveal",
-    "right",
-    "background",
     "buttonwrap",
     "frame1181",
     "frame1176",
@@ -3091,8 +3087,6 @@ const PlasmicDescendants = {
   ],
   typewriter: ["typewriter"],
   arrowReveal: ["arrowReveal"],
-  right: ["right", "background"],
-  background: ["background"],
   buttonwrap: ["buttonwrap"],
   frame1181: [
     "frame1181",
@@ -3475,11 +3469,11 @@ type NodeDefaultElementType = {
   right2: "div";
   frame1187: "div";
   _: "div";
+  right: "div";
+  background: typeof p.PlasmicImg;
   hero: "div";
   typewriter: typeof Typewriter;
   arrowReveal: typeof Reveal;
-  right: "div";
-  background: typeof p.PlasmicImg;
   buttonwrap: "a";
   frame1181: "div";
   frame1176: "div";
@@ -3650,11 +3644,11 @@ export const PlasmicHome = Object.assign(
     right2: makeNodeComponent("right2"),
     frame1187: makeNodeComponent("frame1187"),
     _: makeNodeComponent("_"),
+    right: makeNodeComponent("right"),
+    background: makeNodeComponent("background"),
     hero: makeNodeComponent("hero"),
     typewriter: makeNodeComponent("typewriter"),
     arrowReveal: makeNodeComponent("arrowReveal"),
-    right: makeNodeComponent("right"),
-    background: makeNodeComponent("background"),
     buttonwrap: makeNodeComponent("buttonwrap"),
     frame1181: makeNodeComponent("frame1181"),
     frame1176: makeNodeComponent("frame1176"),
