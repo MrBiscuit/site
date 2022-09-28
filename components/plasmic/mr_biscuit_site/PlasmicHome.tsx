@@ -470,9 +470,11 @@ function PlasmicHome__RenderFunc(props: {
                   </div>
                 ) : null}
                 {true ? (
-                  <div
+                  <p.Stack
+                    as={"div"}
                     data-plasmic-name={"hero"}
                     data-plasmic-override={overrides.hero}
+                    hasGap={true}
                     className={classNames(projectcss.all, sty.hero)}
                   >
                     <Icon14Icon
@@ -787,7 +789,7 @@ function PlasmicHome__RenderFunc(props: {
                         </p.Stack>
                       </p.Stack>
                     </Reveal>
-                  </div>
+                  </p.Stack>
                 ) : null}
                 {true ? (
                   <div

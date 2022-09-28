@@ -270,7 +270,7 @@
   .right {
     position: absolute;
     left: 92.31%;
-    top: 348px;
+    top: 374px;
     height: 372px;
     transform: scaleX(0.8) scaleY(0.8) scaleZ(1);
     right: auto;
@@ -402,15 +402,36 @@
   .hero {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     width: auto;
     height: auto;
     left: auto;
     top: auto;
     right: auto;
     overflow: visible;
-    flex-column-gap: 0px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .hero > :global(.__wab_flex-container) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: calc(0px - 0px);
+    width: calc(100% + 0px);
+    margin-top: calc(0px - 6px);
+    height: calc(100% + 6px);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .hero > :global(.__wab_flex-container) > *,
+  .hero > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .hero > :global(.__wab_flex-container) > picture > img,
+  .hero
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 0px;
+    margin-top: 6px;
   }
 }
 .svg___5PWv5 {
@@ -459,8 +480,8 @@
     position: relative;
     left: auto;
     top: auto;
-    margin-top: 20px;
-    margin-left: 0px;
+    margin-top: calc(20px + 6px) !important;
+    margin-left: calc(0px + 0px) !important;
     padding-left: 14px;
     flex-shrink: 0;
   }
@@ -575,12 +596,16 @@
   object-fit: cover;
   position: relative;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .reveal__aOpBh:global(.__wab_instance) {
     width: auto;
-    margin-top: 0px;
+    margin-top: calc(0px + 6px) !important;
   }
 }
 .buttonwrap {
@@ -698,8 +723,9 @@
   height: auto;
   display: flex;
   position: absolute;
-  top: 471px;
-  left: 87px;
+  top: 475px;
+  left: -88.01%;
+  z-index: 1;
 }
 .frame1181 > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -731,6 +757,8 @@
   height: auto;
   display: flex;
   position: relative;
+  left: auto;
+  top: auto;
   border-radius: 71.2px;
   padding: 6.4px;
 }
@@ -792,6 +820,8 @@
   height: 14.399px;
   display: block !important;
   overflow: hidden;
+  left: auto;
+  top: auto;
   flex-shrink: 0;
 }
 .img__xVycu > picture > img {
@@ -806,6 +836,8 @@
   height: auto;
   display: flex;
   position: relative;
+  left: auto;
+  top: auto;
   border-radius: 71.2px;
   padding: 6.4px;
 }
@@ -853,6 +885,8 @@
   width: auto;
   height: auto;
   max-width: 100%;
+  left: auto;
+  top: auto;
   padding: 6.4px;
 }
 .svg__aZCs {
@@ -869,6 +903,8 @@
   height: auto;
   display: flex;
   position: relative;
+  left: auto;
+  top: auto;
   border-radius: 39.2px;
   padding: 9.6px 12.8px;
 }
