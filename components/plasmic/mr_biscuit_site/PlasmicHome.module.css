@@ -244,6 +244,9 @@
   .freeBox__v6A6F {
     margin-left: 0px;
     margin-right: 0px;
+    padding-right: 12px;
+    padding-left: 12px;
+    height: auto;
   }
 }
 .superEllipse__tDiFo:global(.__wab_instance) {
@@ -258,19 +261,20 @@
   width: 712px;
   height: 717px;
   display: block;
-  position: relative;
-  top: auto;
+  position: absolute;
+  top: -34px;
   left: auto;
-  right: auto;
+  right: 8.33%;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .right {
-    position: relative;
-    left: auto;
-    top: auto;
+    position: absolute;
+    left: 92.31%;
+    top: 348px;
     height: 372px;
     transform: scaleX(0.8) scaleY(0.8) scaleZ(1);
     right: auto;
+    width: auto;
   }
 }
 .freeBox__ya3Ik {
@@ -449,7 +453,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__x8Zqs:global(.__wab_instance) {
-    height: 180px;
+    height: 240px;
     width: 300px;
     font-size: 32px;
     position: relative;
@@ -949,6 +953,7 @@
   .separator2 {
     left: auto;
     top: auto;
+    padding-top: 303px;
   }
 }
 .loop__lblTk:global(.__wab_instance) {
