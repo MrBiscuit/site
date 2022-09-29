@@ -1,4 +1,4 @@
-import { RegisterChakra } from "./registerChakra";
+import { RegisterChakra } from "../registerChakra";
 import { ChakraProvider } from "@chakra-ui/react";
 import { PlasmicCanvasHost } from "@plasmicapp/host";
 import { registerComponent } from "@plasmicapp/host";
