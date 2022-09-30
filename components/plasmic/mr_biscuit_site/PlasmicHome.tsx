@@ -322,6 +322,9 @@ function PlasmicHome__RenderFunc(props: {
               <Button
                 className={classNames("__wab_instance", sty.button__lH6Nd)}
                 color={"clear" as const}
+                link={
+                  "https://www.figma.com/preload-editor?fuid=405240457298389341" as const
+                }
                 size={"compact" as const}
               >
                 <div
@@ -1401,15 +1404,19 @@ function PlasmicHome__RenderFunc(props: {
                         ? true
                         : true
                     ) ? (
-                      <div
+                      <p.PlasmicLink
                         className={classNames(
                           projectcss.all,
+                          projectcss.a,
                           projectcss.__wab_text,
-                          sty.text__t41XD
+                          sty.link__t41XD
                         )}
+                        component={Link}
+                        href={"https://www.figma.com/@MrBiscuit" as const}
+                        platform={"nextjs"}
                       >
                         {"View All »"}
-                      </div>
+                      </p.PlasmicLink>
                     ) : null}
                   </div>
 
@@ -1764,15 +1771,19 @@ function PlasmicHome__RenderFunc(props: {
                   {(
                     hasVariant(globalVariants, "screen", "mobile") ? true : true
                   ) ? (
-                    <div
+                    <p.PlasmicLink
                       className={classNames(
                         projectcss.all,
+                        projectcss.a,
                         projectcss.__wab_text,
-                        sty.text__yYy5S
+                        sty.link__yYy5S
                       )}
+                      component={Link}
+                      href={"https://www.figma.com/@MrBiscuit" as const}
+                      platform={"nextjs"}
                     >
                       {"More »"}
-                    </div>
+                    </p.PlasmicLink>
                   ) : null}
                 </div>
 

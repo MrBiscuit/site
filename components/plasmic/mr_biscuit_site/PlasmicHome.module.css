@@ -2083,7 +2083,7 @@
     letter-spacing: 0.04em;
   }
 }
-.text__t41XD {
+.link__t41XD {
   display: block;
   font-size: 20px;
   text-align: right;
@@ -2096,7 +2096,7 @@
   white-space: pre;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .text__t41XD {
+  .link__t41XD {
     display: none;
   }
 }
@@ -2594,7 +2594,7 @@
   position: relative;
   flex-shrink: 0;
 }
-.text__yYy5S {
+.link__yYy5S {
   display: block;
   font-size: 20px;
   text-align: right;
@@ -2607,7 +2607,7 @@
   flex-shrink: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .text__yYy5S {
+  .link__yYy5S {
     display: none;
   }
 }

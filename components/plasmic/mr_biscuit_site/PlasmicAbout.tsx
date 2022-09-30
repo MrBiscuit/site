@@ -262,6 +262,7 @@ function PlasmicAbout__RenderFunc(props: {
               <Button
                 className={classNames("__wab_instance", sty.button__qoVmP)}
                 color={"clear" as const}
+                link={`/about`}
                 size={"compact" as const}
               >
                 <div
@@ -278,6 +279,9 @@ function PlasmicAbout__RenderFunc(props: {
               <Button
                 className={classNames("__wab_instance", sty.button__h9M1)}
                 color={"clear" as const}
+                link={
+                  "https://www.figma.com/preload-editor?fuid=405240457298389341" as const
+                }
                 size={"compact" as const}
               >
                 <div

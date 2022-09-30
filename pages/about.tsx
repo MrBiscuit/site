@@ -6,6 +6,7 @@ import GlobalContextsProvider from "../components/plasmic/mr_biscuit_site/Plasmi
 import { ScreenVariantProvider } from "../components/plasmic/pro_layout_panel_landing_pgae/PlasmicGlobalVariant__Screen";
 import { PlasmicAbout } from "../components/plasmic/mr_biscuit_site/PlasmicAbout";
 import { useRouter } from "next/router";
+import { ChakraProvider } from "@chakra-ui/react";
 
 function About() {
   // Use PlasmicAbout to render this component as it was
@@ -30,7 +31,8 @@ function About() {
         params={useRouter().query}
         query={useRouter().query}
       >
-        <PlasmicAbout />
+        
+        <ChakraProvider><PlasmicAbout /></ChakraProvider>
       </ph.PageParamsProvider>
     </GlobalContextsProvider>
   );
