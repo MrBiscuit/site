@@ -794,6 +794,19 @@
           "cssFilePath": "plasmic/mr_biscuit_site/PlasmicHome.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "poGDb8OVIHl",
+          "name": "About",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/mr_biscuit_site/PlasmicAbout.tsx",
+          "importSpec": {
+            "modulePath": "../pages/about.tsx"
+          },
+          "cssFilePath": "plasmic/mr_biscuit_site/PlasmicAbout.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -1391,6 +1404,11 @@
           "id": "ZAy48aevCI",
           "name": "Icon16Icon",
           "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon16.tsx"
+        },
+        {
+          "id": "xf9A_AdJl",
+          "name": "ParsIcon",
+          "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Pars.tsx"
         }
       ],
       "images": [
@@ -1493,10 +1511,75 @@
           "id": "Jco9eGey8",
           "name": "image 31",
           "filePath": "../public/plasmic/pro_layout_panel_landing_pgae/images/image31.svg"
+        },
+        {
+          "id": "N4OweBvU0",
+          "name": "Group 957 1",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/group9571.png"
+        },
+        {
+          "id": "BbDupMH-Y",
+          "name": "image 34",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/image34.png"
+        },
+        {
+          "id": "Sv3aCsOsvs",
+          "name": "image 36",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/image36.png"
+        },
+        {
+          "id": "Z_dFwr0aQ0",
+          "name": "image 35",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/image35.png"
+        },
+        {
+          "id": "kS27GRUpgc",
+          "name": "image 37",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/image37.png"
+        },
+        {
+          "id": "uocfO-RCI",
+          "name": "image 4",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/image4.png"
+        },
+        {
+          "id": "E0zlyo4qC",
+          "name": "image 5",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/image5.png"
+        },
+        {
+          "id": "rJzcn_kp1",
+          "name": "image 11",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/image11.png"
+        },
+        {
+          "id": "3qaRK2cRO",
+          "name": "image 12",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/image12.png"
+        },
+        {
+          "id": "LekxcHVuF",
+          "name": "image 13",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/image13.png"
+        },
+        {
+          "id": "W1IBUkj5Q",
+          "name": "image 14",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/image14.png"
+        },
+        {
+          "id": "0skQDKIwG",
+          "name": "image 15",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/image15.png"
+        },
+        {
+          "id": "_3BocR7HG",
+          "name": "image 16",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/image16.png"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "",
+      "globalContextsFilePath": "plasmic/mr_biscuit_site/PlasmicGlobalContextsProvider.tsx",
       "codeComponents": [
         {
           "id": "MI65r1tpoC",
@@ -1887,6 +1970,30 @@
           "id": "T8aFLL0q7u",
           "name": "Fetcher",
           "componentImportPath": "@plasmicapp/data-sources"
+        }
+      ]
+    },
+    {
+      "projectId": "84wxoth5npGrp6RRXPL88z",
+      "projectApiToken": "hOzXksPB8gkTrKnfJeV9VDS8m8dnIXQn1xxDQZ5MHxv9orQY6JNgwmk6aDMZPLkocV2KtD9gNJXv5JwIbbzIQ",
+      "projectName": "react-scroll-parallax-global",
+      "version": "4.3.0",
+      "cssFilePath": "plasmic/react_scroll_parallax_global/plasmic_react_scroll_parallax_global.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/react_scroll_parallax_global/PlasmicGlobalContextsProvider.tsx",
+      "codeComponents": [
+        {
+          "id": "bozP4lLlAZ",
+          "name": "ParallaxWrapper",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        },
+        {
+          "id": "L6MfauX2Cw",
+          "name": "ParallaxProviderWrapper",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
       ]
     }
