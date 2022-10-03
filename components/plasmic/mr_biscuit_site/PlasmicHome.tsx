@@ -48,6 +48,7 @@ import Plugin from "../../Plugin"; // plasmic-import: z9E_OoSoFq/component
 import { AspectRatio } from "@chakra-ui/react"; // plasmic-import: haXMqUgpyx/codeComponent
 import { Image } from "@chakra-ui/react"; // plasmic-import: --YMCTTQh5/codeComponent
 import YouTube from "@plasmicpkgs/react-youtube"; // plasmic-import: CHO21V9uYw/codeComponent
+import PersonalFooter from "../../PersonalFooter"; // plasmic-import: gYEMnmmnyX8/component
 
 import { useScreenVariants as useScreenVariants_3KhhFf1Cq1Qfos } from "../pro_layout_panel_landing_pgae/PlasmicGlobalVariant__Screen"; // plasmic-import: 3KhhFf1CQ1QFOS/globalVariant
 
@@ -81,7 +82,6 @@ import Blob3Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Blob3
 import Blob2Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Blob2"; // plasmic-import: 9D2b_uWVGA/icon
 import BlobIcon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Blob"; // plasmic-import: 1KE4JPl4A8/icon
 import Group955Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Group955"; // plasmic-import: DMOvItYxqx/icon
-import Vector22Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Vector22"; // plasmic-import: 2iBZsGs4KF/icon
 
 export type PlasmicHome__VariantMembers = {};
 
@@ -105,6 +105,7 @@ export type PlasmicHome__OverridesType = {
   typewriter?: p.Flex<typeof Typewriter>;
   arrowReveal?: p.Flex<typeof Reveal>;
   buttonwrap?: p.Flex<"a"> & Partial<LinkProps>;
+  superEllipseButton?: p.Flex<typeof SuperEllipseButton>;
   frame1181?: p.Flex<"div">;
   frame1176?: p.Flex<"div">;
   frame1178?: p.Flex<"div">;
@@ -196,15 +197,7 @@ export type PlasmicHome__OverridesType = {
   frame1249?: p.Flex<"div">;
   frame1250?: p.Flex<"div">;
   frame1251?: p.Flex<"div">;
-  footer?: p.Flex<"div">;
-  frame1253?: p.Flex<"div">;
-  frame1254?: p.Flex<"div">;
-  frame1255?: p.Flex<"div">;
-  frame1256?: p.Flex<"div">;
-  frame1257?: p.Flex<"div">;
-  frame1258?: p.Flex<"div">;
-  frame1259?: p.Flex<"div">;
-  frame1260?: p.Flex<"div">;
+  personalFooter?: p.Flex<typeof PersonalFooter>;
 };
 
 export interface DefaultHomeProps {}
@@ -543,7 +536,7 @@ function PlasmicHome__RenderFunc(props: {
                         loop={0 as const}
                         typeSpeed={90 as const}
                         words={[
-                          "Hi, I'm a\nNext-Gen Professional\nDesign Syetem Architect.",
+                          "Hi, I'm a\nNext-Gen Professional\nDesign System Architect.",
                           "I Develop\nComposable, Declarative\n& Protocol Oriented DS",
                           "Most of which are\nLarge Scale &\nOpen Sourced Projects",
                           "I make\nProductivity Plugins\nIn Figma.",
@@ -666,9 +659,11 @@ function PlasmicHome__RenderFunc(props: {
                         target={"_blank" as const}
                       >
                         <SuperEllipseButton
+                          data-plasmic-name={"superEllipseButton"}
+                          data-plasmic-override={overrides.superEllipseButton}
                           className={classNames(
                             "__wab_instance",
-                            sty.superEllipseButton__miHe9
+                            sty.superEllipseButton
                           )}
                         >
                           <p.Stack
@@ -2806,219 +2801,11 @@ function PlasmicHome__RenderFunc(props: {
             </p.Stack>
           </p.Stack>
 
-          <p.Stack
-            as={"div"}
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.footer)}
-          >
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"frame1253"}
-              data-plasmic-override={overrides.frame1253}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.frame1253)}
-            >
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame1254"}
-                data-plasmic-override={overrides.frame1254}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame1254)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___6Ob2G
-                  )}
-                >
-                  {"About Me"}
-                </div>
-
-                <div
-                  data-plasmic-name={"frame1255"}
-                  data-plasmic-override={overrides.frame1255}
-                  className={classNames(projectcss.all, sty.frame1255)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__kP9Gi
-                    )}
-                  >
-                    {"My Works"}
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___9AzmP
-                    )}
-                  >
-                    {"My Story"}
-                  </div>
-                </div>
-              </p.Stack>
-
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame1256"}
-                data-plasmic-override={overrides.frame1256}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame1256)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__rqYwn
-                  )}
-                >
-                  {"Shop"}
-                </div>
-
-                <div
-                  data-plasmic-name={"frame1257"}
-                  data-plasmic-override={overrides.frame1257}
-                  className={classNames(projectcss.all, sty.frame1257)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___9Ec7
-                    )}
-                  >
-                    {"Pro Layout Panel"}
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__i7PUj
-                    )}
-                  >
-                    {"Figma Section"}
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__xmqTk
-                    )}
-                  >
-                    {"Instance Utils"}
-                  </div>
-                </div>
-              </p.Stack>
-
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame1258"}
-                data-plasmic-override={overrides.frame1258}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame1258)}
-              >
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__dwLdU
-                  )}
-                >
-                  {"Collaborate"}
-                </div>
-
-                <div
-                  data-plasmic-name={"frame1259"}
-                  data-plasmic-override={overrides.frame1259}
-                  className={classNames(projectcss.all, sty.frame1259)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__qWgI
-                    )}
-                  >
-                    {"Invite me to Speak"}
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__neagR
-                    )}
-                  >
-                    {"Hire me for Freelance"}
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__uxW6T
-                    )}
-                  >
-                    {"Private Teaching"}
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__fcT0
-                    )}
-                  >
-                    {"Become An Affiliate"}
-                  </div>
-                </div>
-              </p.Stack>
-            </p.Stack>
-
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"frame1260"}
-              data-plasmic-override={overrides.frame1260}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.frame1260)}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__wDk5Y
-                )}
-              >
-                {"Be the first to know"}
-              </div>
-
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link___3DkG
-                )}
-                component={Link}
-                href={"https://twitter.com/SShuaiqi" as const}
-                platform={"nextjs"}
-              >
-                <SuperEllipseButton
-                  className={classNames(
-                    "__wab_instance",
-                    sty.superEllipseButton__uaWcc
-                  )}
-                />
-              </p.PlasmicLink>
-            </p.Stack>
-          </p.Stack>
+          <PersonalFooter
+            data-plasmic-name={"personalFooter"}
+            data-plasmic-override={overrides.personalFooter}
+            className={classNames("__wab_instance", sty.personalFooter)}
+          />
         </div>
       </div>
     </React.Fragment>
@@ -3038,6 +2825,7 @@ const PlasmicDescendants = {
     "typewriter",
     "arrowReveal",
     "buttonwrap",
+    "superEllipseButton",
     "frame1181",
     "frame1176",
     "frame1178",
@@ -3129,15 +2917,7 @@ const PlasmicDescendants = {
     "frame1249",
     "frame1250",
     "frame1251",
-    "footer",
-    "frame1253",
-    "frame1254",
-    "frame1255",
-    "frame1256",
-    "frame1257",
-    "frame1258",
-    "frame1259",
-    "frame1260"
+    "personalFooter"
   ],
   header: ["header", "left", "frame1225", "right2"],
   left: ["left", "frame1225"],
@@ -3150,6 +2930,7 @@ const PlasmicDescendants = {
     "typewriter",
     "arrowReveal",
     "buttonwrap",
+    "superEllipseButton",
     "frame1181",
     "frame1176",
     "frame1178",
@@ -3162,7 +2943,8 @@ const PlasmicDescendants = {
   ],
   typewriter: ["typewriter"],
   arrowReveal: ["arrowReveal"],
-  buttonwrap: ["buttonwrap"],
+  buttonwrap: ["buttonwrap", "superEllipseButton"],
+  superEllipseButton: ["superEllipseButton"],
   frame1181: [
     "frame1181",
     "frame1176",
@@ -3505,33 +3287,7 @@ const PlasmicDescendants = {
   frame1249: ["frame1249"],
   frame1250: ["frame1250", "frame1251"],
   frame1251: ["frame1251"],
-  footer: [
-    "footer",
-    "frame1253",
-    "frame1254",
-    "frame1255",
-    "frame1256",
-    "frame1257",
-    "frame1258",
-    "frame1259",
-    "frame1260"
-  ],
-  frame1253: [
-    "frame1253",
-    "frame1254",
-    "frame1255",
-    "frame1256",
-    "frame1257",
-    "frame1258",
-    "frame1259"
-  ],
-  frame1254: ["frame1254", "frame1255"],
-  frame1255: ["frame1255"],
-  frame1256: ["frame1256", "frame1257"],
-  frame1257: ["frame1257"],
-  frame1258: ["frame1258", "frame1259"],
-  frame1259: ["frame1259"],
-  frame1260: ["frame1260"]
+  personalFooter: ["personalFooter"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -3548,6 +3304,7 @@ type NodeDefaultElementType = {
   typewriter: typeof Typewriter;
   arrowReveal: typeof Reveal;
   buttonwrap: "a";
+  superEllipseButton: typeof SuperEllipseButton;
   frame1181: "div";
   frame1176: "div";
   frame1178: "div";
@@ -3639,15 +3396,7 @@ type NodeDefaultElementType = {
   frame1249: "div";
   frame1250: "div";
   frame1251: "div";
-  footer: "div";
-  frame1253: "div";
-  frame1254: "div";
-  frame1255: "div";
-  frame1256: "div";
-  frame1257: "div";
-  frame1258: "div";
-  frame1259: "div";
-  frame1260: "div";
+  personalFooter: typeof PersonalFooter;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -3721,6 +3470,7 @@ export const PlasmicHome = Object.assign(
     typewriter: makeNodeComponent("typewriter"),
     arrowReveal: makeNodeComponent("arrowReveal"),
     buttonwrap: makeNodeComponent("buttonwrap"),
+    superEllipseButton: makeNodeComponent("superEllipseButton"),
     frame1181: makeNodeComponent("frame1181"),
     frame1176: makeNodeComponent("frame1176"),
     frame1178: makeNodeComponent("frame1178"),
@@ -3812,15 +3562,7 @@ export const PlasmicHome = Object.assign(
     frame1249: makeNodeComponent("frame1249"),
     frame1250: makeNodeComponent("frame1250"),
     frame1251: makeNodeComponent("frame1251"),
-    footer: makeNodeComponent("footer"),
-    frame1253: makeNodeComponent("frame1253"),
-    frame1254: makeNodeComponent("frame1254"),
-    frame1255: makeNodeComponent("frame1255"),
-    frame1256: makeNodeComponent("frame1256"),
-    frame1257: makeNodeComponent("frame1257"),
-    frame1258: makeNodeComponent("frame1258"),
-    frame1259: makeNodeComponent("frame1259"),
-    frame1260: makeNodeComponent("frame1260"),
+    personalFooter: makeNodeComponent("personalFooter"),
 
     // Metadata about props expected for PlasmicHome
     internalVariantProps: PlasmicHome__VariantProps,

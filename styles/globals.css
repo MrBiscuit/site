@@ -14,7 +14,18 @@ a {
 * {
   box-sizing: border-box;
 }
-
+@font-face {
+  font-family: "ComicRelief-Bold";
+  src: url(../fonts/ComicRelief-Bold.ttf);
+}
+@font-face {
+  font-family: "Albula-Normal";
+  src: url(../fonts/Albula-Regular.ttf);
+}
+@font-face {
+  font-family: "Albula-SemiBold";
+  src: url(../fonts/Albula-SemiBold.ttf);
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

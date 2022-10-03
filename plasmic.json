@@ -807,6 +807,19 @@
           "cssFilePath": "plasmic/mr_biscuit_site/PlasmicAbout.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "gYEMnmmnyX8",
+          "name": "PersonalFooter",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/mr_biscuit_site/PlasmicPersonalFooter.tsx",
+          "importSpec": {
+            "modulePath": "PersonalFooter.tsx"
+          },
+          "cssFilePath": "plasmic/mr_biscuit_site/PlasmicPersonalFooter.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
