@@ -822,7 +822,7 @@
   > img {
   margin-left: 16px;
 }
-.text__yw93F {
+.cta {
   display: block;
   font-size: 24px;
   text-align: center;
@@ -2449,7 +2449,6 @@
   left: auto;
 }
 .plugin__cr8Yf:global(.__wab_instance) {
-  max-width: 100%;
   position: relative;
 }
 .plugin__ruuHr:global(.__wab_instance) {
@@ -3347,7 +3346,7 @@
   margin-top: 8px;
 }
 .rectangle28 {
-  background: rgba(218, 114, 81, 1);
+  background: rgba(212, 213, 217, 1);
   width: 24px;
   height: 6px;
   display: block;
@@ -3374,33 +3373,6 @@
   line-height: 1.36335;
   color: rgba(153, 153, 153, 1);
   position: relative;
-}
-.freeBox___2AclY {
-  display: block;
-  position: relative;
-  width: 24px;
-  height: 25px;
-  flex-shrink: 0;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox___2AclY {
-    transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
-  }
-}
-.svg__mPw92 {
-  position: absolute;
-  object-fit: cover;
-  max-width: 100%;
-  color: #ccc;
-  mix-blend-mode: multiply;
-  transform: scale(1.000000499999875, 1.0000004999998748)
-    rotate(90.0572957604145deg);
-  width: 25px;
-  height: 24px;
-  display: block;
-  transform-origin: top left;
-  left: 24px;
-  top: 0px;
 }
 .link__mIwbc {
   position: relative;
@@ -3443,7 +3415,7 @@
   margin-top: 8px;
 }
 .rectangle29 {
-  background: rgba(14, 117, 255, 1);
+  background: rgba(212, 213, 217, 1);
   width: 24px;
   height: 6px;
   display: block;
@@ -3512,7 +3484,7 @@
   margin-top: 8px;
 }
 .rectangle30 {
-  background: rgba(14, 117, 255, 1);
+  background: rgba(212, 213, 217, 1);
   width: 24px;
   height: 6px;
   display: block;
@@ -3540,6 +3512,33 @@
   color: rgba(153, 153, 153, 1);
   position: relative;
   margin-top: calc(0px + 8px) !important;
+}
+.freeBox___2AclY {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 25px;
+  flex-shrink: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox___2AclY {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
+  }
+}
+.svg__mPw92 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  color: #ccc;
+  mix-blend-mode: multiply;
+  transform: scale(1.000000499999875, 1.0000004999998748)
+    rotate(90.0572957604145deg);
+  width: 25px;
+  height: 24px;
+  display: block;
+  transform-origin: top left;
+  left: 24px;
+  top: 0px;
 }
 .frame1240 {
   flex-direction: column;

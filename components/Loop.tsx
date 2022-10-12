@@ -28,7 +28,6 @@ export function Loop({
   return (
     <div className={className}>
       {children[index]}
-
     </div>
   );
 }

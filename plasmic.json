@@ -1589,6 +1589,66 @@
           "id": "_3BocR7HG",
           "name": "image 16",
           "filePath": "../public/plasmic/mr_biscuit_site/images/image16.png"
+        },
+        {
+          "id": "4xeo9c4Yy",
+          "name": "download.png",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/downloadpng.png"
+        },
+        {
+          "id": "yNB0ot18f",
+          "name": "download-4.png",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/download4Png.png"
+        },
+        {
+          "id": "9_N5lZoOA",
+          "name": "icon.png",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/iconpng.png"
+        },
+        {
+          "id": "2x33qtE-n",
+          "name": "download-6.png",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/download6Png.png"
+        },
+        {
+          "id": "Z8ARb9OPj",
+          "name": "icon-1.png",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/icon1Png.png"
+        },
+        {
+          "id": "VyU5AZTq7",
+          "name": "icon-2.png",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/icon2Png.png"
+        },
+        {
+          "id": "6NOqStP3g",
+          "name": "download-7.png",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/download7Png.png"
+        },
+        {
+          "id": "GgLpWEME2",
+          "name": "download-8.png",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/download8Png.png"
+        },
+        {
+          "id": "qxUzRmM-k",
+          "name": "icon-3.png",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/icon3Png.png"
+        },
+        {
+          "id": "MttQBs2Zi",
+          "name": "download-9.png",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/download9Png.png"
+        },
+        {
+          "id": "-NGw0rAKS",
+          "name": "download-10.png",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/download10Png.png"
+        },
+        {
+          "id": "QYJ7MAQQ_",
+          "name": "download-11.png",
+          "filePath": "../public/plasmic/mr_biscuit_site/images/download11Png.png"
         }
       ],
       "indirect": false,

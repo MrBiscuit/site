@@ -35,7 +35,6 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { AspectRatio } from "@chakra-ui/react"; // plasmic-import: haXMqUgpyx/codeComponent
-import { Image } from "@chakra-ui/react"; // plasmic-import: --YMCTTQh5/codeComponent
 import { Loop } from "../../Loop"; // plasmic-import: IeAlCi-lqq/codeComponent
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -58,19 +57,21 @@ export type PlasmicPlugin__ArgsType = {
   destination?: string;
   imgSrc?: string;
   startIndex?: number;
+  upload?: React.ComponentProps<typeof p.PlasmicImg>["src"];
 };
 
 type ArgPropType = keyof PlasmicPlugin__ArgsType;
 export const PlasmicPlugin__ArgProps = new Array<ArgPropType>(
   "destination",
   "imgSrc",
-  "startIndex"
+  "startIndex",
+  "upload"
 );
 
 export type PlasmicPlugin__OverridesType = {
   root?: p.Flex<"a"> & Partial<LinkProps>;
   aspectRatio?: p.Flex<typeof AspectRatio>;
-  image?: p.Flex<typeof Image>;
+  img?: p.Flex<typeof p.PlasmicImg>;
   loop?: p.Flex<typeof Loop>;
 };
 
@@ -78,6 +79,7 @@ export interface DefaultPluginProps {
   destination?: string;
   imgSrc?: string;
   startIndex?: number;
+  upload?: React.ComponentProps<typeof p.PlasmicImg>["src"];
   className?: string;
 }
 
@@ -144,12 +146,19 @@ function PlasmicPlugin__RenderFunc(props: {
         className={classNames("__wab_instance", sty.aspectRatio)}
         ratio={1 as const}
       >
-        <Image
-          data-plasmic-name={"image"}
-          data-plasmic-override={overrides.image}
-          className={classNames("__wab_instance", sty.image)}
-          fallbackSrc={"https://via.placeholder.com/150" as const}
-          src={args.imgSrc}
+        <p.PlasmicImg
+          data-plasmic-name={"img"}
+          data-plasmic-override={overrides.img}
+          alt={""}
+          className={classNames(sty.img)}
+          displayHeight={"auto" as const}
+          displayMaxHeight={"none" as const}
+          displayMaxWidth={"100%" as const}
+          displayMinHeight={"0" as const}
+          displayMinWidth={"0" as const}
+          displayWidth={"auto" as const}
+          loading={"lazy" as const}
+          src={args.upload}
         />
       </AspectRatio>
 
@@ -182,9 +191,9 @@ function PlasmicPlugin__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "aspectRatio", "image", "loop"],
-  aspectRatio: ["aspectRatio", "image"],
-  image: ["image"],
+  root: ["root", "aspectRatio", "img", "loop"],
+  aspectRatio: ["aspectRatio", "img"],
+  img: ["img"],
   loop: ["loop"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -193,7 +202,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "a";
   aspectRatio: typeof AspectRatio;
-  image: typeof Image;
+  img: typeof p.PlasmicImg;
   loop: typeof Loop;
 };
 
@@ -259,7 +268,7 @@ export const PlasmicPlugin = Object.assign(
   {
     // Helper components rendering sub-elements
     aspectRatio: makeNodeComponent("aspectRatio"),
-    image: makeNodeComponent("image"),
+    img: makeNodeComponent("img"),
     loop: makeNodeComponent("loop"),
 
     // Metadata about props expected for PlasmicPlugin
