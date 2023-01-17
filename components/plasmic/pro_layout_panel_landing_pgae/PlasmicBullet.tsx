@@ -72,6 +72,14 @@ export interface DefaultBulletProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicBullet__RenderFunc(props: {
   variants: PlasmicBullet__VariantsArgs;
   args: PlasmicBullet__ArgsType;
@@ -97,6 +105,23 @@ function PlasmicBullet__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "noIcon",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.noIcon
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
+  const [$queries, setDollarQueries] = React.useState({});
+
   return (
     <p.Stack
       as={"div"}
@@ -115,12 +140,12 @@ function PlasmicBullet__RenderFunc(props: {
         sty.root
       )}
     >
-      {(hasVariant(variants, "noIcon", "noIcon") ? true : true) ? (
+      {(hasVariant($state, "noIcon", "noIcon") ? true : true) ? (
         <Done24Pxsvg2Icon
           data-plasmic-name={"svg"}
           data-plasmic-override={overrides.svg}
           className={classNames(projectcss.all, sty.svg, {
-            [sty.svgnoIcon]: hasVariant(variants, "noIcon", "noIcon")
+            [sty.svgnoIcon]: hasVariant($state, "noIcon", "noIcon")
           })}
           role={"img"}
         />

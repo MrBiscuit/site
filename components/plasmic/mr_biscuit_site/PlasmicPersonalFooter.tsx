@@ -75,6 +75,14 @@ export interface DefaultPersonalFooterProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicPersonalFooter__RenderFunc(props: {
   variants: PlasmicPersonalFooter__VariantsArgs;
   args: PlasmicPersonalFooter__ArgsType;
@@ -99,6 +107,10 @@ function PlasmicPersonalFooter__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()

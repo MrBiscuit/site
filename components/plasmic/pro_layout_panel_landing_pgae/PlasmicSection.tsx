@@ -91,6 +91,14 @@ export interface DefaultSectionProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicSection__RenderFunc(props: {
   variants: PlasmicSection__VariantsArgs;
   args: PlasmicSection__ArgsType;
@@ -116,6 +124,35 @@ function PlasmicSection__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "color",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.color
+      },
+
+      {
+        path: "hasTitle",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.hasTitle
+      },
+
+      {
+        path: "hasSubtitle",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.hasSubtitle
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
+  const [$queries, setDollarQueries] = React.useState({});
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -131,10 +168,10 @@ function PlasmicSection__RenderFunc(props: {
         plasmic_outline_to_single_stroke_css.plasmic_tokens,
         sty.root,
         {
-          [sty.rootcolor_dark]: hasVariant(variants, "color", "dark"),
-          [sty.rootcolor_halfDark]: hasVariant(variants, "color", "halfDark"),
+          [sty.rootcolor_dark]: hasVariant($state, "color", "dark"),
+          [sty.rootcolor_halfDark]: hasVariant($state, "color", "halfDark"),
           [sty.roothasSubtitle]: hasVariant(
-            variants,
+            $state,
             "hasSubtitle",
             "hasSubtitle"
           )
@@ -147,26 +184,22 @@ function PlasmicSection__RenderFunc(props: {
         data-plasmic-override={overrides.content}
         hasGap={true}
         className={classNames(projectcss.all, sty.content, {
-          [sty.contentcolor_halfDark]: hasVariant(
-            variants,
-            "color",
-            "halfDark"
-          ),
+          [sty.contentcolor_halfDark]: hasVariant($state, "color", "halfDark"),
           [sty.contenthasSubtitle]: hasVariant(
-            variants,
+            $state,
             "hasSubtitle",
             "hasSubtitle"
           ),
-          [sty.contenthasTitle]: hasVariant(variants, "hasTitle", "hasTitle")
+          [sty.contenthasTitle]: hasVariant($state, "hasTitle", "hasTitle")
         })}
       >
-        {(hasVariant(variants, "hasTitle", "hasTitle") ? true : true) ? (
+        {(hasVariant($state, "hasTitle", "hasTitle") ? true : true) ? (
           <div
             data-plasmic-name={"titleContainer"}
             data-plasmic-override={overrides.titleContainer}
             className={classNames(projectcss.all, sty.titleContainer, {
               [sty.titleContainerhasTitle]: hasVariant(
-                variants,
+                $state,
                 "hasTitle",
                 "hasTitle"
               )
@@ -179,13 +212,13 @@ function PlasmicSection__RenderFunc(props: {
             })}
           </div>
         ) : null}
-        {(hasVariant(variants, "hasSubtitle", "hasSubtitle") ? true : true) ? (
+        {(hasVariant($state, "hasSubtitle", "hasSubtitle") ? true : true) ? (
           <div
             data-plasmic-name={"subtitleContainer"}
             data-plasmic-override={overrides.subtitleContainer}
             className={classNames(projectcss.all, sty.subtitleContainer, {
               [sty.subtitleContainerhasSubtitle]: hasVariant(
-                variants,
+                $state,
                 "hasSubtitle",
                 "hasSubtitle"
               )
@@ -204,18 +237,18 @@ function PlasmicSection__RenderFunc(props: {
           data-plasmic-override={overrides.contentContainer}
           className={classNames(projectcss.all, sty.contentContainer, {
             [sty.contentContainerhasSubtitle]: hasVariant(
-              variants,
+              $state,
               "hasSubtitle",
               "hasSubtitle"
             ),
             [sty.contentContainerhasTitle]: hasVariant(
-              variants,
+              $state,
               "hasTitle",
               "hasTitle"
             ),
             [sty.contentContainerhasTitle_hasSubtitle]:
-              hasVariant(variants, "hasTitle", "hasTitle") &&
-              hasVariant(variants, "hasSubtitle", "hasSubtitle")
+              hasVariant($state, "hasTitle", "hasTitle") &&
+              hasVariant($state, "hasSubtitle", "hasSubtitle")
           })}
         >
           {p.renderPlasmicSlot({

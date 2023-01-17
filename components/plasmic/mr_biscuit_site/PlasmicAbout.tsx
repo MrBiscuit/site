@@ -155,6 +155,14 @@ export type PlasmicAbout__OverridesType = {
 
 export interface DefaultAboutProps {}
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicAbout__RenderFunc(props: {
   variants: PlasmicAbout__VariantsArgs;
   args: PlasmicAbout__ArgsType;
@@ -179,6 +187,10 @@ function PlasmicAbout__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()
@@ -386,7 +398,7 @@ function PlasmicAbout__RenderFunc(props: {
                           <Vector24Icon
                             className={classNames(
                               projectcss.all,
-                              sty.svg__bzmO3
+                              sty.svg___7Jdy
                             )}
                             role={"img"}
                           />
@@ -394,7 +406,7 @@ function PlasmicAbout__RenderFunc(props: {
                           <Vector25Icon
                             className={classNames(
                               projectcss.all,
-                              sty.svg__ldmyg
+                              sty.svg__f1VkQ
                             )}
                             role={"img"}
                           />
@@ -403,7 +415,7 @@ function PlasmicAbout__RenderFunc(props: {
                         <Loop
                           className={classNames(
                             "__wab_instance",
-                            sty.loop__ysz3L
+                            sty.loop__smgE
                           )}
                           interval={500 as const}
                           startIndex={0 as const}
@@ -419,7 +431,7 @@ function PlasmicAbout__RenderFunc(props: {
                           <Vector32Icon
                             className={classNames(
                               projectcss.all,
-                              sty.svg__jkoBa
+                              sty.svg___6Yaw
                             )}
                             role={"img"}
                           />
@@ -427,7 +439,7 @@ function PlasmicAbout__RenderFunc(props: {
                           <Vector28Icon
                             className={classNames(
                               projectcss.all,
-                              sty.svg__bIlpS
+                              sty.svg__anxJp
                             )}
                             role={"img"}
                           />
@@ -570,7 +582,7 @@ function PlasmicAbout__RenderFunc(props: {
                             >
                               <p.PlasmicImg
                                 alt={""}
-                                className={classNames(sty.img__mbA5E)}
+                                className={classNames(sty.img__htUVv)}
                                 displayHeight={"19.2px" as const}
                                 displayMaxHeight={"none" as const}
                                 displayMaxWidth={"100%" as const}
@@ -591,7 +603,7 @@ function PlasmicAbout__RenderFunc(props: {
 
                         <p.PlasmicImg
                           alt={""}
-                          className={classNames(sty.img__xVycu)}
+                          className={classNames(sty.img__quO)}
                           displayHeight={"14.399px" as const}
                           displayMaxHeight={"none" as const}
                           displayMaxWidth={"100%" as const}
@@ -622,7 +634,7 @@ function PlasmicAbout__RenderFunc(props: {
                             <div
                               className={classNames(
                                 projectcss.all,
-                                sty.freeBox__xbGvf
+                                sty.freeBox__dDbg7
                               )}
                             />
                           </div>
@@ -632,13 +644,13 @@ function PlasmicAbout__RenderFunc(props: {
                           <div
                             className={classNames(
                               projectcss.all,
-                              sty.freeBox__sTtQn
+                              sty.freeBox__jn7Eb
                             )}
                           >
                             <Icon12Icon
                               className={classNames(
                                 projectcss.all,
-                                sty.svg__aZCs
+                                sty.svg___96Drr
                               )}
                               role={"img"}
                             />
@@ -676,7 +688,7 @@ function PlasmicAbout__RenderFunc(props: {
                                 <ExtTypeSomethingIcon
                                   className={classNames(
                                     projectcss.all,
-                                    sty.svg__jdywM
+                                    sty.svg__wHjrN
                                   )}
                                   role={"img"}
                                 />
@@ -684,7 +696,7 @@ function PlasmicAbout__RenderFunc(props: {
                                 <JsIcon
                                   className={classNames(
                                     projectcss.all,
-                                    sty.svg__q1Qso
+                                    sty.svg___6SztO
                                   )}
                                   role={"img"}
                                 />
@@ -713,12 +725,12 @@ function PlasmicAbout__RenderFunc(props: {
                       />
 
                       <Vector30Icon
-                        className={classNames(projectcss.all, sty.svg__kLc7J)}
+                        className={classNames(projectcss.all, sty.svg___5VsJ)}
                         role={"img"}
                       />
 
                       <Vector31Icon
-                        className={classNames(projectcss.all, sty.svg__aBvuc)}
+                        className={classNames(projectcss.all, sty.svg___4OGkC)}
                         role={"img"}
                       />
                     </Loop>
@@ -734,12 +746,12 @@ function PlasmicAbout__RenderFunc(props: {
                       />
 
                       <Vector30Icon
-                        className={classNames(projectcss.all, sty.svg__kLc7J)}
+                        className={classNames(projectcss.all, sty.svg__aYpob)}
                         role={"img"}
                       />
 
                       <Vector31Icon
-                        className={classNames(projectcss.all, sty.svg__aBvuc)}
+                        className={classNames(projectcss.all, sty.svg__pcane)}
                         role={"img"}
                       />
                     </Loop>
@@ -755,12 +767,12 @@ function PlasmicAbout__RenderFunc(props: {
                       />
 
                       <Vector30Icon
-                        className={classNames(projectcss.all, sty.svg__kLc7J)}
+                        className={classNames(projectcss.all, sty.svg__zIrYy)}
                         role={"img"}
                       />
 
                       <Vector31Icon
-                        className={classNames(projectcss.all, sty.svg__aBvuc)}
+                        className={classNames(projectcss.all, sty.svg__lwYm5)}
                         role={"img"}
                       />
                     </Loop>
@@ -1138,7 +1150,7 @@ function PlasmicAbout__RenderFunc(props: {
                   </div>
                 </Tab>
 
-                <Tab className={classNames("__wab_instance", sty.tab__ghXoX)}>
+                <Tab className={classNames("__wab_instance", sty.tab__c9Ik0)}>
                   <div
                     className={classNames(
                       projectcss.all,
@@ -1412,7 +1424,7 @@ function PlasmicAbout__RenderFunc(props: {
                           className={classNames(
                             projectcss.all,
                             projectcss.__wab_text,
-                            sty.text__vbPx
+                            sty.text___9A2Zg
                           )}
                         >
                           {

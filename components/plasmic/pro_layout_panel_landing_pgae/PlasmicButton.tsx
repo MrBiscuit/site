@@ -17,6 +17,7 @@ import Link, { LinkProps } from "next/link";
 
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
+
 import * as pp from "@plasmicapp/react-web";
 import {
   hasVariant,
@@ -99,6 +100,14 @@ export interface DefaultButtonProps extends pp.BaseButtonProps {
   color?: SingleChoiceArg<"figma" | "outline" | "clear" | "black" | "purple">;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicButton__RenderFunc(props: {
   variants: PlasmicButton__VariantsArgs;
   args: PlasmicButton__ArgsType;
@@ -123,6 +132,53 @@ function PlasmicButton__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "showStartIcon",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.showStartIcon
+      },
+
+      {
+        path: "showEndIcon",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.showEndIcon
+      },
+
+      {
+        path: "isDisabled",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.isDisabled
+      },
+
+      {
+        path: "shape",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.shape
+      },
+
+      {
+        path: "size",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.size
+      },
+
+      {
+        path: "color",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.color
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   const [isRootFocusVisibleWithin, triggerRootFocusVisibleWithinProps] =
     useTrigger("useFocusVisibleWithin", {
@@ -152,71 +208,65 @@ function PlasmicButton__RenderFunc(props: {
         sty.root,
         {
           [sty.root___focusVisibleWithin]: triggers.focusVisibleWithin_root,
-          [sty.rootcolor_black]: hasVariant(variants, "color", "black"),
-          [sty.rootcolor_clear]: hasVariant(variants, "color", "clear"),
-          [sty.rootcolor_figma]: hasVariant(variants, "color", "figma"),
-          [sty.rootcolor_outline]: hasVariant(variants, "color", "outline"),
-          [sty.rootcolor_purple]: hasVariant(variants, "color", "purple"),
-          [sty.rootisDisabled]: hasVariant(
-            variants,
-            "isDisabled",
-            "isDisabled"
-          ),
-          [sty.rootshape_rounded]: hasVariant(variants, "shape", "rounded"),
+          [sty.rootcolor_black]: hasVariant($state, "color", "black"),
+          [sty.rootcolor_clear]: hasVariant($state, "color", "clear"),
+          [sty.rootcolor_figma]: hasVariant($state, "color", "figma"),
+          [sty.rootcolor_outline]: hasVariant($state, "color", "outline"),
+          [sty.rootcolor_purple]: hasVariant($state, "color", "purple"),
+          [sty.rootisDisabled]: hasVariant($state, "isDisabled", "isDisabled"),
+          [sty.rootshape_rounded]: hasVariant($state, "shape", "rounded"),
           [sty.rootshape_rounded_showEndIcon]:
-            hasVariant(variants, "showEndIcon", "showEndIcon") &&
-            hasVariant(variants, "shape", "rounded"),
+            hasVariant($state, "showEndIcon", "showEndIcon") &&
+            hasVariant($state, "shape", "rounded"),
           [sty.rootshape_rounded_showStartIcon]:
-            hasVariant(variants, "shape", "rounded") &&
-            hasVariant(variants, "showStartIcon", "showStartIcon"),
+            hasVariant($state, "shape", "rounded") &&
+            hasVariant($state, "showStartIcon", "showStartIcon"),
           [sty.rootshape_rounded_size_compact]:
-            hasVariant(variants, "size", "compact") &&
-            hasVariant(variants, "shape", "rounded"),
+            hasVariant($state, "size", "compact") &&
+            hasVariant($state, "shape", "rounded"),
           [sty.rootshowEndIcon]: hasVariant(
-            variants,
+            $state,
             "showEndIcon",
             "showEndIcon"
           ),
           [sty.rootshowEndIcon_color_figma]:
-            hasVariant(variants, "color", "figma") &&
-            hasVariant(variants, "showEndIcon", "showEndIcon"),
+            hasVariant($state, "color", "figma") &&
+            hasVariant($state, "showEndIcon", "showEndIcon"),
           [sty.rootshowStartIcon]: hasVariant(
-            variants,
+            $state,
             "showStartIcon",
             "showStartIcon"
           ),
-          [sty.rootsize_compact]: hasVariant(variants, "size", "compact"),
+          [sty.rootsize_compact]: hasVariant($state, "size", "compact"),
           [sty.rootsize_compact_showEndIcon]:
-            hasVariant(variants, "size", "compact") &&
-            hasVariant(variants, "showEndIcon", "showEndIcon"),
+            hasVariant($state, "size", "compact") &&
+            hasVariant($state, "showEndIcon", "showEndIcon"),
           [sty.rootsize_compact_showEndIcon_showStartIcon]:
-            hasVariant(variants, "size", "compact") &&
-            hasVariant(variants, "showStartIcon", "showStartIcon") &&
-            hasVariant(variants, "showEndIcon", "showEndIcon"),
+            hasVariant($state, "size", "compact") &&
+            hasVariant($state, "showStartIcon", "showStartIcon") &&
+            hasVariant($state, "showEndIcon", "showEndIcon"),
           [sty.rootsize_compact_showStartIcon]:
-            hasVariant(variants, "size", "compact") &&
-            hasVariant(variants, "showStartIcon", "showStartIcon")
+            hasVariant($state, "size", "compact") &&
+            hasVariant($state, "showStartIcon", "showStartIcon")
         }
       )}
       data-plasmic-trigger-props={[triggerRootFocusVisibleWithinProps]}
     >
-      {(
-        hasVariant(variants, "showStartIcon", "showStartIcon") ? true : false
-      ) ? (
+      {(hasVariant($state, "showStartIcon", "showStartIcon") ? true : false) ? (
         <div
           data-plasmic-name={"startIconContainer"}
           data-plasmic-override={overrides.startIconContainer}
           className={classNames(projectcss.all, sty.startIconContainer, {
             [sty.startIconContainercolor_figma]: hasVariant(
-              variants,
+              $state,
               "color",
               "figma"
             ),
             [sty.startIconContainershape_rounded_showStartIcon]:
-              hasVariant(variants, "shape", "rounded") &&
-              hasVariant(variants, "showStartIcon", "showStartIcon"),
+              hasVariant($state, "shape", "rounded") &&
+              hasVariant($state, "showStartIcon", "showStartIcon"),
             [sty.startIconContainershowStartIcon]: hasVariant(
-              variants,
+              $state,
               "showStartIcon",
               "showStartIcon"
             )
@@ -233,17 +283,17 @@ function PlasmicButton__RenderFunc(props: {
             value: args.startIcon,
             className: classNames(sty.slotTargetStartIcon, {
               [sty.slotTargetStartIconcolor_figma]: hasVariant(
-                variants,
+                $state,
                 "color",
                 "figma"
               ),
               [sty.slotTargetStartIconcolor_outline]: hasVariant(
-                variants,
+                $state,
                 "color",
                 "outline"
               ),
               [sty.slotTargetStartIconshowStartIcon]: hasVariant(
-                variants,
+                $state,
                 "showStartIcon",
                 "showStartIcon"
               )
@@ -259,17 +309,17 @@ function PlasmicButton__RenderFunc(props: {
           [sty.contentContainer___focusVisibleWithin]:
             triggers.focusVisibleWithin_root,
           [sty.contentContainerisDisabled]: hasVariant(
-            variants,
+            $state,
             "isDisabled",
             "isDisabled"
           ),
           [sty.contentContainershape_rounded]: hasVariant(
-            variants,
+            $state,
             "shape",
             "rounded"
           ),
           [sty.contentContainershowEndIcon]: hasVariant(
-            variants,
+            $state,
             "showEndIcon",
             "showEndIcon"
           )
@@ -282,37 +332,37 @@ function PlasmicButton__RenderFunc(props: {
             [sty.slotTargetChildren___focusVisibleWithin]:
               triggers.focusVisibleWithin_root,
             [sty.slotTargetChildrencolor_clear]: hasVariant(
-              variants,
+              $state,
               "color",
               "clear"
             ),
             [sty.slotTargetChildrencolor_figma]: hasVariant(
-              variants,
+              $state,
               "color",
               "figma"
             ),
             [sty.slotTargetChildrencolor_outline]: hasVariant(
-              variants,
+              $state,
               "color",
               "outline"
             ),
             [sty.slotTargetChildrenisDisabled]: hasVariant(
-              variants,
+              $state,
               "isDisabled",
               "isDisabled"
             ),
             [sty.slotTargetChildrenshape_rounded]: hasVariant(
-              variants,
+              $state,
               "shape",
               "rounded"
             ),
             [sty.slotTargetChildrenshowEndIcon]: hasVariant(
-              variants,
+              $state,
               "showEndIcon",
               "showEndIcon"
             ),
             [sty.slotTargetChildrenshowStartIcon]: hasVariant(
-              variants,
+              $state,
               "showStartIcon",
               "showStartIcon"
             )
@@ -320,13 +370,13 @@ function PlasmicButton__RenderFunc(props: {
         })}
       </div>
 
-      {(hasVariant(variants, "showEndIcon", "showEndIcon") ? true : false) ? (
+      {(hasVariant($state, "showEndIcon", "showEndIcon") ? true : false) ? (
         <div
           data-plasmic-name={"endIconContainer"}
           data-plasmic-override={overrides.endIconContainer}
           className={classNames(projectcss.all, sty.endIconContainer, {
             [sty.endIconContainershowEndIcon]: hasVariant(
-              variants,
+              $state,
               "showEndIcon",
               "showEndIcon"
             )
@@ -343,12 +393,12 @@ function PlasmicButton__RenderFunc(props: {
             value: args.endIcon,
             className: classNames(sty.slotTargetEndIcon, {
               [sty.slotTargetEndIconcolor_outline]: hasVariant(
-                variants,
+                $state,
                 "color",
                 "outline"
               ),
               [sty.slotTargetEndIconshowEndIcon]: hasVariant(
-                variants,
+                $state,
                 "showEndIcon",
                 "showEndIcon"
               )

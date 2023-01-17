@@ -73,6 +73,14 @@ export interface DefaultContentCardProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicContentCard__RenderFunc(props: {
   variants: PlasmicContentCard__VariantsArgs;
   args: PlasmicContentCard__ArgsType;
@@ -98,6 +106,23 @@ function PlasmicContentCard__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "padding",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.padding
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
+  const [$queries, setDollarQueries] = React.useState({});
+
   return (
     <p.Stack
       as={"div"}
@@ -114,7 +139,7 @@ function PlasmicContentCard__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_outline_to_single_stroke_css.plasmic_tokens,
         sty.root,
-        { [sty.rootpadding_small]: hasVariant(variants, "padding", "small") }
+        { [sty.rootpadding_small]: hasVariant($state, "padding", "small") }
       )}
     >
       {p.renderPlasmicSlot({

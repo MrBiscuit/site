@@ -89,6 +89,14 @@ export interface DefaultPlanProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicPlan__RenderFunc(props: {
   variants: PlasmicPlan__VariantsArgs;
   args: PlasmicPlan__ArgsType;
@@ -114,6 +122,23 @@ function PlasmicPlan__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "color",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.color
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
+  const [$queries, setDollarQueries] = React.useState({});
+
   return (
     <BaseCard
       data-plasmic-name={"root"}
@@ -121,16 +146,16 @@ function PlasmicPlan__RenderFunc(props: {
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
       className={classNames("__wab_instance", sty.root, {
-        [sty.rootcolor_black]: hasVariant(variants, "color", "black"),
-        [sty.rootcolor_blue]: hasVariant(variants, "color", "blue"),
-        [sty.rootcolor_purle]: hasVariant(variants, "color", "purle")
+        [sty.rootcolor_black]: hasVariant($state, "color", "black"),
+        [sty.rootcolor_blue]: hasVariant($state, "color", "blue"),
+        [sty.rootcolor_purle]: hasVariant($state, "color", "purle")
       })}
       color={
-        hasVariant(variants, "color", "purle")
+        hasVariant($state, "color", "purle")
           ? ("purple" as const)
-          : hasVariant(variants, "color", "black")
+          : hasVariant($state, "color", "black")
           ? ("black" as const)
-          : hasVariant(variants, "color", "blue")
+          : hasVariant($state, "color", "blue")
           ? ("blue" as const)
           : undefined
       }
@@ -147,7 +172,7 @@ function PlasmicPlan__RenderFunc(props: {
         <div
           className={classNames(projectcss.all, sty.freeBox__zZJh, {
             [sty.freeBoxcolor_blue__zZJh3XiLz]: hasVariant(
-              variants,
+              $state,
               "color",
               "blue"
             )
@@ -161,7 +186,7 @@ function PlasmicPlan__RenderFunc(props: {
           hasGap={true}
           className={classNames(projectcss.all, sty.freeBox__k5FnP, {
             [sty.freeBoxcolor_black__k5FnPopnhd]: hasVariant(
-              variants,
+              $state,
               "color",
               "black"
             )
@@ -178,7 +203,7 @@ function PlasmicPlan__RenderFunc(props: {
                 value: args.name,
                 className: classNames(sty.slotTargetName, {
                   [sty.slotTargetNamecolor_purle]: hasVariant(
-                    variants,
+                    $state,
                     "color",
                     "purle"
                   )

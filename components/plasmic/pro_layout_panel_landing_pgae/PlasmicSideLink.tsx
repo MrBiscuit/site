@@ -70,6 +70,14 @@ export interface DefaultSideLinkProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicSideLink__RenderFunc(props: {
   variants: PlasmicSideLink__VariantsArgs;
   args: PlasmicSideLink__ArgsType;
@@ -94,6 +102,10 @@ function PlasmicSideLink__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   return (
     true ? (

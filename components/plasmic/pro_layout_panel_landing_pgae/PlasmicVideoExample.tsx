@@ -80,6 +80,14 @@ export interface DefaultVideoExampleProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicVideoExample__RenderFunc(props: {
   variants: PlasmicVideoExample__VariantsArgs;
   args: PlasmicVideoExample__ArgsType;
@@ -105,6 +113,23 @@ function PlasmicVideoExample__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "reversedLayout",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.reversedLayout
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
+  const [$queries, setDollarQueries] = React.useState({});
+
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()
   });
@@ -127,7 +152,7 @@ function PlasmicVideoExample__RenderFunc(props: {
         sty.root,
         {
           [sty.rootreversedLayout]: hasVariant(
-            variants,
+            $state,
             "reversedLayout",
             "reversedLayout"
           )

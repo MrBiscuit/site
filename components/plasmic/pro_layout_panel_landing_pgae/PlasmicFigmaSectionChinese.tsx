@@ -86,6 +86,14 @@ export type PlasmicFigmaSectionChinese__OverridesType = {
 
 export interface DefaultFigmaSectionChineseProps {}
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicFigmaSectionChinese__RenderFunc(props: {
   variants: PlasmicFigmaSectionChinese__VariantsArgs;
   args: PlasmicFigmaSectionChinese__ArgsType;
@@ -110,6 +118,10 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()
@@ -353,7 +365,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__nY1M
+                        sty.text___5RkOd
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
@@ -384,7 +396,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
             </Reveal>
 
             <Reveal
-              className={classNames("__wab_instance", sty.reveal__lmUbb)}
+              className={classNames("__wab_instance", sty.reveal__oxJO)}
               direction={"up" as const}
               duration={500 as const}
               effect={"fade" as const}
@@ -412,7 +424,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__nY1M
+                        sty.text__y8CEd
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobile")

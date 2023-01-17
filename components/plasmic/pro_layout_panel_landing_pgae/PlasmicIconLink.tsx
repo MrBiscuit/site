@@ -64,6 +64,14 @@ export interface DefaultIconLinkProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicIconLink__RenderFunc(props: {
   variants: PlasmicIconLink__VariantsArgs;
   args: PlasmicIconLink__ArgsType;
@@ -88,6 +96,10 @@ function PlasmicIconLink__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   return (
     <div

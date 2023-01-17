@@ -420,7 +420,7 @@
   top: auto;
   left: auto;
 }
-.svg__bzmO3 {
+.svg___7Jdy {
   position: relative;
   object-fit: cover;
   max-width: 100%;
@@ -432,7 +432,7 @@
   top: auto;
   left: auto;
 }
-.svg__ldmyg {
+.svg__f1VkQ {
   position: relative;
   object-fit: cover;
   max-width: 100%;
@@ -444,7 +444,7 @@
   top: auto;
   left: auto;
 }
-.loop__ysz3L:global(.__wab_instance) {
+.loop__smgE:global(.__wab_instance) {
   object-fit: cover;
   position: relative;
   left: auto;
@@ -467,7 +467,7 @@
   top: auto;
   left: auto;
 }
-.svg__jkoBa {
+.svg___6Yaw {
   position: relative;
   object-fit: cover;
   max-width: 100%;
@@ -478,7 +478,7 @@
   top: auto;
   left: auto;
 }
-.svg__bIlpS {
+.svg__anxJp {
   position: relative;
   object-fit: cover;
   max-width: 100%;
@@ -764,7 +764,7 @@
   left: 0px;
   overflow: hidden;
 }
-.img__mbA5E {
+.img__htUVv {
   position: absolute;
   object-fit: cover;
   max-width: 100%;
@@ -774,13 +774,13 @@
   top: 0px;
   left: 0px;
 }
-.img__mbA5E > picture > img {
+.img__htUVv > picture > img {
   object-fit: cover;
 }
-.img__mbA5E > :global(.__wab_img-spacer) > img {
+.img__htUVv > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-.img__xVycu {
+.img__quO {
   position: relative;
   object-fit: cover;
   max-width: 100%;
@@ -792,10 +792,10 @@
   top: auto;
   flex-shrink: 0;
 }
-.img__xVycu > picture > img {
+.img__quO > picture > img {
   object-fit: cover;
 }
-.img__xVycu > :global(.__wab_img-spacer) > img {
+.img__quO > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .frame1179 {
@@ -837,14 +837,14 @@
   justify-content: flex-start;
   flex-shrink: 0;
 }
-.freeBox__xbGvf {
+.freeBox__dDbg7 {
   display: block;
   position: relative;
   width: 26px;
   height: 26px;
   flex-shrink: 0;
 }
-.freeBox__sTtQn {
+.freeBox__jn7Eb {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -857,7 +857,7 @@
   top: auto;
   padding: 6.4px;
 }
-.svg__aZCs {
+.svg___96Drr {
   object-fit: cover;
   max-width: 100%;
   color: #61dafb;
@@ -916,7 +916,7 @@
   top: 0px;
   left: 0px;
 }
-.svg__jdywM {
+.svg__wHjrN {
   position: absolute;
   object-fit: cover;
   max-width: 100%;
@@ -927,7 +927,7 @@
   top: 0px;
   left: 0px;
 }
-.svg__q1Qso {
+.svg___6SztO {
   position: absolute;
   object-fit: cover;
   max-width: 100%;
@@ -975,7 +975,7 @@
   top: auto;
   left: auto;
 }
-.svg__kLc7J {
+.svg___5VsJ {
   position: relative;
   object-fit: cover;
   max-width: 100%;
@@ -987,7 +987,7 @@
   top: auto;
   left: auto;
 }
-.svg__aBvuc {
+.svg___4OGkC {
   position: relative;
   object-fit: cover;
   max-width: 100%;
@@ -1014,7 +1014,7 @@
   top: auto;
   left: auto;
 }
-.svg__kLc7J {
+.svg__aYpob {
   position: relative;
   object-fit: cover;
   max-width: 100%;
@@ -1026,7 +1026,7 @@
   top: auto;
   left: auto;
 }
-.svg__aBvuc {
+.svg__pcane {
   position: relative;
   object-fit: cover;
   max-width: 100%;
@@ -1053,7 +1053,7 @@
   top: auto;
   left: auto;
 }
-.svg__kLc7J {
+.svg__zIrYy {
   position: relative;
   object-fit: cover;
   max-width: 100%;
@@ -1065,7 +1065,7 @@
   top: auto;
   left: auto;
 }
-.svg__aBvuc {
+.svg__lwYm5 {
   position: relative;
   object-fit: cover;
   max-width: 100%;
@@ -1638,7 +1638,7 @@
   max-width: 800px;
   min-width: 0;
 }
-.tab__ghXoX:global(.__wab_instance) {
+.tab__c9Ik0:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
   font-size: 32px;
@@ -1650,7 +1650,7 @@
   border-radius: 16px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .tab__ghXoX:global(.__wab_instance) {
+  .tab__c9Ik0:global(.__wab_instance) {
     font-size: 16px;
     padding-right: 16px;
     padding-left: 16px;
@@ -2051,7 +2051,7 @@
   height: auto;
   padding: 24px;
 }
-.text__vbPx {
+.text___9A2Zg {
   position: relative;
   width: auto;
   font-family: "Gilroy";

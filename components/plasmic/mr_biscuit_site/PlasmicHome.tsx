@@ -203,6 +203,14 @@ export type PlasmicHome__OverridesType = {
 
 export interface DefaultHomeProps {}
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicHome__RenderFunc(props: {
   variants: PlasmicHome__VariantsArgs;
   args: PlasmicHome__ArgsType;
@@ -227,6 +235,10 @@ function PlasmicHome__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()
@@ -880,12 +892,12 @@ function PlasmicHome__RenderFunc(props: {
                       />
 
                       <Vector30Icon
-                        className={classNames(projectcss.all, sty.svg__kLc7J)}
+                        className={classNames(projectcss.all, sty.svg___1CvBp)}
                         role={"img"}
                       />
 
                       <Vector31Icon
-                        className={classNames(projectcss.all, sty.svg__aBvuc)}
+                        className={classNames(projectcss.all, sty.svg__hmEtD)}
                         role={"img"}
                       />
                     </Loop>
@@ -901,12 +913,12 @@ function PlasmicHome__RenderFunc(props: {
                       />
 
                       <Vector30Icon
-                        className={classNames(projectcss.all, sty.svg__kLc7J)}
+                        className={classNames(projectcss.all, sty.svg__jbPwb)}
                         role={"img"}
                       />
 
                       <Vector31Icon
-                        className={classNames(projectcss.all, sty.svg__aBvuc)}
+                        className={classNames(projectcss.all, sty.svg__ay7IL)}
                         role={"img"}
                       />
                     </Loop>
@@ -922,12 +934,12 @@ function PlasmicHome__RenderFunc(props: {
                       />
 
                       <Vector30Icon
-                        className={classNames(projectcss.all, sty.svg__kLc7J)}
+                        className={classNames(projectcss.all, sty.svg__vukZy)}
                         role={"img"}
                       />
 
                       <Vector31Icon
-                        className={classNames(projectcss.all, sty.svg__aBvuc)}
+                        className={classNames(projectcss.all, sty.svg__uiY7E)}
                         role={"img"}
                       />
                     </Loop>

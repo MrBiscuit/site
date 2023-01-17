@@ -95,6 +95,14 @@ export type PlasmicProLayoutPanelChinese__OverridesType = {
 
 export interface DefaultProLayoutPanelChineseProps {}
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicProLayoutPanelChinese__RenderFunc(props: {
   variants: PlasmicProLayoutPanelChinese__VariantsArgs;
   args: PlasmicProLayoutPanelChinese__ArgsType;
@@ -119,6 +127,10 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()
@@ -376,7 +388,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__nY1M
+                        sty.text__gEfG
                       )}
                     >
                       {"没有弹出框和下拉菜单，一切都固定在它出现的地方"}
@@ -395,7 +407,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
             </Reveal>
 
             <Reveal
-              className={classNames("__wab_instance", sty.reveal___6TFx7)}
+              className={classNames("__wab_instance", sty.reveal__v2LW)}
               direction={"up" as const}
               duration={500 as const}
               effect={"fade" as const}
@@ -423,7 +435,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__mdUty
+                        sty.text__m0NtZ
                       )}
                     >
                       {"修复了大量古怪的 Figma 原生行为，让一切变得顺畅自然。"}
@@ -442,7 +454,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
             </Reveal>
 
             <Reveal
-              className={classNames("__wab_instance", sty.reveal__pg1G5)}
+              className={classNames("__wab_instance", sty.reveal__nk7Mc)}
               direction={"up" as const}
               duration={500 as const}
               effect={"fade" as const}
@@ -469,7 +481,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__nY1M
+                        sty.text__onPg5
                       )}
                     >
                       {

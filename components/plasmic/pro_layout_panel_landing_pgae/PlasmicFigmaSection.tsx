@@ -85,6 +85,14 @@ export type PlasmicFigmaSection__OverridesType = {
 
 export interface DefaultFigmaSectionProps {}
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicFigmaSection__RenderFunc(props: {
   variants: PlasmicFigmaSection__VariantsArgs;
   args: PlasmicFigmaSection__ArgsType;
@@ -109,6 +117,10 @@ function PlasmicFigmaSection__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()
@@ -408,7 +420,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__nY1M
+                        sty.text__qedT
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobile")

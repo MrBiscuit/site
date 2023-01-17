@@ -92,6 +92,14 @@ export type PlasmicProLayoutPanel__OverridesType = {
 
 export interface DefaultProLayoutPanelProps {}
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicProLayoutPanel__RenderFunc(props: {
   variants: PlasmicProLayoutPanel__VariantsArgs;
   args: PlasmicProLayoutPanel__ArgsType;
@@ -116,6 +124,10 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()
@@ -359,7 +371,7 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__nY1M
+                        sty.text__mjkk7
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
@@ -372,7 +384,6 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
                 <YouTube
                   autoplay={true}
                   className={classNames("__wab_instance", sty.youTube__szkYk)}
-                  controls={false}
                   loop={true}
                   modestbranding={true}
                   rel={false}
@@ -457,7 +468,7 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
                       className={classNames(
                         projectcss.all,
                         projectcss.__wab_text,
-                        sty.text__nY1M
+                        sty.text__pqC
                       )}
                     >
                       {

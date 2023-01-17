@@ -77,6 +77,14 @@ export interface DefaultBaseCardProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicBaseCard__RenderFunc(props: {
   variants: PlasmicBaseCard__VariantsArgs;
   args: PlasmicBaseCard__ArgsType;
@@ -102,6 +110,23 @@ function PlasmicBaseCard__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "color",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.color
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
+  const [$queries, setDollarQueries] = React.useState({});
+
   return (
     <div
       data-plasmic-name={"root"}
@@ -117,8 +142,8 @@ function PlasmicBaseCard__RenderFunc(props: {
         plasmic_outline_to_single_stroke_css.plasmic_tokens,
         sty.root,
         {
-          [sty.rootcolor_black]: hasVariant(variants, "color", "black"),
-          [sty.rootcolor_blue]: hasVariant(variants, "color", "blue")
+          [sty.rootcolor_black]: hasVariant($state, "color", "black"),
+          [sty.rootcolor_blue]: hasVariant($state, "color", "blue")
         }
       )}
     >
@@ -126,16 +151,16 @@ function PlasmicBaseCard__RenderFunc(props: {
         data-plasmic-name={"color"}
         data-plasmic-override={overrides.color}
         className={classNames(projectcss.all, sty.color, {
-          [sty.colorcolor_black]: hasVariant(variants, "color", "black"),
-          [sty.colorcolor_blue]: hasVariant(variants, "color", "blue"),
-          [sty.colorcolor_purple]: hasVariant(variants, "color", "purple")
+          [sty.colorcolor_black]: hasVariant($state, "color", "black"),
+          [sty.colorcolor_blue]: hasVariant($state, "color", "blue"),
+          [sty.colorcolor_purple]: hasVariant($state, "color", "purple")
         })}
       />
 
       <div
         className={classNames(projectcss.all, sty.freeBox__dRDu, {
           [sty.freeBoxcolor_black__dRDuWuOza]: hasVariant(
-            variants,
+            $state,
             "color",
             "black"
           )
@@ -147,17 +172,17 @@ function PlasmicBaseCard__RenderFunc(props: {
           value: args.children,
           className: classNames(sty.slotTargetChildren, {
             [sty.slotTargetChildrencolor_black]: hasVariant(
-              variants,
+              $state,
               "color",
               "black"
             ),
             [sty.slotTargetChildrencolor_blue]: hasVariant(
-              variants,
+              $state,
               "color",
               "blue"
             ),
             [sty.slotTargetChildrencolor_grey]: hasVariant(
-              variants,
+              $state,
               "color",
               "grey"
             )

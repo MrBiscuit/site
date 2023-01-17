@@ -83,6 +83,14 @@ export interface DefaultPluginProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicPlugin__RenderFunc(props: {
   variants: PlasmicPlugin__VariantsArgs;
   args: PlasmicPlugin__ArgsType;
@@ -110,6 +118,10 @@ function PlasmicPlugin__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   const [isRootHover, triggerRootHoverProps] = useTrigger("useHover", {});
   const triggers = {

@@ -70,6 +70,14 @@ export interface DefaultSuperEllipseButtonProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicSuperEllipseButton__RenderFunc(props: {
   variants: PlasmicSuperEllipseButton__VariantsArgs;
   args: PlasmicSuperEllipseButton__ArgsType;
@@ -94,6 +102,10 @@ function PlasmicSuperEllipseButton__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   return (
     true ? (

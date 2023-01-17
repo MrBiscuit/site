@@ -82,6 +82,14 @@ export interface DefaultFeatureCardProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    await promise;
+  });
+
 function PlasmicFeatureCard__RenderFunc(props: {
   variants: PlasmicFeatureCard__VariantsArgs;
   args: PlasmicFeatureCard__ArgsType;
@@ -107,6 +115,23 @@ function PlasmicFeatureCard__RenderFunc(props: {
     ...variants
   };
 
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "long",
+        type: "private",
+        initFunc: ($props, $state, $ctx) => $props.long
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
+  const [$queries, setDollarQueries] = React.useState({});
+
   return (
     <p.Stack
       as={"div"}
@@ -123,22 +148,18 @@ function PlasmicFeatureCard__RenderFunc(props: {
         projectcss.plasmic_tokens,
         plasmic_outline_to_single_stroke_css.plasmic_tokens,
         sty.root,
-        { [sty.rootlong]: hasVariant(variants, "long", "long") }
+        { [sty.rootlong]: hasVariant($state, "long", "long") }
       )}
     >
-      {(hasVariant(variants, "long", "long") ? true : true) ? (
+      {(hasVariant($state, "long", "long") ? true : true) ? (
         <div
           className={classNames(projectcss.all, sty.freeBox___1SiCj, {
-            [sty.freeBoxlong___1SiCjpRgsr]: hasVariant(variants, "long", "long")
+            [sty.freeBoxlong___1SiCjpRgsr]: hasVariant($state, "long", "long")
           })}
         >
           <div
             className={classNames(projectcss.all, sty.freeBox__ldXqs, {
-              [sty.freeBoxlong__ldXqspRgsr]: hasVariant(
-                variants,
-                "long",
-                "long"
-              )
+              [sty.freeBoxlong__ldXqspRgsr]: hasVariant($state, "long", "long")
             })}
           >
             {p.renderPlasmicSlot({
@@ -159,14 +180,14 @@ function PlasmicFeatureCard__RenderFunc(props: {
         as={"div"}
         hasGap={true}
         className={classNames(projectcss.all, sty.freeBox___4UCsD, {
-          [sty.freeBoxlong___4UCsDpRgsr]: hasVariant(variants, "long", "long")
+          [sty.freeBoxlong___4UCsDpRgsr]: hasVariant($state, "long", "long")
         })}
       >
         {p.renderPlasmicSlot({
           defaultContents: "Title",
           value: args.title,
           className: classNames(sty.slotTargetTitle, {
-            [sty.slotTargetTitlelong]: hasVariant(variants, "long", "long")
+            [sty.slotTargetTitlelong]: hasVariant($state, "long", "long")
           })
         })}
 
@@ -175,19 +196,15 @@ function PlasmicFeatureCard__RenderFunc(props: {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           value: args.description,
           className: classNames(sty.slotTargetDescription, {
-            [sty.slotTargetDescriptionlong]: hasVariant(
-              variants,
-              "long",
-              "long"
-            )
+            [sty.slotTargetDescriptionlong]: hasVariant($state, "long", "long")
           })
         })}
       </p.Stack>
 
-      {(hasVariant(variants, "long", "long") ? true : true) ? (
+      {(hasVariant($state, "long", "long") ? true : true) ? (
         <div
           className={classNames(projectcss.all, sty.freeBox___4VY4M, {
-            [sty.freeBoxlong___4VY4MpRgsr]: hasVariant(variants, "long", "long")
+            [sty.freeBoxlong___4VY4MpRgsr]: hasVariant($state, "long", "long")
           })}
         >
           {p.renderPlasmicSlot({
