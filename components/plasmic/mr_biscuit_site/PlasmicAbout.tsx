@@ -160,7 +160,7 @@ const __wrapUserFunction =
 const __wrapUserPromise =
   globalThis.__PlasmicWrapUserPromise ??
   (async (loc, promise) => {
-    await promise;
+    return await promise;
   });
 
 function PlasmicAbout__RenderFunc(props: {
@@ -187,6 +187,9 @@ function PlasmicAbout__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
 
@@ -349,7 +352,7 @@ function PlasmicAbout__RenderFunc(props: {
                                 "__wab_instance",
                                 sty.typewriter
                               )}
-                              cursor={false}
+                              cursor={true}
                               cursorStyle={"|" as const}
                               delaySpeed={5000 as const}
                               deleteSpeed={0 as const}

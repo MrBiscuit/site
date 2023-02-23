@@ -73,6 +73,14 @@ export interface DefaultDocsNextButtonProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicDocsNextButton__RenderFunc(props: {
   variants: PlasmicDocsNextButton__VariantsArgs;
   args: PlasmicDocsNextButton__ArgsType;
@@ -98,6 +106,29 @@ function PlasmicDocsNextButton__RenderFunc(props: {
     ...variants
   };
 
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "iconPosition",
+        type: "private",
+        variableType: "variant",
+        initFunc: true
+          ? ($props, $state, $ctx) => $props.iconPosition
+          : undefined
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
+  const [$queries, setDollarQueries] = React.useState({});
+
   return (
     <div
       data-plasmic-name={"nextPage"}
@@ -118,7 +149,7 @@ function PlasmicDocsNextButton__RenderFunc(props: {
         data-plasmic-override={overrides.freeBox}
         className={classNames(projectcss.all, sty.freeBox)}
       >
-        {(hasVariant(variants, "iconPosition", "left") ? true : true) ? (
+        {(hasVariant($state, "iconPosition", "left") ? true : true) ? (
           <div
             className={classNames(
               projectcss.all,
@@ -126,7 +157,7 @@ function PlasmicDocsNextButton__RenderFunc(props: {
               sty.text__m65Es,
               {
                 [sty.texticonPosition_left__m65Es0Z1Jo]: hasVariant(
-                  variants,
+                  $state,
                   "iconPosition",
                   "left"
                 )
@@ -141,19 +172,19 @@ function PlasmicDocsNextButton__RenderFunc(props: {
           value: args.children,
           className: classNames(sty.slotTargetChildren, {
             [sty.slotTargetChildreniconPosition_left]: hasVariant(
-              variants,
+              $state,
               "iconPosition",
               "left"
             ),
             [sty.slotTargetChildreniconPosition_right]: hasVariant(
-              variants,
+              $state,
               "iconPosition",
               "right"
             )
           })
         })}
 
-        {(hasVariant(variants, "iconPosition", "left") ? true : true) ? (
+        {(hasVariant($state, "iconPosition", "left") ? true : true) ? (
           <div
             className={classNames(
               projectcss.all,
@@ -161,7 +192,7 @@ function PlasmicDocsNextButton__RenderFunc(props: {
               sty.text__bcyt6,
               {
                 [sty.texticonPosition_left__bcyt60Z1Jo]: hasVariant(
-                  variants,
+                  $state,
                   "iconPosition",
                   "left"
                 )

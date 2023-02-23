@@ -1,0 +1,203 @@
+.root {
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  min-width: 0;
+  padding: 0px;
+}
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  margin-left: calc(0px - 12px);
+  width: calc(100% + 12px);
+}
+.root > :global(.__wab_flex-container) > *,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.root > :global(.__wab_flex-container) > picture > img,
+.root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 12px;
+}
+.rootexpanded {
+  display: flex;
+  flex-direction: column;
+}
+.rootexpanded > :global(.__wab_flex-container) {
+  flex-direction: column;
+  margin-left: calc(0px - 0px);
+  width: calc(100% + 0px);
+}
+.rootexpanded > :global(.__wab_flex-container) > *,
+.rootexpanded > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.rootexpanded > :global(.__wab_flex-container) > picture > img,
+.rootexpanded
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 0px;
+}
+.par {
+  flex-direction: row;
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: #ffffff;
+  min-width: 0;
+  padding: 8px;
+}
+.par > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 0;
+  margin-left: calc(0px - 12px);
+  width: calc(100% + 12px);
+}
+.par > :global(.__wab_flex-container) > *,
+.par > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.par > :global(.__wab_flex-container) > picture > img,
+.par > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 12px;
+}
+.parexpanded {
+  display: flex;
+}
+.root:hover .par {
+  background: var(--token-2fqdQaStK);
+}
+.rootisGroup_expanded:hover .parisGroup_expanded {
+  background: none;
+}
+.slotTargetIcon {
+  color: var(--token-UMOpAZlrQj);
+  font-size: 14px;
+}
+.slotTargetIconisGroup {
+  font-size: 14px;
+  user-select: none;
+  white-space: pre;
+}
+.root:hover .slotTargetIcon {
+  color: var(--token-l0eeXWeAYwTjpW);
+}
+.rootisGroup_expanded:hover .slotTargetIconisGroup_expanded {
+  color: var(--token-2fqdQaStK);
+}
+.svg__ooSu0 {
+  position: relative;
+  object-fit: cover;
+  left: auto;
+  top: auto;
+  width: 14px;
+  height: 14px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.freeBox__vcwFh {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  left: auto;
+  top: auto;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetChildren {
+  font-size: 14px;
+  color: #000000;
+  line-height: 1;
+  user-select: none;
+}
+.root:hover .slotTargetChildren {
+  color: var(--token-l0eeXWeAYwTjpW);
+}
+.rootisGroup_expanded:hover .slotTargetChildrenisGroup_expanded {
+  color: var(--token-2fqdQaStK);
+}
+.svg {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  left: auto;
+  top: auto;
+  width: 14px;
+  height: 14px;
+  transition-property: all;
+  transition-duration: 0.2s;
+  flex-shrink: 0;
+  display: none;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.2s;
+}
+.svgisGroup {
+  display: block;
+}
+.svgexpanded {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(-180deg);
+  display: block;
+}
+.freeBox__rpVij {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  flex-direction: column;
+  min-width: 0;
+  display: none;
+  padding: 0px;
+}
+.freeBoxexpanded__rpVijlG8TP {
+  display: flex;
+}
+.unstyledNavItemSubItem__vnCLy:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  display: flex;
+}
+.svg___4IdSr {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  left: auto;
+  top: auto;
+  width: 14px;
+  height: 14px;
+}
+.unstyledNavItemSubItem___1BAgt:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  display: flex;
+}
+.svg__alfvy {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  left: auto;
+  top: auto;
+  width: 14px;
+  height: 14px;
+}
+.unstyledNavItemSubItem__vK9Ql:global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
+  display: flex;
+}
+.svg__rl4ZE {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  left: auto;
+  top: auto;
+  width: 14px;
+  height: 14px;
+}

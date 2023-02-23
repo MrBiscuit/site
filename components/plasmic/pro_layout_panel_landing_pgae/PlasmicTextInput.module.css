@@ -8,28 +8,35 @@
   background: #ffffff;
   position: sticky;
   min-width: 0;
-  border-radius: 3px;
-  padding: 7px 11px;
-  border: 1px solid #dbdbd7;
+  border-radius: 4px;
+  padding: 7px 12px;
+  border: 1px solid #000000;
 }
 .rootcolor_dark {
   background: var(--token-rsk6THq9Hi);
   border-color: var(--token-CU_VORm9N4);
 }
-.root:hover {
-  border-color: #c8c7c1;
-}
 .root:focus-within {
-  box-shadow: 0px 0px 0px 3px #96c7f2;
+  box-shadow: 0px 0px 0px 1px #2f54eb;
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-row-gap: 0px;
+  min-width: 0;
   outline: none;
-  border-radius: 6px;
+  padding: 7px 12px;
+  border: 1px solid #2f54eb;
 }
 .root___focusVisibleWithin {
-  box-shadow: 0px 0px 0px 3px #96c7f2;
+  box-shadow: 0px 0px 0px 1px #2f54eb;
   outline: none;
-  border-radius: 6px;
+  border-color: #2f54eb;
 }
 .startIconContainer {
+  display: flex;
   position: relative;
   flex-direction: row;
   align-items: stretch;
@@ -37,7 +44,6 @@
   left: auto;
   top: auto;
   margin-right: 8px;
-  display: none;
 }
 .startIconContainershowStartIcon {
   display: flex;
@@ -45,21 +51,28 @@
 .root .startIconContainer___focusVisibleWithin {
   outline: none;
 }
+.slotTargetStartIcon {
+  color: #808080;
+  font-size: 16px;
+}
 .slotTargetStartIconshowStartIcon {
   color: #90908c;
 }
-.svg__y93Nd {
+.svg__tKhY {
   position: relative;
   object-fit: cover;
-  width: 24px;
-  height: 24px;
+  max-width: 100%;
+  width: 1em;
   flex-shrink: 0;
+  height: 1em;
 }
 .input {
   width: 100%;
   left: auto;
   top: auto;
   background: #ffffff00;
+  font-size: 14px;
+  color: var(--token-o5xf3fxrqf);
   min-width: 0;
   padding: 0px;
   border-width: 0px;

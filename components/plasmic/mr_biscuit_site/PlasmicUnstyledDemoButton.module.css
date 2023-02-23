@@ -1,0 +1,119 @@
+.unstyledDemoButton {
+  background: rgba(255, 255, 255, 1);
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+.button2 {
+  flex-direction: row;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  border-radius: 4px;
+  padding: 4px 8px;
+  border: 1px solid #7f7f7f;
+}
+.button2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.button2 > :global(.__wab_flex-container) > *,
+.button2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.button2 > :global(.__wab_flex-container) > picture > img,
+.button2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 4px;
+}
+.button2hasSplit {
+  border-radius: 4px 0px 0px 4px;
+  border-color: #7f7f7f;
+}
+.button2isIcon {
+  display: none;
+}
+.button2isPrimary {
+  background: #2f54eb;
+  border-color: #000000;
+}
+.slotTargetText {
+  color: var(--token-o5xf3fxrqf);
+  user-select: none;
+}
+.slotTargetTexthasSplit {
+  color: var(--token-5gFOPrhbO);
+}
+.slotTargetTextisPrimary {
+  color: var(--token-l0eeXWeAYwTjpW);
+}
+.text__rEpcu {
+  display: block;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.1499899999999998;
+  position: relative;
+}
+.split {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  width: auto;
+  position: relative;
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  display: none;
+  border-top: 1px solid #7f7f7f;
+  border-right: 1px solid #7f7f7f;
+  border-bottom: 1px solid #7f7f7f;
+}
+.splithasSplit {
+  display: flex;
+}
+.splitisIcon {
+  border-left-width: 1px;
+  border-left-style: solid;
+  height: 26px;
+  width: 26px;
+  flex-shrink: 0;
+  display: flex;
+  border-radius: 4px;
+  border-color: #7f7f7f;
+}
+.splitisPrimary {
+  background: #2f54eb;
+  border-top-color: #000000;
+  border-right-color: #000000;
+  border-bottom-color: #000000;
+}
+.splitisIcon_isPrimary {
+  border-color: #000000;
+}
+.svg___6T1Xx {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #000;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}

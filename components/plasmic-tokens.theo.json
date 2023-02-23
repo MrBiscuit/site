@@ -141,6 +141,16 @@
       }
     },
     {
+      "name": "Unstyled",
+      "type": "color",
+      "value": "#2F53EB",
+      "category": "color",
+      "meta": {
+        "projectId": "qDNA17RfdgsM73kkELPPxa",
+        "id": "2fqdQaStK"
+      }
+    },
+    {
       "name": "article-title",
       "type": "fontsize",
       "value": "40px",

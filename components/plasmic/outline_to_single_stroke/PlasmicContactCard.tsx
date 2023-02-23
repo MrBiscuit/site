@@ -62,6 +62,14 @@ export interface DefaultContactCardProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicContactCard__RenderFunc(props: {
   variants: PlasmicContactCard__VariantsArgs;
   args: PlasmicContactCard__ArgsType;
@@ -86,6 +94,13 @@ function PlasmicContactCard__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   return (
     <p.Stack

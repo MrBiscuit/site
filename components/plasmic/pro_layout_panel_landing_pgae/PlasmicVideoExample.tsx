@@ -85,7 +85,7 @@ const __wrapUserFunction =
 const __wrapUserPromise =
   globalThis.__PlasmicWrapUserPromise ??
   (async (loc, promise) => {
-    await promise;
+    return await promise;
   });
 
 function PlasmicVideoExample__RenderFunc(props: {
@@ -113,6 +113,9 @@ function PlasmicVideoExample__RenderFunc(props: {
     ...variants
   };
 
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
+
   const currentUser = p.useCurrentUser?.() || {};
 
   const stateSpecs = React.useMemo(
@@ -120,7 +123,10 @@ function PlasmicVideoExample__RenderFunc(props: {
       {
         path: "reversedLayout",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.reversedLayout
+        variableType: "variant",
+        initFunc: true
+          ? ($props, $state, $ctx) => $props.reversedLayout
+          : undefined
       }
     ],
 

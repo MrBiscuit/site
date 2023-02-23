@@ -1,0 +1,114 @@
+.radio {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+}
+.radio > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.radio > :global(.__wab_flex-container) > *,
+.radio > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.radio > :global(.__wab_flex-container) > picture > img,
+.radio > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 4px;
+}
+.radio2 {
+  flex-direction: row;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3996px;
+  padding: 4px;
+}
+.radio2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.radio2 > :global(.__wab_flex-container) > *,
+.radio2 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.radio2 > :global(.__wab_flex-container) > picture > img,
+.radio2
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.dot {
+  flex-direction: row;
+  background: rgba(46, 83, 234, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  border-radius: 999px;
+  padding: 4px;
+}
+.dot > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.dot > :global(.__wab_flex-container) > *,
+.dot > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.dot > :global(.__wab_flex-container) > picture > img,
+.dot > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 8px;
+}
+.dotchecked {
+  opacity: 1;
+  display: flex;
+}
+._ {
+  width: 0px;
+  height: 0px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+}
+.text > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: calc(0px - 4px);
+  width: calc(100% + 4px);
+}
+.text > :global(.__wab_flex-container) > *,
+.text > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.text > :global(.__wab_flex-container) > picture > img,
+.text > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
+  margin-left: 4px;
+}
+.slotTargetText3 {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.1499899999999998;
+  letter-spacing: 0em;
+}

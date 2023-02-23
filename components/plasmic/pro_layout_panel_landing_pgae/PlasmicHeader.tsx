@@ -91,7 +91,7 @@ const __wrapUserFunction =
 const __wrapUserPromise =
   globalThis.__PlasmicWrapUserPromise ??
   (async (loc, promise) => {
-    await promise;
+    return await promise;
   });
 
 function PlasmicHeader__RenderFunc(props: {
@@ -119,6 +119,9 @@ function PlasmicHeader__RenderFunc(props: {
     ...variants
   };
 
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
+
   const currentUser = p.useCurrentUser?.() || {};
 
   const stateSpecs = React.useMemo(
@@ -126,7 +129,8 @@ function PlasmicHeader__RenderFunc(props: {
       {
         path: "chinese",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.chinese
+        variableType: "variant",
+        initFunc: true ? ($props, $state, $ctx) => $props.chinese : undefined
       }
     ],
 

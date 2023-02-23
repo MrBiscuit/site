@@ -71,6 +71,14 @@ export interface DefaultLinkButtonProps {
   className?: string;
 }
 
+const __wrapUserFunction =
+  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
+const __wrapUserPromise =
+  globalThis.__PlasmicWrapUserPromise ??
+  (async (loc, promise) => {
+    return await promise;
+  });
+
 function PlasmicLinkButton__RenderFunc(props: {
   variants: PlasmicLinkButton__VariantsArgs;
   args: PlasmicLinkButton__ArgsType;
@@ -95,6 +103,27 @@ function PlasmicLinkButton__RenderFunc(props: {
     ...args,
     ...variants
   };
+
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
+
+  const currentUser = p.useCurrentUser?.() || {};
+
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "active",
+        type: "private",
+        variableType: "variant",
+        initFunc: true ? ($props, $state, $ctx) => $props.active : undefined
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, $props, $ctx);
+
+  const [$queries, setDollarQueries] = React.useState({});
 
   const [isRootHover, triggerRootHoverProps] = useTrigger("useHover", {});
   const triggers = {
@@ -122,7 +151,7 @@ function PlasmicLinkButton__RenderFunc(props: {
           data-plasmic-name={"freeBox"}
           data-plasmic-override={overrides.freeBox}
           className={classNames(projectcss.all, sty.freeBox, {
-            [sty.freeBoxactive]: hasVariant(variants, "active", "active")
+            [sty.freeBoxactive]: hasVariant($state, "active", "active")
           })}
         >
           {p.renderPlasmicSlot({
@@ -130,7 +159,7 @@ function PlasmicLinkButton__RenderFunc(props: {
             value: args.children,
             className: classNames(sty.slotTargetChildren, {
               [sty.slotTargetChildrenactive]: hasVariant(
-                variants,
+                $state,
                 "active",
                 "active"
               )

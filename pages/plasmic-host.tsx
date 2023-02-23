@@ -5,9 +5,36 @@ import { registerComponent } from "@plasmicapp/host";
 import { Typewriter } from "react-simple-typewriter";
 import { Loop } from "../components/Loop";
 import CountUp from "react-countup";
-
+import {Motion} from "../components/Animate";
 RegisterChakra();
-
+registerComponent(Motion, {
+  name: 'Motion',
+  importPath: './components/Animate',
+  props:{
+      from:{
+          type:"object",
+      },
+      to:{
+          type:"object",
+      },
+      isChildren:{
+          type:'boolean',
+          defaultValue:false
+      },
+      whileInView:{
+          type:"object",
+      },
+      whileHover:{
+          type:"object",
+      },
+      whileTap:{
+          type:"object",
+      },
+      children:{
+          type:"slot"
+      }
+  }
+})
 registerComponent(CountUp, {
   name: "CountUp",
   importPath: "react-countup",

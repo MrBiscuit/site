@@ -1,0 +1,39 @@
+.root {
+  display: inline-flex;
+  flex-direction: row;
+  position: relative;
+  width: auto;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 4px;
+  padding: 7px 12px;
+  border: 1px solid #000000;
+}
+.text {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  white-space: pre;
+  color: #00000066;
+  font-size: 14px;
+  user-select: none;
+  min-width: 0;
+}
+.endIconContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  left: auto;
+  top: auto;
+  margin-left: 8px;
+}
+.svg__xVs8 {
+  position: relative;
+  object-fit: cover;
+  width: 10px;
+  height: 8px;
+  flex-shrink: 0;
+}

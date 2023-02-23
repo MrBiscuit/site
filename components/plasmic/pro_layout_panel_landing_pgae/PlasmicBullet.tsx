@@ -77,7 +77,7 @@ const __wrapUserFunction =
 const __wrapUserPromise =
   globalThis.__PlasmicWrapUserPromise ??
   (async (loc, promise) => {
-    await promise;
+    return await promise;
   });
 
 function PlasmicBullet__RenderFunc(props: {
@@ -105,6 +105,9 @@ function PlasmicBullet__RenderFunc(props: {
     ...variants
   };
 
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
+
   const currentUser = p.useCurrentUser?.() || {};
 
   const stateSpecs = React.useMemo(
@@ -112,7 +115,8 @@ function PlasmicBullet__RenderFunc(props: {
       {
         path: "noIcon",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.noIcon
+        variableType: "variant",
+        initFunc: true ? ($props, $state, $ctx) => $props.noIcon : undefined
       }
     ],
 

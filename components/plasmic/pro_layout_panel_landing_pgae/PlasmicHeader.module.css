@@ -1,13 +1,16 @@
 .root {
   width: 100%;
   height: auto;
-  max-width: var(--token-qI3Bf7JneQc0w1);
+  max-width: none;
   display: flex;
   position: relative;
   justify-content: space-between;
   align-items: center;
+  border-bottom-color: #000000;
   min-width: 0;
-  padding: 16px 8px;
+  padding: 16px 64px;
+  border-width: 1px;
+  border-style: solid;
 }
 .link {
   display: flex;

@@ -42,7 +42,7 @@ import plasmic_outline_to_single_stroke_css from "../outline_to_single_stroke/pl
 import projectcss from "./plasmic_pro_layout_panel_landing_pgae.module.css"; // plasmic-import: qDNA17RfdgsM73kkELPPxa/projectcss
 import sty from "./PlasmicTextInput.module.css"; // plasmic-import: 7I48dDLBiI4vYE/css
 
-import SearchsvgIcon from "./icons/PlasmicIcon__Searchsvg"; // plasmic-import: GzyI_M5ipReRTC/icon
+import Icon36Icon from "../mr_biscuit_site/icons/PlasmicIcon__Icon36"; // plasmic-import: _BGhawlqpJ/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: r_TPt86vHV4SXb/icon
 
 export type PlasmicTextInput__VariantMembers = {
@@ -104,7 +104,7 @@ const __wrapUserFunction =
 const __wrapUserPromise =
   globalThis.__PlasmicWrapUserPromise ??
   (async (loc, promise) => {
-    await promise;
+    return await promise;
   });
 
 function PlasmicTextInput__RenderFunc(props: {
@@ -121,7 +121,7 @@ function PlasmicTextInput__RenderFunc(props: {
     () =>
       Object.assign(
         {
-          placeholder: "Enter something…" as const
+          placeholder: "unstyled@gmail.com" as const
         },
         props.args
       ),
@@ -133,6 +133,9 @@ function PlasmicTextInput__RenderFunc(props: {
     ...variants
   };
 
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
+
   const currentUser = p.useCurrentUser?.() || {};
 
   const stateSpecs = React.useMemo(
@@ -140,31 +143,40 @@ function PlasmicTextInput__RenderFunc(props: {
       {
         path: "showStartIcon",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.showStartIcon
+        variableType: "variant",
+        initFunc: true
+          ? ($props, $state, $ctx) => $props.showStartIcon
+          : undefined
       },
 
       {
         path: "showEndIcon",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.showEndIcon
+        variableType: "variant",
+        initFunc: true
+          ? ($props, $state, $ctx) => $props.showEndIcon
+          : undefined
       },
 
       {
         path: "isDisabled",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.isDisabled
+        variableType: "variant",
+        initFunc: true ? ($props, $state, $ctx) => $props.isDisabled : undefined
       },
 
       {
         path: "color",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.color
+        variableType: "variant",
+        initFunc: true ? ($props, $state, $ctx) => $props.color : undefined
       },
 
       {
         path: "fontSize",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.fontSize
+        variableType: "variant",
+        initFunc: true ? ($props, $state, $ctx) => $props.fontSize : undefined
       }
     ],
 
@@ -232,8 +244,8 @@ function PlasmicTextInput__RenderFunc(props: {
         >
           {p.renderPlasmicSlot({
             defaultContents: (
-              <SearchsvgIcon
-                className={classNames(projectcss.all, sty.svg__y93Nd)}
+              <Icon36Icon
+                className={classNames(projectcss.all, sty.svg__tKhY)}
                 role={"img"}
               />
             ),
@@ -268,6 +280,9 @@ function PlasmicTextInput__RenderFunc(props: {
           hasVariant($state, "isDisabled", "isDisabled") ? true : undefined
         }
         placeholder={args.placeholder}
+        ref={ref => {
+          $refs["input"] = ref;
+        }}
         type={"text" as const}
         value={args.value}
       />

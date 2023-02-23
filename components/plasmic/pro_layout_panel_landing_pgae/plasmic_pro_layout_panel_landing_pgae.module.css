@@ -37,6 +37,8 @@
   --plasmic-token-l-pri-icon-g-30: var(--token-CU_VORm9N4);
   --token-s6PHCYz-b: Albula;
   --plasmic-token-main: var(--token-s6PHCYz-b);
+  --token-2fqdQaStK: #2f53eb;
+  --plasmic-token-unstyled: var(--token-2fqdQaStK);
 }
 
 .plasmic_default_styles {

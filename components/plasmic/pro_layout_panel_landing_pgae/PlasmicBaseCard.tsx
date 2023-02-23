@@ -82,7 +82,7 @@ const __wrapUserFunction =
 const __wrapUserPromise =
   globalThis.__PlasmicWrapUserPromise ??
   (async (loc, promise) => {
-    await promise;
+    return await promise;
   });
 
 function PlasmicBaseCard__RenderFunc(props: {
@@ -110,6 +110,9 @@ function PlasmicBaseCard__RenderFunc(props: {
     ...variants
   };
 
+  const refsRef = React.useRef({});
+  const $refs = refsRef.current;
+
   const currentUser = p.useCurrentUser?.() || {};
 
   const stateSpecs = React.useMemo(
@@ -117,7 +120,8 @@ function PlasmicBaseCard__RenderFunc(props: {
       {
         path: "color",
         type: "private",
-        initFunc: ($props, $state, $ctx) => $props.color
+        variableType: "variant",
+        initFunc: true ? ($props, $state, $ctx) => $props.color : undefined
       }
     ],
 

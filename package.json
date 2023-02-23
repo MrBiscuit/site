@@ -21,7 +21,7 @@
     "@plasmicpkgs/react-scroll-parallax": "^0.0.85",
     "@plasmicpkgs/react-youtube": "^7.13.82",
     "antd": "^4.23.2",
-    "framer-motion": "^7.3.5",
+    "framer-motion": "^9.0.7",
     "next": "12.3.0",
     "react": "^18.2.0",
     "react-countup": "^6.3.1",
