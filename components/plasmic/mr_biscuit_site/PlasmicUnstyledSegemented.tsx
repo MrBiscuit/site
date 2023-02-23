@@ -14,6 +14,7 @@ import * as React from "react";
 
 import Head from "next/head";
 import Link, { LinkProps } from "next/link";
+import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
@@ -80,6 +81,7 @@ function PlasmicUnstyledSegemented__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -133,7 +135,7 @@ function PlasmicUnstyledSegemented__RenderFunc(props: {
               sty.text__zCzx8
             )}
           >
-            {"First"}
+            {"UnStyled"}
           </div>
         }
       />
@@ -142,6 +144,17 @@ function PlasmicUnstyledSegemented__RenderFunc(props: {
         data-plasmic-name={"second"}
         data-plasmic-override={overrides.second}
         className={classNames("__wab_instance", sty.second)}
+        text={
+          <div
+            className={classNames(
+              projectcss.all,
+              projectcss.__wab_text,
+              sty.text__htbwa
+            )}
+          >
+            {"Material"}
+          </div>
+        }
       />
 
       <UnstyledToggleItem
@@ -156,7 +169,7 @@ function PlasmicUnstyledSegemented__RenderFunc(props: {
               sty.text___96Poc
             )}
           >
-            {"Third"}
+            {"Microsoft"}
           </div>
         }
       />

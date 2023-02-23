@@ -1,0 +1,18 @@
+.root {
+  object-fit: cover;
+  max-width: 100%;
+  position: relative;
+  transition-property: all;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 0.1s;
+}
+.rootactive {
+  color: #f5a524;
+}
+.root:hover {
+  transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
+}

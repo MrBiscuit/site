@@ -14,6 +14,7 @@ import * as React from "react";
 
 import Head from "next/head";
 import Link, { LinkProps } from "next/link";
+import { useRouter } from "next/router";
 
 import * as p from "@plasmicapp/react-web";
 import * as ph from "@plasmicapp/host";
@@ -34,20 +35,22 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import Header from "../../Header"; // plasmic-import: gCP9N_nn5MCbJS/component
 import UnStyledButton from "../../UnStyledButton"; // plasmic-import: 9IyHljfnvH/component
 import { Motion } from "../../Animate"; // plasmic-import: xjL7Mr59UJ/codeComponent
 import { Text } from "@chakra-ui/react"; // plasmic-import: GwrfPQ0Lynu/codeComponent
 import { Typewriter } from "react-simple-typewriter"; // plasmic-import: _wC7mwePtk/codeComponent
 import UnstyledNavItem from "../../UnstyledNavItem"; // plasmic-import: oTpWPg9u2R/component
 import UnstyledNavItemSubItem from "../../UnstyledNavItemSubItem"; // plasmic-import: c3-xwhQPkN8/component
+import UnstyledSegemented from "../../UnstyledSegemented"; // plasmic-import: CnyTEdcn7w/component
 import UnstyledDemoButton from "../../UnstyledDemoButton"; // plasmic-import: PZC_D0OEbs/component
 import UnstyledRadio from "../../UnstyledRadio"; // plasmic-import: 3nGVGX_H4w/component
 import UnstyledSwitch from "../../UnstyledSwitch"; // plasmic-import: mk11Af_XHM/component
 import UnstyledCheckbox from "../../UnstyledCheckbox"; // plasmic-import: fYHVVFh75H/component
-import UnstyledSegemented from "../../UnstyledSegemented"; // plasmic-import: CnyTEdcn7w/component
 import TextInput from "../../TextInput"; // plasmic-import: 7I48dDLBiI4vYE/component
 import UnstyledTabs from "../../UnstyledTabs"; // plasmic-import: d4weC4A-AC/component
+import Rate from "../../Rate"; // plasmic-import: 1gM6u15t6Q/component
+import UnstyledStar from "../../UnstyledStar"; // plasmic-import: vKnKnMdjXV/component
+import UnstyledAvatar from "../../UnstyledAvatar"; // plasmic-import: MrJiOwdVal/component
 import UnstyledDropdown from "../../UnstyledDropdown"; // plasmic-import: zQM7IHkPTi/component
 import UnstyledDropdownMenu from "../../UnstyledDropdownMenu"; // plasmic-import: 3yi4QiloTF/component
 import UnstyledDropdownMenuItem from "../../UnstyledDropdownMenuItem"; // plasmic-import: onwC6FbbBj/component
@@ -80,6 +83,7 @@ import Icon19Icon from "./icons/PlasmicIcon__Icon19"; // plasmic-import: T0dSDQf
 import Icon20Icon from "./icons/PlasmicIcon__Icon20"; // plasmic-import: nqBPTk3cO/icon
 import Icon36Icon from "./icons/PlasmicIcon__Icon36"; // plasmic-import: _BGhawlqpJ/icon
 import ChecksvgIcon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Checksvg"; // plasmic-import: r_TPt86vHV4SXb/icon
+import Icon51Icon from "./icons/PlasmicIcon__Icon51"; // plasmic-import: _AYgKmW_aR/icon
 import Icon37Icon from "./icons/PlasmicIcon__Icon37"; // plasmic-import: WHV25Sv77u/icon
 
 export type PlasmicUnStyled__VariantMembers = {};
@@ -94,7 +98,6 @@ export const PlasmicUnStyled__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicUnStyled__OverridesType = {
   root?: p.Flex<"div">;
-  header?: p.Flex<typeof Header>;
   frame3?: p.Flex<"div">;
   frame6?: p.Flex<"div">;
   frame5?: p.Flex<"div">;
@@ -106,15 +109,16 @@ export type PlasmicUnStyled__OverridesType = {
   corner4?: p.Flex<"div">;
   _for?: p.Flex<"div">;
   typewriter?: p.Flex<typeof Typewriter>;
+  unstyledSegemented?: p.Flex<typeof UnstyledSegemented>;
   text2?: p.Flex<"div">;
   text4?: p.Flex<"div">;
   text5?: p.Flex<"div">;
   text3?: p.Flex<"div">;
   text6?: p.Flex<"div">;
   unstyledSwitch?: p.Flex<typeof UnstyledSwitch>;
-  unstyledSegemented?: p.Flex<typeof UnstyledSegemented>;
   textInput?: p.Flex<typeof TextInput>;
   unstyledTabs?: p.Flex<typeof UnstyledTabs>;
+  unstyledRate?: p.Flex<typeof Rate>;
   unstyledDropdown?: p.Flex<typeof UnstyledDropdown>;
   unstyledDropdownMenu?: p.Flex<typeof UnstyledDropdownMenu>;
   footer?: p.Flex<typeof Footer>;
@@ -139,6 +143,7 @@ function PlasmicUnStyled__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
+  const __nextRouter = useRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -189,48 +194,51 @@ function PlasmicUnStyled__RenderFunc(props: {
             sty.root
           )}
         >
-          <Header
-            data-plasmic-name={"header"}
-            data-plasmic-override={overrides.header}
-            children={null}
-            className={classNames("__wab_instance", sty.header)}
-            slot={"UnStyled"}
-            slot2={
-              true ? (
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__sZxYn)}
+          <div className={classNames(projectcss.all, sty.freeBox___4BIe8)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__g8Bba
+              )}
+            >
+              {"UnStyled"}
+            </div>
+
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__x0Gd)}
+              >
+                <UnStyledButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.unStyledButton__aiGzn
+                  )}
+                />
+
+                <UnStyledButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.unStyledButton__ripUq
+                  )}
                 >
-                  <UnStyledButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.unStyledButton__r5DIq
-                    )}
-                  />
+                  {"Preview in Figma"}
+                </UnStyledButton>
 
-                  <UnStyledButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.unStyledButton__laIhZ
-                    )}
-                  >
-                    {"Preview in Figma"}
-                  </UnStyledButton>
-
-                  <UnStyledButton
-                    className={classNames(
-                      "__wab_instance",
-                      sty.unStyledButton__xEisa
-                    )}
-                    cta={true}
-                  >
-                    {"Get Early Access"}
-                  </UnStyledButton>
-                </p.Stack>
-              ) : null
-            }
-          />
+                <UnStyledButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.unStyledButton__tna8D
+                  )}
+                  cta={true}
+                >
+                  {"Get Early Access"}
+                </UnStyledButton>
+              </p.Stack>
+            ) : null}
+          </div>
 
           <Motion
             className={classNames("__wab_instance", sty.motion__onP7V)}
@@ -573,7 +581,6 @@ function PlasmicUnStyled__RenderFunc(props: {
                           "__wab_instance",
                           sty.unstyledNavItem__jZTu5
                         )}
-                        expanded={true}
                         icon={
                           <Icon44Icon
                             className={classNames(
@@ -683,7 +690,6 @@ function PlasmicUnStyled__RenderFunc(props: {
                           "__wab_instance",
                           sty.unstyledNavItem__jkJB
                         )}
-                        expanded={true}
                         icon={
                           <Icon52Icon
                             className={classNames(
@@ -822,6 +828,15 @@ function PlasmicUnStyled__RenderFunc(props: {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__kbuc3)}
                   >
+                    <UnstyledSegemented
+                      data-plasmic-name={"unstyledSegemented"}
+                      data-plasmic-override={overrides.unstyledSegemented}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.unstyledSegemented
+                      )}
+                    />
+
                     {true ? (
                       <p.Stack
                         as={"div"}
@@ -1022,15 +1037,6 @@ function PlasmicUnStyled__RenderFunc(props: {
                       </p.Stack>
                     ) : null}
 
-                    <UnstyledSegemented
-                      data-plasmic-name={"unstyledSegemented"}
-                      data-plasmic-override={overrides.unstyledSegemented}
-                      className={classNames(
-                        "__wab_instance",
-                        sty.unstyledSegemented
-                      )}
-                    />
-
                     <TextInput
                       data-plasmic-name={"textInput"}
                       data-plasmic-override={overrides.textInput}
@@ -1042,6 +1048,132 @@ function PlasmicUnStyled__RenderFunc(props: {
                       data-plasmic-override={overrides.unstyledTabs}
                       className={classNames("__wab_instance", sty.unstyledTabs)}
                     />
+
+                    {true ? (
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__xicF4
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___2VujY
+                          )}
+                        >
+                          {"Rating:"}
+                        </div>
+
+                        <Rate
+                          data-plasmic-name={"unstyledRate"}
+                          data-plasmic-override={overrides.unstyledRate}
+                          className={classNames(
+                            "__wab_instance",
+                            sty.unstyledRate
+                          )}
+                        />
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__j1LMj
+                          )}
+                        />
+
+                        <UnstyledAvatar
+                          className={classNames(
+                            "__wab_instance",
+                            sty.unstyledAvatar__aLa4F
+                          )}
+                        />
+
+                        <UnstyledAvatar
+                          className={classNames(
+                            "__wab_instance",
+                            sty.unstyledAvatar__dN0Jf
+                          )}
+                        >
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__j5X71)}
+                            displayHeight={"auto" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"auto" as const}
+                            loading={"lazy" as const}
+                            src={{
+                              src: "/plasmic/mr_biscuit_site/images/avatar2.png",
+                              fullWidth: 400,
+                              fullHeight: 400,
+                              aspectRatio: undefined
+                            }}
+                          />
+
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__mPkAu
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__zp38
+                              )}
+                            >
+                              {"5"}
+                            </div>
+                          </div>
+                        </UnstyledAvatar>
+
+                        <UnstyledAvatar
+                          className={classNames(
+                            "__wab_instance",
+                            sty.unstyledAvatar__xMuZs
+                          )}
+                        >
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__yrNc)}
+                            displayHeight={"auto" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"100%" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"auto" as const}
+                            loading={"lazy" as const}
+                            src={{
+                              src: "/plasmic/mr_biscuit_site/images/avatar3.png",
+                              fullWidth: 400,
+                              fullHeight: 400,
+                              aspectRatio: undefined
+                            }}
+                          />
+
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__r1Cj
+                            )}
+                          >
+                            <Icon51Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__b8QOq
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        </UnstyledAvatar>
+                      </p.Stack>
+                    ) : null}
                   </p.Stack>
                 ) : null}
                 {true ? (
@@ -1073,6 +1205,70 @@ function PlasmicUnStyled__RenderFunc(props: {
             ) : null}
           </div>
 
+          <div className={classNames(projectcss.all, sty.freeBox__pmiBc)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__hYvq8
+              )}
+            >
+              <React.Fragment>
+                <React.Fragment>{""}</React.Fragment>
+                {
+                  <span
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.span,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.span__twKt
+                    )}
+                  >
+                    {"Expand your own Varaints on the most "}
+                  </span>
+                }
+                <React.Fragment>{""}</React.Fragment>
+                {
+                  <span
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.span,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.span__zXmrS
+                    )}
+                  >
+                    {"Composable "}
+                  </span>
+                }
+                <React.Fragment>{""}</React.Fragment>
+                {
+                  <span
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.span,
+                      projectcss.__wab_text,
+                      projectcss.plasmic_default__inline,
+                      sty.span__w1Me
+                    )}
+                  >
+                    {"Architecture"}
+                  </span>
+                }
+                <React.Fragment>{""}</React.Fragment>
+              </React.Fragment>
+            </div>
+
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__vMvkg)}
+              />
+            ) : null}
+          </div>
+
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -1087,7 +1283,6 @@ function PlasmicUnStyled__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "header",
     "frame3",
     "frame6",
     "frame5",
@@ -1099,21 +1294,21 @@ const PlasmicDescendants = {
     "corner4",
     "_for",
     "typewriter",
+    "unstyledSegemented",
     "text2",
     "text4",
     "text5",
     "text3",
     "text6",
     "unstyledSwitch",
-    "unstyledSegemented",
     "textInput",
     "textbox",
     "unstyledTabs",
+    "unstyledRate",
     "unstyledDropdown",
     "unstyledDropdownMenu",
     "footer"
   ],
-  header: ["header"],
   frame3: [
     "frame3",
     "frame6",
@@ -1157,15 +1352,16 @@ const PlasmicDescendants = {
   corner4: ["corner4"],
   _for: ["_for"],
   typewriter: ["typewriter"],
+  unstyledSegemented: ["unstyledSegemented"],
   text2: ["text2"],
   text4: ["text4"],
   text5: ["text5"],
   text3: ["text3"],
   text6: ["text6"],
   unstyledSwitch: ["unstyledSwitch"],
-  unstyledSegemented: ["unstyledSegemented"],
   textInput: ["textInput", "textbox"],
   unstyledTabs: ["unstyledTabs"],
+  unstyledRate: ["unstyledRate"],
   unstyledDropdown: ["unstyledDropdown"],
   unstyledDropdownMenu: ["unstyledDropdownMenu"],
   footer: ["footer"]
@@ -1175,7 +1371,6 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  header: typeof Header;
   frame3: "div";
   frame6: "div";
   frame5: "div";
@@ -1187,15 +1382,16 @@ type NodeDefaultElementType = {
   corner4: "div";
   _for: "div";
   typewriter: typeof Typewriter;
+  unstyledSegemented: typeof UnstyledSegemented;
   text2: "div";
   text4: "div";
   text5: "div";
   text3: "div";
   text6: "div";
   unstyledSwitch: typeof UnstyledSwitch;
-  unstyledSegemented: typeof UnstyledSegemented;
   textInput: typeof TextInput;
   unstyledTabs: typeof UnstyledTabs;
+  unstyledRate: typeof Rate;
   unstyledDropdown: typeof UnstyledDropdown;
   unstyledDropdownMenu: typeof UnstyledDropdownMenu;
   footer: typeof Footer;
@@ -1262,7 +1458,6 @@ export const PlasmicUnStyled = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    header: makeNodeComponent("header"),
     frame3: makeNodeComponent("frame3"),
     frame6: makeNodeComponent("frame6"),
     frame5: makeNodeComponent("frame5"),
@@ -1274,15 +1469,16 @@ export const PlasmicUnStyled = Object.assign(
     corner4: makeNodeComponent("corner4"),
     _for: makeNodeComponent("_for"),
     typewriter: makeNodeComponent("typewriter"),
+    unstyledSegemented: makeNodeComponent("unstyledSegemented"),
     text2: makeNodeComponent("text2"),
     text4: makeNodeComponent("text4"),
     text5: makeNodeComponent("text5"),
     text3: makeNodeComponent("text3"),
     text6: makeNodeComponent("text6"),
     unstyledSwitch: makeNodeComponent("unstyledSwitch"),
-    unstyledSegemented: makeNodeComponent("unstyledSegemented"),
     textInput: makeNodeComponent("textInput"),
     unstyledTabs: makeNodeComponent("unstyledTabs"),
+    unstyledRate: makeNodeComponent("unstyledRate"),
     unstyledDropdown: makeNodeComponent("unstyledDropdown"),
     unstyledDropdownMenu: makeNodeComponent("unstyledDropdownMenu"),
     footer: makeNodeComponent("footer"),

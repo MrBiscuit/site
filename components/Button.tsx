@@ -2,7 +2,7 @@ import * as React from "react";
 import {
   PlasmicButton,
   DefaultButtonProps
-} from "./plasmic/pro_layout_panel_landing_pgae/PlasmicButton";
+} from "./plasmic/outline_to_single_stroke/PlasmicButton";
 import {
   ButtonRef,
   HtmlAnchorOnlyProps,

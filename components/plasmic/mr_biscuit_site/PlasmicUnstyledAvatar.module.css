@@ -1,0 +1,31 @@
+.root {
+  display: block;
+  width: 42px;
+  height: 42px;
+  max-width: 100%;
+  background: #ffffff;
+  position: relative;
+  padding: 8px;
+}
+.freeBox {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  border-radius: 41px;
+  border: 1px solid #000000;
+}
+.img___5PIir {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  left: auto;
+  top: auto;
+  border-radius: 41px;
+}
+.img___5PIir > picture > img {
+  object-fit: cover;
+}
+.img___5PIir > :global(.__wab_img-spacer) > img {
+  object-fit: cover;
+}

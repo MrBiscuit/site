@@ -26,13 +26,16 @@ function UnstyledNavItem_(
   props: UnstyledNavItemProps,
   ref: HTMLElementRefOf<"div">
 ) {
-  const [isExpended, setIsExpended] = React.useState(false);
+  const [isExpended, setIsExpended] = React.useState(props.isGroup?true:false);
 
   return <PlasmicUnstyledNavItem 
   expanded={isExpended}
   par={{
     props:{
-      onClick: () => setIsExpended(!isExpended)
+      onClick: () => {
+        if (props.isGroup)
+        setIsExpended(!isExpended);
+      }
     }
   }}
    root={{ ref }} {...props} />;
