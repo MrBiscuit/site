@@ -53,21 +53,24 @@ export const PlasmicUnstyledDropdown__VariantProps =
 
 export type PlasmicUnstyledDropdown__ArgsType = {
   endIcon?: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 type ArgPropType = keyof PlasmicUnstyledDropdown__ArgsType;
 export const PlasmicUnstyledDropdown__ArgProps = new Array<ArgPropType>(
-  "endIcon"
+  "endIcon",
+  "children"
 );
 
 export type PlasmicUnstyledDropdown__OverridesType = {
   root?: p.Flex<"div">;
-  text?: p.Flex<"div">;
+  freeBox?: p.Flex<"div">;
   endIconContainer?: p.Flex<"div">;
 };
 
 export interface DefaultUnstyledDropdownProps {
   endIcon?: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
 }
 
@@ -129,11 +132,15 @@ function PlasmicUnstyledDropdown__RenderFunc(props: {
       )}
     >
       <div
-        data-plasmic-name={"text"}
-        data-plasmic-override={overrides.text}
-        className={classNames(projectcss.all, projectcss.__wab_text, sty.text)}
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(projectcss.all, sty.freeBox)}
       >
-        {"Dropdown Select"}
+        {p.renderPlasmicSlot({
+          defaultContents: "Dropdown Select",
+          value: args.children,
+          className: classNames(sty.slotTargetChildren)
+        })}
       </div>
 
       {true ? (
@@ -159,8 +166,8 @@ function PlasmicUnstyledDropdown__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "text", "endIconContainer"],
-  text: ["text"],
+  root: ["root", "freeBox", "endIconContainer"],
+  freeBox: ["freeBox"],
   endIconContainer: ["endIconContainer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -168,7 +175,7 @@ type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  text: "div";
+  freeBox: "div";
   endIconContainer: "div";
 };
 
@@ -233,7 +240,7 @@ export const PlasmicUnstyledDropdown = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    text: makeNodeComponent("text"),
+    freeBox: makeNodeComponent("freeBox"),
     endIconContainer: makeNodeComponent("endIconContainer"),
 
     // Metadata about props expected for PlasmicUnstyledDropdown

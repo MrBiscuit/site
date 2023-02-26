@@ -10,15 +10,19 @@
   padding: 7px 12px;
   border: 1px solid #000000;
 }
-.text {
+.freeBox {
   width: 100%;
   height: auto;
   max-width: 800px;
-  white-space: pre;
-  color: #00000066;
-  font-size: 14px;
-  user-select: none;
+  display: flex;
+  flex-direction: row;
   min-width: 0;
+}
+.slotTargetChildren {
+  font-size: 14px;
+  color: #00000066;
+  white-space: pre;
+  user-select: none;
 }
 .endIconContainer {
   display: flex;

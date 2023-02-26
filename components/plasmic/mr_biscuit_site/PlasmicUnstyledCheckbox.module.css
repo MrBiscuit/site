@@ -4,6 +4,7 @@
   height: auto;
   display: inline-flex;
   position: relative;
+  cursor: pointer;
 }
 .checkbox > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -109,4 +110,5 @@
   color: #000000;
   line-height: 1.1499899999999998;
   letter-spacing: 0em;
+  user-select: none;
 }

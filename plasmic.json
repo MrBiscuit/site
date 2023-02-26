@@ -562,6 +562,32 @@
           "cssFilePath": "plasmic/mr_biscuit_site/PlasmicUnstyledAvatar.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "j-zq1RSVcV",
+          "name": "UnStyledPagination",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/mr_biscuit_site/PlasmicUnStyledPagination.tsx",
+          "importSpec": {
+            "modulePath": "UnStyledPagination.tsx"
+          },
+          "cssFilePath": "plasmic/mr_biscuit_site/PlasmicUnStyledPagination.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "chyRgv30hi",
+          "name": "UnStyledPaginationItem",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/mr_biscuit_site/PlasmicUnStyledPaginationItem.tsx",
+          "importSpec": {
+            "modulePath": "UnStyledPaginationItem.tsx"
+          },
+          "cssFilePath": "plasmic/mr_biscuit_site/PlasmicUnStyledPaginationItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -1364,6 +1390,36 @@
           "id": "_AYgKmW_aR",
           "name": "Icon51Icon",
           "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon51.tsx"
+        },
+        {
+          "id": "plvXl2zxQM",
+          "name": "Icon54Icon",
+          "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon54.tsx"
+        },
+        {
+          "id": "FFnEshjgff",
+          "name": "Icon55Icon",
+          "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon55.tsx"
+        },
+        {
+          "id": "XuYf6ufEk1",
+          "name": "Icon56Icon",
+          "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon56.tsx"
+        },
+        {
+          "id": "Bfj59BVPAt",
+          "name": "Icon57Icon",
+          "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon57.tsx"
+        },
+        {
+          "id": "5p0wU6DBid",
+          "name": "Icon58Icon",
+          "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon58.tsx"
+        },
+        {
+          "id": "Cd0Qv4bMM",
+          "name": "Icon59Icon",
+          "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon59.tsx"
         }
       ],
       "images": [
@@ -2181,7 +2237,7 @@
         {
           "id": "p3HNI5RglT",
           "name": "TabPane",
-          "componentImportPath": "rc-tabs"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerTabs"
         },
         {
           "id": "Hb-DVgvuk3",

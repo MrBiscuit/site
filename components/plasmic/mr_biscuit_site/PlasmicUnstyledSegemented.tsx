@@ -135,7 +135,7 @@ function PlasmicUnstyledSegemented__RenderFunc(props: {
               sty.text__zCzx8
             )}
           >
-            {"UnStyled"}
+            {"Make"}
           </div>
         }
       />
@@ -152,7 +152,7 @@ function PlasmicUnstyledSegemented__RenderFunc(props: {
               sty.text__htbwa
             )}
           >
-            {"Material"}
+            {"UnStyled"}
           </div>
         }
       />
@@ -169,7 +169,7 @@ function PlasmicUnstyledSegemented__RenderFunc(props: {
               sty.text___96Poc
             )}
           >
-            {"Microsoft"}
+            {"Your own"}
           </div>
         }
       />

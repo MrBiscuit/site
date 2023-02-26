@@ -23,6 +23,10 @@ a {
   font-family: "Albula";
   src: url(../fonts/Albula-Regular.ttf);
 }
+@font-face {
+  font-family: "Alliance No.2";
+  src: url(../fonts/AllianceNo2-Bold.ttf);
+}
 
 @media (prefers-color-scheme: dark) {
   html {

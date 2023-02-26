@@ -1,0 +1,45 @@
+.prev {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 8px;
+}
+.previsCurrent {
+  background: var(--token-2fqdQaStK);
+  box-shadow: inset 0px 0px 0px 1px #000000;
+}
+.previsDisabled {
+  opacity: 0.4;
+}
+.prev:hover {
+  background: #0000001a;
+}
+.previsCurrent:hover {
+  background: var(--token-2fqdQaStK);
+}
+.previsDisabled:hover {
+  background: none;
+}
+.slotTargetChildren {
+  color: var(--token-5gFOPrhbO);
+  user-select: none;
+}
+.slotTargetChildrenisCurrent {
+  color: var(--token-l0eeXWeAYwTjpW);
+}
+.svg__fimDp {
+  object-fit: cover;
+  max-width: 100%;
+  width: 14px;
+  height: 14px;
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(90deg);
+  flex-shrink: 0;
+  display: block;
+}

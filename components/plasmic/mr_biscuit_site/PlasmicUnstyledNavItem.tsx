@@ -267,7 +267,10 @@ function PlasmicUnstyledNavItem__RenderFunc(props: {
               data-plasmic-override={overrides.svg}
               className={classNames(projectcss.all, sty.svg, {
                 [sty.svgexpanded]: hasVariant($state, "expanded", "expanded"),
-                [sty.svgisGroup]: hasVariant($state, "isGroup", "isGroup")
+                [sty.svgisGroup]: hasVariant($state, "isGroup", "isGroup"),
+                [sty.svgisGroup_expanded]:
+                  hasVariant($state, "isGroup", "isGroup") &&
+                  hasVariant($state, "expanded", "expanded")
               })}
               role={"img"}
             />

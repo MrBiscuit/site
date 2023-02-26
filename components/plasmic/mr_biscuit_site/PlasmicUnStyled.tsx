@@ -48,13 +48,17 @@ import UnstyledSwitch from "../../UnstyledSwitch"; // plasmic-import: mk11Af_XHM
 import UnstyledCheckbox from "../../UnstyledCheckbox"; // plasmic-import: fYHVVFh75H/component
 import TextInput from "../../TextInput"; // plasmic-import: 7I48dDLBiI4vYE/component
 import UnstyledTabs from "../../UnstyledTabs"; // plasmic-import: d4weC4A-AC/component
+import UnStyledPagination from "../../UnStyledPagination"; // plasmic-import: j-zq1RSVcV/component
 import Rate from "../../Rate"; // plasmic-import: 1gM6u15t6Q/component
 import UnstyledStar from "../../UnstyledStar"; // plasmic-import: vKnKnMdjXV/component
 import UnstyledAvatar from "../../UnstyledAvatar"; // plasmic-import: MrJiOwdVal/component
 import UnstyledDropdown from "../../UnstyledDropdown"; // plasmic-import: zQM7IHkPTi/component
 import UnstyledDropdownMenu from "../../UnstyledDropdownMenu"; // plasmic-import: 3yi4QiloTF/component
 import UnstyledDropdownMenuItem from "../../UnstyledDropdownMenuItem"; // plasmic-import: onwC6FbbBj/component
-import Footer from "../../Footer"; // plasmic-import: 48OR7NBtqAcun7/component
+import YouTube from "@plasmicpkgs/react-youtube"; // plasmic-import: CHO21V9uYw/codeComponent
+import IconLink from "../../IconLink"; // plasmic-import: 1VSJl1M4qMed7Q/component
+
+import { useScreenVariants as useScreenVariants_3KhhFf1Cq1Qfos } from "../pro_layout_panel_landing_pgae/PlasmicGlobalVariant__Screen"; // plasmic-import: 3KhhFf1CQ1QFOS/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -62,10 +66,11 @@ import plasmic_outline_to_single_stroke_css from "../outline_to_single_stroke/pl
 import projectcss from "../pro_layout_panel_landing_pgae/plasmic_pro_layout_panel_landing_pgae.module.css"; // plasmic-import: qDNA17RfdgsM73kkELPPxa/projectcss
 import sty from "./PlasmicUnStyled.module.css"; // plasmic-import: 0VvvxOmc0M/css
 
-import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: -PFqTUHSM8/icon
 import Icon27Icon from "./icons/PlasmicIcon__Icon27"; // plasmic-import: E6ZcFdEu9Q/icon
+import Icon28Icon from "./icons/PlasmicIcon__Icon28"; // plasmic-import: -PFqTUHSM8/icon
 import Icon29Icon from "./icons/PlasmicIcon__Icon29"; // plasmic-import: YiIRCnOcuU/icon
 import Icon30Icon from "./icons/PlasmicIcon__Icon30"; // plasmic-import: fTykVWwuoF/icon
+import Icon54Icon from "./icons/PlasmicIcon__Icon54"; // plasmic-import: plvXl2zxQM/icon
 import Globe06Icon from "./icons/PlasmicIcon__Globe06"; // plasmic-import: c9dVyZw-IZ/icon
 import Icon41Icon from "./icons/PlasmicIcon__Icon41"; // plasmic-import: VpWG7TJuBB/icon
 import Icon44Icon from "./icons/PlasmicIcon__Icon44"; // plasmic-import: YzsZRDIwF/icon
@@ -84,7 +89,14 @@ import Icon20Icon from "./icons/PlasmicIcon__Icon20"; // plasmic-import: nqBPTk3
 import Icon36Icon from "./icons/PlasmicIcon__Icon36"; // plasmic-import: _BGhawlqpJ/icon
 import ChecksvgIcon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Checksvg"; // plasmic-import: r_TPt86vHV4SXb/icon
 import Icon51Icon from "./icons/PlasmicIcon__Icon51"; // plasmic-import: _AYgKmW_aR/icon
+import Icon56Icon from "./icons/PlasmicIcon__Icon56"; // plasmic-import: XuYf6ufEk1/icon
+import Icon57Icon from "./icons/PlasmicIcon__Icon57"; // plasmic-import: Bfj59BVPAt/icon
+import Icon58Icon from "./icons/PlasmicIcon__Icon58"; // plasmic-import: 5p0wU6DBid/icon
+import Icon59Icon from "./icons/PlasmicIcon__Icon59"; // plasmic-import: Cd0Qv4bMM/icon
 import Icon37Icon from "./icons/PlasmicIcon__Icon37"; // plasmic-import: WHV25Sv77u/icon
+import TwitterIconIcon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__TwitterIcon"; // plasmic-import: fXUwwdElPSPysi/icon
+import FigmasvgIcon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Figmasvg"; // plasmic-import: xchrs1LLb/icon
+import Vector19Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Vector19"; // plasmic-import: KN1g5LXUG/icon
 
 export type PlasmicUnStyled__VariantMembers = {};
 
@@ -92,9 +104,12 @@ export type PlasmicUnStyled__VariantsArgs = {};
 type VariantPropType = keyof PlasmicUnStyled__VariantsArgs;
 export const PlasmicUnStyled__VariantProps = new Array<VariantPropType>();
 
-export type PlasmicUnStyled__ArgsType = {};
+export type PlasmicUnStyled__ArgsType = {
+  children?: React.ReactNode;
+};
+
 type ArgPropType = keyof PlasmicUnStyled__ArgsType;
-export const PlasmicUnStyled__ArgProps = new Array<ArgPropType>();
+export const PlasmicUnStyled__ArgProps = new Array<ArgPropType>("children");
 
 export type PlasmicUnStyled__OverridesType = {
   root?: p.Flex<"div">;
@@ -118,10 +133,11 @@ export type PlasmicUnStyled__OverridesType = {
   unstyledSwitch?: p.Flex<typeof UnstyledSwitch>;
   textInput?: p.Flex<typeof TextInput>;
   unstyledTabs?: p.Flex<typeof UnstyledTabs>;
+  unStyledPagination?: p.Flex<typeof UnStyledPagination>;
   unstyledRate?: p.Flex<typeof Rate>;
   unstyledDropdown?: p.Flex<typeof UnstyledDropdown>;
   unstyledDropdownMenu?: p.Flex<typeof UnstyledDropdownMenu>;
-  footer?: p.Flex<typeof Footer>;
+  youTube?: p.Flex<typeof YouTube>;
   textbox?: p.Flex<typeof TextInput>;
 };
 
@@ -168,6 +184,10 @@ function PlasmicUnStyled__RenderFunc(props: {
 
   const [$queries, setDollarQueries] = React.useState({});
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariants_3KhhFf1Cq1Qfos()
+  });
+
   return (
     <React.Fragment>
       <Head></Head>
@@ -205,7 +225,7 @@ function PlasmicUnStyled__RenderFunc(props: {
               {"UnStyled"}
             </div>
 
-            {true ? (
+            {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
               <p.Stack
                 as={"div"}
                 hasGap={true}
@@ -223,6 +243,9 @@ function PlasmicUnStyled__RenderFunc(props: {
                     "__wab_instance",
                     sty.unStyledButton__ripUq
                   )}
+                  link={
+                    "https://www.figma.com/file/rbyg2yfXvQHo3HbjguKRFO/UnStyled?node-id=1345%3A16731&t=Hrstvng7a2Yl0ugJ-0" as const
+                  }
                 >
                   {"Preview in Figma"}
                 </UnStyledButton>
@@ -239,86 +262,6 @@ function PlasmicUnStyled__RenderFunc(props: {
               </p.Stack>
             ) : null}
           </div>
-
-          <Motion
-            className={classNames("__wab_instance", sty.motion__onP7V)}
-            from={{ y: 0 }}
-            isChildren={false}
-            to={{
-              y: 12,
-              transition: {
-                delay: 2,
-                repeat: "Infinity",
-                duration: 4,
-                repeatType: "reverse"
-              }
-            }}
-          >
-            <Icon28Icon
-              className={classNames(projectcss.all, sty.svg___0Zdw0)}
-              role={"img"}
-            />
-          </Motion>
-
-          <Motion
-            className={classNames("__wab_instance", sty.motion__ugaei)}
-            from={{ y: 0 }}
-            isChildren={false}
-            to={{
-              y: 12,
-              transition: {
-                repeat: "Infinity",
-                duration: 4,
-                repeatType: "reverse"
-              }
-            }}
-          >
-            <Icon27Icon
-              className={classNames(projectcss.all, sty.svg__mlKZf)}
-              role={"img"}
-            />
-          </Motion>
-
-          <Motion
-            className={classNames("__wab_instance", sty.motion__g0G2B)}
-            from={{ y: 0, rotate: 0 }}
-            isChildren={false}
-            to={{
-              y: 12,
-              rotate: 5,
-              transition: {
-                delay: 3,
-                repeat: "Infinity",
-                duration: 4,
-                repeatType: "reverse"
-              }
-            }}
-          >
-            <Icon29Icon
-              className={classNames(projectcss.all, sty.svg__e7Bkm)}
-              role={"img"}
-            />
-          </Motion>
-
-          <Motion
-            className={classNames("__wab_instance", sty.motion__wj4IN)}
-            from={{ y: 0 }}
-            isChildren={false}
-            to={{
-              y: 12,
-              transition: {
-                delay: 0.35,
-                repeat: "Infinity",
-                duration: 4,
-                repeatType: "reverse"
-              }
-            }}
-          >
-            <Icon30Icon
-              className={classNames(projectcss.all, sty.svg__bNzKi)}
-              role={"img"}
-            />
-          </Motion>
 
           <p.Stack
             as={"div"}
@@ -339,6 +282,25 @@ function PlasmicUnStyled__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.frame5)}
               >
+                <Motion
+                  className={classNames("__wab_instance", sty.motion__ugaei)}
+                  from={{ y: 0 }}
+                  isChildren={false}
+                  to={{
+                    y: 12,
+                    transition: {
+                      repeat: "Infinity",
+                      duration: 4,
+                      repeatType: "reverse"
+                    }
+                  }}
+                >
+                  <Icon27Icon
+                    className={classNames(projectcss.all, sty.svg__mlKZf)}
+                    role={"img"}
+                  />
+                </Motion>
+
                 <div
                   data-plasmic-name={"aMinimal"}
                   data-plasmic-override={overrides.aMinimal}
@@ -402,6 +364,26 @@ function PlasmicUnStyled__RenderFunc(props: {
                 >
                   {"for "}
                 </div>
+
+                <Motion
+                  className={classNames("__wab_instance", sty.motion__onP7V)}
+                  from={{ y: 0 }}
+                  isChildren={false}
+                  to={{
+                    y: 12,
+                    transition: {
+                      delay: 2,
+                      repeat: "Infinity",
+                      duration: 4,
+                      repeatType: "reverse"
+                    }
+                  }}
+                >
+                  <Icon28Icon
+                    className={classNames(projectcss.all, sty.svg___0Zdw0)}
+                    role={"img"}
+                  />
+                </Motion>
               </p.Stack>
 
               {true ? (
@@ -438,36 +420,126 @@ function PlasmicUnStyled__RenderFunc(props: {
                   </Text>
                 </p.Stack>
               ) : null}
+              {true ? (
+                <div className={classNames(projectcss.all, sty.freeBox__rcQwq)}>
+                  <Motion
+                    className={classNames("__wab_instance", sty.motion__g0G2B)}
+                    from={{ y: 0, rotate: 0 }}
+                    isChildren={false}
+                    to={{
+                      y: 12,
+                      rotate: 5,
+                      transition: {
+                        delay: 3,
+                        repeat: "Infinity",
+                        duration: 4,
+                        repeatType: "reverse"
+                      }
+                    }}
+                  >
+                    <Icon29Icon
+                      className={classNames(projectcss.all, sty.svg__e7Bkm)}
+                      role={"img"}
+                    />
+                  </Motion>
 
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__bLsiS
-                )}
-              >
-                {"Design Systems in Figma"}
-              </div>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__bLsiS
+                    )}
+                  >
+                    {"Design Systems in Figma"}
+                  </div>
+
+                  <Motion
+                    className={classNames("__wab_instance", sty.motion__wj4IN)}
+                    from={{ y: 0 }}
+                    isChildren={false}
+                    to={{
+                      y: 12,
+                      transition: {
+                        delay: 0.35,
+                        repeat: "Infinity",
+                        duration: 4,
+                        repeatType: "reverse"
+                      }
+                    }}
+                  >
+                    <Icon30Icon
+                      className={classNames(projectcss.all, sty.svg__bNzKi)}
+                      role={"img"}
+                    />
+                  </Motion>
+                </div>
+              ) : null}
             </div>
 
-            <UnStyledButton
-              className={classNames(
-                "__wab_instance",
-                sty.unStyledButton__icQ6B
-              )}
-              cta={true}
-              icon={true}
-            >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text__ehoP
-                )}
+            {true ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__cc0D8)}
               >
-                {"Sign up for Early Access"}
+                <UnStyledButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.unStyledButton___0YPH
+                  )}
+                  discord={true}
+                  link={"https://discord.gg/t8uASknrc6" as const}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__p5WHi
+                    )}
+                  >
+                    {"Join Our Discord"}
+                  </div>
+                </UnStyledButton>
+
+                <UnStyledButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.unStyledButton__icQ6B
+                  )}
+                  cta={true}
+                  icon={true}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ehoP
+                    )}
+                  >
+                    {"Sign up for Early Access"}
+                  </div>
+                </UnStyledButton>
+              </p.Stack>
+            ) : null}
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox___4LlBd)}>
+                <Motion
+                  className={classNames("__wab_instance", sty.motion___7Q8Tc)}
+                  from={{ y: 0, opacity: 1 }}
+                  isChildren={false}
+                  to={{
+                    y: 40,
+                    opacity: 0,
+                    transition: { duration: 1.5, repeatDelay: 1, repeat: 4 }
+                  }}
+                >
+                  <Icon54Icon
+                    className={classNames(projectcss.all, sty.svg__u6VVa)}
+                    role={"img"}
+                  />
+                </Motion>
               </div>
-            </UnStyledButton>
+            ) : null}
           </p.Stack>
 
           <div className={classNames(projectcss.all, sty.freeBox___1T2Cd)}>
@@ -504,7 +576,7 @@ function PlasmicUnStyled__RenderFunc(props: {
                       sty.span__de1W1
                     )}
                   >
-                    {"Theming "}
+                    {"Design Token "}
                   </span>
                 }
                 <React.Fragment>{""}</React.Fragment>
@@ -531,7 +603,9 @@ function PlasmicUnStyled__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox___6Qom)}
               >
-                {true ? (
+                {(
+                  hasVariant(globalVariants, "screen", "mobile") ? true : true
+                ) ? (
                   <div
                     className={classNames(projectcss.all, sty.freeBox__ax10C)}
                   >
@@ -993,7 +1067,25 @@ function PlasmicUnStyled__RenderFunc(props: {
                             "__wab_instance",
                             sty.unstyledCheckbox__xEgW2
                           )}
-                          isMixed={true}
+                        />
+
+                        <UnstyledCheckbox
+                          className={classNames(
+                            "__wab_instance",
+                            sty.unstyledCheckbox___0LlZm
+                          )}
+                          isChecked={true}
+                          text7={
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__pGzlC
+                              )}
+                            >
+                              {"Checked"}
+                            </div>
+                          }
                         />
 
                         <UnstyledCheckbox
@@ -1015,25 +1107,6 @@ function PlasmicUnStyled__RenderFunc(props: {
                             </div>
                           }
                         />
-
-                        <UnstyledCheckbox
-                          className={classNames(
-                            "__wab_instance",
-                            sty.unstyledCheckbox___0LlZm
-                          )}
-                          isChecked={true}
-                          text7={
-                            <div
-                              className={classNames(
-                                projectcss.all,
-                                projectcss.__wab_text,
-                                sty.text__pGzlC
-                              )}
-                            >
-                              {"Checked"}
-                            </div>
-                          }
-                        />
                       </p.Stack>
                     ) : null}
 
@@ -1047,6 +1120,15 @@ function PlasmicUnStyled__RenderFunc(props: {
                       data-plasmic-name={"unstyledTabs"}
                       data-plasmic-override={overrides.unstyledTabs}
                       className={classNames("__wab_instance", sty.unstyledTabs)}
+                    />
+
+                    <UnStyledPagination
+                      data-plasmic-name={"unStyledPagination"}
+                      data-plasmic-override={overrides.unStyledPagination}
+                      className={classNames(
+                        "__wab_instance",
+                        sty.unStyledPagination
+                      )}
                     />
 
                     {true ? (
@@ -1174,6 +1256,222 @@ function PlasmicUnStyled__RenderFunc(props: {
                         </UnstyledAvatar>
                       </p.Stack>
                     ) : null}
+
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__l4M3Q)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__xymMk
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__yyVIg
+                          )}
+                        >
+                          {"Name"}
+                        </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___1TCz2
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__lqrFa
+                          )}
+                        >
+                          {"Title"}
+                        </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__mFeV
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__zbpsn
+                          )}
+                        >
+                          {"Status"}
+                        </div>
+                      </div>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___7BzMp
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__j2Z5
+                          )}
+                        >
+                          {"Actions"}
+                        </div>
+                      </div>
+
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__ujkjF
+                        )}
+                      >
+                        {true ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__fkWyW
+                            )}
+                          >
+                            <Icon56Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__khlI
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        {true ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__fp7Cm
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__xDguY
+                              )}
+                            >
+                              {"Name"}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__sa9Vm
+                              )}
+                            >
+                              {"tony.reichert@example.com"}
+                            </div>
+                          </div>
+                        ) : null}
+                      </p.Stack>
+
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__x5VQw
+                        )}
+                      >
+                        {true ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__jh70O
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text___17N5D
+                              )}
+                            >
+                              {"CEO"}
+                            </div>
+
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__jw8H
+                              )}
+                            >
+                              {"Management"}
+                            </div>
+                          </div>
+                        ) : null}
+                      </p.Stack>
+
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__xvxG2
+                        )}
+                      >
+                        {true ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox___29Jh
+                            )}
+                          >
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__kSy8
+                              )}
+                            >
+                              {"Active"}
+                            </div>
+                          </div>
+                        ) : null}
+                      </p.Stack>
+
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__jPks5
+                        )}
+                      >
+                        <Icon57Icon
+                          className={classNames(projectcss.all, sty.svg__oaStk)}
+                          role={"img"}
+                        />
+
+                        <Icon58Icon
+                          className={classNames(projectcss.all, sty.svg__kjFx4)}
+                          role={"img"}
+                        />
+
+                        <Icon59Icon
+                          className={classNames(projectcss.all, sty.svg__ibkEx)}
+                          role={"img"}
+                        />
+                      </p.Stack>
+                    </div>
                   </p.Stack>
                 ) : null}
                 {true ? (
@@ -1260,20 +1558,129 @@ function PlasmicUnStyled__RenderFunc(props: {
               </React.Fragment>
             </div>
 
-            {true ? (
+            <YouTube
+              data-plasmic-name={"youTube"}
+              data-plasmic-override={overrides.youTube}
+              className={classNames("__wab_instance", sty.youTube)}
+              rel={false}
+              videoId={"_6731luLfeg" as const}
+            />
+          </div>
+
+          <div className={classNames(projectcss.all, sty.freeBox__jsPzX)}>
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__xgmke)}
+            >
+              <div className={classNames(projectcss.all, sty.freeBox__duUeE)}>
+                <p.PlasmicLink
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.link__bcWol
+                  )}
+                  component={Link}
+                  platform={"nextjs"}
+                >
+                  {p.renderPlasmicSlot({
+                    defaultContents:
+                      "Designed and developed by Mr.Biscuit in collaboration with Into Design Systems. ",
+                    value: args.children,
+                    className: classNames(sty.slotTargetChildren)
+                  })}
+                </p.PlasmicLink>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__pqGZt
+                  )}
+                >
+                  {"All rights reserved."}
+                </div>
+              </div>
+
               <p.Stack
                 as={"div"}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__vMvkg)}
-              />
-            ) : null}
+                className={classNames(projectcss.all, sty.freeBox__cI8U)}
+              >
+                {true ? (
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__eWz25
+                    )}
+                    component={Link}
+                    href={"https://twitter.com/SShuaiqi" as const}
+                    platform={"nextjs"}
+                    target={"_blank" as const}
+                  >
+                    <IconLink
+                      icon={
+                        <TwitterIconIcon
+                          className={classNames(projectcss.all, sty.svg__qjhRk)}
+                          role={"img"}
+                        />
+                      }
+                    />
+                  </p.PlasmicLink>
+                ) : null}
+                {true ? (
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__aTb7J
+                    )}
+                    component={Link}
+                    href={
+                      "https://www.figma.com/file/rbyg2yfXvQHo3HbjguKRFO/UnStyled?node-id=1345%3A16731&t=Hrstvng7a2Yl0ugJ-0" as const
+                    }
+                    platform={"nextjs"}
+                    target={"_blank" as const}
+                  >
+                    <IconLink
+                      icon={
+                        <FigmasvgIcon
+                          className={classNames(projectcss.all, sty.svg__asGJa)}
+                          role={"img"}
+                        />
+                      }
+                    />
+                  </p.PlasmicLink>
+                ) : null}
+                {true ? (
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__n2G5R
+                    )}
+                    component={Link}
+                    href={"https://discord.gg/t8uASknrc6" as const}
+                    platform={"nextjs"}
+                    target={"_blank" as const}
+                  >
+                    <IconLink
+                      icon={
+                        <Vector19Icon
+                          className={classNames(
+                            projectcss.all,
+                            sty.svg___5PhbP
+                          )}
+                          role={"img"}
+                        />
+                      }
+                    />
+                  </p.PlasmicLink>
+                ) : null}
+              </p.Stack>
+            </p.Stack>
           </div>
-
-          <Footer
-            data-plasmic-name={"footer"}
-            data-plasmic-override={overrides.footer}
-            className={classNames("__wab_instance", sty.footer)}
-          />
         </div>
       </div>
     </React.Fragment>
@@ -1304,10 +1711,11 @@ const PlasmicDescendants = {
     "textInput",
     "textbox",
     "unstyledTabs",
+    "unStyledPagination",
     "unstyledRate",
     "unstyledDropdown",
     "unstyledDropdownMenu",
-    "footer"
+    "youTube"
   ],
   frame3: [
     "frame3",
@@ -1361,10 +1769,11 @@ const PlasmicDescendants = {
   unstyledSwitch: ["unstyledSwitch"],
   textInput: ["textInput", "textbox"],
   unstyledTabs: ["unstyledTabs"],
+  unStyledPagination: ["unStyledPagination"],
   unstyledRate: ["unstyledRate"],
   unstyledDropdown: ["unstyledDropdown"],
   unstyledDropdownMenu: ["unstyledDropdownMenu"],
-  footer: ["footer"]
+  youTube: ["youTube"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1391,10 +1800,11 @@ type NodeDefaultElementType = {
   unstyledSwitch: typeof UnstyledSwitch;
   textInput: typeof TextInput;
   unstyledTabs: typeof UnstyledTabs;
+  unStyledPagination: typeof UnStyledPagination;
   unstyledRate: typeof Rate;
   unstyledDropdown: typeof UnstyledDropdown;
   unstyledDropdownMenu: typeof UnstyledDropdownMenu;
-  footer: typeof Footer;
+  youTube: typeof YouTube;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1478,10 +1888,11 @@ export const PlasmicUnStyled = Object.assign(
     unstyledSwitch: makeNodeComponent("unstyledSwitch"),
     textInput: makeNodeComponent("textInput"),
     unstyledTabs: makeNodeComponent("unstyledTabs"),
+    unStyledPagination: makeNodeComponent("unStyledPagination"),
     unstyledRate: makeNodeComponent("unstyledRate"),
     unstyledDropdown: makeNodeComponent("unstyledDropdown"),
     unstyledDropdownMenu: makeNodeComponent("unstyledDropdownMenu"),
-    footer: makeNodeComponent("footer"),
+    youTube: makeNodeComponent("youTube"),
 
     // Metadata about props expected for PlasmicUnStyled
     internalVariantProps: PlasmicUnStyled__VariantProps,

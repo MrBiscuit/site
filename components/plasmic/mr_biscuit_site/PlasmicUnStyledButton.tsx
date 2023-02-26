@@ -43,41 +43,48 @@ import projectcss from "../pro_layout_panel_landing_pgae/plasmic_pro_layout_pane
 import sty from "./PlasmicUnStyledButton.module.css"; // plasmic-import: 9IyHljfnvH/css
 
 import Icon33Icon from "./icons/PlasmicIcon__Icon33"; // plasmic-import: m2qCIW6_G-/icon
+import Vector19Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Vector19"; // plasmic-import: KN1g5LXUG/icon
 
 export type PlasmicUnStyledButton__VariantMembers = {
   cta: "cta";
   icon: "icon";
+  discord: "discord";
 };
 
 export type PlasmicUnStyledButton__VariantsArgs = {
   cta?: SingleBooleanChoiceArg<"cta">;
   icon?: SingleBooleanChoiceArg<"icon">;
+  discord?: SingleBooleanChoiceArg<"discord">;
 };
 
 type VariantPropType = keyof PlasmicUnStyledButton__VariantsArgs;
 export const PlasmicUnStyledButton__VariantProps = new Array<VariantPropType>(
   "cta",
-  "icon"
+  "icon",
+  "discord"
 );
 
 export type PlasmicUnStyledButton__ArgsType = {
   children?: React.ReactNode;
+  link?: string;
 };
 
 type ArgPropType = keyof PlasmicUnStyledButton__ArgsType;
 export const PlasmicUnStyledButton__ArgProps = new Array<ArgPropType>(
-  "children"
+  "children",
+  "link"
 );
 
 export type PlasmicUnStyledButton__OverridesType = {
-  root?: p.Flex<"div">;
-  svg?: p.Flex<"svg">;
+  root?: p.Flex<"a"> & Partial<LinkProps>;
 };
 
 export interface DefaultUnStyledButtonProps {
   children?: React.ReactNode;
+  link?: string;
   cta?: SingleBooleanChoiceArg<"cta">;
   icon?: SingleBooleanChoiceArg<"icon">;
+  discord?: SingleBooleanChoiceArg<"discord">;
   className?: string;
 }
 
@@ -134,6 +141,13 @@ function PlasmicUnStyledButton__RenderFunc(props: {
         type: "private",
         variableType: "variant",
         initFunc: true ? ($props, $state, $ctx) => $props.icon : undefined
+      },
+
+      {
+        path: "discord",
+        type: "private",
+        variableType: "variant",
+        initFunc: true ? ($props, $state, $ctx) => $props.discord : undefined
       }
     ],
 
@@ -149,13 +163,16 @@ function PlasmicUnStyledButton__RenderFunc(props: {
   };
 
   return (
-    <div
+    <p.Stack
+      as={p.PlasmicLink}
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
+      hasGap={true}
       className={classNames(
         projectcss.all,
+        projectcss.a,
         projectcss.root_reset,
         projectcss.plasmic_default_styles,
         projectcss.plasmic_mixins,
@@ -167,9 +184,13 @@ function PlasmicUnStyledButton__RenderFunc(props: {
           [sty.rootcta_icon]:
             hasVariant($state, "cta", "cta") &&
             hasVariant($state, "icon", "icon"),
+          [sty.rootdiscord]: hasVariant($state, "discord", "discord"),
           [sty.rooticon]: hasVariant($state, "icon", "icon")
         }
       )}
+      component={Link}
+      href={args.link}
+      platform={"nextjs"}
       data-plasmic-trigger-props={[triggerRootHoverProps]}
     >
       {p.renderPlasmicSlot({
@@ -180,6 +201,11 @@ function PlasmicUnStyledButton__RenderFunc(props: {
           [sty.slotTargetChildrencta_icon]:
             hasVariant($state, "cta", "cta") &&
             hasVariant($state, "icon", "icon"),
+          [sty.slotTargetChildrendiscord]: hasVariant(
+            $state,
+            "discord",
+            "discord"
+          ),
           [sty.slotTargetChildrenicon]: hasVariant($state, "icon", "icon")
         })
       })}
@@ -200,6 +226,11 @@ function PlasmicUnStyledButton__RenderFunc(props: {
             [sty.freeBoxcta_icon__xqoU2ICxVERkT0]:
               hasVariant($state, "cta", "cta") &&
               hasVariant($state, "icon", "icon"),
+            [sty.freeBoxdiscord__xqoUm5Yzd]: hasVariant(
+              $state,
+              "discord",
+              "discord"
+            ),
             [sty.freeBoxicon__xqoUeRkT0]: hasVariant($state, "icon", "icon")
           })}
         >
@@ -235,33 +266,41 @@ function PlasmicUnStyledButton__RenderFunc(props: {
               : false
           ) ? (
             <Icon33Icon
-              data-plasmic-name={"svg"}
-              data-plasmic-override={overrides.svg}
-              className={classNames(projectcss.all, sty.svg, {
-                [sty.svgcta_icon]:
+              className={classNames(projectcss.all, sty.svg__rQMgY, {
+                [sty.svgcta_icon__rQMgY2ICxVERkT0]:
                   hasVariant($state, "cta", "cta") &&
                   hasVariant($state, "icon", "icon"),
-                [sty.svgicon]: hasVariant($state, "icon", "icon")
+                [sty.svgicon__rQMgYeRkT0]: hasVariant($state, "icon", "icon")
               })}
               role={"img"}
             />
           ) : null}
         </p.Stack>
       ) : null}
-    </div>
+      {(hasVariant($state, "discord", "discord") ? true : false) ? (
+        <Vector19Icon
+          className={classNames(projectcss.all, sty.svg___6UXk0, {
+            [sty.svgdiscord___6UXk0M5Yzd]: hasVariant(
+              $state,
+              "discord",
+              "discord"
+            )
+          })}
+          role={"img"}
+        />
+      ) : null}
+    </p.Stack>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "svg"],
-  svg: ["svg"]
+  root: ["root"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
-  root: "div";
-  svg: "svg";
+  root: "a";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -325,7 +364,6 @@ export const PlasmicUnStyledButton = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    svg: makeNodeComponent("svg"),
 
     // Metadata about props expected for PlasmicUnStyledButton
     internalVariantProps: PlasmicUnStyledButton__VariantProps,

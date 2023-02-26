@@ -1,12 +1,10 @@
 .root {
+  flex-direction: row;
   display: inline-flex;
   width: auto;
   height: auto;
   max-width: 100%;
-  flex-direction: row;
   position: relative;
-  align-items: center;
-  justify-content: flex-start;
   cursor: pointer;
   transition-property: all;
   transition-duration: 0.1s;
@@ -14,14 +12,42 @@
   -webkit-transition-duration: 0.1s;
   padding: 8px 16px;
 }
+.root > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .rootcta {
   background: #000000;
+}
+.rootdiscord {
+  border: 1px solid #000000;
+}
+.rootdiscord > :global(.__wab_flex-container) {
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+  margin-top: calc(0px - 0px);
+  height: calc(100% + 0px);
+}
+.rootdiscord > :global(.__wab_flex-container) > *,
+.rootdiscord > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.rootdiscord > :global(.__wab_flex-container) > picture > img,
+.rootdiscord
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+  margin-top: 0px;
 }
 .root:hover {
   transform: translateX(0px) translateY(-1.5px) translateZ(0px);
 }
+.rootdiscord:hover {
+  transform: scaleX(1.03) scaleY(1.03) scaleZ(1);
+}
 .rootcta_icon:hover {
-  transform: translateX(0px) translateY(0px) translateZ(0px);
+  transform: scaleX(1.03) scaleY(1.03) scaleZ(1);
 }
 .slotTargetChildren {
   color: #000000;
@@ -49,6 +75,9 @@
 }
 .freeBoxicon__xqoUeRkT0 {
   display: flex;
+}
+.freeBoxdiscord__xqoUm5Yzd {
+  margin-left: calc(8px + 8px) !important;
 }
 .freeBoxcta_icon__xqoU2ICxVERkT0 {
   width: auto;
@@ -119,7 +148,7 @@
   flex-shrink: 0;
   display: block;
 }
-.svg {
+.svg__rQMgY {
   position: relative;
   plasmic-display-none: true;
   object-fit: cover;
@@ -130,19 +159,39 @@
   margin-bottom: 1px;
   flex-shrink: 0;
 }
-.svgicon {
+.svgicon__rQMgYeRkT0 {
   color: #000000;
   display: block;
 }
-.svgcta_icon {
+.svgcta_icon__rQMgY2ICxVERkT0 {
   color: #ffffff;
   margin: 0px 0px 1px;
 }
-.rootcta_icon:hover .svgcta_icon {
+.rootcta_icon:hover .svgcta_icon__rQMgY2ICxVERkT0 {
   color: #ffffff;
   margin-bottom: 1px;
   margin-top: calc(0px + 0px) !important;
   margin-right: 0px;
   margin-left: calc(0px + 0px) !important;
   display: block;
+}
+.svg___6UXk0 {
+  object-fit: cover;
+  max-width: 100%;
+  color: #000000;
+  width: 25px;
+  height: 19px;
+  margin-right: 8px;
+  plasmic-display-none: true;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  flex-shrink: 0;
+  -webkit-transition-property: all;
+  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.5s;
+}
+.rootdiscord:hover .svgdiscord___6UXk0M5Yzd {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+  color: #5865f2;
 }
