@@ -40,7 +40,7 @@ function UnStyledButton_(
   //
   // By default, we are just piping all UnStyledButtonProps here, but feel free
   // to do whatever works for you.
-
+  // @ts-ignore
   return <PlasmicUnStyledButton root={{ ref }} {...props} />;
 }
 

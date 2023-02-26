@@ -2095,6 +2095,15 @@
     font-size: 24px;
   }
 }
+.youTube:global(.__wab_instance) {
+  width: 677px;
+  height: 381px;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  position: relative;
+  flex-shrink: 0;
+}
 .freeBox__jsPzX {
   display: flex;
   position: relative;
