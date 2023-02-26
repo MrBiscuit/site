@@ -55,7 +55,6 @@ import UnstyledAvatar from "../../UnstyledAvatar"; // plasmic-import: MrJiOwdVal
 import UnstyledDropdown from "../../UnstyledDropdown"; // plasmic-import: zQM7IHkPTi/component
 import UnstyledDropdownMenu from "../../UnstyledDropdownMenu"; // plasmic-import: 3yi4QiloTF/component
 import UnstyledDropdownMenuItem from "../../UnstyledDropdownMenuItem"; // plasmic-import: onwC6FbbBj/component
-import YouTube from "@plasmicpkgs/react-youtube"; // plasmic-import: CHO21V9uYw/codeComponent
 import IconLink from "../../IconLink"; // plasmic-import: 1VSJl1M4qMed7Q/component
 
 import { useScreenVariants as useScreenVariants_3KhhFf1Cq1Qfos } from "../pro_layout_panel_landing_pgae/PlasmicGlobalVariant__Screen"; // plasmic-import: 3KhhFf1CQ1QFOS/globalVariant
@@ -137,7 +136,6 @@ export type PlasmicUnStyled__OverridesType = {
   unstyledRate?: p.Flex<typeof Rate>;
   unstyledDropdown?: p.Flex<typeof UnstyledDropdown>;
   unstyledDropdownMenu?: p.Flex<typeof UnstyledDropdownMenu>;
-  youTube?: p.Flex<typeof YouTube>;
   textbox?: p.Flex<typeof TextInput>;
 };
 
@@ -1557,14 +1555,6 @@ function PlasmicUnStyled__RenderFunc(props: {
                 <React.Fragment>{""}</React.Fragment>
               </React.Fragment>
             </div>
-
-            <YouTube
-              data-plasmic-name={"youTube"}
-              data-plasmic-override={overrides.youTube}
-              className={classNames("__wab_instance", sty.youTube)}
-              rel={false}
-              videoId={"_6731luLfeg" as const}
-            />
           </div>
 
           <div className={classNames(projectcss.all, sty.freeBox__jsPzX)}>
@@ -1714,8 +1704,7 @@ const PlasmicDescendants = {
     "unStyledPagination",
     "unstyledRate",
     "unstyledDropdown",
-    "unstyledDropdownMenu",
-    "youTube"
+    "unstyledDropdownMenu"
   ],
   frame3: [
     "frame3",
@@ -1772,8 +1761,7 @@ const PlasmicDescendants = {
   unStyledPagination: ["unStyledPagination"],
   unstyledRate: ["unstyledRate"],
   unstyledDropdown: ["unstyledDropdown"],
-  unstyledDropdownMenu: ["unstyledDropdownMenu"],
-  youTube: ["youTube"]
+  unstyledDropdownMenu: ["unstyledDropdownMenu"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1804,7 +1792,6 @@ type NodeDefaultElementType = {
   unstyledRate: typeof Rate;
   unstyledDropdown: typeof UnstyledDropdown;
   unstyledDropdownMenu: typeof UnstyledDropdownMenu;
-  youTube: typeof YouTube;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1892,7 +1879,6 @@ export const PlasmicUnStyled = Object.assign(
     unstyledRate: makeNodeComponent("unstyledRate"),
     unstyledDropdown: makeNodeComponent("unstyledDropdown"),
     unstyledDropdownMenu: makeNodeComponent("unstyledDropdownMenu"),
-    youTube: makeNodeComponent("youTube"),
 
     // Metadata about props expected for PlasmicUnStyled
     internalVariantProps: PlasmicUnStyled__VariantProps,
