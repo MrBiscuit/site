@@ -231,12 +231,14 @@ function PlasmicUnStyled__RenderFunc(props: {
                 hasGap={true}
                 className={classNames(projectcss.all, sty.freeBox__x0Gd)}
               >
-                <UnStyledButton
-                  className={classNames(
-                    "__wab_instance",
-                    sty.unStyledButton__aiGzn
-                  )}
-                />
+                {true ? (
+                  <UnStyledButton
+                    className={classNames(
+                      "__wab_instance",
+                      sty.unStyledButton__aiGzn
+                    )}
+                  />
+                ) : null}
 
                 <UnStyledButton
                   className={classNames(
@@ -256,8 +258,11 @@ function PlasmicUnStyled__RenderFunc(props: {
                     sty.unStyledButton__tna8D
                   )}
                   cta={true}
+                  link={
+                    "https://intodesignsystems.lemonsqueezy.com/checkout/buy/c2906f14-26ac-445b-92b8-c2419ab7ed8e" as const
+                  }
                 >
-                  {"Get Early Access"}
+                  {"Order Now"}
                 </UnStyledButton>
               </p.Stack>
             ) : null}
@@ -508,6 +513,9 @@ function PlasmicUnStyled__RenderFunc(props: {
                   )}
                   cta={true}
                   icon={true}
+                  link={
+                    "https://intodesignsystems.lemonsqueezy.com/checkout/buy/c2906f14-26ac-445b-92b8-c2419ab7ed8e" as const
+                  }
                 >
                   <div
                     className={classNames(
@@ -516,7 +524,7 @@ function PlasmicUnStyled__RenderFunc(props: {
                       sty.text__ehoP
                     )}
                   >
-                    {"Sign up for Early Access"}
+                    {"Get Access to Kit"}
                   </div>
                 </UnStyledButton>
               </p.Stack>
@@ -542,7 +550,11 @@ function PlasmicUnStyled__RenderFunc(props: {
             ) : null}
           </p.Stack>
 
-          <div className={classNames(projectcss.all, sty.freeBox___1T2Cd)}>
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox___1T2Cd)}
+          >
             <div
               className={classNames(
                 projectcss.all,
@@ -1501,9 +1513,13 @@ function PlasmicUnStyled__RenderFunc(props: {
                 ) : null}
               </p.Stack>
             ) : null}
-          </div>
+          </p.Stack>
 
-          <div className={classNames(projectcss.all, sty.freeBox__pmiBc)}>
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__pmiBc)}
+          >
             <div
               className={classNames(
                 projectcss.all,
@@ -1566,7 +1582,7 @@ function PlasmicUnStyled__RenderFunc(props: {
               rel={false}
               videoId={"_6731luLfeg" as const}
             />
-          </div>
+          </p.Stack>
 
           <div className={classNames(projectcss.all, sty.freeBox__jsPzX)}>
             <p.Stack
@@ -1574,34 +1590,38 @@ function PlasmicUnStyled__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__xgmke)}
             >
-              <div className={classNames(projectcss.all, sty.freeBox__duUeE)}>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__bcWol
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  {p.renderPlasmicSlot({
-                    defaultContents:
-                      "Designed and developed by Mr.Biscuit in collaboration with Into Design Systems. ",
-                    value: args.children,
-                    className: classNames(sty.slotTargetChildren)
-                  })}
-                </p.PlasmicLink>
+              {(
+                hasVariant(globalVariants, "screen", "mobile") ? true : true
+              ) ? (
+                <div className={classNames(projectcss.all, sty.freeBox__duUeE)}>
+                  <p.PlasmicLink
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.link__bcWol
+                    )}
+                    component={Link}
+                    platform={"nextjs"}
+                  >
+                    {p.renderPlasmicSlot({
+                      defaultContents:
+                        "Designed and developed by Mr.Biscuit in collaboration with Into Design Systems. ",
+                      value: args.children,
+                      className: classNames(sty.slotTargetChildren)
+                    })}
+                  </p.PlasmicLink>
 
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__pqGZt
-                  )}
-                >
-                  {"All rights reserved."}
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__pqGZt
+                    )}
+                  >
+                    {"All rights reserved."}
+                  </div>
                 </div>
-              </div>
+              ) : null}
 
               <p.Stack
                 as={"div"}
