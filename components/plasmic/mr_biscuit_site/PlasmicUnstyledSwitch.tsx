@@ -167,7 +167,7 @@ function PlasmicUnstyledSwitch__RenderFunc(props: {
           [sty.texton]: hasVariant($state, "on", "on")
         })}
       >
-        {"Swtich"}
+        {"Switch"}
       </div>
     </p.Stack>
   ) as React.ReactElement | null;
