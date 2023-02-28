@@ -41,9 +41,9 @@
   font-weight: 700;
 }
 .freeBox__x0Gd {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   width: 100%;
   height: auto;
   max-width: 100%;
@@ -53,8 +53,8 @@
 }
 .freeBox__x0Gd > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
   min-width: 0;
   margin-left: calc(0px - 16px);
   width: calc(100% + 16px);
@@ -84,18 +84,18 @@
   position: relative;
 }
 .frame3 {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
+  flex-direction: column;
   margin-top: 152px;
   margin-bottom: 64px;
   overflow: visible;
 }
 .frame3 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-top: calc(0px - 40px);
   height: calc(100% + 40px);
 }
@@ -147,11 +147,11 @@
   justify-content: flex-start;
 }
 .frame5 {
-  flex-direction: row;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: row;
 }
 .frame5 > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -337,9 +337,9 @@
   }
 }
 .freeBox__uX9N {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   width: 100%;
   height: 76px;
   max-width: 100%;
@@ -349,8 +349,8 @@
 }
 .freeBox__uX9N > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   min-width: 0;
   margin-left: calc(0px - 16px);
   width: calc(100% + 16px);
@@ -504,9 +504,9 @@
   }
 }
 .freeBox__cc0D8 {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   width: auto;
   height: auto;
   max-width: 100%;
@@ -514,8 +514,8 @@
 }
 .freeBox__cc0D8 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-left: calc(0px - 24px);
   width: calc(100% + 24px);
 }
@@ -586,6 +586,27 @@
     font-size: 14px;
   }
 }
+.text__vsKxJ {
+  width: 238px;
+  font-family: "Alliance No.2";
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  line-height: 1.1799899999999999;
+  letter-spacing: 0em;
+  position: absolute;
+  left: auto;
+  top: 70px;
+  right: 0px;
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__vsKxJ {
+    font-size: 24px;
+  }
+}
 .freeBox___4LlBd {
   display: flex;
   position: relative;
@@ -613,12 +634,12 @@
   height: 1em;
 }
 .freeBox___1T2Cd {
-  flex-direction: row;
   display: flex;
   position: relative;
   width: 100%;
   height: 536px;
   max-width: 100%;
+  flex-direction: row;
   border-top-style: solid;
   border-top-width: 1px;
   min-width: 0;
@@ -627,8 +648,8 @@
 }
 .freeBox___1T2Cd > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -716,9 +737,9 @@
   }
 }
 .freeBox___6Qom {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   width: 100%;
   height: 480px;
   max-width: 100%;
@@ -729,8 +750,8 @@
 }
 .freeBox___6Qom > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   min-width: 0;
   margin-left: calc(0px - 16px);
   width: calc(100% + 16px);
@@ -775,18 +796,18 @@
   }
 }
 .freeBox__gqb4G {
-  flex-direction: row;
   display: flex;
   width: 100%;
   height: auto;
   max-width: 100%;
+  flex-direction: row;
   min-width: 0;
   padding: 0px;
 }
 .freeBox__gqb4G > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   min-width: 0;
   margin-left: calc(0px - 12px);
   width: calc(100% + 12px);
@@ -1203,8 +1224,8 @@
   height: 14px;
 }
 .freeBox__kbuc3 {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   width: 277px;
   height: auto;
   max-width: 100%;
@@ -1214,8 +1235,8 @@
 }
 .freeBox__kbuc3 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 14px);
   height: calc(100% + 14px);
 }
@@ -1234,9 +1255,9 @@
   width: auto;
 }
 .freeBox__zoW6Y {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   width: 100%;
   height: auto;
   max-width: 100%;
@@ -1245,8 +1266,8 @@
 }
 .freeBox__zoW6Y > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: stretch;
+  justify-content: flex-start;
   min-width: 0;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
@@ -1313,9 +1334,9 @@
   height: 14px;
 }
 .freeBox__ylyIk {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   width: auto;
   height: auto;
   max-width: 100%;
@@ -1325,8 +1346,8 @@
 }
 .freeBox__ylyIk > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
 }
@@ -1341,9 +1362,9 @@
   margin-left: 8px;
 }
 .freeBox__viMo2 {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   width: 100%;
   height: auto;
   max-width: 100%;
@@ -1352,8 +1373,8 @@
 }
 .freeBox__viMo2 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: stretch;
+  justify-content: flex-start;
   min-width: 0;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
@@ -1393,9 +1414,9 @@
   position: relative;
 }
 .freeBox__xicF4 {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   width: auto;
   height: auto;
   max-width: 100%;
@@ -1403,8 +1424,8 @@
 }
 .freeBox__xicF4 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
 }
@@ -1693,12 +1714,12 @@
   min-width: 0;
 }
 .freeBox__ujkjF {
-  flex-direction: row;
   display: flex;
   position: relative;
   width: auto;
   height: 68px;
   max-width: 100%;
+  flex-direction: row;
   background: #ffffff;
   grid-column-end: span 2;
   padding: 16px 16px 15px;
@@ -1706,8 +1727,8 @@
 }
 .freeBox__ujkjF > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 12px);
   width: calc(100% + 12px);
 }
@@ -1780,20 +1801,20 @@
   min-width: 0;
 }
 .freeBox__x5VQw {
-  flex-direction: row;
   display: flex;
   position: relative;
   width: auto;
   height: 68px;
   max-width: 100%;
+  flex-direction: row;
   background: #ffffff;
   padding: 16px 16px 15px;
   border-bottom: 1px solid #f2f2f2;
 }
 .freeBox__x5VQw > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 12px);
   width: calc(100% + 12px);
 }
@@ -1843,20 +1864,20 @@
   min-width: 0;
 }
 .freeBox__xvxG2 {
-  flex-direction: row;
   display: flex;
   position: relative;
   width: auto;
   height: 68px;
   max-width: 100%;
+  flex-direction: row;
   background: #ffffff;
   padding: 16px 16px 15px;
   border-bottom: 1px solid #f2f2f2;
 }
 .freeBox__xvxG2 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 12px);
   width: calc(100% + 12px);
 }
@@ -1895,20 +1916,20 @@
   min-width: 0;
 }
 .freeBox__jPks5 {
-  flex-direction: row;
   display: flex;
   position: relative;
   width: auto;
   height: 68px;
   max-width: 100%;
+  flex-direction: row;
   background: #ffffff;
   padding: 16px 16px 15px;
   border-bottom: 1px solid #f2f2f2;
 }
 .freeBox__jPks5 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
 }
@@ -1950,9 +1971,9 @@
   flex-shrink: 0;
 }
 .freeBox__viDpa {
-  flex-direction: column;
   display: flex;
   position: relative;
+  flex-direction: column;
   width: auto;
   height: auto;
   max-width: 100%;
@@ -1960,8 +1981,8 @@
 }
 .freeBox__viDpa > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-top: calc(0px - 14px);
   height: calc(100% + 14px);
 }
@@ -2047,7 +2068,6 @@
   left: auto;
 }
 .freeBox__pmiBc {
-  flex-direction: row;
   display: flex;
   position: relative;
   width: 100%;
@@ -2056,6 +2076,7 @@
   padding-left: 186px;
   padding-right: 186px;
   padding-bottom: 8px;
+  flex-direction: row;
   border-top-style: solid;
   border-top-width: 1px;
   min-width: 0;
@@ -2063,8 +2084,8 @@
 }
 .freeBox__pmiBc > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -2191,7 +2212,6 @@
   }
 }
 .freeBox__xgmke {
-  flex-direction: row;
   width: 100%;
   height: auto;
   max-width: none;
@@ -2199,6 +2219,7 @@
   left: auto;
   top: auto;
   display: flex;
+  flex-direction: row;
   min-width: 0;
 }
 .freeBox__xgmke > :global(.__wab_flex-container) {
@@ -2266,14 +2287,14 @@
   color: var(--token-ygTQn1PS0A_9eH);
 }
 .freeBox__cI8U {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
 }
 .freeBox__cI8U > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: stretch;
+  justify-content: flex-start;
   margin-left: calc(0px - 16px);
   width: calc(100% + 16px);
 }

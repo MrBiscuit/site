@@ -1,15 +1,15 @@
 .root {
-  flex-direction: row;
   display: inline-flex;
   width: auto;
   height: auto;
   position: relative;
+  flex-direction: row;
   padding: 0px;
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 4px);
   width: calc(100% + 4px);
 }

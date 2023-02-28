@@ -1,7 +1,7 @@
 .root {
-  flex-direction: row;
   height: auto;
   display: flex;
+  flex-direction: row;
   position: relative;
   border-top-width: 0px;
   border-right-width: 0px;
@@ -14,8 +14,8 @@
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
 }

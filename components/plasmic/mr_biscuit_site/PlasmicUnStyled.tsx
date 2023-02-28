@@ -527,6 +527,16 @@ function PlasmicUnStyled__RenderFunc(props: {
                     {"Get Access to Kit"}
                   </div>
                 </UnStyledButton>
+
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__vsKxJ
+                  )}
+                >
+                  {"50% OFF launch discount code: INTODSCONF"}
+                </div>
               </p.Stack>
             ) : null}
             {true ? (
@@ -1539,7 +1549,7 @@ function PlasmicUnStyled__RenderFunc(props: {
                       sty.span__twKt
                     )}
                   >
-                    {"Expand your own Varaints on the most "}
+                    {"Expand your own Variants on the most "}
                   </span>
                 }
                 <React.Fragment>{""}</React.Fragment>

@@ -35,18 +35,18 @@
   margin-left: -10px;
 }
 .navSiteNavSiteInternal {
-  flex-direction: row;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
   top: auto;
   right: auto;
+  flex-direction: row;
 }
 .navSiteNavSiteInternal > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-left: calc(0px - 0px);
   width: calc(100% + 0px);
 }

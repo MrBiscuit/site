@@ -30,9 +30,9 @@
   background: #292929;
 }
 .freeBox__pgCiL {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   width: auto;
   height: auto;
   max-width: 100%;
@@ -42,8 +42,8 @@
 }
 .freeBox__pgCiL > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 16px);
   width: calc(100% + 16px);
 }

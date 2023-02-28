@@ -1,16 +1,16 @@
 .toggleItem {
-  flex-direction: row;
   width: 89px;
   height: auto;
   display: flex;
+  flex-direction: row;
   position: relative;
   cursor: pointer;
   padding: 6px 4px;
 }
 .toggleItem > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-left: calc(0px - 4px);
   width: calc(100% + 4px);
 }

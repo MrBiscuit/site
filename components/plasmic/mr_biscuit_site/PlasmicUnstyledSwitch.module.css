@@ -1,8 +1,8 @@
 .frame9 {
-  flex-direction: row;
   width: auto;
   height: auto;
   display: inline-flex;
+  flex-direction: row;
   position: relative;
   cursor: pointer;
   transition-property: all;
@@ -12,8 +12,8 @@
 }
 .frame9 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 4px);
   width: calc(100% + 4px);
 }

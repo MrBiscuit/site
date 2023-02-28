@@ -27,9 +27,9 @@
   flex-shrink: 0;
 }
 .freeBox___7CZcb {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   width: 100%;
   height: auto;
   max-width: 100%;
@@ -38,8 +38,8 @@
 }
 .freeBox___7CZcb > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   min-width: 0;
   margin-left: calc(0px - 20px);
   width: calc(100% + 20px);

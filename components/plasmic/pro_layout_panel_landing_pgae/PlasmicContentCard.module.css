@@ -1,10 +1,10 @@
 .root {
-  flex-direction: column;
   background: var(--token-l0eeXWeAYwTjpW);
   box-shadow: 0px 0px 0px 2px #0000000d;
   height: auto;
   display: flex;
   flex-grow: 1;
+  flex-direction: column;
   position: relative;
   width: 100%;
   transition-property: all;
@@ -17,8 +17,8 @@
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   min-width: 0;
   margin-top: calc(0px - 16px);
   height: calc(100% + 16px);
@@ -37,16 +37,16 @@
   transform: translateX(0px) translateY(-4px) translateZ(0px);
 }
 .freeBox__kgoaf {
-  flex-direction: row;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: row;
 }
 .freeBox__kgoaf > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
 }
@@ -73,16 +73,16 @@
   white-space: pre;
 }
 .freeBox__zXlz {
-  flex-direction: row;
   height: auto;
   display: flex;
   position: relative;
   align-self: stretch;
+  flex-direction: row;
 }
 .freeBox__zXlz > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
 }

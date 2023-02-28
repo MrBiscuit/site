@@ -19,7 +19,6 @@
   }
 }
 .header {
-  flex-direction: row;
   transform: translate(-0.057px, -0.248px);
   width: 100%;
   height: 64px;
@@ -27,6 +26,7 @@
   position: relative;
   top: auto;
   left: auto;
+  flex-direction: row;
   min-width: 0;
   flex-shrink: 0;
   padding: 16px 128px;
@@ -88,16 +88,16 @@
   }
 }
 .left {
-  flex-direction: row;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: row;
 }
 .left > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 12px);
   width: calc(100% + 12px);
 }
@@ -128,17 +128,17 @@
   transform: translate(0.498px, 0.2519999999999998px);
 }
 .right2 {
-  flex-direction: row;
   opacity: 0.6;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: row;
 }
 .right2 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
   margin-left: calc(0px - 24px);
   width: calc(100% + 24px);
 }
@@ -577,7 +577,6 @@
   }
 }
 .buttonwrap {
-  flex-direction: row;
   transform: translate(-0.031999999999996476px, -0.46800000000001774px);
   width: auto;
   height: auto;
@@ -585,11 +584,12 @@
   position: absolute;
   top: 325px;
   left: 83px;
+  flex-direction: row;
 }
 .buttonwrap > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-left: calc(0px - 16px);
   width: calc(100% + 16px);
 }
@@ -623,9 +623,9 @@
   }
 }
 .freeBox__jCuU8 {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   width: auto;
   height: auto;
   max-width: 100%;
@@ -635,8 +635,8 @@
 }
 .freeBox__jCuU8 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 16px);
   width: calc(100% + 16px);
 }
@@ -683,7 +683,6 @@
   top: 0px;
 }
 .frame1181 {
-  flex-direction: row;
   border-top-left-radius: 48px;
   border-bottom-left-radius: 48px;
   transform: translate(0.04099999999999682px, -0.1290000000000191px);
@@ -693,12 +692,13 @@
   position: absolute;
   top: 442px;
   left: -88.01%;
+  flex-direction: row;
   z-index: 1;
 }
 .frame1181 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 6.4px);
   width: calc(100% + 6.4px);
 }
@@ -720,11 +720,11 @@
   }
 }
 .frame1176 {
-  flex-direction: row;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: row;
   left: auto;
   top: auto;
   border-radius: 71.2px;
@@ -732,8 +732,8 @@
 }
 .frame1176 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-left: calc(0px - 6.4px);
   width: calc(100% + 6.4px);
 }
@@ -799,11 +799,11 @@
   object-fit: cover;
 }
 .frame1179 {
-  flex-direction: row;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: row;
   left: auto;
   top: auto;
   border-radius: 71.2px;
@@ -811,8 +811,8 @@
 }
 .frame1179 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-left: calc(0px - 6.4px);
   width: calc(100% + 6.4px);
 }
@@ -866,11 +866,11 @@
   flex-shrink: 0;
 }
 .frame1180 {
-  flex-direction: row;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: row;
   left: auto;
   top: auto;
   border-radius: 39.2px;
@@ -878,8 +878,8 @@
 }
 .frame1180 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-left: calc(0px - 6.4px);
   width: calc(100% + 6.4px);
 }
@@ -1078,7 +1078,6 @@
   left: auto;
 }
 .side {
-  flex-direction: row;
   background: rgba(0, 0, 0, 1);
   transform: scale(1.000000499999875, 1.0000004999998748)
     rotate(-90.0572957604145deg) translate(-0.001px, 0.01599999999996271px);
@@ -1091,14 +1090,15 @@
   position: fixed;
   top: 450px;
   left: 0px;
+  flex-direction: row;
   z-index: 1;
   flex-shrink: 0;
   padding: 20px 2px 20px 14px;
 }
 .side > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-left: calc(0px - 8px);
   width: calc(100% + 8px);
 }
@@ -1170,7 +1170,6 @@
   object-fit: cover;
 }
 .content {
-  flex-direction: column;
   transform: translate(0px, 0.16200000000003456px);
   width: 100%;
   height: auto;
@@ -1178,12 +1177,13 @@
   position: relative;
   top: auto;
   left: auto;
+  flex-direction: column;
   min-width: 0;
 }
 .content > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   min-width: 0;
   margin-top: calc(0px - 50px);
   height: calc(100% + 50px);
@@ -1704,10 +1704,10 @@
   mix-blend-mode: multiply;
 }
 .frame1234 {
-  flex-direction: column;
   width: auto;
   height: 1551px;
   display: flex;
+  flex-direction: column;
   left: auto;
   top: auto;
   z-index: 1;
@@ -1715,8 +1715,8 @@
 }
 .frame1234 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-top: calc(0px - 48px);
   height: calc(100% + 48px);
 }
@@ -1909,10 +1909,10 @@
   }
 }
 .frame1235 {
-  flex-direction: column;
   width: auto;
   height: 1179px;
   display: flex;
+  flex-direction: column;
   left: auto;
   top: auto;
   z-index: 1;
@@ -1922,8 +1922,8 @@
 }
 .frame1235 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-top: calc(0px - 48px);
   height: calc(100% + 48px);
 }

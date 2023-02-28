@@ -1,8 +1,8 @@
 .toggleItem {
-  flex-direction: row;
   width: 89px;
   height: auto;
   display: flex;
+  flex-direction: row;
   position: relative;
   cursor: pointer;
   border-radius: 2px;
@@ -10,8 +10,8 @@
 }
 .toggleItem > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-left: calc(0px - 4px);
   width: calc(100% + 4px);
 }

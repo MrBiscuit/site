@@ -1,9 +1,9 @@
 .root {
-  flex-direction: row;
   display: inline-flex;
   width: auto;
   height: auto;
   max-width: 100%;
+  flex-direction: row;
   position: relative;
   padding: 0px;
 }

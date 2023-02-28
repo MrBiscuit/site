@@ -1,8 +1,8 @@
 .root {
-  flex-direction: row;
   background: rgba(242, 243, 248, 1);
   height: auto;
   display: flex;
+  flex-direction: row;
   width: 100%;
   position: relative;
   min-width: 0;
@@ -10,8 +10,8 @@
 }
 .root > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   min-width: 0;
   margin-left: calc(0px - 245px);
   width: calc(100% + 245px);
@@ -53,16 +53,16 @@
   }
 }
 .frame1253 {
-  flex-direction: row;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: row;
 }
 .frame1253 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-left: calc(0px - 72px);
   width: calc(100% + 72px);
 }
@@ -107,16 +107,16 @@
   }
 }
 .frame1254 {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: column;
 }
 .frame1254 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 24px);
   height: calc(100% + 24px);
 }
@@ -196,16 +196,16 @@
   position: relative;
 }
 .frame1256 {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: column;
 }
 .frame1256 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 24px);
   height: calc(100% + 24px);
 }
@@ -290,16 +290,16 @@
   position: relative;
 }
 .frame1258 {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: column;
 }
 .frame1258 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 24px);
   height: calc(100% + 24px);
 }
@@ -394,16 +394,16 @@
   position: relative;
 }
 .frame1260 {
-  flex-direction: column;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: column;
 }
 .frame1260 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
+  justify-content: flex-start;
   margin-top: calc(0px - 24px);
   height: calc(100% + 24px);
 }
@@ -482,9 +482,9 @@
   margin-left: -8px;
 }
 .freeBox {
-  flex-direction: row;
   display: flex;
   position: relative;
+  flex-direction: row;
   width: auto;
   height: auto;
   max-width: 100%;
@@ -494,8 +494,8 @@
 }
 .freeBox > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
   margin-left: calc(0px - 16px);
   width: calc(100% + 16px);
 }

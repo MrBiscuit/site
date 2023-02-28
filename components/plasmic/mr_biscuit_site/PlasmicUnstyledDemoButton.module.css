@@ -10,21 +10,21 @@
   cursor: pointer;
 }
 .button2 {
-  flex-direction: row;
   background: rgba(255, 255, 255, 1);
   box-shadow: none;
   width: auto;
   height: auto;
   display: flex;
   position: relative;
+  flex-direction: row;
   border-radius: 4px;
   padding: 4px 8px;
   border: 1px solid #7f7f7f;
 }
 .button2 > :global(.__wab_flex-container) {
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-left: calc(0px - 4px);
   width: calc(100% + 4px);
 }

@@ -119,7 +119,15 @@ function PlasmicSuperEllipseButton__RenderFunc(props: {
         data-plasmic-override={overrides.root}
         data-plasmic-root={true}
         data-plasmic-for-node={forNode}
-        className={classNames("__wab_instance", sty.root)}
+        className={classNames(
+          "__wab_instance",
+          projectcss.root_reset,
+          projectcss.plasmic_default_styles,
+          projectcss.plasmic_mixins,
+          projectcss.plasmic_tokens,
+          plasmic_outline_to_single_stroke_css.plasmic_tokens,
+          sty.root
+        )}
         r1={0.12 as const}
         r2={0.5 as const}
       >
