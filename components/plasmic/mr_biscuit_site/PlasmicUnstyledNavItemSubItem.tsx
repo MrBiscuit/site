@@ -81,6 +81,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicUnstyledNavItemSubItem__RenderFunc(props: {
   variants: PlasmicUnstyledNavItemSubItem__VariantsArgs;
   args: PlasmicUnstyledNavItemSubItem__ArgsType;
@@ -89,7 +96,7 @@ function PlasmicUnstyledNavItemSubItem__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -111,7 +118,6 @@ function PlasmicUnstyledNavItemSubItem__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
 
   return (

@@ -101,6 +101,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicProLayoutPanel__RenderFunc(props: {
   variants: PlasmicProLayoutPanel__VariantsArgs;
   args: PlasmicProLayoutPanel__ArgsType;
@@ -109,7 +116,7 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -131,7 +138,6 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({

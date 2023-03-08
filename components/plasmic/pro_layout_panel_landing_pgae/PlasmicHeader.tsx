@@ -95,6 +95,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicHeader__RenderFunc(props: {
   variants: PlasmicHeader__VariantsArgs;
   args: PlasmicHeader__ArgsType;
@@ -103,7 +110,7 @@ function PlasmicHeader__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -125,22 +132,22 @@ function PlasmicHeader__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
+  const [$queries, setDollarQueries] = React.useState({});
   const stateSpecs = React.useMemo(
     () => [
       {
         path: "chinese",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.chinese : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.chinese
+          : undefined
       }
     ],
 
     [$props, $ctx]
   );
-  const $state = p.useDollarState(stateSpecs, $props, $ctx);
-
-  const [$queries, setDollarQueries] = React.useState({});
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()

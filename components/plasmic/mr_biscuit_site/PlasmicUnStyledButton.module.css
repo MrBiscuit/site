@@ -150,7 +150,6 @@
 }
 .svg__rQMgY {
   position: relative;
-  plasmic-display-none: true;
   object-fit: cover;
   max-width: 100%;
   color: #ffffff;
@@ -182,7 +181,6 @@
   width: 25px;
   height: 19px;
   margin-right: 8px;
-  plasmic-display-none: true;
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;

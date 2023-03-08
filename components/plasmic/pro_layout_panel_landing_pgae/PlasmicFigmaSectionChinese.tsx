@@ -95,6 +95,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicFigmaSectionChinese__RenderFunc(props: {
   variants: PlasmicFigmaSectionChinese__VariantsArgs;
   args: PlasmicFigmaSectionChinese__ArgsType;
@@ -103,7 +110,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -125,7 +132,6 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({

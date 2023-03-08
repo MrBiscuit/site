@@ -1219,27 +1219,27 @@
     socket.io-client "^2.3.0"
     yargs "^14.2.0"
 
-"@plasmicapp/data-sources-context@0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/data-sources-context/-/data-sources-context-0.1.3.tgz#ce4799f66995b668fbe96ee50c11f98e41ef9095"
-  integrity sha512-/Duq6/O541kaXrYvI5K8wsshAQT5IOsoGcMG/3WaBXmSGQriaxwUg1QtsW1nr81a4y+3rh85lbFhjNx7MJKh2A==
+"@plasmicapp/data-sources-context@0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/data-sources-context/-/data-sources-context-0.1.7.tgz#6d592ac8098bfdf3ae09c27817683d5e5af619e3"
+  integrity sha512-CiLLoKEuMD86KXWSqip5n9f/WeC81YRZcGtoD7+Miv8HBwYVsSkTelgbs8fH/osbzkFJ6vi1HcPm/TEDcsQarQ==
 
-"@plasmicapp/data-sources@0.1.23":
-  version "0.1.23"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/data-sources/-/data-sources-0.1.23.tgz#b9a7020d5e6dfbebe0ad8723823f74b7b3c9ca67"
-  integrity sha512-9sgCrOqSws647EjG7Biwriy7EeXUlz/hS4zyT3KuHx3tm8lFXsXG7oRZVkpp+Iak5zOLCVOWpCwEPL60/i3aNA==
+"@plasmicapp/data-sources@0.1.43":
+  version "0.1.43"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/data-sources/-/data-sources-0.1.43.tgz#0e45d915c5dd397bfc28299d4466a1aa918d3f1a"
+  integrity sha512-XCS1UiDl2821/CtVyGSbL0tG+t1jI0kSBHtd0ESLDb9Rhemvry0bNMfwZP/aFlGyAszrwm/FCllS40gSjqEZUw==
   dependencies:
-    "@plasmicapp/data-sources-context" "0.1.3"
-    "@plasmicapp/host" "1.0.93"
-    "@plasmicapp/query" "0.1.58"
-    isomorphic-unfetch "^3.1.0"
+    "@plasmicapp/data-sources-context" "0.1.7"
+    "@plasmicapp/host" "1.0.110"
+    "@plasmicapp/isomorphic-unfetch" "^1.0.1"
+    "@plasmicapp/query" "0.1.61"
 
-"@plasmicapp/host@1.0.93":
-  version "1.0.93"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/host/-/host-1.0.93.tgz#fa980e9700da61990c0108ea461a5efbe90824c4"
-  integrity sha512-IanAgsVyCerpqKx7+iEkSecT6suwBosrTMWWHWkgUbE4YKVaMJgzeEgyn6BpWu9GPGca5jyjtGSO461pahzA0A==
+"@plasmicapp/host@1.0.110":
+  version "1.0.110"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/host/-/host-1.0.110.tgz#8d8606e8ad510fd8d603951be83ec9d32a626575"
+  integrity sha512-mAR+7CGkTZuj28Wx5mHTaKmbW6YPSJ1KuJnZjmsBhrX/yiXYrsgASzNj2o+cKyJd8Nh2/aeMT6IZQIbIc/UmSg==
   dependencies:
-    "@plasmicapp/query" "0.1.58"
+    "@plasmicapp/query" "0.1.61"
     window-or-global "^1.0.1"
 
 "@plasmicapp/host@^1.0.107":
@@ -1250,12 +1250,13 @@
     "@plasmicapp/query" "0.1.61"
     window-or-global "^1.0.1"
 
-"@plasmicapp/query@0.1.58":
-  version "0.1.58"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/query/-/query-0.1.58.tgz#32da1e5522eab254fa500854ea0b1a6524194ec2"
-  integrity sha512-sKX/KLLHEVrqgQyS/HyOocWxGbQAykbl6DrJfZweodzKp3oy7yVfdfA7QiURuToHoqApChfgy8dxAOi4WQ9sPQ==
+"@plasmicapp/isomorphic-unfetch@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/isomorphic-unfetch/-/isomorphic-unfetch-1.0.1.tgz#e2dfdc8d23d9d1c82f5596986fe8c09013ec8eec"
+  integrity sha512-V1PBEQjypQ47zO0ggI7B46o0WL2I4y5nmv4rdCGVA9oVCAHHPt7kcOxDak9cj/ryQocLEU8YC6Uwqz+hYL5YAw==
   dependencies:
-    swr "^1.0.0"
+    node-fetch "^2.6.1"
+    unfetch "^4.2.0"
 
 "@plasmicapp/query@0.1.61":
   version "0.1.61"
@@ -1264,15 +1265,15 @@
   dependencies:
     swr "^1.0.0"
 
-"@plasmicapp/react-web@^0.2.139":
-  version "0.2.139"
-  resolved "https://registry.yarnpkg.com/@plasmicapp/react-web/-/react-web-0.2.139.tgz#12d192a6c55acb78450b758517409d9c096584ae"
-  integrity sha512-M2ssPtDolFds3oIybhmCeVDXRzX0yE9UkbqP1VkJRKA4LfoquT6t9Vh0EcHopkb9l0hsv4fVJPj4Jhuq+8E5pQ==
+"@plasmicapp/react-web@^0.2.166":
+  version "0.2.166"
+  resolved "https://registry.yarnpkg.com/@plasmicapp/react-web/-/react-web-0.2.166.tgz#1737fa32a6904352871f0b3efa377c7108001381"
+  integrity sha512-pJjFuGvWLBamGPNQm0CuJAVCQ7/MxHCw1dx8xFHE8B2tpjS8+59/bU/hb/EfC9qSFCzrSiCo782aACxF7zVRWA==
   dependencies:
-    "@plasmicapp/data-sources" "0.1.23"
-    "@plasmicapp/data-sources-context" "0.1.3"
-    "@plasmicapp/host" "1.0.93"
-    "@plasmicapp/query" "0.1.58"
+    "@plasmicapp/data-sources" "0.1.43"
+    "@plasmicapp/data-sources-context" "0.1.7"
+    "@plasmicapp/host" "1.0.110"
+    "@plasmicapp/query" "0.1.61"
     "@react-aria/checkbox" "^3.5.0"
     "@react-aria/focus" "^3.7.0"
     "@react-aria/interactions" "^3.10.0"
@@ -3312,14 +3313,6 @@ isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
-
-isomorphic-unfetch@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/isomorphic-unfetch/-/isomorphic-unfetch-3.1.0.tgz#87341d5f4f7b63843d468438128cb087b7c3e98f"
-  integrity sha512-geDJjpoZ8N0kWexiwkX8F9NkTsXhetLPVbZFQ+JTW239QNOwvB0gniuR1Wc6f0AMTn7/mFGyXvHTifrCp/GH8Q==
-  dependencies:
-    node-fetch "^2.6.1"
-    unfetch "^4.2.0"
 
 js-sdsl@^4.1.4:
   version "4.1.4"

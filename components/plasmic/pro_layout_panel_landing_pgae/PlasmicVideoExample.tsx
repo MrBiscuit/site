@@ -89,6 +89,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicVideoExample__RenderFunc(props: {
   variants: PlasmicVideoExample__VariantsArgs;
   args: PlasmicVideoExample__ArgsType;
@@ -97,7 +104,7 @@ function PlasmicVideoExample__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -119,7 +126,7 @@ function PlasmicVideoExample__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
+  const [$queries, setDollarQueries] = React.useState({});
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -127,16 +134,14 @@ function PlasmicVideoExample__RenderFunc(props: {
         type: "private",
         variableType: "variant",
         initFunc: true
-          ? ($props, $state, $ctx) => $props.reversedLayout
+          ? ({ $props, $state, $queries, $ctx }) => $props.reversedLayout
           : undefined
       }
     ],
 
     [$props, $ctx]
   );
-  const $state = p.useDollarState(stateSpecs, $props, $ctx);
-
-  const [$queries, setDollarQueries] = React.useState({});
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()

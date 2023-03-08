@@ -94,6 +94,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicUnstyledDemoButton__RenderFunc(props: {
   variants: PlasmicUnstyledDemoButton__VariantsArgs;
   args: PlasmicUnstyledDemoButton__ArgsType;
@@ -102,7 +109,7 @@ function PlasmicUnstyledDemoButton__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -124,36 +131,40 @@ function PlasmicUnstyledDemoButton__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
+  const [$queries, setDollarQueries] = React.useState({});
   const stateSpecs = React.useMemo(
     () => [
       {
         path: "hasSplit",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.hasSplit : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.hasSplit
+          : undefined
       },
 
       {
         path: "isIcon",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.isIcon : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.isIcon
+          : undefined
       },
 
       {
         path: "isPrimary",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.isPrimary : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.isPrimary
+          : undefined
       }
     ],
 
     [$props, $ctx]
   );
-  const $state = p.useDollarState(stateSpecs, $props, $ctx);
-
-  const [$queries, setDollarQueries] = React.useState({});
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   return (
     <div

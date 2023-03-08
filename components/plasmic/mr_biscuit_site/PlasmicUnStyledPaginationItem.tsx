@@ -86,6 +86,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicUnStyledPaginationItem__RenderFunc(props: {
   variants: PlasmicUnStyledPaginationItem__VariantsArgs;
   args: PlasmicUnStyledPaginationItem__ArgsType;
@@ -94,7 +101,7 @@ function PlasmicUnStyledPaginationItem__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -116,29 +123,31 @@ function PlasmicUnStyledPaginationItem__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
+  const [$queries, setDollarQueries] = React.useState({});
   const stateSpecs = React.useMemo(
     () => [
       {
         path: "isCurrent",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.isCurrent : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.isCurrent
+          : undefined
       },
 
       {
         path: "isDisabled",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.isDisabled : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.isDisabled
+          : undefined
       }
     ],
 
     [$props, $ctx]
   );
-  const $state = p.useDollarState(stateSpecs, $props, $ctx);
-
-  const [$queries, setDollarQueries] = React.useState({});
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   return (
     true ? (

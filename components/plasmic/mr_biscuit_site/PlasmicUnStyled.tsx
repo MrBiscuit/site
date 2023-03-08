@@ -138,7 +138,6 @@ export type PlasmicUnStyled__OverridesType = {
   unstyledDropdown?: p.Flex<typeof UnstyledDropdown>;
   unstyledDropdownMenu?: p.Flex<typeof UnstyledDropdownMenu>;
   youTube?: p.Flex<typeof YouTube>;
-  textbox?: p.Flex<typeof TextInput>;
 };
 
 export interface DefaultUnStyledProps {}
@@ -151,6 +150,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicUnStyled__RenderFunc(props: {
   variants: PlasmicUnStyled__VariantsArgs;
   args: PlasmicUnStyled__ArgsType;
@@ -159,7 +165,7 @@ function PlasmicUnStyled__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -181,8 +187,22 @@ function PlasmicUnStyled__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
+  const stateSpecs = React.useMemo(
+    () => [
+      {
+        path: "textInput.value",
+        type: "private",
+        variableType: "text",
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => undefined
+          : undefined
+      }
+    ],
+
+    [$props, $ctx]
+  );
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariants_3KhhFf1Cq1Qfos()
@@ -528,15 +548,17 @@ function PlasmicUnStyled__RenderFunc(props: {
                   </div>
                 </UnStyledButton>
 
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__vsKxJ
-                  )}
-                >
-                  {"50% OFF launch discount code: INTODSCONF"}
-                </div>
+                {true ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__vsKxJ
+                    )}
+                  >
+                    {"50% OFF launch discount code: INTODSCONF"}
+                  </div>
+                ) : null}
               </p.Stack>
             ) : null}
             {true ? (
@@ -1136,6 +1158,18 @@ function PlasmicUnStyled__RenderFunc(props: {
                       data-plasmic-name={"textInput"}
                       data-plasmic-override={overrides.textInput}
                       className={classNames("__wab_instance", sty.textInput)}
+                      onChange={(...args) => {
+                        p.generateStateOnChangeProp($state, [
+                          "textInput",
+
+                          "value"
+                        ])((e => e.target?.value).apply(null, args));
+                      }}
+                      value={p.generateStateValueProp($state, [
+                        "textInput",
+
+                        "value"
+                      ])}
                     />
 
                     <UnstyledTabs
@@ -1740,7 +1774,6 @@ const PlasmicDescendants = {
     "text6",
     "unstyledSwitch",
     "textInput",
-    "textbox",
     "unstyledTabs",
     "unStyledPagination",
     "unstyledRate",
@@ -1798,7 +1831,7 @@ const PlasmicDescendants = {
   text3: ["text3"],
   text6: ["text6"],
   unstyledSwitch: ["unstyledSwitch"],
-  textInput: ["textInput", "textbox"],
+  textInput: ["textInput"],
   unstyledTabs: ["unstyledTabs"],
   unStyledPagination: ["unStyledPagination"],
   unstyledRate: ["unstyledRate"],

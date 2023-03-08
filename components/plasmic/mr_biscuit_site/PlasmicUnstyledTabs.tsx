@@ -75,6 +75,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicUnstyledTabs__RenderFunc(props: {
   variants: PlasmicUnstyledTabs__VariantsArgs;
   args: PlasmicUnstyledTabs__ArgsType;
@@ -83,7 +90,7 @@ function PlasmicUnstyledTabs__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -105,7 +112,6 @@ function PlasmicUnstyledTabs__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
 
   return (

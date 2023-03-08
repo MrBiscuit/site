@@ -601,6 +601,7 @@
   right: 0px;
   opacity: 0.6;
   flex-shrink: 0;
+  display: none;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .text__vsKxJ {

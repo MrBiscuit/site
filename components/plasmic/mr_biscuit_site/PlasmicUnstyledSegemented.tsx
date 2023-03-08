@@ -73,6 +73,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicUnstyledSegemented__RenderFunc(props: {
   variants: PlasmicUnstyledSegemented__VariantsArgs;
   args: PlasmicUnstyledSegemented__ArgsType;
@@ -81,7 +88,7 @@ function PlasmicUnstyledSegemented__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -103,7 +110,6 @@ function PlasmicUnstyledSegemented__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
 
   return (

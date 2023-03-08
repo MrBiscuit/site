@@ -92,6 +92,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicPlugin__RenderFunc(props: {
   variants: PlasmicPlugin__VariantsArgs;
   args: PlasmicPlugin__ArgsType;
@@ -100,7 +107,7 @@ function PlasmicPlugin__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -125,7 +132,6 @@ function PlasmicPlugin__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
   const [$queries, setDollarQueries] = React.useState({});
 
   const [isRootHover, triggerRootHoverProps] = useTrigger("useHover", {});

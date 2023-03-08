@@ -2086,7 +2086,8 @@
           "name": "ParallaxProviderWrapper",
           "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "szjgMQpPpxhmkjnaBvZQJG",
@@ -2105,7 +2106,8 @@
           "name": "Tilt",
           "componentImportPath": "@plasmicpkgs/react-parallax-tilt"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "28Ba3BDvRe7EiWdfFNnLB6",
@@ -2264,7 +2266,8 @@
           "name": "TableValue",
           "componentImportPath": "@plasmicpkgs/antd/skinny/registerTable"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "56iVbBJXbx9hFxysoAGHJC",
@@ -2515,7 +2518,8 @@
       ],
       "indirect": true,
       "globalContextsFilePath": "",
-      "codeComponents": []
+      "codeComponents": [],
+      "jsBundleThemes": []
     },
     {
       "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
@@ -2534,7 +2538,8 @@
           "name": "Reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
@@ -2553,7 +2558,8 @@
           "name": "YouTube",
           "componentImportPath": "@plasmicpkgs/react-youtube"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -2587,7 +2593,8 @@
           "name": "DataProvider",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
@@ -2610,6 +2617,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.214",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.214/dist/plasmic.schema.json"
+  "cliVersion": "0.1.220",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.220/dist/plasmic.schema.json"
 }

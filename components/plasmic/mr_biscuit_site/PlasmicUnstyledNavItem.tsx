@@ -98,6 +98,13 @@ const __wrapUserPromise =
     return await promise;
   });
 
+function useNextRouter() {
+  try {
+    return useRouter();
+  } catch {}
+  return undefined;
+}
+
 function PlasmicUnstyledNavItem__RenderFunc(props: {
   variants: PlasmicUnstyledNavItem__VariantsArgs;
   args: PlasmicUnstyledNavItem__ArgsType;
@@ -106,7 +113,7 @@ function PlasmicUnstyledNavItem__RenderFunc(props: {
   forNode?: string;
 }) {
   const { variants, overrides, forNode } = props;
-  const __nextRouter = useRouter();
+  const __nextRouter = useNextRouter();
 
   const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(
@@ -128,29 +135,31 @@ function PlasmicUnstyledNavItem__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
+  const [$queries, setDollarQueries] = React.useState({});
   const stateSpecs = React.useMemo(
     () => [
       {
         path: "isGroup",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.isGroup : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.isGroup
+          : undefined
       },
 
       {
         path: "expanded",
         type: "private",
         variableType: "variant",
-        initFunc: true ? ($props, $state, $ctx) => $props.expanded : undefined
+        initFunc: true
+          ? ({ $props, $state, $queries, $ctx }) => $props.expanded
+          : undefined
       }
     ],
 
     [$props, $ctx]
   );
-  const $state = p.useDollarState(stateSpecs, $props, $ctx);
-
-  const [$queries, setDollarQueries] = React.useState({});
+  const $state = p.useDollarState(stateSpecs, { $props, $ctx, $queries });
 
   return (
     <p.Stack

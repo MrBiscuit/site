@@ -669,7 +669,6 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    flex-column-gap: 0px;
   }
 }
 .plan__vxZ0U:global(.__wab_instance):global(.__wab_instance) {
@@ -748,7 +747,6 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    flex-column-gap: 0px;
   }
 }
 .plan__acCb7:global(.__wab_instance):global(.__wab_instance) {
@@ -821,7 +819,6 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    flex-column-gap: 0px;
   }
 }
 .plan__ahYyw:global(.__wab_instance):global(.__wab_instance) {
