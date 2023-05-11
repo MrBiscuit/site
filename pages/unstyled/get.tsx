@@ -23,6 +23,7 @@ function Unstyledget() {
             },
           }}
           download={{
+            // @ts-ignore
             onClick: () => {
               const licenseKey = value;
 
