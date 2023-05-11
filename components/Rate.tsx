@@ -5,7 +5,6 @@ import {
   PlasmicRate,
   DefaultRateProps
 } from "./plasmic/mr_biscuit_site/PlasmicRate";
-import  UnstyledStar  from "./UnstyledStar";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined
@@ -24,23 +23,23 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 export interface RateProps extends DefaultRateProps {}
 
 function Rate_(props: RateProps, ref: HTMLElementRefOf<"div">) {
-  const [hoverValue, setHoverValue] = React.useState(0);
+  // Use PlasmicRate to render this component as it was
+  // designed in Plasmic, by activating the appropriate variants,
+  // attaching the appropriate event handlers, etc.  You
+  // can also install whatever React hooks you need here to manage state or
+  // fetch data.
+  //
+  // Props you can pass into PlasmicRate are:
+  // 1. Variants you want to activate,
+  // 2. Contents for slots you want to fill,
+  // 3. Overrides for any named node in the component to attach behavior and data,
+  // 4. Props to set on the root node.
+  //
+  // By default, we are just piping all RateProps here, but feel free
+  // to do whatever works for you.
 
-  return (
-    <PlasmicRate
-      root={{ ref }}
-      children={
-        [1,2,3,4,5].map((n, i) => {
-        return <UnstyledStar key={i}
-        // @ts-ignore
-          onMouseOver={() => setHoverValue(i + 1)}
-          active={i < hoverValue}
-   />;
-      })}
-      {...props}
-    />
-  );
+  return <PlasmicRate root={{ ref }} {...props} />;
 }
 
-const UnstyledRate = React.forwardRef(Rate_);
-export default UnstyledRate;
+const Rate = React.forwardRef(Rate_);
+export default Rate;

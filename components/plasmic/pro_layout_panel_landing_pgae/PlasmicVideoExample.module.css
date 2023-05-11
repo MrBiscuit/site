@@ -14,18 +14,33 @@
   min-width: 0;
   margin-left: calc(0px - 48px);
   width: calc(100% + 48px);
-}
-.root > :global(.__wab_flex-container) > :nth-child(2n + 1) {
-  width: calc((100% - 2 * 48px) * 10 / 12);
-}
-.root > :global(.__wab_flex-container) > :nth-child(2n + 2) {
-  width: calc((100% - 2 * 48px) * 2 / 12);
+  --plsmc-rc-col-gap: 48px;
 }
 .root > :global(.__wab_flex-container) > *,
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
 .root > :global(.__wab_flex-container) > picture > img,
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 48px;
+}
+.root {
+  --plsmc-rc-col-gap: 0px;
+}
+.root {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  position: relative;
+  min-width: 0;
+}
+.root > :global(.__wab_flex-container) > :nth-child(2n + 1) {
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 10 / 12);
+}
+.root > :global(.__wab_flex-container) > :nth-child(2n + 2) {
+  width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 2 / 12);
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
@@ -45,13 +60,9 @@
     min-width: 0;
     margin-left: calc(0px - 0px);
     width: calc(100% + 0px);
+    --plsmc-rc-col-gap: 0px;
     margin-top: calc(0px - 24px);
     height: calc(100% + 24px);
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .root > :global(.__wab_flex-container) > :nth-child(1n + 1) {
-    width: calc((100% - 1 * 0px) * 12 / 12);
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -67,6 +78,23 @@
     margin-top: 24px;
   }
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root > :global(.__wab_flex-container) > :nth-child(1n + 1) {
+    width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
+  }
+}
 .rootreversedLayout {
   flex-direction: row-reverse;
 }
@@ -74,12 +102,6 @@
   flex-direction: row-reverse;
   margin-top: calc(0px - 0px);
   height: calc(100% + 0px);
-}
-.rootreversedLayout > :global(.__wab_flex-container) > :nth-child(2n + 1) {
-  width: calc((100% - 2 * 48px) * 10 / 12);
-}
-.rootreversedLayout > :global(.__wab_flex-container) > :nth-child(2n + 2) {
-  width: calc((100% - 2 * 48px) * 2 / 12);
 }
 .rootreversedLayout > :global(.__wab_flex-container) > *,
 .rootreversedLayout > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -90,6 +112,9 @@
   > picture
   > img {
   margin-top: 0px;
+}
+.rootreversedLayout {
+  flex-direction: row-reverse;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .rootreversedLayout {
@@ -105,11 +130,6 @@
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .rootreversedLayout > :global(.__wab_flex-container) > :nth-child(1n + 1) {
-    width: calc((100% - 1 * 0px) * 12 / 12);
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
   .rootreversedLayout > :global(.__wab_flex-container) > *,
   .rootreversedLayout
     > :global(.__wab_flex-container)
@@ -122,6 +142,17 @@
     > picture
     > img {
     margin-top: 24px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .rootreversedLayout {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .rootreversedLayout > :global(.__wab_flex-container) > :nth-child(1n + 1) {
+    width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
   }
 }
 .column__pC6Ly {
@@ -181,6 +212,15 @@
   > img {
   margin-top: 24px;
 }
+.freeBox {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  min-width: 0;
+}
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox {
     width: 100%;
@@ -189,6 +229,12 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox {
+    width: 100%;
     min-width: 0;
   }
 }

@@ -16,3 +16,10 @@
 .root:hover {
   transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
 }
+.root:active {
+  transform: scaleX(0.9) scaleY(0.9) scaleZ(0.9);
+  transform-style: preserve-3d;
+}
+.root:active * {
+  transform-style: preserve-3d;
+}

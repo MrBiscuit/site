@@ -525,19 +525,6 @@
           "componentType": "component"
         },
         {
-          "id": "1gM6u15t6Q",
-          "name": "Rate",
-          "type": "managed",
-          "projectId": "qDNA17RfdgsM73kkELPPxa",
-          "renderModuleFilePath": "plasmic/mr_biscuit_site/PlasmicRate.tsx",
-          "importSpec": {
-            "modulePath": "Rate.tsx"
-          },
-          "cssFilePath": "plasmic/mr_biscuit_site/PlasmicRate.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "vKnKnMdjXV",
           "name": "UnstyledStar",
           "type": "managed",
@@ -588,6 +575,32 @@
           "cssFilePath": "plasmic/mr_biscuit_site/PlasmicUnStyledPaginationItem.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "1gM6u15t6Q",
+          "name": "Rate",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/mr_biscuit_site/PlasmicRate.tsx",
+          "importSpec": {
+            "modulePath": "Rate.tsx"
+          },
+          "cssFilePath": "plasmic/mr_biscuit_site/PlasmicRate.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "PAFe091khx",
+          "name": "Unstyledget",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/mr_biscuit_site/PlasmicUnstyledget.tsx",
+          "importSpec": {
+            "modulePath": "../pages/unstyled/get.tsx"
+          },
+          "cssFilePath": "plasmic/mr_biscuit_site/PlasmicUnstyledget.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -1420,6 +1433,11 @@
           "id": "Cd0Qv4bMM",
           "name": "Icon59Icon",
           "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon59.tsx"
+        },
+        {
+          "id": "OpcRpaIUSJ",
+          "name": "Icon60Icon",
+          "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon60.tsx"
         }
       ],
       "images": [
@@ -2617,6 +2635,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.220",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.220/dist/plasmic.schema.json"
+  "cliVersion": "0.1.272",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.272/dist/plasmic.schema.json"
 }

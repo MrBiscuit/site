@@ -25,6 +25,21 @@
   > img {
   margin-left: 4px;
 }
+.toggleItem {
+  width: 89px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 4px;
+}
+.toggleItemisCurrent {
+  background: #ffffff;
+}
 .toggleItemisCurrent {
   background: #ffffff;
 }

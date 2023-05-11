@@ -18,6 +18,15 @@
 .radio > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 4px;
 }
+.radio {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
 .radio2 {
   background: rgba(255, 255, 255, 1);
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 1);
@@ -47,6 +56,20 @@
   > img {
   margin-left: 8px;
 }
+.radio2 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-radius: 3996px;
+  padding: 4px;
+}
 .dot {
   background: rgba(46, 83, 234, 1);
   width: auto;
@@ -71,6 +94,24 @@
 .dot > :global(.__wab_flex-container) > picture > img,
 .dot > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 8px;
+}
+.dot {
+  background: rgba(46, 83, 234, 1);
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  opacity: 0;
+  border-radius: 999px;
+  padding: 4px;
+}
+.dotchecked {
+  opacity: 1;
+  display: flex;
 }
 .dotchecked {
   opacity: 1;
@@ -103,6 +144,15 @@
 .text > :global(.__wab_flex-container) > picture > img,
 .text > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 4px;
+}
+.text {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 .slotTargetText3 {
   font-family: "Inter", sans-serif;

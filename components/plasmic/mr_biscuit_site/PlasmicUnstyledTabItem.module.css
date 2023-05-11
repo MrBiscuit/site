@@ -24,6 +24,22 @@
   > img {
   margin-left: 4px;
 }
+.toggleItem {
+  width: 89px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  padding: 6px 4px;
+}
+.toggleItemisCurrent {
+  background: #ffffff;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--token-2fqdQaStK);
+}
 .toggleItemisCurrent {
   background: #ffffff;
   padding-bottom: 5px;

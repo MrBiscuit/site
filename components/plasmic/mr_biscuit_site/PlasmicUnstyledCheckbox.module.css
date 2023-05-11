@@ -23,6 +23,16 @@
   > img {
   margin-left: 4px;
 }
+.checkbox {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  cursor: pointer;
+}
 .checkbox2 {
   background: rgba(255, 255, 255, 1);
   box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 1);
@@ -51,6 +61,23 @@
   > picture
   > img {
   margin-left: 8px;
+}
+.checkbox2 {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 1);
+  width: 16px;
+  height: 16px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  padding: 2px;
+}
+.checkbox2isChecked {
+  background: #2f54eb;
 }
 .checkbox2isChecked {
   background: #2f54eb;
@@ -102,6 +129,15 @@
 .text > :global(.__wab_flex-container) > picture > img,
 .text > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 4px;
+}
+.text {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
 .slotTargetText7 {
   font-family: "Inter", sans-serif;

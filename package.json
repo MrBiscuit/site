@@ -11,9 +11,8 @@
   "dependencies": {
     "@chakra-ui/react": "^2.3.2",
     "@emotion/styled": "^11.10.4",
-    "@plasmicapp/cli": "^0.0.4",
-    "@plasmicapp/host": "^1.0.107",
-    "@plasmicapp/react-web": "^0.2.166",
+    "@plasmicapp/cli": "^0.1.231",
+    "@plasmicapp/react-web": "^0.2.210",
     "@plasmicpkgs/antd": "^0.0.94",
     "@plasmicpkgs/plasmic-basic-components": "^0.0.84",
     "@plasmicpkgs/react-awesome-reveal": "^3.8.79",

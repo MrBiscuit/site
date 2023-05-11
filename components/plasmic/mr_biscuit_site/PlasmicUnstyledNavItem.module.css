@@ -22,6 +22,18 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 12px;
 }
+.root {
+  display: flex;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  min-width: 0;
+  padding: 0px;
+}
 .rootexpanded {
   display: flex;
   flex-direction: column;
@@ -40,6 +52,10 @@
   > picture
   > img {
   margin-left: 0px;
+}
+.rootexpanded {
+  display: flex;
+  flex-direction: column;
 }
 .par {
   display: flex;
@@ -65,11 +81,32 @@
 .par > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 12px;
 }
+.par {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 32px;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.parexpanded {
+  display: flex;
+}
 .parexpanded {
   display: flex;
 }
 .root:hover .par {
   background: var(--token-2fqdQaStK);
+}
+.root:hover .par {
+  background: var(--token-2fqdQaStK);
+}
+.rootisGroup_expanded:hover .parisGroup_expanded {
+  background: none;
 }
 .rootisGroup_expanded:hover .parisGroup_expanded {
   background: none;
