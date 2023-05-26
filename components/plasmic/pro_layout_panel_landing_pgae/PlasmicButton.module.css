@@ -27,32 +27,8 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 4px;
 }
-.root {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background: none;
-  cursor: pointer;
-  transition-property: transform;
-  transition-duration: 0.4s;
-  transition-timing-function: ease-out;
-  -webkit-transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 0.4s;
-  border-radius: 10px;
-  padding: 10px 40px;
-  border: 2px solid #ffffff00;
-}
 .rootshowStartIcon {
   padding-left: 16px;
-}
-.rootshowStartIcon {
-  padding-left: 16px;
-}
-.rootcolor_purple {
-  background: #5551ff;
 }
 .rootcolor_purple {
   background: #5551ff;
@@ -78,14 +54,6 @@
   margin-left: 8px;
   margin-top: 0px;
 }
-.rootshowEndIcon {
-  padding-right: 32px;
-  padding-left: 32px;
-}
-.rootisDisabled {
-  cursor: not-allowed;
-  opacity: 0.6;
-}
 .rootisDisabled {
   cursor: not-allowed;
   opacity: 0.6;
@@ -96,27 +64,11 @@
   min-width: 100px;
   border-radius: 999px;
 }
-.rootshape_rounded {
-  padding-left: 20px;
-  padding-right: 20px;
-  min-width: 100px;
-  border-radius: 999px;
-}
-.rootsize_compact {
-  padding: 6px 12px;
-}
 .rootsize_compact {
   padding: 6px 12px;
 }
 .rootcolor_figma {
   background: #0d99ff;
-}
-.rootcolor_figma {
-  background: #0d99ff;
-}
-.rootcolor_outline {
-  background: #ffffff00;
-  border: 2px solid #000000;
 }
 .rootcolor_outline {
   background: #ffffff00;
@@ -127,19 +79,8 @@
   padding-right: 32px;
   padding-left: 32px;
 }
-.rootcolor_clear {
-  background: #23232000;
-  padding-right: 32px;
-  padding-left: 32px;
-}
 .rootcolor_black {
   background: #000000;
-}
-.rootcolor_black {
-  background: #000000;
-}
-.rootshape_rounded_showStartIcon {
-  padding-left: 16px;
 }
 .rootshape_rounded_showStartIcon {
   padding-left: 16px;
@@ -147,29 +88,14 @@
 .rootsize_compact_showStartIcon {
   padding-left: 8px;
 }
-.rootsize_compact_showStartIcon {
-  padding-left: 8px;
-}
-.rootshape_rounded_showEndIcon {
-  padding-right: 16px;
-}
 .rootshape_rounded_showEndIcon {
   padding-right: 16px;
 }
 .rootsize_compact_showEndIcon {
   padding-right: 8px;
 }
-.rootsize_compact_showEndIcon {
-  padding-right: 8px;
-}
 .root:hover {
   transform: translateX(0px) translateY(-3px) translateZ(0px);
-}
-.root:hover {
-  transform: translateX(0px) translateY(-3px) translateZ(0px);
-}
-.rootcolor_purple:hover {
-  border-color: #000000;
 }
 .rootcolor_purple:hover {
   border-color: #000000;
@@ -178,31 +104,13 @@
   background: var(--token-I651Myd9-);
   border: 2px solid var(--token-5gFOPrhbO);
 }
-.rootcolor_figma:hover {
-  background: var(--token-I651Myd9-);
-  border: 2px solid var(--token-5gFOPrhbO);
-}
-.rootcolor_outline:hover {
-  background: none;
-}
 .rootcolor_outline:hover {
   background: none;
 }
 .rootcolor_clear:hover {
   background: #e5e5e5;
 }
-.rootcolor_clear:hover {
-  background: #e5e5e5;
-}
 .root:focus-within {
-  box-shadow: 0px 0px 0px 3px #000000;
-  outline: none;
-}
-.root:focus-within {
-  box-shadow: 0px 0px 0px 3px #000000;
-  outline: none;
-}
-.root___focusVisibleWithin {
   box-shadow: 0px 0px 0px 3px #000000;
   outline: none;
 }
@@ -213,23 +121,11 @@
 .root:active {
   background: #2e2e2b;
 }
-.root:active {
-  background: #2e2e2b;
-}
-.rootcolor_figma:active {
-  background: #2721ff;
-}
 .rootcolor_figma:active {
   background: #2721ff;
 }
 .rootcolor_outline:active {
   background: none;
-}
-.rootcolor_outline:active {
-  background: none;
-}
-.rootcolor_clear:active {
-  background: var(--token-iPMnBEZADP);
 }
 .rootcolor_clear:active {
   background: var(--token-iPMnBEZADP);

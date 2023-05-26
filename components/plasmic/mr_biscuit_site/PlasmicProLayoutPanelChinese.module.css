@@ -23,18 +23,6 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 64px;
 }
-.root {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: 100%;
-  background: #ffffff;
-  min-width: 0;
-  min-height: 0;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
     width: 100%;
@@ -45,14 +33,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .root > :global(.__wab_flex-container) {
-    min-width: 0;
-    min-height: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .root {
-    width: 100%;
-    height: 100%;
     min-width: 0;
     min-height: 0;
   }
@@ -148,17 +128,6 @@
   > img {
   margin-top: 32px;
 }
-.freeBox__a38V7 {
-  width: 100%;
-  height: auto;
-  max-width: var(--token-qI3Bf7JneQc0w1);
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-width: 0;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__a38V7 {
     width: 100%;
@@ -195,19 +164,6 @@
     margin-top: 32px;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox__a38V7 {
-    width: 100%;
-    height: auto;
-    max-width: var(--token-qI3Bf7JneQc0w1);
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-width: 0;
-  }
-}
 .freeBox__gc4B4 {
   display: flex;
   position: relative;
@@ -233,16 +189,6 @@
   > picture
   > img {
   margin-top: 32px;
-}
-.freeBox__gc4B4 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: 1000px;
-  min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__gc4B4 {
@@ -277,18 +223,6 @@
     > img {
     margin-left: 0px;
     margin-top: 32px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox__gc4B4 {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    width: 100%;
-    max-width: 1000px;
-    min-width: 0;
   }
 }
 .freeBox___6VAgA {
@@ -378,13 +312,6 @@
   > picture
   > img {
   margin-left: 12px;
-}
-.freeBox___5GqPu {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
 }
 .button___0BJvr:global(.__wab_instance) {
   position: relative;
@@ -589,35 +516,6 @@
 .howItWorks:global(.__wab_instance) {
   position: relative;
 }
-.reveal___35Oi {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  min-width: 0;
-}
-.reveal___35Oi > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-width: 0;
-  margin-left: calc(0px - 20px);
-  width: calc(100% + 20px);
-  margin-top: calc(0px - 20px);
-  height: calc(100% + 20px);
-}
-.reveal___35Oi > :global(.__wab_flex-container) > *,
-.reveal___35Oi > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.reveal___35Oi > :global(.__wab_flex-container) > picture > img,
-.reveal___35Oi
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 20px;
-  margin-top: 20px;
-}
 .reveal___35Oi:global(.__wab_instance) {
   position: relative;
   width: 100%;
@@ -627,6 +525,8 @@
   justify-content: center;
   flex-wrap: wrap;
   min-width: 0;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 .freeBox__fYdkh {
   display: flex;
@@ -655,15 +555,6 @@
   > img {
   margin-left: 20px;
   margin-top: 20px;
-}
-.freeBox__fYdkh {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  flex-wrap: wrap;
-  min-width: 0;
 }
 .featureCard__f1HCs:global(.__wab_instance) {
   position: relative;
@@ -811,19 +702,6 @@
 .columns {
   --plsmc-rc-col-gap: 0px;
 }
-.columns {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  flex-wrap: nowrap;
-  padding-right: 180px;
-  padding-left: 180px;
-  min-width: 0;
-}
 .columns > :global(.__wab_flex-container) > :nth-child(2n + 1) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
@@ -866,20 +744,6 @@
     > img {
     margin-left: 16px;
     margin-top: 32px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .columns {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    position: relative;
-    align-items: stretch;
-    justify-content: flex-start;
-    min-width: 0;
-    padding: 0px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -937,13 +801,6 @@
   > picture
   > img {
   margin-top: 8px;
-}
-.freeBox__o6Uzz {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  position: relative;
 }
 .bullet__kmeIg:global(.__wab_instance) {
   position: relative;
@@ -1011,13 +868,6 @@
   > img {
   margin-top: 8px;
 }
-.freeBox__dNs9 {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  position: relative;
-}
 .bullet__xHUjC:global(.__wab_instance) {
   position: relative;
 }
@@ -1045,35 +895,6 @@
 .howItWorks2:global(.__wab_instance) {
   position: relative;
 }
-.reveal__yXpxh {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  min-width: 0;
-}
-.reveal__yXpxh > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-width: 0;
-  margin-left: calc(0px - 20px);
-  width: calc(100% + 20px);
-  margin-top: calc(0px - 20px);
-  height: calc(100% + 20px);
-}
-.reveal__yXpxh > :global(.__wab_flex-container) > *,
-.reveal__yXpxh > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.reveal__yXpxh > :global(.__wab_flex-container) > picture > img,
-.reveal__yXpxh
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 20px;
-  margin-top: 20px;
-}
 .reveal__yXpxh:global(.__wab_instance) {
   position: relative;
   width: 100%;
@@ -1083,6 +904,8 @@
   justify-content: center;
   flex-wrap: wrap;
   min-width: 0;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 .freeBox___5LF6N {
   display: flex;
@@ -1112,15 +935,6 @@
   margin-left: 20px;
   margin-top: 20px;
 }
-.freeBox___5LF6N {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  flex-wrap: wrap;
-  min-width: 0;
-}
 .freeBox__vNiQd {
   display: flex;
   position: relative;
@@ -1148,19 +962,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.freeBox__vNiQd {
-  display: flex;
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 99px;
-  padding: 8px 24px;
-  border: 2px solid #000000;
 }
 .svg__zUpzX {
   position: relative;
@@ -1205,19 +1006,6 @@
   > img {
   margin-left: 8px;
 }
-.freeBox__jqaN {
-  display: flex;
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 99px;
-  padding: 8px 24px;
-  border: 2px solid #000000;
-}
 .svg__yyyD8 {
   position: relative;
   object-fit: cover;
@@ -1261,19 +1049,6 @@
   > img {
   margin-left: 8px;
 }
-.freeBox__ioamV {
-  display: flex;
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 99px;
-  padding: 8px 24px;
-  border: 2px solid #000000;
-}
 .svg__rlQr {
   position: relative;
   object-fit: cover;
@@ -1316,19 +1091,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.freeBox__olR9E {
-  display: flex;
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 99px;
-  padding: 8px 24px;
-  border: 2px solid #000000;
 }
 .svg__e5VK {
   position: relative;
@@ -1379,19 +1141,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.freeBox___47Ksy {
-  display: flex;
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 99px;
-  padding: 8px 24px;
-  border: 2px solid #000000;
 }
 .svg__eKua {
   position: relative;

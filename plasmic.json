@@ -601,6 +601,20 @@
           "cssFilePath": "plasmic/mr_biscuit_site/PlasmicUnstyledget.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "Ahr29ahuyJW",
+          "name": "Button2",
+          "type": "managed",
+          "projectId": "qDNA17RfdgsM73kkELPPxa",
+          "renderModuleFilePath": "plasmic/mr_biscuit_site/PlasmicButton2.tsx",
+          "importSpec": {
+            "modulePath": "Button2.tsx"
+          },
+          "cssFilePath": "plasmic/mr_biscuit_site/PlasmicButton2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
         }
       ],
       "icons": [
@@ -1438,6 +1452,16 @@
           "id": "OpcRpaIUSJ",
           "name": "Icon60Icon",
           "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon60.tsx"
+        },
+        {
+          "id": "_2Xgt3HUXgn",
+          "name": "Icon61Icon",
+          "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon61.tsx"
+        },
+        {
+          "id": "uSTkRiPpTUbV",
+          "name": "Icon62Icon",
+          "moduleFilePath": "plasmic/mr_biscuit_site/icons/PlasmicIcon__Icon62.tsx"
         }
       ],
       "images": [
@@ -2635,6 +2659,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.272",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.272/dist/plasmic.schema.json"
+  "cliVersion": "0.1.275",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.275/dist/plasmic.schema.json"
 }

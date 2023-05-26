@@ -48,20 +48,6 @@
   > img {
   margin-left: 8px;
 }
-.header {
-  transform: translate(-0.057px, -0.248px);
-  width: 100%;
-  height: 64px;
-  display: flex;
-  position: relative;
-  top: auto;
-  left: auto;
-  flex-direction: row;
-  justify-content: space-between;
-  min-width: 0;
-  flex-shrink: 0;
-  padding: 16px 128px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .header {
     width: 100%;
@@ -101,22 +87,6 @@
     margin-top: 0px;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    left: auto;
-    top: auto;
-    margin-bottom: 12px;
-    height: 90px;
-    min-width: 0;
-    flex-shrink: 0;
-    padding: 16px 0px 0px;
-  }
-}
 .left {
   width: auto;
   height: auto;
@@ -136,15 +106,6 @@
 .left > :global(.__wab_flex-container) > picture > img,
 .left > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 12px;
-}
-.left {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
 }
 .frame1225 {
   width: 186px;
@@ -191,16 +152,6 @@
   > img {
   margin-left: 24px;
 }
-.right2 {
-  opacity: 0.6;
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .right2 > :global(.__wab_flex-container) {
     align-items: center;
@@ -222,12 +173,6 @@
     > img {
     margin-left: 0px;
     margin-top: 0px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .right2 {
-    align-items: center;
-    justify-content: center;
   }
 }
 .button__cBpUi:global(.__wab_instance) {
@@ -584,17 +529,6 @@
   overflow: visible;
   border-radius: 18px;
 }
-.hero {
-  width: 1268px;
-  height: 557px;
-  display: block;
-  position: relative;
-  top: auto;
-  left: auto;
-  margin-top: 16px;
-  overflow: visible;
-  border-radius: 18px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .hero {
     display: flex;
@@ -629,20 +563,6 @@
     > img {
     margin-left: 0px;
     margin-top: 6px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: auto;
-    height: auto;
-    left: auto;
-    top: auto;
-    right: auto;
-    overflow: visible;
   }
 }
 .svg___5PWv5 {
@@ -854,25 +774,6 @@
   > img {
   margin-left: 16px;
 }
-.buttonwrap {
-  transform: translate(-0.031999999999996476px, -0.46800000000001774px);
-  width: auto;
-  height: auto;
-  display: flex;
-  position: absolute;
-  top: 375px;
-  left: 83px;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .buttonwrap {
-    position: relative;
-    left: auto;
-    top: auto;
-  }
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .buttonwrap {
     position: relative;
@@ -919,19 +820,6 @@
   > picture
   > img {
   margin-left: 16px;
-}
-.freeBox__zWE1 {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  align-self: auto;
-  flex-shrink: 0;
-  padding: 20px 32px;
 }
 .cta {
   display: block;
@@ -995,28 +883,6 @@
   > img {
   margin-left: 6.4px;
 }
-.frame1181 {
-  border-top-left-radius: 48px;
-  border-bottom-left-radius: 48px;
-  transform: translate(0.04099999999999682px, -0.1290000000000191px);
-  width: auto;
-  height: auto;
-  display: flex;
-  position: absolute;
-  top: 475px;
-  left: -88.01%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  z-index: 1;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1181 {
-    position: relative;
-    left: auto;
-    top: auto;
-  }
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1181 {
     position: relative;
@@ -1051,19 +917,6 @@
   > picture
   > img {
   margin-left: 6.4px;
-}
-.frame1176 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  left: auto;
-  top: auto;
-  border-radius: 71.2px;
-  padding: 6.4px;
 }
 .frame1178 {
   width: 39px;
@@ -1144,19 +997,6 @@
   > img {
   margin-left: 6.4px;
 }
-.frame1179 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  left: auto;
-  top: auto;
-  border-radius: 71.2px;
-  padding: 6.4px;
-}
 .freeBox__e5LA {
   background: url("/plasmic/pro_layout_panel_landing_pgae/images/image32.png") center center / cover no-repeat;
   width: 26px;
@@ -1223,19 +1063,6 @@
   > picture
   > img {
   margin-left: 6.4px;
-}
-.frame1180 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  left: auto;
-  top: auto;
-  border-radius: 39.2px;
-  padding: 9.6px 12.8px;
 }
 .page1 {
   width: 43px;
@@ -1568,33 +1395,6 @@
 .side > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 8px;
 }
-.side {
-  background: rgba(0, 0, 0, 1);
-  transform: scale(1.000000499999875, 1.0000004999998748)
-    rotate(-90.0572957604145deg) translate(-0.001px, 0.01599999999996271px);
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
-  width: 269px;
-  height: 64px;
-  display: flex;
-  transform-origin: top left;
-  position: fixed;
-  top: 450px;
-  left: 0px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  flex-shrink: 0;
-  padding: 20px 2px 20px 14px;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .side {
-    top: 525px;
-    height: 48px;
-    flex-shrink: 0;
-  }
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .side {
     top: 525px;
@@ -1684,26 +1484,6 @@
   > picture
   > img {
   margin-top: 50px;
-}
-.content {
-  transform: translate(0px, 0.16200000000003456px);
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  top: auto;
-  left: auto;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-width: 0;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .content {
-    left: auto;
-    top: auto;
-    margin-top: -40px;
-  }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .content {
@@ -2131,18 +1911,6 @@
   > img {
   margin-top: 40px;
 }
-.frame1197 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-right: 56px;
-  padding-left: 56px;
-  min-width: 0;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1197 {
     width: 100%;
@@ -2174,15 +1942,6 @@
     margin-top: 40px;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1197 {
-    width: 100%;
-    padding-top: 24px;
-    padding-right: 0px;
-    padding-left: 0px;
-    min-width: 0;
-  }
-}
 .freeBox__too8Y {
   display: flex;
   position: relative;
@@ -2211,19 +1970,6 @@
   > picture
   > img {
   margin-top: 16px;
-}
-.freeBox__too8Y {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  align-self: stretch;
-  min-width: 0;
-  padding: 0px;
 }
 .frame1193 {
   width: 100%;
@@ -2268,15 +2014,6 @@
   > img {
   margin-left: 32px;
 }
-.frame1214 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: baseline;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1214 {
     display: flex;
@@ -2302,14 +2039,6 @@
     > picture
     > img {
     margin-left: 0px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1214 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 }
 .text___6ZeHr {
@@ -2396,16 +2125,6 @@
   > img {
   margin-left: 16px;
 }
-.frame1222 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 8px 16px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1222 {
     display: flex;
@@ -2436,14 +2155,6 @@
     margin-top: 16px;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1222 {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-  }
-}
 .contentCard__mM8Jx:global(.__wab_instance) {
   position: relative;
 }
@@ -2470,15 +2181,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.frame1189 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 .text__h4TgZ {
   display: block;
@@ -2514,15 +2216,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.frame1217 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 .plugin___8Ui7A:global(.__wab_instance) {
   max-width: 100%;
@@ -2565,15 +2258,6 @@
   > img {
   margin-left: 8px;
 }
-.frame1198 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 .text__lGmd {
   display: block;
   font-size: 18px;
@@ -2608,15 +2292,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.frame1218 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 .plugin__gYccd:global(.__wab_instance) {
   max-width: 100%;
@@ -2657,15 +2332,6 @@
   > img {
   margin-left: 8px;
 }
-.frame1200 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 .text__mkjKj {
   display: block;
   font-size: 18px;
@@ -2700,15 +2366,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.frame1219 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 .plugin__dsCjf:global(.__wab_instance) {
   max-width: 100%;
@@ -2749,15 +2406,6 @@
   > img {
   margin-left: 8px;
 }
-.frame1215 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 .text__tUweE {
   display: block;
   font-size: 18px;
@@ -2792,15 +2440,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.frame1220 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 .plugin___8KLbc:global(.__wab_instance) {
   position: relative;
@@ -2838,15 +2477,6 @@
   > img {
   margin-top: 16px;
 }
-.frame1196 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1196 {
     display: flex;
@@ -2870,12 +2500,6 @@
     > picture
     > img {
     margin-left: 0px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1196 {
-    display: flex;
-    flex-direction: column;
   }
 }
 .frame1194 {
@@ -2921,15 +2545,6 @@
   > img {
   margin-left: 32px;
 }
-.frame1237 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: baseline;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1237 {
     display: flex;
@@ -2953,12 +2568,6 @@
     > picture
     > img {
     margin-left: 0px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1237 {
-    display: flex;
-    flex-direction: column;
   }
 }
 .text___8CqH5 {
@@ -3030,20 +2639,6 @@
   > img {
   margin-left: 16px;
 }
-.frame1188 {
-  background: rgba(255, 255, 255, 1);
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
-  border-radius: 16px;
-  padding: 0px 16px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1188 {
     display: flex;
@@ -3071,13 +2666,6 @@
     > img {
     margin-left: 0px;
     margin-top: 16px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1188 {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
   }
 }
 .link__k6Tt8 {
@@ -3131,24 +2719,6 @@
   > picture
   > img {
   margin-top: 4px;
-}
-.frame1216 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  left: auto;
-  top: auto;
-  min-width: 0;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1216 {
-    left: auto;
-    top: auto;
-  }
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1216 {
@@ -3230,24 +2800,6 @@
   > img {
   margin-top: 4px;
 }
-.frame1223 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  left: auto;
-  top: auto;
-  min-width: 0;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1223 {
-    left: auto;
-    top: auto;
-  }
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1223 {
     left: auto;
@@ -3325,16 +2877,6 @@
   > img {
   margin-top: 4px;
 }
-.frame1224 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-width: 0;
-}
 .text___6Nug {
   display: block;
   font-size: 18px;
@@ -3409,16 +2951,6 @@
   > img {
   margin-top: 4px;
 }
-.frame1205 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-width: 0;
-}
 .text___6VYlk {
   display: block;
   font-size: 18px;
@@ -3491,19 +3023,6 @@
   > img {
   margin-top: 24px;
 }
-.frame1206 {
-  background: rgba(252, 244, 231, 1);
-  height: auto;
-  display: flex;
-  overflow: hidden;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
-  border-radius: 25px;
-  padding: 24px 32px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1206 {
     width: 100%;
@@ -3514,14 +3033,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1206 > :global(.__wab_flex-container) {
-    min-width: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1206 {
-    width: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
     min-width: 0;
   }
 }
@@ -3582,16 +3093,6 @@
   > img {
   margin-left: 32px;
 }
-.frame1238 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  align-items: baseline;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1238 {
     display: flex;
@@ -3620,16 +3121,6 @@
     > picture
     > img {
     margin-left: 0px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1238 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex-shrink: 1;
-    flex-grow: 1;
-    min-width: 0;
   }
 }
 .text__i9PY {
@@ -3705,16 +3196,6 @@
   > img {
   margin-left: 12px;
 }
-.frame1208 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  min-width: 0;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1208 {
     display: flex;
@@ -3748,18 +3229,6 @@
     > img {
     margin-left: 0px;
     margin-top: 16px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1208 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-    min-width: 0;
   }
 }
 .link__dOZhl {
@@ -3801,16 +3270,6 @@
   > picture
   > img {
   margin-top: 8px;
-}
-.frame1210 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-width: 0;
 }
 .rectangle27 {
   background: rgba(212, 213, 217, 1);
@@ -3882,16 +3341,6 @@
   > img {
   margin-top: 8px;
 }
-.frame1212 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-width: 0;
-}
 .rectangle28 {
   background: rgba(212, 213, 217, 1);
   width: 24px;
@@ -3961,16 +3410,6 @@
   > img {
   margin-top: 8px;
 }
-.frame1239 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-width: 0;
-}
 .rectangle29 {
   background: rgba(212, 213, 217, 1);
   width: 24px;
@@ -4039,16 +3478,6 @@
   > picture
   > img {
   margin-top: 8px;
-}
-.frame1252 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  min-width: 0;
 }
 .rectangle30 {
   background: rgba(212, 213, 217, 1);
@@ -4131,15 +3560,6 @@
   > img {
   margin-top: 16px;
 }
-.frame1240 {
-  height: auto;
-  display: flex;
-  position: relative;
-  align-self: stretch;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
 .frame1241 {
   width: 100%;
   height: auto;
@@ -4175,15 +3595,6 @@
   > img {
   margin-left: 32px;
 }
-.frame1242 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: flex-start;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1242 {
     display: flex;
@@ -4208,13 +3619,6 @@
     > picture
     > img {
     margin-left: 0px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1242 {
-    display: flex;
-    flex-direction: column;
-    width: auto;
   }
 }
 .text__qVjWx {
@@ -4286,18 +3690,6 @@
   > img {
   margin-left: 16px;
 }
-.frame1243 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-right: 16px;
-  padding-left: 16px;
-  min-width: 0;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1243 {
     display: flex;
@@ -4331,16 +3723,6 @@
     margin-top: 24px;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1243 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-right: 12px;
-    padding-left: 12px;
-    min-width: 0;
-  }
-}
 .frame1244 {
   background: rgba(255, 255, 255, 1);
   height: 100%;
@@ -4371,20 +3753,6 @@
   > picture
   > img {
   margin-top: 12px;
-}
-.frame1244 {
-  background: rgba(255, 255, 255, 1);
-  height: 100%;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
-  min-height: 0;
-  padding: 0px;
 }
 .aspectRatio__swvNs:global(.__wab_instance) {
   width: 100%;
@@ -4443,15 +3811,6 @@
   > img {
   margin-top: 8px;
 }
-.frame1245 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 .text__odC8Z {
   display: block;
   font-size: 18px;
@@ -4502,20 +3861,6 @@
   > picture
   > img {
   margin-top: 12px;
-}
-.frame1246 {
-  background: rgba(255, 255, 255, 1);
-  height: 100%;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
-  min-height: 0;
-  padding: 0px;
 }
 .aspectRatio__bzqx:global(.__wab_instance) {
   width: 100%;
@@ -4576,15 +3921,6 @@
   > img {
   margin-top: 8px;
 }
-.frame1247 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 .text__x5Fs {
   display: block;
   font-size: 18px;
@@ -4635,20 +3971,6 @@
   > picture
   > img {
   margin-top: 12px;
-}
-.frame1248 {
-  background: rgba(255, 255, 255, 1);
-  height: 100%;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
-  min-height: 0;
-  padding: 0px;
 }
 .aspectRatio__h87J3:global(.__wab_instance) {
   width: 100%;
@@ -4709,15 +4031,6 @@
   > img {
   margin-top: 8px;
 }
-.frame1249 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 .text__gs4Wy {
   display: block;
   font-size: 18px;
@@ -4768,20 +4081,6 @@
   > picture
   > img {
   margin-top: 12px;
-}
-.frame1250 {
-  background: rgba(255, 255, 255, 1);
-  height: 100%;
-  display: flex;
-  position: relative;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
-  min-height: 0;
-  padding: 0px;
 }
 .aspectRatio__idWVo:global(.__wab_instance) {
   width: 100%;
@@ -4841,15 +4140,6 @@
   > picture
   > img {
   margin-top: 8px;
-}
-.frame1251 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 .text___0Vzfw {
   display: block;

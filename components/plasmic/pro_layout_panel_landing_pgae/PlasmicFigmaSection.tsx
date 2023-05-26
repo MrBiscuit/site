@@ -131,6 +131,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -177,6 +178,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                   color={"clear" as const}
                   link={"#feature" as const}
                   size={"compact" as const}
+                  submitsForm={true}
                 >
                   {"Features"}
                 </Button>
@@ -185,6 +187,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                   color={"clear" as const}
                   link={"#price" as const}
                   size={"compact" as const}
+                  submitsForm={true}
                 >
                   {"Pricing"}
                 </Button>
@@ -193,6 +196,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                   color={"clear" as const}
                   link={`/figmasection_cn`}
                   size={"compact" as const}
+                  submitsForm={true}
                 >
                   {"中文"}
                 </Button>
@@ -282,6 +286,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                     "https://www.figma.com/community/plugin/1105082111167032053/Figma-Section" as const
                   }
                   showEndIcon={true}
+                  submitsForm={true}
                 >
                   {"Try it out now"}
                 </Button>
@@ -639,6 +644,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                       link={
                         "https://www.figma.com/community/plugin/1105082111167032053/Figma-Section" as const
                       }
+                      submitsForm={true}
                     >
                       {"Get Started"}
                     </Button>
@@ -706,6 +712,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                       link={
                         "https://mrbiscuit.gumroad.com/l/detnuo?variant=Individual" as const
                       }
+                      submitsForm={true}
                     >
                       {"Buy Now"}
                     </Button>
@@ -773,6 +780,7 @@ function PlasmicFigmaSection__RenderFunc(props: {
                       link={
                         "https://mrbiscuit.gumroad.com/l/detnuo?variant=Team" as const
                       }
+                      submitsForm={true}
                     >
                       {"Buy Now"}
                     </Button>

@@ -65,6 +65,8 @@ export type PlasmicUnstyledget__OverridesType = {
   input?: p.Flex<typeof TextInput>;
   svg?: p.Flex<"svg">;
   download?: p.Flex<typeof UnStyledButton>;
+  errorMessage?: p.Flex<"div">;
+  successMessage?: p.Flex<"div">;
 };
 
 export interface DefaultUnstyledgetProps {}
@@ -113,7 +115,9 @@ function PlasmicUnstyledget__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -142,176 +146,208 @@ function PlasmicUnstyledget__RenderFunc(props: {
         }
       `}</style>
 
-      <div
-        data-plasmic-name={"root"}
-        data-plasmic-override={overrides.root}
-        data-plasmic-root={true}
-        data-plasmic-for-node={forNode}
-        className={classNames(
-          projectcss.all,
-          projectcss.root_reset,
-          projectcss.plasmic_default_styles,
-          projectcss.plasmic_mixins,
-          projectcss.plasmic_tokens,
-          plasmic_outline_to_single_stroke_css.plasmic_tokens,
-          sty.root
-        )}
-      >
-        <div className={classNames(projectcss.all, sty.freeBox__ro7P4)}>
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__qk4Vk
-            )}
-          >
-            {"UnStyled"}
-          </div>
-          {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__wa5BR)}
+      <div className={projectcss.plasmic_page_wrapper}>
+        <div
+          data-plasmic-name={"root"}
+          data-plasmic-override={overrides.root}
+          data-plasmic-root={true}
+          data-plasmic-for-node={forNode}
+          className={classNames(
+            projectcss.all,
+            projectcss.root_reset,
+            projectcss.plasmic_default_styles,
+            projectcss.plasmic_mixins,
+            projectcss.plasmic_tokens,
+            plasmic_outline_to_single_stroke_css.plasmic_tokens,
+            sty.root
+          )}
+        >
+          <div className={classNames(projectcss.all, sty.freeBox__ro7P4)}>
+            <div
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__qk4Vk
+              )}
             >
-              {true ? (
+              {"UnStyled"}
+            </div>
+            {(hasVariant(globalVariants, "screen", "mobile") ? true : true) ? (
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__wa5BR)}
+              >
+                {true ? (
+                  <UnStyledButton
+                    className={classNames(
+                      "__wab_instance",
+                      sty.unStyledButton__wMuEd
+                    )}
+                  />
+                ) : null}
                 <UnStyledButton
                   className={classNames(
                     "__wab_instance",
-                    sty.unStyledButton__wMuEd
+                    sty.unStyledButton__nrH3F
                   )}
-                />
-              ) : null}
-              <UnStyledButton
-                className={classNames(
-                  "__wab_instance",
-                  sty.unStyledButton__nrH3F
-                )}
-                link={
-                  "https://www.figma.com/file/rbyg2yfXvQHo3HbjguKRFO/UnStyled?node-id=1345%3A16731&t=Hrstvng7a2Yl0ugJ-0" as const
-                }
-              >
-                {"Preview in Figma"}
-              </UnStyledButton>
-              <UnStyledButton
-                className={classNames(
-                  "__wab_instance",
-                  sty.unStyledButton___0Gx5W
-                )}
-                cta={true}
-                link={
-                  "https://intodesignsystems.lemonsqueezy.com/checkout/buy/c2906f14-26ac-445b-92b8-c2419ab7ed8e" as const
-                }
-              >
-                {"Order Now"}
-              </UnStyledButton>
-            </p.Stack>
-          ) : null}
-        </div>
-        {true ? (
-          <div className={classNames(projectcss.all, sty.freeBox__mUQvg)}>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__uZ0He
-              )}
-            >
-              {"Thank you for purchasing UnStyled!"}
-            </div>
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__pF6I4
-              )}
-            >
-              {"We are shaping the future of design systems!"}
-            </div>
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox___8Ih4Y)}>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__bt1HQ
-                  )}
+                  link={
+                    "https://www.figma.com/file/rbyg2yfXvQHo3HbjguKRFO/UnStyled?node-id=1345%3A16731&t=Hrstvng7a2Yl0ugJ-0" as const
+                  }
                 >
-                  {"Your license key:"}
-                </div>
-                {true ? (
-                  <p.Stack
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox___3TRmD)}
-                  >
-                    {true ? (
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__cd9Qn
-                        )}
-                      >
-                        <TextInput
-                          data-plasmic-name={"input"}
-                          data-plasmic-override={overrides.input}
-                          className={classNames("__wab_instance", sty.input)}
-                          onChange={(...eventArgs) => {
-                            p.generateStateOnChangeProp($state, [
-                              "input",
-                              "value"
-                            ])((e => e.target?.value).apply(null, eventArgs));
-                          }}
-                          placeholder={"Please input your license key" as const}
-                          startIcon={
-                            <Icon60Icon
-                              data-plasmic-name={"svg"}
-                              data-plasmic-override={overrides.svg}
-                              className={classNames(projectcss.all, sty.svg)}
-                              role={"img"}
-                            />
-                          }
-                          value={p.generateStateValueProp($state, [
-                            "input",
-                            "value"
-                          ])}
-                        />
-                      </div>
-                    ) : null}
-                    <UnStyledButton
-                      data-plasmic-name={"download"}
-                      data-plasmic-override={overrides.download}
-                      className={classNames("__wab_instance", sty.download)}
-                      cta={true}
-                      link={
-                        "https://intodesignsystems.lemonsqueezy.com/checkout/buy/c2906f14-26ac-445b-92b8-c2419ab7ed8e" as const
-                      }
-                    >
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          projectcss.__wab_text,
-                          sty.text__hblT
-                        )}
-                      >
-                        {"Verify license"}
-                      </div>
-                    </UnStyledButton>
-                  </p.Stack>
-                ) : null}
-              </div>
+                  {"Preview in Figma"}
+                </UnStyledButton>
+                <UnStyledButton
+                  className={classNames(
+                    "__wab_instance",
+                    sty.unStyledButton___0Gx5W
+                  )}
+                  cta={true}
+                  link={
+                    "https://intodesignsystems.lemonsqueezy.com/checkout/buy/c2906f14-26ac-445b-92b8-c2419ab7ed8e" as const
+                  }
+                >
+                  {"Order Now"}
+                </UnStyledButton>
+              </p.Stack>
             ) : null}
           </div>
-        ) : null}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__mUQvg)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__uZ0He
+                )}
+              >
+                {"Thank you for purchasing UnStyled!"}
+              </div>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text__pF6I4
+                )}
+              >
+                {"We are shaping the future of design systems!"}
+              </div>
+              {true ? (
+                <div
+                  className={classNames(projectcss.all, sty.freeBox___8Ih4Y)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__bt1HQ
+                    )}
+                  >
+                    {"Your license key:"}
+                  </div>
+                  {true ? (
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___3TRmD
+                      )}
+                    >
+                      {true ? (
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__cd9Qn
+                          )}
+                        >
+                          <TextInput
+                            data-plasmic-name={"input"}
+                            data-plasmic-override={overrides.input}
+                            className={classNames("__wab_instance", sty.input)}
+                            onChange={(...eventArgs) => {
+                              p.generateStateOnChangeProp($state, [
+                                "input",
+                                "value"
+                              ])((e => e.target?.value).apply(null, eventArgs));
+                            }}
+                            placeholder={
+                              "Please input your license key" as const
+                            }
+                            startIcon={
+                              <Icon60Icon
+                                data-plasmic-name={"svg"}
+                                data-plasmic-override={overrides.svg}
+                                className={classNames(projectcss.all, sty.svg)}
+                                role={"img"}
+                              />
+                            }
+                            value={
+                              p.generateStateValueProp($state, [
+                                "input",
+                                "value"
+                              ]) ?? ""
+                            }
+                          />
+                        </div>
+                      ) : null}
+                      <UnStyledButton
+                        data-plasmic-name={"download"}
+                        data-plasmic-override={overrides.download}
+                        className={classNames("__wab_instance", sty.download)}
+                        cta={true}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__hblT
+                          )}
+                        >
+                          {"Verify license"}
+                        </div>
+                      </UnStyledButton>
+                    </p.Stack>
+                  ) : null}
+                </div>
+              ) : null}
+              <div
+                data-plasmic-name={"errorMessage"}
+                data-plasmic-override={overrides.errorMessage}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.errorMessage
+                )}
+              >
+                {""}
+              </div>
+              <div
+                data-plasmic-name={"successMessage"}
+                data-plasmic-override={overrides.successMessage}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.successMessage
+                )}
+              >
+                {""}
+              </div>
+            </div>
+          ) : null}
+        </div>
       </div>
     </React.Fragment>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "input", "svg", "download"],
+  root: ["root", "input", "svg", "download", "errorMessage", "successMessage"],
   input: ["input", "svg"],
   svg: ["svg"],
-  download: ["download"]
+  download: ["download"],
+  errorMessage: ["errorMessage"],
+  successMessage: ["successMessage"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -321,6 +357,8 @@ type NodeDefaultElementType = {
   input: typeof TextInput;
   svg: "svg";
   download: typeof UnStyledButton;
+  errorMessage: "div";
+  successMessage: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -386,6 +424,8 @@ export const PlasmicUnstyledget = Object.assign(
     input: makeNodeComponent("input"),
     svg: makeNodeComponent("svg"),
     download: makeNodeComponent("download"),
+    errorMessage: makeNodeComponent("errorMessage"),
+    successMessage: makeNodeComponent("successMessage"),
 
     // Metadata about props expected for PlasmicUnstyledget
     internalVariantProps: PlasmicUnstyledget__VariantProps,

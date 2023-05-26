@@ -48,17 +48,6 @@
   > img {
   margin-top: 10px;
 }
-.content {
-  width: 100%;
-  height: auto;
-  max-width: var(--token-qI3Bf7JneQc0w1);
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-width: 0;
-}
 .titleContainer {
   position: relative;
   width: 100%;

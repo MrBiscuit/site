@@ -128,7 +128,9 @@ function PlasmicUnstyledCheckbox__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {

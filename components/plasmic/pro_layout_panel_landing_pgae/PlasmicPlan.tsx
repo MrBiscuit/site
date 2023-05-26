@@ -135,7 +135,9 @@ function PlasmicPlan__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -280,6 +282,7 @@ function PlasmicPlan__RenderFunc(props: {
                 <Button
                   className={classNames("__wab_instance", sty.button__pYicp)}
                   color={"outline" as const}
+                  submitsForm={true}
                 >
                   {"Get started"}
                 </Button>

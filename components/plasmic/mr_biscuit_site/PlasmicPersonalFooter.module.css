@@ -22,18 +22,6 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 245px;
 }
-.root {
-  background: rgba(242, 243, 248, 1);
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 100%;
-  position: relative;
-  min-width: 0;
-  padding: 46px 99px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
     display: flex;
@@ -64,17 +52,6 @@
     margin-left: 0px;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .root {
-    align-items: flex-start;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    padding-right: 24px;
-    padding-left: 24px;
-    width: 106.2%;
-  }
-}
 .frame1253 {
   width: auto;
   height: auto;
@@ -98,15 +75,6 @@
   > picture
   > img {
   margin-left: 72px;
-}
-.frame1253 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1253 {
@@ -138,14 +106,6 @@
     margin-top: 0px;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1253 {
-    align-items: flex-start;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-  }
-}
 .frame1254 {
   width: auto;
   height: auto;
@@ -169,15 +129,6 @@
   > picture
   > img {
   margin-top: 24px;
-}
-.frame1254 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1254 > :global(.__wab_flex-container) {
@@ -267,15 +218,6 @@
   > picture
   > img {
   margin-top: 24px;
-}
-.frame1256 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1256 > :global(.__wab_flex-container) {
@@ -370,15 +312,6 @@
   > picture
   > img {
   margin-top: 24px;
-}
-.frame1258 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1258 > :global(.__wab_flex-container) {
@@ -484,15 +417,6 @@
   > img {
   margin-top: 24px;
 }
-.frame1260 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .frame1260 {
     display: flex;
@@ -520,15 +444,6 @@
     > picture
     > img {
     margin-left: 0px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .frame1260 {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 32px;
-    width: 100%;
-    min-width: 0;
   }
 }
 .text___3F0VA {
@@ -593,19 +508,6 @@
   > picture
   > img {
   margin-left: 16px;
-}
-.freeBox {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  align-self: auto;
-  flex-shrink: 0;
-  padding: 20px 32px;
 }
 .text___6Rm43 {
   display: block;

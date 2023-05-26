@@ -132,6 +132,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -178,6 +179,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                   color={"clear" as const}
                   link={"#feature" as const}
                   size={"compact" as const}
+                  submitsForm={true}
                 >
                   {"功能"}
                 </Button>
@@ -186,6 +188,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                   color={"clear" as const}
                   link={"#price" as const}
                   size={"compact" as const}
+                  submitsForm={true}
                 >
                   {"价格"}
                 </Button>
@@ -194,6 +197,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                   color={"clear" as const}
                   link={`/figmasection`}
                   size={"compact" as const}
+                  submitsForm={true}
                 >
                   {"English"}
                 </Button>
@@ -283,6 +287,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                     "https://www.figma.com/community/plugin/1105082111167032053/Figma-Section" as const
                   }
                   showEndIcon={true}
+                  submitsForm={true}
                 >
                   {"开始使用"}
                 </Button>
@@ -655,6 +660,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                       link={
                         "https://www.figma.com/community/plugin/1105082111167032053/Figma-Section" as const
                       }
+                      submitsForm={true}
                     >
                       {"开始使用"}
                     </Button>
@@ -722,6 +728,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                       link={
                         "https://mianbaoduo.com/o/bread/mbd-Ypqcl55u" as const
                       }
+                      submitsForm={true}
                     >
                       {"立即购买"}
                     </Button>
@@ -787,6 +794,7 @@ function PlasmicFigmaSectionChinese__RenderFunc(props: {
                       )}
                       color={"purple" as const}
                       link={"" as const}
+                      submitsForm={true}
                     >
                       {"微信咨询 sunshuaiqi1993"}
                     </Button>

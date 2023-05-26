@@ -54,26 +54,8 @@
   > img {
   margin-left: 20px;
 }
-.freeBox___7CZcb {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  min-width: 0;
-  padding: 0px 24px 0px 0px;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox___7CZcb > :global(.__wab_flex-container) {
-    align-items: center;
-    justify-content: flex-end;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox___7CZcb {
     align-items: center;
     justify-content: flex-end;
   }

@@ -117,6 +117,7 @@ function PlasmicFooter__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({

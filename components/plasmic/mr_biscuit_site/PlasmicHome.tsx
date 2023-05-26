@@ -249,6 +249,7 @@ function PlasmicHome__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -323,6 +324,7 @@ function PlasmicHome__RenderFunc(props: {
                 color={"clear" as const}
                 link={`/about`}
                 size={"compact" as const}
+                submitsForm={true}
               >
                 <div
                   className={classNames(
@@ -341,6 +343,7 @@ function PlasmicHome__RenderFunc(props: {
                   "https://www.figma.com/preload-editor?fuid=405240457298389341" as const
                 }
                 size={"compact" as const}
+                submitsForm={true}
               >
                 <div
                   className={classNames(

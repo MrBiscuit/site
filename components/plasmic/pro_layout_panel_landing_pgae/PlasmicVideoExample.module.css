@@ -25,17 +25,6 @@
 .root {
   --plsmc-rc-col-gap: 0px;
 }
-.root {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  height: auto;
-  flex-wrap: wrap;
-  position: relative;
-  min-width: 0;
-}
 .root > :global(.__wab_flex-container) > :nth-child(2n + 1) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 10 / 12);
 }
@@ -79,18 +68,6 @@
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .root {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    min-width: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
   .root > :global(.__wab_flex-container) > :nth-child(1n + 1) {
     width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
   }
@@ -112,9 +89,6 @@
   > picture
   > img {
   margin-top: 0px;
-}
-.rootreversedLayout {
-  flex-direction: row-reverse;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .rootreversedLayout {
@@ -142,12 +116,6 @@
     > picture
     > img {
     margin-top: 24px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .rootreversedLayout {
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -212,15 +180,6 @@
   > img {
   margin-top: 24px;
 }
-.freeBox {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  min-width: 0;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox {
     width: 100%;
@@ -229,12 +188,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox > :global(.__wab_flex-container) {
-    min-width: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox {
-    width: 100%;
     min-width: 0;
   }
 }

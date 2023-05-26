@@ -24,19 +24,6 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 64px;
 }
-.root {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0px 0px 0px 2px #0000000d;
-  background: #ffffff;
-  min-width: 0;
-  min-height: 0;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
     width: 100%;
@@ -47,14 +34,6 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .root > :global(.__wab_flex-container) {
-    min-width: 0;
-    min-height: 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .root {
-    width: 100%;
-    height: 100%;
     min-width: 0;
     min-height: 0;
   }
@@ -157,17 +136,6 @@
   > img {
   margin-top: 32px;
 }
-.freeBox__nv186 {
-  width: 100%;
-  height: auto;
-  max-width: var(--token-qI3Bf7JneQc0w1);
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-width: 0;
-}
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__nv186 {
     width: 100%;
@@ -204,19 +172,6 @@
     margin-top: 32px;
   }
 }
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox__nv186 {
-    width: 100%;
-    height: auto;
-    max-width: var(--token-qI3Bf7JneQc0w1);
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-width: 0;
-  }
-}
 .freeBox__sp085 {
   display: flex;
   position: relative;
@@ -243,17 +198,6 @@
   > picture
   > img {
   margin-top: 32px;
-}
-.freeBox__sp085 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: 1000px;
-  overflow: visible;
-  min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__sp085 {
@@ -288,18 +232,6 @@
     > img {
     margin-left: 0px;
     margin-top: 32px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .freeBox__sp085 {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-start;
-    width: 100%;
-    max-width: 1000px;
-    min-width: 0;
   }
 }
 .freeBox__m4FLv {
@@ -391,13 +323,6 @@
   > picture
   > img {
   margin-left: 12px;
-}
-.freeBox__iqFz0 {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
 }
 .button__zi5V9:global(.__wab_instance) {
   position: relative;
@@ -527,35 +452,6 @@
 .howItWorks:global(.__wab_instance) {
   position: relative;
 }
-.reveal__ddj9N {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  min-width: 0;
-}
-.reveal__ddj9N > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-width: 0;
-  margin-left: calc(0px - 20px);
-  width: calc(100% + 20px);
-  margin-top: calc(0px - 20px);
-  height: calc(100% + 20px);
-}
-.reveal__ddj9N > :global(.__wab_flex-container) > *,
-.reveal__ddj9N > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.reveal__ddj9N > :global(.__wab_flex-container) > picture > img,
-.reveal__ddj9N
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 20px;
-  margin-top: 20px;
-}
 .reveal__ddj9N:global(.__wab_instance) {
   position: relative;
   width: 100%;
@@ -565,6 +461,8 @@
   justify-content: center;
   flex-wrap: wrap;
   min-width: 0;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 .freeBox___9S0Q4 {
   display: flex;
@@ -593,15 +491,6 @@
   > img {
   margin-left: 20px;
   margin-top: 20px;
-}
-.freeBox___9S0Q4 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  flex-wrap: wrap;
-  min-width: 0;
 }
 .featureCard__uv1K2:global(.__wab_instance) {
   position: relative;
@@ -702,18 +591,6 @@
 .columns {
   --plsmc-rc-col-gap: 0px;
 }
-.columns {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 100%;
-  height: 400px;
-  flex-wrap: nowrap;
-  min-width: 0;
-  padding: 0px;
-}
 .columns > :global(.__wab_flex-container) > :nth-child(3n + 1) {
   width: calc((100% - 3 * var(--plsmc-rc-col-gap, 0px)) * 4 / 12);
 }
@@ -759,20 +636,6 @@
     > img {
     margin-left: 16px;
     margin-top: 32px;
-  }
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .columns {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    position: relative;
-    align-items: stretch;
-    justify-content: flex-start;
-    min-width: 0;
-    padding: 0px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -836,15 +699,6 @@
   > picture
   > img {
   margin-top: 8px;
-}
-.freeBox__zBBs {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  position: relative;
-  height: 100%;
-  min-height: 0;
 }
 .bullet___3X7S1:global(.__wab_instance) {
   position: relative;
@@ -914,13 +768,6 @@
   > picture
   > img {
   margin-top: 8px;
-}
-.freeBox__v1Z4V {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  position: relative;
 }
 .bullet__iYjRg:global(.__wab_instance) {
   position: relative;
@@ -994,13 +841,6 @@
   > img {
   margin-top: 8px;
 }
-.freeBox__xBot {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  position: relative;
-}
 .bullet__oKoMl:global(.__wab_instance) {
   position: relative;
 }
@@ -1028,35 +868,6 @@
 .howItWorks2:global(.__wab_instance) {
   position: relative;
 }
-.reveal___3C4Sj {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  min-width: 0;
-}
-.reveal___3C4Sj > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-width: 0;
-  margin-left: calc(0px - 20px);
-  width: calc(100% + 20px);
-  margin-top: calc(0px - 20px);
-  height: calc(100% + 20px);
-}
-.reveal___3C4Sj > :global(.__wab_flex-container) > *,
-.reveal___3C4Sj > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.reveal___3C4Sj > :global(.__wab_flex-container) > picture > img,
-.reveal___3C4Sj
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 20px;
-  margin-top: 20px;
-}
 .reveal___3C4Sj:global(.__wab_instance) {
   position: relative;
   width: 100%;
@@ -1066,6 +877,8 @@
   justify-content: center;
   flex-wrap: wrap;
   min-width: 0;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 .freeBox__rrr8K {
   display: flex;
@@ -1096,16 +909,6 @@
   margin-left: 20px;
   margin-top: 20px;
 }
-.freeBox__rrr8K {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  width: 100%;
-  flex-wrap: wrap;
-  align-content: flex-start;
-  min-width: 0;
-}
 .freeBox__g3TOy {
   display: flex;
   position: relative;
@@ -1134,20 +937,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.freeBox__g3TOy {
-  display: flex;
-  position: relative;
-  width: 452px;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  border-radius: 12px;
-  padding: 8px 24px;
-  border: 2px solid #000000;
 }
 .freeBox__vmsJs {
   display: flex;
@@ -1223,20 +1012,6 @@
   > img {
   margin-left: 8px;
 }
-.freeBox__fuUhc {
-  display: flex;
-  position: relative;
-  width: 452px;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  border-radius: 12px;
-  padding: 8px 24px;
-  border: 2px solid #000000;
-}
 .img__pbI1Q {
   position: relative;
   object-fit: cover;
@@ -1297,20 +1072,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.freeBox__shpk6 {
-  display: flex;
-  position: relative;
-  width: 452px;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  border-radius: 12px;
-  padding: 8px 24px;
-  border: 2px solid #000000;
 }
 .img__fEDoG {
   position: relative;
@@ -1374,20 +1135,6 @@
   > img {
   margin-left: 8px;
 }
-.freeBox__emrBs {
-  display: flex;
-  position: relative;
-  width: 452px;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  border-radius: 12px;
-  padding: 8px 24px;
-  border: 2px solid #000000;
-}
 .img__auBjN {
   position: relative;
   object-fit: cover;
@@ -1424,35 +1171,6 @@
 .section__oKaTh:global(.__wab_instance) {
   position: relative;
 }
-.reveal__hjFpo {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  min-width: 0;
-}
-.reveal__hjFpo > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-width: 0;
-  margin-left: calc(0px - 20px);
-  width: calc(100% + 20px);
-  margin-top: calc(0px - 20px);
-  height: calc(100% + 20px);
-}
-.reveal__hjFpo > :global(.__wab_flex-container) > *,
-.reveal__hjFpo > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
-.reveal__hjFpo > :global(.__wab_flex-container) > picture > img,
-.reveal__hjFpo
-  > :global(.__wab_flex-container)
-  > :global(.__wab_slot)
-  > picture
-  > img {
-  margin-left: 20px;
-  margin-top: 20px;
-}
 .reveal__hjFpo:global(.__wab_instance) {
   position: relative;
   width: 100%;
@@ -1462,6 +1180,8 @@
   justify-content: center;
   flex-wrap: wrap;
   min-width: 0;
+  column-gap: 20px;
+  row-gap: 20px;
 }
 .freeBox__xuMsZ {
   display: flex;
@@ -1491,15 +1211,6 @@
   margin-left: 20px;
   margin-top: 20px;
 }
-.freeBox__xuMsZ {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  flex-wrap: wrap;
-  min-width: 0;
-}
 .freeBox__z03La {
   display: flex;
   position: relative;
@@ -1527,19 +1238,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.freeBox__z03La {
-  display: flex;
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 99px;
-  padding: 8px 24px;
-  border: 2px solid #000000;
 }
 .svg__kcd27 {
   position: relative;
@@ -1589,19 +1287,6 @@
   > picture
   > img {
   margin-left: 8px;
-}
-.freeBox__k3UPk {
-  display: flex;
-  position: relative;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  border-radius: 99px;
-  padding: 8px 24px;
-  border: 2px solid #000000;
 }
 .svg__cY4E3 {
   position: relative;

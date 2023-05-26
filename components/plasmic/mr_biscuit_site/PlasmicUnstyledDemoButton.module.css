@@ -38,30 +38,9 @@
   > img {
   margin-left: 4px;
 }
-.button2 {
-  background: rgba(255, 255, 255, 1);
-  box-shadow: none;
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
-  padding: 4px 8px;
-  border: 1px solid #7f7f7f;
-}
 .button2hasSplit {
   border-radius: 4px 0px 0px 4px;
   border-color: #7f7f7f;
-}
-.button2hasSplit {
-  border-radius: 4px 0px 0px 4px;
-  border-color: #7f7f7f;
-}
-.button2isIcon {
-  display: none;
 }
 .button2isIcon {
   display: none;
@@ -70,18 +49,8 @@
   background: #2f54eb;
   border-color: #000000;
 }
-.button2isPrimary {
-  background: #2f54eb;
-  border-color: #000000;
-}
 .button2radius_small {
   border-radius: 0px;
-}
-.button2radius_small {
-  border-radius: 0px;
-}
-.button2radius_large {
-  border-radius: 8px;
 }
 .button2radius_large {
   border-radius: 8px;

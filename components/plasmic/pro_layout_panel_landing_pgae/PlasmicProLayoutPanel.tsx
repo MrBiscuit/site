@@ -138,6 +138,7 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -184,6 +185,7 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
                   color={"clear" as const}
                   link={"#feature" as const}
                   size={"compact" as const}
+                  submitsForm={true}
                 >
                   {"Features"}
                 </Button>
@@ -192,6 +194,7 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
                   color={"clear" as const}
                   link={"#price" as const}
                   size={"compact" as const}
+                  submitsForm={true}
                 >
                   {"Pricing"}
                 </Button>
@@ -200,6 +203,7 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
                   color={"clear" as const}
                   link={`/plp_cn`}
                   size={"compact" as const}
+                  submitsForm={true}
                 >
                   {"中文"}
                 </Button>
@@ -272,6 +276,7 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
                     "https://www.figma.com/community/plugin/1065130523685842895/Pro-Layout-Panel" as const
                   }
                   showEndIcon={true}
+                  submitsForm={true}
                 >
                   {"Start free trial"}
                 </Button>
@@ -287,6 +292,7 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
                   link={
                     "https://www.figma.com/community/file/1089450392855659100/Pro-Layout-Panel-Playground" as const
                   }
+                  submitsForm={true}
                 >
                   {"Open Playground"}
                 </Button>
@@ -775,6 +781,7 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
                       link={
                         "https://www.figma.com/community/plugin/1065130523685842895/Pro-Layout-Panel" as const
                       }
+                      submitsForm={true}
                     >
                       {"Get Started"}
                     </Button>
@@ -842,6 +849,7 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
                       link={
                         "https://mrbiscuit.gumroad.com/l/prolayoutpanel?variant=Single%20User" as const
                       }
+                      submitsForm={true}
                     >
                       {"Buy Now"}
                     </Button>
@@ -909,6 +917,7 @@ function PlasmicProLayoutPanel__RenderFunc(props: {
                       link={
                         "https://mrbiscuit.gumroad.com/l/prolayoutpanel?variant=Team" as const
                       }
+                      submitsForm={true}
                     >
                       {"Buy Now"}
                     </Button>

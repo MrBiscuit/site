@@ -141,6 +141,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
@@ -198,6 +199,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
                   color={"clear" as const}
                   link={"#feature" as const}
                   size={"compact" as const}
+                  submitsForm={true}
                 >
                   {"功能"}
                 </Button>
@@ -206,6 +208,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
                   color={"clear" as const}
                   link={"#price" as const}
                   size={"compact" as const}
+                  submitsForm={true}
                 >
                   {"价格"}
                 </Button>
@@ -214,6 +217,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
                   color={"clear" as const}
                   link={`/plp`}
                   size={"compact" as const}
+                  submitsForm={true}
                 >
                   {"English"}
                 </Button>
@@ -286,6 +290,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
                     "https://www.figma.com/community/plugin/1065130523685842895/Pro-Layout-Panel" as const
                   }
                   showEndIcon={true}
+                  submitsForm={true}
                 >
                   {"开启免费体验"}
                 </Button>
@@ -301,6 +306,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
                   link={
                     "https://www.figma.com/community/file/1089790476460041983/Pro-Layout-Panel-playground-(%E4%B8%AD%E6%96%87%E7%89%88)" as const
                   }
+                  submitsForm={true}
                 >
                   {"Figma 中文游乐场"}
                 </Button>
@@ -749,6 +755,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
                       link={
                         "https://www.figma.com/community/plugin/1065130523685842895/Pro-Layout-Panel" as const
                       }
+                      submitsForm={true}
                     >
                       {"开始使用"}
                     </Button>
@@ -816,6 +823,7 @@ function PlasmicProLayoutPanelChinese__RenderFunc(props: {
                       link={
                         "https://item.taobao.com/item.htm?spm=a2oq0.12575281.0.0.50111deb2Qb6Cn&ft=t&id=670429733914" as const
                       }
+                      submitsForm={true}
                     >
                       {"立即购买"}
                     </Button>

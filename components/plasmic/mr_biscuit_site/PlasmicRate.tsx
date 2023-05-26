@@ -120,7 +120,9 @@ function PlasmicRate__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -239,6 +241,9 @@ function PlasmicRate__RenderFunc(props: {
                         },
                         () =>
                           (({ variable, value, startIndex, deleteCount }) => {
+                            if (!variable) {
+                              return;
+                            }
                             const { objRoot, variablePath } = variable;
 
                             p.set(objRoot, variablePath, value);
@@ -312,6 +317,9 @@ function PlasmicRate__RenderFunc(props: {
                         },
                         () =>
                           (({ variable, value, startIndex, deleteCount }) => {
+                            if (!variable) {
+                              return;
+                            }
                             const { objRoot, variablePath } = variable;
 
                             p.set(objRoot, variablePath, value);

@@ -18,15 +18,6 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 0px;
 }
-.root {
-  display: inline-flex;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  flex-direction: row;
-  position: relative;
-  padding: 0px;
-}
 .hitbox {
   display: flex;
   position: relative;

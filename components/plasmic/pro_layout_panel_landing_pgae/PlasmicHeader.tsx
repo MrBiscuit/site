@@ -132,7 +132,9 @@ function PlasmicHeader__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -214,6 +216,7 @@ function PlasmicHeader__RenderFunc(props: {
                       color={"clear" as const}
                       link={"#feature" as const}
                       size={"compact" as const}
+                      submitsForm={true}
                     >
                       {"Features"}
                     </Button>
@@ -225,6 +228,7 @@ function PlasmicHeader__RenderFunc(props: {
                       color={"clear" as const}
                       link={"#price" as const}
                       size={"compact" as const}
+                      submitsForm={true}
                     >
                       {"Pricing"}
                     </Button>
@@ -235,6 +239,7 @@ function PlasmicHeader__RenderFunc(props: {
                       )}
                       color={"clear" as const}
                       size={"compact" as const}
+                      submitsForm={true}
                     >
                       {"中文"}
                     </Button>

@@ -94,6 +94,7 @@ import Icon57Icon from "./icons/PlasmicIcon__Icon57"; // plasmic-import: Bfj59BV
 import Icon58Icon from "./icons/PlasmicIcon__Icon58"; // plasmic-import: 5p0wU6DBid/icon
 import Icon59Icon from "./icons/PlasmicIcon__Icon59"; // plasmic-import: Cd0Qv4bMM/icon
 import Icon37Icon from "./icons/PlasmicIcon__Icon37"; // plasmic-import: WHV25Sv77u/icon
+import Icon62Icon from "./icons/PlasmicIcon__Icon62"; // plasmic-import: uSTkRiPpTUbV/icon
 import TwitterIconIcon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__TwitterIcon"; // plasmic-import: fXUwwdElPSPysi/icon
 import FigmasvgIcon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Figmasvg"; // plasmic-import: xchrs1LLb/icon
 import Vector19Icon from "../pro_layout_panel_landing_pgae/icons/PlasmicIcon__Vector19"; // plasmic-import: KN1g5LXUG/icon
@@ -148,6 +149,7 @@ export type PlasmicUnStyled__OverridesType = {
   unstyledDropdown?: p.Flex<typeof UnstyledDropdown>;
   unstyledDropdownMenu?: p.Flex<typeof UnstyledDropdownMenu>;
   youTube?: p.Flex<typeof YouTube>;
+  columns?: p.Flex<"div">;
 };
 
 export interface DefaultUnStyledProps {}
@@ -196,7 +198,9 @@ function PlasmicUnStyled__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
+
   const stateSpecs = React.useMemo(
     () => [
       {
@@ -1190,10 +1194,12 @@ function PlasmicUnStyled__RenderFunc(props: {
                           "value"
                         ])((e => e.target?.value).apply(null, eventArgs));
                       }}
-                      value={p.generateStateValueProp($state, [
-                        "textInput",
-                        "value"
-                      ])}
+                      value={
+                        p.generateStateValueProp($state, [
+                          "textInput",
+                          "value"
+                        ]) ?? ""
+                      }
                     />
 
                     <UnstyledTabs
@@ -1289,6 +1295,9 @@ function PlasmicUnStyled__RenderFunc(props: {
                                           startIndex,
                                           deleteCount
                                         }) => {
+                                          if (!variable) {
+                                            return;
+                                          }
                                           const { objRoot, variablePath } =
                                             variable;
 
@@ -1757,6 +1766,1222 @@ function PlasmicUnStyled__RenderFunc(props: {
               videoId={"_6731luLfeg" as const}
             />
           </p.Stack>
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__zsIA)}
+          >
+            <p.Stack
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox___4Ywzy)}
+            >
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox___2VmZc)}
+              >
+                <div className={classNames(projectcss.all, sty.freeBox__qfjhb)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__kXj8X
+                    )}
+                  >
+                    {"Pricing plans"}
+                  </div>
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__wplq4
+                  )}
+                >
+                  {"Choose the Right Plan for Your Team's Success"}
+                </div>
+              </p.Stack>
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"columns"}
+                data-plasmic-override={overrides.columns}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.columns)}
+              >
+                <div className={classNames(projectcss.all, sty.column__dd3Sp)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__yfn1I)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__b30X)}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___28Wn3
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___9Nlh4
+                          )}
+                        >
+                          {"Individual"}
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__p42P
+                          )}
+                        >
+                          {"Single user"}
+                        </div>
+                      </p.Stack>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__tkDxn
+                        )}
+                      >
+                        {"$249"}
+                      </div>
+                      <UnStyledButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.unStyledButton__sj6Xn
+                        )}
+                        cta={true}
+                        link={
+                          "https://intodesignsystems.lemonsqueezy.com/checkout/buy/2d8c3ecd-59fb-41a6-a92c-5a3586c824a5?discount=0&disabled=81827%2C45773" as const
+                        }
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__zOc6S
+                          )}
+                        >
+                          {"Get started"}
+                        </div>
+                      </UnStyledButton>
+                    </p.Stack>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__ssjEe)}
+                    />
+
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__wF9Bz)}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__ssu0
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__bstrx
+                          )}
+                        >
+                          <Icon62Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___7EWqt
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                        {false ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__kU4Ge
+                            )}
+                          >
+                            <Icon62Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__hPu1G
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___77Az6
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__mDbK7
+                              )}
+                            >
+                              {"Label"}
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__oJp48
+                            )}
+                          >
+                            {"Discord support"}
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__qqqNn
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__pjLuv
+                          )}
+                        >
+                          <Icon62Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___97Kj5
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                        {false ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__iioMf
+                            )}
+                          >
+                            <Icon62Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__rU5DF
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__l8Z4W
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__qCs7
+                              )}
+                            >
+                              {"Label"}
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__yjRyc
+                            )}
+                          >
+                            {"Regular updates and bug fixes"}
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__ei269
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__pv2Em
+                          )}
+                        >
+                          <Icon62Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__gioCx
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                        {false ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__nglHk
+                            )}
+                          >
+                            <Icon62Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg___6Fqtl
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__yg1Xq
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__dn8Fn
+                              )}
+                            >
+                              {"Label"}
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__mMtg0
+                            )}
+                          >
+                            {"In-File tutorials and documentation"}
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__jNii
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__nUYa
+                          )}
+                        >
+                          <Icon62Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__ql88P
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                        {false ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__lWJdr
+                            )}
+                          >
+                            <Icon62Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__q5BZp
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__f4ZeF
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__uYKds
+                              )}
+                            >
+                              {"Label"}
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__vm28T
+                            )}
+                          >
+                            {"Quarterly feature updates"}
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                    </p.Stack>
+                  </div>
+                </div>
+                <div className={classNames(projectcss.all, sty.column___6Rmf)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__kWnsj)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___432BG
+                      )}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__tKv3I
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__oDq3X
+                          )}
+                        >
+                          {"Small Team"}
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__pKyCl
+                          )}
+                        >
+                          {"2-5 users"}
+                        </div>
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__rUElB
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__q91Ol
+                          )}
+                        >
+                          {"$899"}
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__dNerK
+                          )}
+                        >
+                          {"-26%"}
+                        </div>
+                      </p.Stack>
+                      <UnStyledButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.unStyledButton__wYrWy
+                        )}
+                        cta={true}
+                        link={
+                          "https://intodesignsystems.lemonsqueezy.com/checkout/buy/c2906f14-26ac-445b-92b8-c2419ab7ed8e?discount=0&disabled=81827%2C81829" as const
+                        }
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__zhVgK
+                          )}
+                        >
+                          {"Get started"}
+                        </div>
+                      </UnStyledButton>
+                    </p.Stack>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__yiiTw)}
+                    />
+
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__djUcv)}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox___15E
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__qxpmu
+                          )}
+                        >
+                          <Icon62Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__lqYXh
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                        {false ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__bKgJ9
+                            )}
+                          >
+                            <Icon62Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__t8T8R
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__krD0O
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__hFwVy
+                              )}
+                            >
+                              {"Label"}
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__t6Dr
+                            )}
+                          >
+                            {"Priority support"}
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__lv7PT
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__eElIr
+                          )}
+                        >
+                          <Icon62Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__oxym4
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                        {false ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__aNng
+                            )}
+                          >
+                            <Icon62Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__gx7Aj
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__nLt0B
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__lCm3P
+                              )}
+                            >
+                              {"Label"}
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__ffYy0
+                            )}
+                          >
+                            {"Access to team collaboration tutorials"}
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                    </p.Stack>
+                  </div>
+                </div>
+                <div className={classNames(projectcss.all, sty.column__ngNgf)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__jntPx)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(
+                        projectcss.all,
+                        sty.freeBox___1BSx5
+                      )}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__gne4
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__vkS8N
+                          )}
+                        >
+                          {"Medium Team"}
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__rNpKa
+                          )}
+                        >
+                          {"6-20 users"}
+                        </div>
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__y3XX
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__sOfmI
+                          )}
+                        >
+                          {"$1499"}
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__duxvJ
+                          )}
+                        >
+                          {"-70%"}
+                        </div>
+                      </p.Stack>
+                      <UnStyledButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.unStyledButton__z80JB
+                        )}
+                        cta={true}
+                        link={
+                          "https://intodesignsystems.lemonsqueezy.com/checkout/buy/7e0ae922-2b48-4fa4-be79-614867649b98?discount=0&disabled=81829%2C45773" as const
+                        }
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__asXfw
+                          )}
+                        >
+                          {"Get started"}
+                        </div>
+                      </UnStyledButton>
+                    </p.Stack>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__ahZbw)}
+                    />
+
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__lTcX4)}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__kk0F5
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__ql4Es
+                          )}
+                        >
+                          <Icon62Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__cuAxM
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                        {false ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__vuUnv
+                            )}
+                          >
+                            <Icon62Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__bpeM
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__oXsYi
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__lK1Iw
+                              )}
+                            >
+                              {"Label"}
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__mf8Gk
+                            )}
+                          >
+                            {"Early access to new features"}
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__bnnJv
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__mmNYs
+                          )}
+                        >
+                          <Icon62Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__hFzcj
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                        {false ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__m6Vtg
+                            )}
+                          >
+                            <Icon62Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg___61NCb
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__qviql
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__nAaa
+                              )}
+                            >
+                              {"Label"}
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__dCsvr
+                            )}
+                          >
+                            {
+                              "Free entry to webinars or online training sessions"
+                            }
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__vzJqv
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__oDfOo
+                          )}
+                        >
+                          <Icon62Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__uHt5X
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                        {false ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox___46Njr
+                            )}
+                          >
+                            <Icon62Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__hhUtI
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___7BUy
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__jBl3E
+                              )}
+                            >
+                              {"Label"}
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__jJ5S7
+                            )}
+                          >
+                            {"Special discounts for intodsconf online webinars"}
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                    </p.Stack>
+                  </div>
+                </div>
+                <div className={classNames(projectcss.all, sty.column___77Rqw)}>
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__aO3EA)}
+                  >
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__zjDkz)}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__fPqZt
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__eqbnP
+                          )}
+                        >
+                          {"Enterprise Team"}
+                        </div>
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text___1X5Wq
+                          )}
+                        >
+                          {"Entire Company"}
+                        </div>
+                      </p.Stack>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__bTc9U
+                        )}
+                      >
+                        {"Custom"}
+                      </div>
+                      <UnStyledButton
+                        className={classNames(
+                          "__wab_instance",
+                          sty.unStyledButton__cROg
+                        )}
+                        cta={true}
+                        link={"https://discord.gg/t8uASknrc6" as const}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__gyz8T
+                          )}
+                        >
+                          {"Contact us"}
+                        </div>
+                      </UnStyledButton>
+                    </p.Stack>
+                    <div
+                      className={classNames(projectcss.all, sty.freeBox__on4P)}
+                    />
+
+                    <p.Stack
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__p05Xj)}
+                    >
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__rwLhb
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox___6Cy4P
+                          )}
+                        >
+                          <Icon62Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__lwHjr
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                        {false ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox___3IB9A
+                            )}
+                          >
+                            <Icon62Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__s1N9A
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__kpKge
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__gtJD
+                              )}
+                            >
+                              {"Label"}
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__xgL6M
+                            )}
+                          >
+                            {"Influence feature development"}
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__nBIiM
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__k3Zr9
+                          )}
+                        >
+                          <Icon62Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg___1RlVg
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                        {false ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox__ms0Dt
+                            )}
+                          >
+                            <Icon62Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__aqwv9
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__dkBCw
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text__ivi3Q
+                              )}
+                            >
+                              {"Label"}
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__xqDbh
+                            )}
+                          >
+                            {"Customized training sessions"}
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                      <p.Stack
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__qpJ3F
+                        )}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__prMaH
+                          )}
+                        >
+                          <Icon62Icon
+                            className={classNames(
+                              projectcss.all,
+                              sty.svg__aEps6
+                            )}
+                            role={"img"}
+                          />
+                        </div>
+                        {false ? (
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              sty.freeBox___22CgG
+                            )}
+                          >
+                            <Icon62Icon
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__uzN1B
+                              )}
+                              role={"img"}
+                            />
+                          </div>
+                        ) : null}
+                        <p.Stack
+                          as={"div"}
+                          hasGap={true}
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__w35P
+                          )}
+                        >
+                          {false ? (
+                            <div
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.__wab_text,
+                                sty.text___4Pgmw
+                              )}
+                            >
+                              {"Label"}
+                            </div>
+                          ) : null}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__qmxG
+                            )}
+                          >
+                            {"Exclusive access to beta testing opportunities"}
+                          </div>
+                        </p.Stack>
+                      </p.Stack>
+                    </p.Stack>
+                  </div>
+                </div>
+              </p.Stack>
+            </p.Stack>
+          </p.Stack>
           <div className={classNames(projectcss.all, sty.freeBox__jsPzX)}>
             <p.Stack
               as={"div"}
@@ -1906,7 +3131,8 @@ const PlasmicDescendants = {
     "unstyledRate",
     "unstyledDropdown",
     "unstyledDropdownMenu",
-    "youTube"
+    "youTube",
+    "columns"
   ],
   frame3: [
     "frame3",
@@ -1964,7 +3190,8 @@ const PlasmicDescendants = {
   unstyledRate: ["unstyledRate"],
   unstyledDropdown: ["unstyledDropdown"],
   unstyledDropdownMenu: ["unstyledDropdownMenu"],
-  youTube: ["youTube"]
+  youTube: ["youTube"],
+  columns: ["columns"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -1996,6 +3223,7 @@ type NodeDefaultElementType = {
   unstyledDropdown: typeof UnstyledDropdown;
   unstyledDropdownMenu: typeof UnstyledDropdownMenu;
   youTube: typeof YouTube;
+  columns: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -2083,6 +3311,7 @@ export const PlasmicUnStyled = Object.assign(
     unstyledDropdown: makeNodeComponent("unstyledDropdown"),
     unstyledDropdownMenu: makeNodeComponent("unstyledDropdownMenu"),
     youTube: makeNodeComponent("youTube"),
+    columns: makeNodeComponent("columns"),
 
     // Metadata about props expected for PlasmicUnStyled
     internalVariantProps: PlasmicUnStyled__VariantProps,
