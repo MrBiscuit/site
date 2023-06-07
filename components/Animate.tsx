@@ -22,8 +22,11 @@ export function Motion({
   className: string;
 }) {
   const { scrollYProgress } = useScroll();
-  let variants = { from, to };
-
+  let variants = {
+    from,
+    to,
+    scrollYProgress, // Add scrollYProgress to variants
+  };
   if (isChildren) {
     return (
       <motion.div
@@ -37,15 +40,16 @@ export function Motion({
       </motion.div>
     );
   } else if (control) {
-
-    return <motion.div
-    initial="from"
-    variants={variants}
-      animate={control}
-      className={className}
-    >
-      {children}
-    </motion.div>;
+    return (
+      <motion.div
+        initial="from"
+        variants={variants}
+        animate={control}
+        className={className}
+      >
+        {children}
+      </motion.div>
+    );
   } else
     return (
       <motion.div
